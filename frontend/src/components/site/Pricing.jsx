@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { SectionLabel, fadeUp } from "./Shared";
-import { ArrowDown, Check, X } from "@phosphor-icons/react";
+import { ArrowDown, Check, X } from "lucide-react";
 
 const INFO_IMG =
   "https://static.prod-images.emergentagent.com/jobs/239039ec-0a02-4e58-850c-c28fee591dc0/images/05a40c0ca33d58776dafe6a7ac741d882a1fae18134fdff1fa6cf6d45b02133e.png";
@@ -83,7 +83,7 @@ export const Pricing = () => {
             </ul>
 
             <div className="mt-10 pt-8 border-t border-[#E5E5E5] flex items-center gap-3 text-sm text-[#52525A]">
-              <ArrowDown size={16} weight="bold" color="#E57119" />
+              <ArrowDown size={16} strokeWidth={2.2} color="#E57119" />
               Real numbers from real agencies. Most businesses can't pay this upfront.
             </div>
           </motion.div>
@@ -149,7 +149,7 @@ export const Pricing = () => {
         >
           <div className="p-8 md:p-10 border-b md:border-b-0 md:border-r border-[#E5E5E5]">
             <div className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.22em] text-[#52525A] mb-4">
-              <X size={14} weight="bold" /> Cheap website
+              <X size={14} strokeWidth={2.2} /> Cheap website
             </div>
             <ul className="space-y-2 text-sm text-[#52525A]">
               <li>— Template that looks like everyone else's</li>
@@ -160,7 +160,7 @@ export const Pricing = () => {
           </div>
           <div className="p-8 md:p-10 bg-[#FDFDFD]">
             <div className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.22em] text-[#E57119] mb-4">
-              <Check size={14} weight="bold" /> Built right
+              <Check size={14} strokeWidth={2.2} /> Built right
             </div>
             <ul className="space-y-2 text-sm text-[#0A0A0A]">
               <li>+ Custom design for your brand</li>

@@ -23,12 +23,12 @@ No build step. No framework runtime. Just three files.
 ## Dependencies (all via CDN, no install)
 
 - **Tailwind CSS** Play CDN — utility classes used throughout
-- **Phosphor Icons** Web font — `<i class="ph-bold ph-arrow-right">` syntax
+- **Lucide Icons** Web UMD — `<i data-lucide="arrow-right">` syntax, initialised via `lucide.createIcons()`
 - **Google Fonts** — Outfit (display) + Inter (body) + JetBrains Mono (mono)
 
 If you want zero CDN dependence:
 - Replace `cdn.tailwindcss.com` with a built Tailwind CSS file (run `npx tailwindcss -i in.css -o out.css --minify` after extracting classes).
-- Swap `@phosphor-icons/web` for inline SVGs.
+- Swap Lucide for inline SVGs (copy from https://lucide.dev).
 - Self-host the Google Fonts woff2 files.
 
 ## Customising

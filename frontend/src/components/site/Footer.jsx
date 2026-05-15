@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { PrimaryCTA, fadeUp } from "./Shared";
-import { ArrowUpRight } from "@phosphor-icons/react";
+import { ArrowUpRight } from "lucide-react";
 
 export const FinalCTA = () => {
   return (
@@ -96,7 +96,7 @@ export const Footer = () => {
             className="inline-flex items-center gap-2 font-display font-bold text-2xl text-white hover:text-[#E57119]"
           >
             itniche.com
-            <ArrowUpRight size={22} weight="bold" />
+            <ArrowUpRight size={22} strokeWidth={2.2} />
           </a>
           <p className="mt-4 text-sm text-white/60">
             Ready when you are. We reply within one business day.

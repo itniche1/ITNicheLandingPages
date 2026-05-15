@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { PrimaryCTA, SectionLabel, fadeUp } from "./Shared";
-import { CheckCircle } from "@phosphor-icons/react";
+import { CheckCircle2 } from "lucide-react";
 
 const WORKSPACE_IMG =
   "https://static.prod-images.emergentagent.com/jobs/239039ec-0a02-4e58-850c-c28fee591dc0/images/af639724c23b81e972d0edf6c7ef31df0f12168185da9384a1760eb97d7a56bc.png";
@@ -166,7 +166,7 @@ export const WhyUs = () => {
                 data-testid={`whyus-point-${i}`}
                 className="flex items-start gap-3"
               >
-                <CheckCircle size={22} weight="fill" color="#E57119" className="mt-0.5 shrink-0" />
+                <CheckCircle2 size={22} fill="#E57119" stroke="#FFFFFF" strokeWidth={2} className="mt-0.5 shrink-0" />
                 <span className="text-[15px] text-[#0A0A0A]">{p}</span>
               </motion.li>
             ))}

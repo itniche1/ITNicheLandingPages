@@ -2,45 +2,45 @@ import React from "react";
 import { motion } from "framer-motion";
 import { SectionLabel, fadeUp } from "./Shared";
 import {
-  PencilRuler,
-  Code,
-  MagnifyingGlass,
-  Browsers,
-  CloudArrowUp,
+  Ruler,
+  Code2,
+  Search,
+  AppWindow,
+  CloudUpload,
   ShieldCheck,
-} from "@phosphor-icons/react";
+} from "lucide-react";
 
 const FEATURES = [
   {
-    icon: PencilRuler,
+    icon: Ruler,
     title: "Custom design",
     blurb:
       "Your digital storefront — designed for your brand, your audience, and how visitors actually move through a page.",
     chip: "Brand-led",
   },
   {
-    icon: Code,
+    icon: Code2,
     title: "Development",
     blurb:
       "Forms, booking, payments, integrations. Built clean and tested — without the giant invoice upfront.",
     chip: "$0 upfront",
   },
   {
-    icon: MagnifyingGlass,
+    icon: Search,
     title: "SEO foundations",
     blurb:
       "Clean markup, fast loads, mobile-first structure and the technical basics — built in from day one.",
     chip: "Built-in",
   },
   {
-    icon: Browsers,
+    icon: AppWindow,
     title: "Content & UX",
     blurb:
       "Copy that guides action, layouts that scan, and navigation that helps visitors get to ‘yes' faster.",
     chip: "Conversion",
   },
   {
-    icon: CloudArrowUp,
+    icon: CloudUpload,
     title: "Hosting included",
     blurb:
       "Reliable infrastructure, automatic backups and performance monitoring — all part of the $99/mo.",
@@ -99,7 +99,7 @@ export const Features = () => {
               >
                 <div className="flex items-start justify-between mb-10">
                   <div className="w-12 h-12 bg-[#FFF1E8] flex items-center justify-center">
-                    <Icon size={26} weight="light" color="#E57119" />
+                    <Icon size={26} strokeWidth={1.4} color="#E57119" />
                   </div>
                   <span className="font-mono text-[10px] tracking-[0.22em] text-[#52525A]">
                     0{i + 1}

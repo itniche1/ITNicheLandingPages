@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { PrimaryCTA, SecondaryLink, fadeUp } from "./Shared";
-import { Star, CheckCircle } from "@phosphor-icons/react";
+import { Star, CheckCircle2 } from "lucide-react";
 
 const HERO_IMG =
   "https://static.prod-images.emergentagent.com/jobs/239039ec-0a02-4e58-850c-c28fee591dc0/images/2dc1b7f5c24ca802b37f41068581758159cdd435da2aa5cee5847c6fd1360d07.png";
@@ -93,13 +93,13 @@ export const Hero = () => {
           >
             <div className="flex items-center gap-1">
               {[0, 1, 2, 3, 4].map((i) => (
-                <Star key={i} size={14} weight="fill" color="#E57119" />
+                <Star key={i} size={14} fill="#E57119" stroke="#E57119" strokeWidth={1.5} />
               ))}
               <span className="ml-2 text-[#0A0A0A] font-semibold">4.9</span>
               <span>/ 5 client rating</span>
             </div>
             <div className="hidden sm:flex items-center gap-2">
-              <CheckCircle size={16} weight="fill" color="#0A0A0A" />
+              <CheckCircle2 size={16} fill="#0A0A0A" stroke="#FFFFFF" strokeWidth={2} />
               <span>No long-term contracts</span>
             </div>
           </motion.div>

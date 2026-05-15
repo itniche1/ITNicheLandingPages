@@ -1,10 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  ArrowUpRight,
-  ArrowRight,
-  Sparkle,
-} from "@phosphor-icons/react";
+import { ArrowUpRight, ArrowRight, Sparkles } from "lucide-react";
 
 const EXTERNAL_URL = "https://www.itniche.com";
 
@@ -55,7 +51,7 @@ export const Header = () => {
           className="cta-orange inline-flex items-center gap-2 px-4 md:px-5 h-10 md:h-11 text-[13px] md:text-sm font-medium"
         >
           Free consultation
-          <ArrowUpRight size={16} weight="bold" />
+          <ArrowUpRight size={16} strokeWidth={2.2} />
         </a>
       </div>
     </header>
@@ -82,7 +78,7 @@ export const Marquee = () => {
         {row.map((t, i) => (
           <div key={i} className="flex items-center gap-6 mx-6">
             <span className="font-mono text-[11px] tracking-[0.22em]">{t}</span>
-            <Sparkle size={12} weight="fill" color="#E57119" />
+            <Sparkles size={12} color="#E57119" fill="#E57119" strokeWidth={1.5} />
           </div>
         ))}
       </div>
@@ -120,7 +116,7 @@ export const PrimaryCTA = ({ children = "Get a free consultation", testId = "pri
     className={`cta-orange inline-flex items-center gap-2.5 px-6 h-12 md:h-14 font-medium text-sm md:text-base ${className}`}
   >
     {children}
-    {arrow && <ArrowRight size={18} weight="bold" />}
+    {arrow && <ArrowRight size={18} strokeWidth={2.2} />}
   </a>
 );
 
@@ -131,6 +127,6 @@ export const SecondaryLink = ({ href = "#pricing", children, testId }) => (
     className="inline-flex items-center gap-2 text-sm font-medium text-[#0A0A0A] border-b border-[#0A0A0A] pb-1 hover:gap-3 transition-all"
   >
     {children}
-    <ArrowRight size={14} weight="bold" />
+    <ArrowRight size={14} strokeWidth={2.2} />
   </a>
 );

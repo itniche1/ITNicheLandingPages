@@ -1,0 +1,127 @@
+/* ITNiche Landing — Custom Styles
+   Companion to Tailwind utility classes used in index.html
+   ------------------------------------------------------------------ */
+
+:root {
+  --bg: #FDFDFD;
+  --fg: #0A0A0A;
+  --muted: #52525A;
+  --primary: #E57119;
+  --primary-hover: #C96012;
+  --accent: #FFF1E8;
+  --border: #E5E5E5;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection { background: var(--primary); color: #fff; }
+
+.font-display { font-family: 'Outfit', sans-serif; font-feature-settings: "ss01"; }
+.font-mono    { font-family: 'JetBrains Mono', monospace; }
+
+/* ---- Animated underline link ---- */
+.link-underline {
+  background-image: linear-gradient(var(--fg), var(--fg));
+  background-size: 0% 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease;
+}
+.link-underline:hover { background-size: 100% 1px; }
+
+/* ---- Marquee ---- */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee { animation: marquee 40s linear infinite; }
+
+/* ---- Pulse dot ---- */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.35; }
+}
+.dot-pulse { animation: blink 1.4s ease-in-out infinite; }
+
+/* ---- CTA button ---- */
+.cta-orange {
+  background: var(--primary);
+  color: #fff;
+  transition: transform 0.25s cubic-bezier(.2,.7,.2,1), background 0.25s ease;
+}
+.cta-orange:hover { background: var(--primary-hover); transform: translateY(-1px); }
+
+/* ---- Card hover lift ---- */
+.lift {
+  transition: transform 0.35s cubic-bezier(.2,.7,.2,1),
+              box-shadow 0.35s ease,
+              border-color 0.35s ease;
+}
+.lift:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px -20px rgba(0,0,0,.18);
+  border-color: var(--fg);
+}
+
+/* ---- Focus ring (accessibility) ---- */
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+
+/* ---- Reveal-on-scroll (replaces framer-motion) ---- */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .6s cubic-bezier(.2,.7,.2,1),
+              transform .6s cubic-bezier(.2,.7,.2,1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero visual scale-in */
+.scale-in {
+  opacity: 0;
+  transform: scale(.96);
+  transition: opacity .8s cubic-bezier(.2,.7,.2,1),
+              transform .8s cubic-bezier(.2,.7,.2,1);
+}
+.scale-in.in-view { opacity: 1; transform: scale(1); }
+
+/* ---- Animated pricing bar widths ---- */
+.bar-fill {
+  height: 100%;
+  background: var(--primary);
+  width: 0;
+  transition: width 1s cubic-bezier(.2,.7,.2,1);
+  transition-delay: var(--bar-delay, 0ms);
+}
+.in-view > .bar-fill,
+.reveal.in-view .bar-fill {
+  width: var(--bar-width, 0%);
+}
+
+/* ---- Reduced motion ---- */
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .scale-in { transition: none; opacity: 1; transform: none; }
+  .animate-marquee   { animation: none; }
+  .dot-pulse         { animation: none; }
+  .bar-fill          { transition: none; width: var(--bar-width, 0%); }
+}
