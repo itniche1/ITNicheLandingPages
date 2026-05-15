@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#E57119" />
+  <meta name="description" content="Professional websites for $0 upfront. Just $99/month covers hosting, maintenance, security & support. Built by IT Niche." />
+  <title>IT Niche — Professional Websites. Zero Upfront Cost.</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind (Play CDN — drop in for a static export) -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Outfit', 'sans-serif'],
+            sans:    ['Inter', 'sans-serif'],
+            mono:    ['JetBrains Mono', 'monospace'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ============================ HEADER ============================ -->
+  <header data-testid="site-header"
+          class="fixed top-0 inset-x-0 z-50 bg-white/75 backdrop-blur-xl border-b border-[#E5E5E5]">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 h-16 md:h-20 flex items-center justify-between">
+
+      <a href="#top" data-testid="header-logo" class="flex items-center gap-2.5 group">
+        <span class="relative inline-flex items-center justify-center w-9 h-9 bg-[#0A0A0A] text-white">
+          <span class="font-display font-black text-[15px] leading-none">IT</span>
+          <span class="absolute -bottom-1 -right-1 w-2.5 h-2.5 bg-[#E57119]"></span>
+        </span>
+        <span class="leading-tight">
+          <span class="block font-display font-bold text-[15px] tracking-tight">IT Niche</span>
+          <span class="block text-[10px] uppercase tracking-[0.18em] text-[#52525A] -mt-0.5">Web Studio</span>
+        </span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm text-[#52525A]">
+        <a href="#pricing"          data-testid="nav-pricing"  class="link-underline hover:text-[#0A0A0A]">Pricing</a>
+        <a href="#what-drives-cost" data-testid="nav-features" class="link-underline hover:text-[#0A0A0A]">What you get</a>
+        <a href="#process"          data-testid="nav-process"  class="link-underline hover:text-[#0A0A0A]">Process</a>
+        <a href="#why-us"           data-testid="nav-why"      class="link-underline hover:text-[#0A0A0A]">Why us</a>
+      </nav>
+
+      <a href="https://www.itniche.com" target="_blank" rel="noopener noreferrer"
+         data-testid="header-cta"
+         class="cta-orange inline-flex items-center gap-2 px-4 md:px-5 h-10 md:h-11 text-[13px] md:text-sm font-medium">
+        Free consultation
+        <i class="ph-bold ph-arrow-up-right" style="font-size:16px"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- ============================ HERO ============================ -->
+  <section id="top" data-testid="hero-section"
+           class="relative pt-28 md:pt-36 pb-20 md:pb-32 overflow-hidden">
+
+    <!-- Decorative grid -->
+    <div aria-hidden="true"
+         class="absolute inset-0 pointer-events-none opacity-[0.045]"
+         style="background-image:linear-gradient(#0A0A0A 1px,transparent 1px),linear-gradient(90deg,#0A0A0A 1px,transparent 1px);background-size:64px 64px;"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6 md:px-12 grid lg:grid-cols-12 gap-10 lg:gap-12 items-end">
+
+      <!-- Left -->
+      <div class="lg:col-span-7">
+        <div class="reveal">
+          <div class="inline-flex items-center gap-2 border border-[#0A0A0A] px-3 py-1.5 mb-8">
+            <span class="w-1.5 h-1.5 bg-[#E57119] dot-pulse"></span>
+            <span class="text-[11px] font-bold uppercase tracking-[0.22em]">Now booking — Q1 builds</span>
+          </div>
+        </div>
+
+        <h1 data-testid="hero-headline"
+            class="reveal font-display font-black tracking-[-0.03em] leading-[0.92] text-[42px] sm:text-6xl md:text-7xl lg:text-[88px]"
+            style="--reveal-delay:50ms">
+          Professional<br>
+          websites.
+          <span class="relative inline-block">
+            <span class="text-[#E57119]">Zero</span>
+            <svg viewBox="0 0 220 16" class="absolute -bottom-2 left-0 w-full h-3 text-[#E57119]" fill="none">
+              <path d="M2 12 C 60 2, 160 2, 218 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+            </svg>
+          </span><br>
+          upfront cost.
+        </h1>
+
+        <p class="reveal mt-8 text-base md:text-lg text-[#52525A] max-w-xl leading-relaxed"
+           style="--reveal-delay:150ms">
+          Get a fully custom site built by senior designers and developers.
+          Pay <span class="text-[#0A0A0A] font-semibold">$0 to launch</span>,
+          then a flat <span class="text-[#0A0A0A] font-semibold">$99/month</span>—
+          hosting, security, maintenance and support, all included.
+        </p>
+
+        <div class="reveal mt-10 flex flex-wrap items-center gap-6" style="--reveal-delay:250ms">
+          <a href="https://www.itniche.com" target="_blank" rel="noopener noreferrer"
+             data-testid="hero-primary-cta"
+             class="cta-orange inline-flex items-center gap-2.5 px-6 h-12 md:h-14 font-medium text-sm md:text-base">
+            Get a free consultation
+            <i class="ph-bold ph-arrow-right" style="font-size:18px"></i>
+          </a>
+          <a href="#pricing" data-testid="hero-secondary-link"
+             class="inline-flex items-center gap-2 text-sm font-medium text-[#0A0A0A] border-b border-[#0A0A0A] pb-1 hover:gap-3 transition-all">
+            See what sites cost
+            <i class="ph-bold ph-arrow-right" style="font-size:14px"></i>
+          </a>
+        </div>
+
+        <div class="reveal mt-12 flex items-center gap-6 text-sm text-[#52525A]" style="--reveal-delay:350ms">
+          <div class="flex items-center gap-1">
+            <i class="ph-fill ph-star" style="color:#E57119;font-size:14px"></i>
+            <i class="ph-fill ph-star" style="color:#E57119;font-size:14px"></i>
+            <i class="ph-fill ph-star" style="color:#E57119;font-size:14px"></i>
+            <i class="ph-fill ph-star" style="color:#E57119;font-size:14px"></i>
+            <i class="ph-fill ph-star" style="color:#E57119;font-size:14px"></i>
+            <span class="ml-2 text-[#0A0A0A] font-semibold">4.9</span>
+            <span>/ 5 client rating</span>
+          </div>
+          <div class="hidden sm:flex items-center gap-2">
+            <i class="ph-fill ph-check-circle" style="color:#0A0A0A;font-size:16px"></i>
+            <span>No long-term contracts</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right visual -->
+      <div class="lg:col-span-5">
+        <div class="scale-in relative" style="transition-delay:200ms">
+          <div class="relative aspect-[4/5] bg-[#FFF1E8] border border-[#0A0A0A] overflow-hidden">
+            <img data-testid="hero-image"
+                 src="https://static.prod-images.emergentagent.com/jobs/239039ec-0a02-4e58-850c-c28fee591dc0/images/2dc1b7f5c24ca802b37f41068581758159cdd435da2aa5cee5847c6fd1360d07.png"
+                 alt="Abstract 3D composition representing premium website craft"
+                 class="absolute inset-0 w-full h-full object-cover mix-blend-multiply"
+                 loading="eager" />
+            <div class="absolute top-4 left-4 bg-white border border-[#0A0A0A] px-3 py-1.5 font-mono text-[11px] tracking-[0.18em]">
+              ID — 001 / NICHE
+            </div>
+            <div class="absolute bottom-4 right-4 bg-[#0A0A0A] text-white px-5 py-4 max-w-[220px]">
+              <div class="text-[10px] font-mono tracking-[0.22em] text-white/60">ALL-INCLUSIVE</div>
+              <div class="font-display font-black text-3xl mt-1">
+                $99<span class="text-base font-medium text-white/60">/mo</span>
+              </div>
+              <div class="text-[11px] text-white/70 mt-1">Hosting + maintenance + support</div>
+            </div>
+          </div>
+
+          <div class="hidden md:flex absolute -left-6 top-10 items-center gap-2 bg-white border border-[#0A0A0A] px-3 py-2 shadow-[0_8px_24px_-12px_rgba(0,0,0,0.25)]">
+            <span class="w-2 h-2 bg-[#E57119]"></span>
+            <span class="text-[11px] font-mono tracking-[0.18em]">$0 UPFRONT</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ MARQUEE ============================ -->
+  <div data-testid="marquee-bar" class="border-y border-[#0A0A0A] bg-[#0A0A0A] text-white overflow-hidden">
+    <div class="flex animate-marquee whitespace-nowrap py-3">
+      <!-- Items duplicated for seamless loop -->
+      <span class="flex items-center gap-6 mx-6"><span class="font-mono text-[11px] tracking-[0.22em]">$0 UPFRONT</span><i class="ph-fill ph-sparkle" style="color:#E57119;font-size:12px"></i></span>
+      <span class="flex items-center gap-6 mx-6"><span class="font-mono text-[11px] tracking-[0.22em]">$99 / MONTH</span><i class="ph-fill ph-sparkle" style="color:#E57119;font-size:12px"></i></span>
+      <span class="flex items-center gap-6 mx-6"><span class="font-mono text-[11px] tracking-[0.22em]">ALL-INCLUSIVE HOSTING</span><i class="ph-fill ph-sparkle" style="color:#E57119;font-size:12px"></i></span>
+      <span class="flex items-center gap-6 mx-6"><span class="font-mono text-[11px] tracking-[0.22em]">SECURITY UPDATES</span><i class="ph-fill ph-sparkle" style="color:#E57119;font-size:12px"></i></span>
+      <span class="flex items-center gap-6 mx-6"><span class="font-mono text-[11px] tracking-[0.22em]">SEO-READY</span><i class="ph-fill ph-sparkle" style="color:#E57119;font-size:12px"></i></span>
+      <span class="flex items-center gap-6 mx-6"><span class="font-mono text-[11px] tracking-[0.22em]">TRANSPARENT PRICING</span><i class="ph-fill ph-sparkle" style="color:#E57119;font-size:12px"></i></span>
+      <span class="flex items-center gap-6 mx-6"><span class="font-mono text-[11px] tracking-[0.22em]">BUILT FOR BUSINESS</span><i class="ph-fill ph-sparkle" style="color:#E57119;font-size:12px"></i></span>
+      <!-- duplicate -->
+      <span class="flex items-center gap-6 mx-6"><span class="font-mono text-[11px] tracking-[0.22em]">$0 UPFRONT</span><i class="ph-fill ph-sparkle" style="color:#E57119;font-size:12px"></i></span>
+      <span class="flex items-center gap-6 mx-6"><span class="font-mono text-[11px] tracking-[0.22em]">$99 / MONTH</span><i class="ph-fill ph-sparkle" style="color:#E57119;font-size:12px"></i></span>
+      <span class="flex items-center gap-6 mx-6"><span class="font-mono text-[11px] tracking-[0.22em]">ALL-INCLUSIVE HOSTING</span><i class="ph-fill ph-sparkle" style="color:#E57119;font-size:12px"></i></span>
+      <span class="flex items-center gap-6 mx-6"><span class="font-mono text-[11px] tracking-[0.22em]">SECURITY UPDATES</span><i class="ph-fill ph-sparkle" style="color:#E57119;font-size:12px"></i></span>
+      <span class="flex items-center gap-6 mx-6"><span class="font-mono text-[11px] tracking-[0.22em]">SEO-READY</span><i class="ph-fill ph-sparkle" style="color:#E57119;font-size:12px"></i></span>
+      <span class="flex items-center gap-6 mx-6"><span class="font-mono text-[11px] tracking-[0.22em]">TRANSPARENT PRICING</span><i class="ph-fill ph-sparkle" style="color:#E57119;font-size:12px"></i></span>
+      <span class="flex items-center gap-6 mx-6"><span class="font-mono text-[11px] tracking-[0.22em]">BUILT FOR BUSINESS</span><i class="ph-fill ph-sparkle" style="color:#E57119;font-size:12px"></i></span>
+    </div>
+  </div>
+
+  <!-- ============================ PRICING ============================ -->
+  <section id="pricing" data-testid="pricing-section"
+           class="relative py-24 md:py-32 bg-[#FDFDFD] border-t border-[#E5E5E5]">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+
+      <div class="grid lg:grid-cols-12 gap-10 mb-14 md:mb-20">
+        <div class="lg:col-span-5">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="font-mono text-[11px] text-[#52525A] tracking-[0.2em]">01 — Benchmark</span>
+            <span class="h-px w-8 bg-[#0A0A0A]"></span>
+            <span class="text-[11px] font-bold uppercase tracking-[0.22em] text-[#E57119]">Pricing Reality Check</span>
+          </div>
+          <h2 class="reveal font-display font-black tracking-[-0.025em] text-4xl md:text-5xl lg:text-6xl leading-[0.95]">
+            What a quality<br>website actually<br><span class="text-[#E57119]">costs.</span>
+          </h2>
+        </div>
+        <div class="lg:col-span-6 lg:col-start-7 flex items-end">
+          <p class="reveal text-base md:text-lg text-[#52525A] leading-relaxed">
+            Search "website pricing" and you'll see numbers from $500 to $50,000+.
+            Here's the honest range agencies quote — and how IT Niche fits in.
+          </p>
+        </div>
+      </div>
+
+      <!-- Bento -->
+      <div class="grid grid-cols-1 md:grid-cols-6 gap-4 md:gap-5">
+
+        <!-- Tiers card -->
+        <div data-testid="pricing-tiers-card"
+             class="reveal md:col-span-4 md:row-span-2 bg-white border border-[#0A0A0A] p-8 md:p-12">
+          <div class="font-mono text-[11px] tracking-[0.22em] text-[#52525A] mb-2">TYPICAL AGENCY QUOTE</div>
+          <h3 class="font-display font-bold text-2xl md:text-3xl tracking-tight mb-10">Build cost by site type</h3>
+
+          <ul class="space-y-7">
+            <li data-testid="tier-row-0">
+              <div class="flex items-baseline justify-between gap-6 mb-2">
+                <span class="text-sm md:text-base font-medium text-[#0A0A0A]">Brochure site (5–10 pages)</span>
+                <span class="font-display font-bold text-base md:text-lg whitespace-nowrap">$2,000 – $5,000</span>
+              </div>
+              <div class="relative h-1.5 bg-[#F1F1F1]">
+                <span class="bar-fill absolute inset-y-0 left-0" style="--bar-width:18%; --bar-delay:0ms"></span>
+              </div>
+            </li>
+            <li data-testid="tier-row-1">
+              <div class="flex items-baseline justify-between gap-6 mb-2">
+                <span class="text-sm md:text-base font-medium text-[#0A0A0A]">Business site with custom features</span>
+                <span class="font-display font-bold text-base md:text-lg whitespace-nowrap">$5,000 – $15,000</span>
+              </div>
+              <div class="relative h-1.5 bg-[#F1F1F1]">
+                <span class="bar-fill absolute inset-y-0 left-0" style="--bar-width:38%; --bar-delay:80ms"></span>
+              </div>
+            </li>
+            <li data-testid="tier-row-2">
+              <div class="flex items-baseline justify-between gap-6 mb-2">
+                <span class="text-sm md:text-base font-medium text-[#0A0A0A]">E-commerce with product catalog</span>
+                <span class="font-display font-bold text-base md:text-lg whitespace-nowrap">$8,000 – $25,000+</span>
+              </div>
+              <div class="relative h-1.5 bg-[#F1F1F1]">
+                <span class="bar-fill absolute inset-y-0 left-0" style="--bar-width:62%; --bar-delay:160ms"></span>
+              </div>
+            </li>
+            <li data-testid="tier-row-3">
+              <div class="flex items-baseline justify-between gap-6 mb-2">
+                <span class="text-sm md:text-base font-medium text-[#0A0A0A]">Enterprise / custom web app</span>
+                <span class="font-display font-bold text-base md:text-lg whitespace-nowrap">$25,000+</span>
+              </div>
+              <div class="relative h-1.5 bg-[#F1F1F1]">
+                <span class="bar-fill absolute inset-y-0 left-0" style="--bar-width:96%; --bar-delay:240ms"></span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="mt-10 pt-8 border-t border-[#E5E5E5] flex items-center gap-3 text-sm text-[#52525A]">
+            <i class="ph-bold ph-arrow-down" style="color:#E57119;font-size:16px"></i>
+            Real numbers from real agencies. Most businesses can't pay this upfront.
+          </div>
+        </div>
+
+        <!-- IT Niche price card -->
+        <div data-testid="niche-price-card"
+             class="reveal md:col-span-2 bg-[#0A0A0A] text-white p-8 md:p-10 relative overflow-hidden">
+          <div class="font-mono text-[11px] tracking-[0.22em] text-white/60 mb-3">THE IT NICHE WAY</div>
+          <div class="font-display font-black text-7xl md:text-8xl leading-none tracking-[-0.04em]">$0</div>
+          <div class="mt-2 text-sm text-white/70">upfront. To launch.</div>
+
+          <div class="mt-10 pt-6 border-t border-white/15">
+            <div class="font-display font-black text-3xl md:text-4xl">
+              $99<span class="text-base font-medium text-white/60">/mo</span>
+            </div>
+            <p class="text-sm text-white/70 mt-1">Everything included. Cancel anytime.</p>
+          </div>
+
+          <span class="absolute -right-8 -bottom-8 w-32 h-32 bg-[#E57119]"></span>
+        </div>
+
+        <!-- Stat card -->
+        <div data-testid="visual-stat-card"
+             class="reveal md:col-span-2 bg-[#FFF1E8] border border-[#E57119]/30 relative overflow-hidden p-8 min-h-[220px]">
+          <img aria-hidden="true"
+               src="https://static.prod-images.emergentagent.com/jobs/239039ec-0a02-4e58-850c-c28fee591dc0/images/05a40c0ca33d58776dafe6a7ac741d882a1fae18134fdff1fa6cf6d45b02133e.png"
+               alt=""
+               class="absolute inset-0 w-full h-full object-cover opacity-30"
+               loading="lazy" />
+          <div class="relative">
+            <div class="font-mono text-[11px] tracking-[0.22em] text-[#0A0A0A]">BREAK-EVEN</div>
+            <div class="font-display font-black text-5xl md:text-6xl mt-2 tracking-[-0.03em]">3+ <span class="text-2xl md:text-3xl">yrs</span></div>
+            <p class="text-sm text-[#52525A] mt-2 max-w-[240px]">It takes that long to spend $5k at $99/mo. Most sites get replaced before then.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Compare strip -->
+      <div data-testid="compare-strip" class="reveal mt-5 grid md:grid-cols-2 border border-[#E5E5E5]">
+        <div class="p-8 md:p-10 border-b md:border-b-0 md:border-r border-[#E5E5E5]">
+          <div class="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.22em] text-[#52525A] mb-4">
+            <i class="ph-bold ph-x" style="font-size:14px"></i> Cheap website
+          </div>
+          <ul class="space-y-2 text-sm text-[#52525A]">
+            <li>— Template that looks like everyone else's</li>
+            <li>— Slow load times that hurt SEO</li>
+            <li>— Security gaps &amp; vendor juggling</li>
+            <li>— Rebuilds within 12 months</li>
+          </ul>
+        </div>
+        <div class="p-8 md:p-10 bg-[#FDFDFD]">
+          <div class="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.22em] text-[#E57119] mb-4">
+            <i class="ph-bold ph-check" style="font-size:14px"></i> Built right
+          </div>
+          <ul class="space-y-2 text-sm text-[#0A0A0A]">
+            <li>+ Custom design for your brand</li>
+            <li>+ SEO-ready, fast, mobile-first code</li>
+            <li>+ Security, backups &amp; monitoring included</li>
+            <li>+ One team, transparent pricing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FEATURES ============================ -->
+  <section id="what-drives-cost" data-testid="features-section"
+           class="relative py-24 md:py-32 border-t border-[#E5E5E5]">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+
+      <div class="grid lg:grid-cols-12 gap-10 mb-14 md:mb-20 items-end">
+        <div class="lg:col-span-7">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="font-mono text-[11px] text-[#52525A] tracking-[0.2em]">02 — What you get</span>
+            <span class="h-px w-8 bg-[#0A0A0A]"></span>
+            <span class="text-[11px] font-bold uppercase tracking-[0.22em] text-[#E57119]">Behind the price</span>
+          </div>
+          <h2 class="reveal font-display font-black tracking-[-0.025em] text-4xl md:text-5xl lg:text-6xl leading-[0.95]">
+            Six things that turn a<br><span class="text-[#E57119]">website</span> into a<br>business asset.
+          </h2>
+        </div>
+        <div class="lg:col-span-5">
+          <p class="reveal text-base md:text-lg text-[#52525A] leading-relaxed">
+            A site isn't just a layout. It's strategy, code, content and
+            infrastructure working together. Here's what's included in every
+            IT Niche build.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-t border-l border-[#E5E5E5]">
+
+        <!-- Feature 1 -->
+        <div data-testid="feature-card-0" class="reveal group relative p-8 md:p-10 border-r border-b border-[#E5E5E5] bg-white lift">
+          <div class="flex items-start justify-between mb-10">
+            <div class="w-12 h-12 bg-[#FFF1E8] flex items-center justify-center">
+              <i class="ph-light ph-pencil-ruler" style="color:#E57119;font-size:26px"></i>
+            </div>
+            <span class="font-mono text-[10px] tracking-[0.22em] text-[#52525A]">01</span>
+          </div>
+          <div class="inline-block text-[10px] font-bold uppercase tracking-[0.22em] text-[#E57119] mb-3">Brand-led</div>
+          <h3 class="font-display font-bold text-2xl tracking-tight mb-3">Custom design</h3>
+          <p class="text-sm md:text-base text-[#52525A] leading-relaxed">Your digital storefront — designed for your brand, your audience, and how visitors actually move through a page.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div data-testid="feature-card-1" class="reveal group relative p-8 md:p-10 border-r border-b border-[#E5E5E5] bg-white lift" style="--reveal-delay:50ms">
+          <div class="flex items-start justify-between mb-10">
+            <div class="w-12 h-12 bg-[#FFF1E8] flex items-center justify-center">
+              <i class="ph-light ph-code" style="color:#E57119;font-size:26px"></i>
+            </div>
+            <span class="font-mono text-[10px] tracking-[0.22em] text-[#52525A]">02</span>
+          </div>
+          <div class="inline-block text-[10px] font-bold uppercase tracking-[0.22em] text-[#E57119] mb-3">$0 upfront</div>
+          <h3 class="font-display font-bold text-2xl tracking-tight mb-3">Development</h3>
+          <p class="text-sm md:text-base text-[#52525A] leading-relaxed">Forms, booking, payments, integrations. Built clean and tested — without the giant invoice upfront.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div data-testid="feature-card-2" class="reveal group relative p-8 md:p-10 border-r border-b border-[#E5E5E5] bg-white lift" style="--reveal-delay:100ms">
+          <div class="flex items-start justify-between mb-10">
+            <div class="w-12 h-12 bg-[#FFF1E8] flex items-center justify-center">
+              <i class="ph-light ph-magnifying-glass" style="color:#E57119;font-size:26px"></i>
+            </div>
+            <span class="font-mono text-[10px] tracking-[0.22em] text-[#52525A]">03</span>
+          </div>
+          <div class="inline-block text-[10px] font-bold uppercase tracking-[0.22em] text-[#E57119] mb-3">Built-in</div>
+          <h3 class="font-display font-bold text-2xl tracking-tight mb-3">SEO foundations</h3>
+          <p class="text-sm md:text-base text-[#52525A] leading-relaxed">Clean markup, fast loads, mobile-first structure and the technical basics — built in from day one.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div data-testid="feature-card-3" class="reveal group relative p-8 md:p-10 border-r border-b border-[#E5E5E5] bg-white lift" style="--reveal-delay:150ms">
+          <div class="flex items-start justify-between mb-10">
+            <div class="w-12 h-12 bg-[#FFF1E8] flex items-center justify-center">
+              <i class="ph-light ph-browsers" style="color:#E57119;font-size:26px"></i>
+            </div>
+            <span class="font-mono text-[10px] tracking-[0.22em] text-[#52525A]">04</span>
+          </div>
+          <div class="inline-block text-[10px] font-bold uppercase tracking-[0.22em] text-[#E57119] mb-3">Conversion</div>
+          <h3 class="font-display font-bold text-2xl tracking-tight mb-3">Content &amp; UX</h3>
+          <p class="text-sm md:text-base text-[#52525A] leading-relaxed">Copy that guides action, layouts that scan, and navigation that helps visitors get to 'yes' faster.</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div data-testid="feature-card-4" class="reveal group relative p-8 md:p-10 border-r border-b border-[#E5E5E5] bg-white lift" style="--reveal-delay:200ms">
+          <div class="flex items-start justify-between mb-10">
+            <div class="w-12 h-12 bg-[#FFF1E8] flex items-center justify-center">
+              <i class="ph-light ph-cloud-arrow-up" style="color:#E57119;font-size:26px"></i>
+            </div>
+            <span class="font-mono text-[10px] tracking-[0.22em] text-[#52525A]">05</span>
+          </div>
+          <div class="inline-block text-[10px] font-bold uppercase tracking-[0.22em] text-[#E57119] mb-3">All-inclusive</div>
+          <h3 class="font-display font-bold text-2xl tracking-tight mb-3">Hosting included</h3>
+          <p class="text-sm md:text-base text-[#52525A] leading-relaxed">Reliable infrastructure, automatic backups and performance monitoring — all part of the $99/mo.</p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div data-testid="feature-card-5" class="reveal group relative p-8 md:p-10 border-r border-b border-[#E5E5E5] bg-white lift" style="--reveal-delay:250ms">
+          <div class="flex items-start justify-between mb-10">
+            <div class="w-12 h-12 bg-[#FFF1E8] flex items-center justify-center">
+              <i class="ph-light ph-shield-check" style="color:#E57119;font-size:26px"></i>
+            </div>
+            <span class="font-mono text-[10px] tracking-[0.22em] text-[#52525A]">06</span>
+          </div>
+          <div class="inline-block text-[10px] font-bold uppercase tracking-[0.22em] text-[#E57119] mb-3">Ongoing</div>
+          <h3 class="font-display font-bold text-2xl tracking-tight mb-3">Security &amp; support</h3>
+          <p class="text-sm md:text-base text-[#52525A] leading-relaxed">Patches, certificates, fixes and a team you can actually talk to — no juggling multiple vendors.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ PROCESS ============================ -->
+  <section id="process" data-testid="process-section"
+           class="relative py-24 md:py-32 border-t border-[#E5E5E5] bg-[#FDFDFD]">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+
+      <div class="grid lg:grid-cols-12 gap-10 mb-14 md:mb-20 items-end">
+        <div class="lg:col-span-6">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="font-mono text-[11px] text-[#52525A] tracking-[0.2em]">03 — Process</span>
+            <span class="h-px w-8 bg-[#0A0A0A]"></span>
+            <span class="text-[11px] font-bold uppercase tracking-[0.22em] text-[#E57119]">From idea to live</span>
+          </div>
+          <h2 class="reveal font-display font-black tracking-[-0.025em] text-4xl md:text-5xl lg:text-6xl leading-[0.95]">
+            A four-step<br>path to a site<br>that <span class="text-[#E57119]">works.</span>
+          </h2>
+        </div>
+        <div class="lg:col-span-5 lg:col-start-8">
+          <p class="reveal text-base md:text-lg text-[#52525A] leading-relaxed">
+            Simple, predictable, and built around your business — not a sales funnel.
+            Most clients launch in 3 to 5 weeks.
+          </p>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="absolute left-0 right-0 top-[58px] hidden md:block">
+          <div class="h-px bg-[#E5E5E5]"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-0">
+          <div data-testid="process-step-0" class="reveal relative md:pr-6">
+            <div class="relative z-10 w-14 h-14 bg-[#0A0A0A] text-white flex items-center justify-center font-display font-black text-base">01</div>
+            <div class="mt-6 font-mono text-[11px] tracking-[0.22em] text-[#E57119]">Day 1</div>
+            <h3 class="mt-2 font-display font-bold text-2xl tracking-tight">Discovery call</h3>
+            <p class="mt-3 text-sm text-[#52525A] leading-relaxed max-w-[260px]">30-minute scoping conversation. We learn your goals, audience and must-haves.</p>
+          </div>
+
+          <div data-testid="process-step-1" class="reveal relative md:pr-6" style="--reveal-delay:80ms">
+            <div class="relative z-10 w-14 h-14 bg-[#0A0A0A] text-white flex items-center justify-center font-display font-black text-base">02</div>
+            <div class="mt-6 font-mono text-[11px] tracking-[0.22em] text-[#E57119]">Week 1–2</div>
+            <h3 class="mt-2 font-display font-bold text-2xl tracking-tight">Design &amp; approval</h3>
+            <p class="mt-3 text-sm text-[#52525A] leading-relaxed max-w-[260px]">Custom design concept tailored to your brand — refined until it's right.</p>
+          </div>
+
+          <div data-testid="process-step-2" class="reveal relative md:pr-6" style="--reveal-delay:160ms">
+            <div class="relative z-10 w-14 h-14 bg-[#0A0A0A] text-white flex items-center justify-center font-display font-black text-base">03</div>
+            <div class="mt-6 font-mono text-[11px] tracking-[0.22em] text-[#E57119]">Week 3–5</div>
+            <h3 class="mt-2 font-display font-bold text-2xl tracking-tight">Build &amp; launch</h3>
+            <p class="mt-3 text-sm text-[#52525A] leading-relaxed max-w-[260px]">We develop, test and deploy a fast, SEO-ready site. Zero invoice on launch day.</p>
+          </div>
+
+          <div data-testid="process-step-3" class="reveal relative md:pr-6" style="--reveal-delay:240ms">
+            <div class="relative z-10 w-14 h-14 bg-[#0A0A0A] text-white flex items-center justify-center font-display font-black text-base">04</div>
+            <div class="mt-6 font-mono text-[11px] tracking-[0.22em] text-[#E57119]">Ongoing</div>
+            <h3 class="mt-2 font-display font-bold text-2xl tracking-tight">Grow on $99/mo</h3>
+            <p class="mt-3 text-sm text-[#52525A] leading-relaxed max-w-[260px]">Hosting, security, updates and ongoing support — all included, forever.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ PITCH (dark) ============================ -->
+  <section data-testid="pitch-section" class="relative bg-[#0A0A0A] text-white py-28 md:py-40 overflow-hidden">
+    <div aria-hidden="true"
+         class="absolute inset-0 pointer-events-none opacity-[0.05]"
+         style="background-image:linear-gradient(#FFFFFF 1px,transparent 1px),linear-gradient(90deg,#FFFFFF 1px,transparent 1px);background-size:96px 96px;"></div>
+
+    <div class="relative max-w-6xl mx-auto px-6 md:px-12 text-center">
+      <div class="inline-flex items-center gap-3 mb-6">
+        <span class="h-px w-8 bg-white/40"></span>
+        <span class="text-[11px] font-bold uppercase tracking-[0.22em] text-[#E57119]">The Pitch</span>
+        <span class="h-px w-8 bg-white/40"></span>
+      </div>
+
+      <h2 class="reveal font-display font-black tracking-[-0.03em] leading-[0.92] text-5xl sm:text-6xl md:text-7xl lg:text-[96px]">
+        Why pay<br><span class="text-[#E57119]">$5,000</span> upfront<br>when you can pay <span class="text-[#E57119]">$0</span>?
+      </h2>
+
+      <p class="reveal mt-10 max-w-xl mx-auto text-base md:text-lg text-white/70" style="--reveal-delay:100ms">
+        Same custom design. Same engineering. Same SEO foundations. Just a smarter way to pay for it.
+      </p>
+
+      <div class="reveal mt-12 flex flex-col sm:flex-row items-center justify-center gap-6" style="--reveal-delay:200ms">
+        <a href="https://www.itniche.com" target="_blank" rel="noopener noreferrer"
+           data-testid="pitch-cta"
+           class="cta-orange inline-flex items-center gap-2.5 px-6 h-12 md:h-14 font-medium text-sm md:text-base">
+          Start with a free consultation
+          <i class="ph-bold ph-arrow-right" style="font-size:18px"></i>
+        </a>
+        <a href="#why-us" data-testid="pitch-secondary"
+           class="text-sm text-white/80 underline underline-offset-4 hover:text-white">
+          See why teams choose us
+        </a>
+      </div>
+
+      <div class="mt-20 grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto text-left">
+        <div class="border border-white/15 p-6">
+          <div class="font-display font-black text-3xl">$0</div>
+          <div class="text-[11px] font-mono tracking-[0.22em] text-white/60 mt-1">UPFRONT TO LAUNCH</div>
+        </div>
+        <div class="border border-white/15 p-6">
+          <div class="font-display font-black text-3xl">$99/mo</div>
+          <div class="text-[11px] font-mono tracking-[0.22em] text-white/60 mt-1">FLAT, ALL-INCLUSIVE</div>
+        </div>
+        <div class="border border-white/15 p-6">
+          <div class="font-display font-black text-3xl">24/7</div>
+          <div class="text-[11px] font-mono tracking-[0.22em] text-white/60 mt-1">MONITORED UPTIME</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ WHY US ============================ -->
+  <section id="why-us" data-testid="whyus-section" class="relative py-24 md:py-32 border-t border-[#E5E5E5]">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+      <div class="lg:col-span-6">
+        <div class="scale-in relative aspect-[4/5] bg-[#FFF1E8] border border-[#0A0A0A] overflow-hidden">
+          <img data-testid="workspace-image"
+               src="https://static.prod-images.emergentagent.com/jobs/239039ec-0a02-4e58-850c-c28fee591dc0/images/af639724c23b81e972d0edf6c7ef31df0f12168185da9384a1760eb97d7a56bc.png"
+               alt="A modern, high-contrast agency workspace"
+               class="absolute inset-0 w-full h-full object-cover"
+               loading="lazy" />
+          <div class="absolute bottom-4 left-4 right-4 bg-white border border-[#0A0A0A] p-4 flex items-center justify-between">
+            <div>
+              <div class="font-mono text-[10px] tracking-[0.22em] text-[#52525A]">STUDIO</div>
+              <div class="font-display font-bold text-base mt-0.5">IT Niche — Web Studio</div>
+            </div>
+            <div class="font-display font-black text-2xl text-[#E57119]">EST.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-6">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="font-mono text-[11px] text-[#52525A] tracking-[0.2em]">04 — Why us</span>
+          <span class="h-px w-8 bg-[#0A0A0A]"></span>
+          <span class="text-[11px] font-bold uppercase tracking-[0.22em] text-[#E57119]">Built for businesses</span>
+        </div>
+
+        <h2 class="reveal font-display font-black tracking-[-0.025em] text-4xl md:text-5xl lg:text-6xl leading-[0.95]">
+          A team you can talk to.<br><span class="text-[#E57119]">Sites</span> that earn their keep.
+        </h2>
+
+        <p class="reveal mt-6 text-base md:text-lg text-[#52525A] leading-relaxed max-w-xl" style="--reveal-delay:100ms">
+          We've helped businesses across industries get websites that actually work — not just look good. No one-size-fits-all.
+        </p>
+
+        <ul class="mt-10 space-y-4">
+          <li data-testid="whyus-point-0" class="reveal flex items-start gap-3">
+            <i class="ph-fill ph-check-circle mt-0.5 shrink-0" style="color:#E57119;font-size:22px"></i>
+            <span class="text-[15px] text-[#0A0A0A]">We build with your business goals in mind, not just aesthetics</span>
+          </li>
+          <li data-testid="whyus-point-1" class="reveal flex items-start gap-3" style="--reveal-delay:50ms">
+            <i class="ph-fill ph-check-circle mt-0.5 shrink-0" style="color:#E57119;font-size:22px"></i>
+            <span class="text-[15px] text-[#0A0A0A]">Every site is SEO-ready from the ground up</span>
+          </li>
+          <li data-testid="whyus-point-2" class="reveal flex items-start gap-3" style="--reveal-delay:100ms">
+            <i class="ph-fill ph-check-circle mt-0.5 shrink-0" style="color:#E57119;font-size:22px"></i>
+            <span class="text-[15px] text-[#0A0A0A]">Clean, fast code that performs on every device</span>
+          </li>
+          <li data-testid="whyus-point-3" class="reveal flex items-start gap-3" style="--reveal-delay:150ms">
+            <i class="ph-fill ph-check-circle mt-0.5 shrink-0" style="color:#E57119;font-size:22px"></i>
+            <span class="text-[15px] text-[#0A0A0A]">Transparent pricing — no surprises, no hidden fees</span>
+          </li>
+          <li data-testid="whyus-point-4" class="reveal flex items-start gap-3" style="--reveal-delay:200ms">
+            <i class="ph-fill ph-check-circle mt-0.5 shrink-0" style="color:#E57119;font-size:22px"></i>
+            <span class="text-[15px] text-[#0A0A0A]">A team you can actually talk to, before and after launch</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FINAL CTA ============================ -->
+  <section id="cta" data-testid="final-cta-section"
+           class="relative py-28 md:py-40 bg-[#FFF1E8] border-t border-[#0A0A0A] overflow-hidden">
+    <div class="absolute -right-32 -bottom-32 w-[420px] h-[420px] bg-[#E57119]/15"></div>
+    <div class="relative max-w-7xl mx-auto px-6 md:px-12 grid lg:grid-cols-12 gap-10 items-end">
+      <div class="lg:col-span-8">
+        <div class="font-mono text-[11px] tracking-[0.22em] text-[#E57119] mb-6">05 — LET'S BUILD</div>
+        <h2 class="reveal font-display font-black tracking-[-0.03em] leading-[0.9] text-5xl md:text-6xl lg:text-7xl">
+          Invest in a website<br>that works for<br><span class="text-[#E57119]">your business.</span>
+        </h2>
+        <p class="reveal mt-8 text-base md:text-lg text-[#52525A] max-w-xl leading-relaxed" style="--reveal-delay:100ms">
+          Stop guessing. Talk to our team and see exactly what we can build for you — at zero financial risk to start.
+        </p>
+      </div>
+      <div class="lg:col-span-4 flex lg:justify-end">
+        <a href="https://www.itniche.com" target="_blank" rel="noopener noreferrer"
+           data-testid="final-cta-button"
+           class="cta-orange inline-flex items-center gap-2.5 px-8 h-16 font-medium text-base">
+          Get a free consultation
+          <i class="ph-bold ph-arrow-right" style="font-size:18px"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer data-testid="site-footer" class="bg-[#0A0A0A] text-white">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-20 grid md:grid-cols-12 gap-10">
+
+      <div class="md:col-span-5">
+        <div class="flex items-center gap-2.5">
+          <span class="relative inline-flex items-center justify-center w-10 h-10 bg-white text-[#0A0A0A]">
+            <span class="font-display font-black text-base">IT</span>
+            <span class="absolute -bottom-1 -right-1 w-2.5 h-2.5 bg-[#E57119]"></span>
+          </span>
+          <span>
+            <span class="block font-display font-bold text-base">IT Niche</span>
+            <span class="block text-[10px] uppercase tracking-[0.18em] text-white/50 -mt-0.5">Web Studio</span>
+          </span>
+        </div>
+        <p class="mt-6 text-sm text-white/60 max-w-sm leading-relaxed">
+          Custom websites built by senior designers and engineers. $0 upfront. $99/month all-inclusive.
+        </p>
+      </div>
+
+      <div class="md:col-span-3">
+        <div class="font-mono text-[11px] tracking-[0.22em] text-white/40 mb-4">EXPLORE</div>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#pricing"          class="text-white/80 hover:text-[#E57119]">Pricing</a></li>
+          <li><a href="#what-drives-cost" class="text-white/80 hover:text-[#E57119]">What you get</a></li>
+          <li><a href="#process"          class="text-white/80 hover:text-[#E57119]">Process</a></li>
+          <li><a href="#why-us"           class="text-white/80 hover:text-[#E57119]">Why us</a></li>
+        </ul>
+      </div>
+
+      <div class="md:col-span-4">
+        <div class="font-mono text-[11px] tracking-[0.22em] text-white/40 mb-4">CONTACT</div>
+        <a href="https://www.itniche.com" target="_blank" rel="noopener noreferrer"
+           data-testid="footer-website-link"
+           class="inline-flex items-center gap-2 font-display font-bold text-2xl text-white hover:text-[#E57119]">
+          itniche.com
+          <i class="ph-bold ph-arrow-up-right" style="font-size:22px"></i>
+        </a>
+        <p class="mt-4 text-sm text-white/60">Ready when you are. We reply within one business day.</p>
+      </div>
+    </div>
+
+    <div class="border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-6 md:px-12 py-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-[11px] font-mono tracking-[0.18em] text-white/40">
+        <div>© <span data-year>2025</span> IT NICHE — ALL RIGHTS RESERVED</div>
+        <div>BUILT WITH CARE — NO TEMPLATES</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
