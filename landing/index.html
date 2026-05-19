@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="IT Niche — Custom Website Design, Hosting, Maintenance and Digital Marketing. Your complete solution partner for businesses of all sizes." />
+  <meta name="theme-color" content="#e57119" />
+  <title>IT Niche — Your Complete Digital Solution Partner</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Lucide icons via CDN -->
+  <script defer src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header" data-testid="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo" data-testid="logo-link" aria-label="IT Niche home">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="logo-text">IT<span class="logo-dot">.</span>Niche</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Primary">
+        <a href="#services" data-testid="nav-services">Services</a>
+        <a href="#process" data-testid="nav-process">Process</a>
+        <a href="#team" data-testid="nav-team">Team</a>
+        <a href="#industries" data-testid="nav-industries">Industries</a>
+        <a href="#contact" data-testid="nav-contact">Contact</a>
+      </nav>
+
+      <a href="#contact" class="btn btn-primary header-cta" data-testid="header-cta-button">Start a project →</a>
+
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" data-testid="menu-toggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="nav-mobile" id="navMobile" data-testid="nav-mobile" hidden>
+      <a href="#services" data-testid="mnav-services">Services</a>
+      <a href="#process" data-testid="mnav-process">Process</a>
+      <a href="#team" data-testid="mnav-team">Team</a>
+      <a href="#industries" data-testid="mnav-industries">Industries</a>
+      <a href="#contact" data-testid="mnav-contact">Contact</a>
+      <a href="#contact" class="btn btn-primary" data-testid="mnav-cta">Start a project</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero" data-testid="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <span class="eyebrow" data-testid="hero-eyebrow">// Your Complete Solution Partner</span>
+          <h1 data-testid="hero-title">
+            Instant solutions for your <span class="accent">world-wide market.</span>
+          </h1>
+          <p class="lead" data-testid="hero-subtitle">
+            We build, host and grow custom websites that help small businesses compete with the biggest names in their vertical — design, development, marketing, all under one roof.
+          </p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary" data-testid="hero-primary-cta">Get a free consultation</a>
+            <a href="#services" class="btn btn-ghost" data-testid="hero-secondary-cta">Explore services →</a>
+          </div>
+          <ul class="hero-meta" aria-label="Trust">
+            <li><strong>Memphis, TN</strong><span>Headquarters</span></li>
+            <li><strong>Hyderabad, IN</strong><span>Production Center</span></li>
+            <li><strong>24×7×365</strong><span>Uptime focus</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <!-- SVG infographic / abstract -->
+          <svg viewBox="0 0 520 520" class="hero-svg" role="img" aria-label="Abstract geometric composition">
+            <defs>
+              <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+                <path d="M32 0H0V32" fill="none" stroke="#eee" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <rect width="520" height="520" fill="url(#grid)"/>
+            <!-- Big black square -->
+            <rect x="60" y="60" width="280" height="280" fill="#000"/>
+            <!-- Orange circle behind -->
+            <circle cx="380" cy="180" r="110" fill="#e57119"/>
+            <!-- Inner geometric -->
+            <rect x="120" y="120" width="160" height="160" fill="none" stroke="#e57119" stroke-width="2"/>
+            <line x1="120" y1="120" x2="280" y2="280" stroke="#fff" stroke-width="2"/>
+            <line x1="280" y1="120" x2="120" y2="280" stroke="#fff" stroke-width="2"/>
+            <!-- Small dots -->
+            <circle cx="380" cy="380" r="10" fill="#000"/>
+            <circle cx="420" cy="380" r="6" fill="#e57119"/>
+            <circle cx="450" cy="380" r="3" fill="#000"/>
+            <!-- Tag -->
+            <g transform="translate(360,300)">
+              <rect width="120" height="48" fill="#fff" stroke="#000" stroke-width="2"/>
+              <text x="14" y="20" font-family="Outfit, sans-serif" font-weight="700" font-size="11" fill="#000">DESIGN → DEPLOY</text>
+              <text x="14" y="38" font-family="Manrope, sans-serif" font-size="10" fill="#e57119">end-to-end</text>
+            </g>
+          </svg>
+          <div class="float-card card-1" data-testid="hero-float-1">
+            <span class="dot"></span>
+            <div>
+              <strong>Custom Code</strong>
+              <small>built for your brand</small>
+            </div>
+          </div>
+          <div class="float-card card-2" data-testid="hero-float-2">
+            <span class="dot dot-orange"></span>
+            <div>
+              <strong>100% Uptime</strong>
+              <small>own dedicated servers</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee logo strip -->
+    <section class="strip" aria-label="Capabilities">
+      <div class="strip-track" data-testid="strip-track">
+        <span>WEB DESIGN</span><span>•</span>
+        <span>CUSTOM DEVELOPMENT</span><span>•</span>
+        <span>DEDICATED HOSTING</span><span>•</span>
+        <span>SEO & MARKETING</span><span>•</span>
+        <span>MAINTENANCE</span><span>•</span>
+        <span>ONGOING SUPPORT</span><span>•</span>
+        <span>WEB DESIGN</span><span>•</span>
+        <span>CUSTOM DEVELOPMENT</span><span>•</span>
+        <span>DEDICATED HOSTING</span><span>•</span>
+        <span>SEO & MARKETING</span><span>•</span>
+        <span>MAINTENANCE</span><span>•</span>
+        <span>ONGOING SUPPORT</span><span>•</span>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats" data-testid="stats-section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow light">// By the numbers</span>
+          <h2>Built to help you <span class="accent">compete with giants.</span></h2>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card reveal" data-testid="stat-1">
+            <div class="stat-num" data-count="100" data-suffix="%">0</div>
+            <div class="stat-label">Server Control</div>
+            <p>Leased dedicated infrastructure — zero third-party dependencies.</p>
+          </div>
+          <div class="stat-card reveal" data-testid="stat-2">
+            <div class="stat-num" data-count="365" data-suffix="">0</div>
+            <div class="stat-label">Days Uptime Focus</div>
+            <p>24×7×365 monitoring of performance, links and W3C compliance.</p>
+          </div>
+          <div class="stat-card reveal" data-testid="stat-3">
+            <div class="stat-num" data-count="6" data-suffix="">0</div>
+            <div class="stat-label">Step Delivery Loop</div>
+            <p>Design → Develop → Deploy → Manage → Enhance → Support.</p>
+          </div>
+          <div class="stat-card reveal" data-testid="stat-4">
+            <div class="stat-num" data-count="2" data-suffix="">0</div>
+            <div class="stat-label">Continents, One Team</div>
+            <p>Memphis on-site strategy, Hyderabad production engine.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Bento -->
+    <section id="services" class="services" data-testid="services-section">
+      <div class="container">
+        <div class="section-head row">
+          <div>
+            <span class="eyebrow">// What we do</span>
+            <h2>One partner. <span class="accent">Every layer of your web presence.</span></h2>
+          </div>
+          <p class="section-sub">
+            From the first wireframe to the next decade of enhancements — we cover the full lifecycle so you can focus on running the business.
+          </p>
+        </div>
+
+        <div class="bento">
+          <article class="bento-card big reveal" data-testid="service-design">
+            <div class="icon-wrap"><i data-lucide="layout-template"></i></div>
+            <h3>Custom Website Design</h3>
+            <p>On-site consultation paired with offshore execution — quality custom websites at an affordable price, strategised around your goals.</p>
+            <ul class="chip-row">
+              <li>UI/UX</li><li>Brand Strategy</li><li>Wireframes</li>
+            </ul>
+          </article>
+
+          <article class="bento-card reveal" data-testid="service-hosting">
+            <div class="icon-wrap"><i data-lucide="server"></i></div>
+            <h3>Dedicated Hosting</h3>
+            <p>Deployed on our own leased dedicated servers — 100% control of uptime, performance and security.</p>
+          </article>
+
+          <article class="bento-card reveal" data-testid="service-maintenance">
+            <div class="icon-wrap"><i data-lucide="wrench"></i></div>
+            <h3>Maintenance</h3>
+            <p>W3C compliance, broken-link audits and monthly Alexa &amp; Google performance reports — your site stays sharp.</p>
+          </article>
+
+          <article class="bento-card reveal" data-testid="service-support">
+            <div class="icon-wrap"><i data-lucide="life-buoy"></i></div>
+            <h3>Ongoing Support</h3>
+            <p>Graphics, new features, integrations — beck and call access to qualified professionals whenever you evolve.</p>
+          </article>
+
+          <article class="bento-card dark reveal" data-testid="service-marketing">
+            <div class="icon-wrap light"><i data-lucide="trending-up"></i></div>
+            <h3>Internet Marketing &amp; SEO</h3>
+            <p>Specialist SEO and digital marketing experts plug into your project to make sure you’re found — and ranked.</p>
+            <a href="#contact" class="card-link" data-testid="service-marketing-link">Talk to a specialist →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Timeline -->
+    <section id="process" class="process" data-testid="process-section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">// How we work</span>
+          <h2>A loop that <span class="accent">keeps you ahead.</span></h2>
+        </div>
+
+        <ol class="timeline" data-testid="timeline">
+          <li class="reveal"><span class="step">01</span><h4>Design</h4><p>Discovery, strategy &amp; UI direction.</p></li>
+          <li class="reveal"><span class="step">02</span><h4>Develop</h4><p>Offshore engineering, fast and cost-effective.</p></li>
+          <li class="reveal"><span class="step">03</span><h4>Deploy</h4><p>Pushed to our dedicated servers.</p></li>
+          <li class="reveal"><span class="step">04</span><h4>Manage</h4><p>Monitoring, reports, compliance.</p></li>
+          <li class="reveal"><span class="step">05</span><h4>Enhance</h4><p>New features as your business grows.</p></li>
+          <li class="reveal"><span class="step">06</span><h4>Support</h4><p>Ongoing access to every skill you need.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Team / Expertise Infographic -->
+    <section id="team" class="team" data-testid="team-section">
+      <div class="container team-grid">
+        <div class="team-copy reveal">
+          <span class="eyebrow">// The talent stack</span>
+          <h2>It takes many <span class="accent">specialists</span> to make one great website.</h2>
+          <p>Request any skill you need for a given challenge — we’ll plug in the right expert on your project.</p>
+          <a href="#contact" class="btn btn-dark" data-testid="team-cta">Request a specialist →</a>
+        </div>
+
+        <div class="skills reveal" data-testid="skills-board">
+          <div class="skill" data-percent="92">
+            <div class="skill-head"><span>Graphic Design</span><b>92%</b></div>
+            <div class="bar"><span></span></div>
+          </div>
+          <div class="skill" data-percent="96">
+            <div class="skill-head"><span>Web Development</span><b>96%</b></div>
+            <div class="bar"><span></span></div>
+          </div>
+          <div class="skill" data-percent="88">
+            <div class="skill-head"><span>QA &amp; Testing</span><b>88%</b></div>
+            <div class="bar"><span></span></div>
+          </div>
+          <div class="skill" data-percent="90">
+            <div class="skill-head"><span>SEO Engineering</span><b>90%</b></div>
+            <div class="bar"><span></span></div>
+          </div>
+          <div class="skill" data-percent="85">
+            <div class="skill-head"><span>Internet Marketing</span><b>85%</b></div>
+            <div class="bar"><span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industries -->
+    <section id="industries" class="industries" data-testid="industries-section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">// Who we serve</span>
+          <h2>Businesses of <span class="accent">all sizes</span>, in <span class="accent">any industry.</span></h2>
+          <p class="section-sub center">IT Niche works as the complete digital solution partner across verticals — empowering you to compete with the biggest names.</p>
+        </div>
+
+        <ul class="ind-grid" data-testid="industries-grid">
+          <li><i data-lucide="building-2"></i><span>Small Business</span></li>
+          <li><i data-lucide="shopping-bag"></i><span>Retail &amp; E-Commerce</span></li>
+          <li><i data-lucide="stethoscope"></i><span>Healthcare</span></li>
+          <li><i data-lucide="graduation-cap"></i><span>Education</span></li>
+          <li><i data-lucide="utensils"></i><span>Restaurants</span></li>
+          <li><i data-lucide="briefcase"></i><span>Professional Services</span></li>
+          <li><i data-lucide="hammer"></i><span>Construction</span></li>
+          <li><i data-lucide="plane"></i><span>Travel &amp; Hospitality</span></li>
+          <li><i data-lucide="landmark"></i><span>Finance</span></li>
+          <li><i data-lucide="leaf"></i><span>Non-Profit</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CTA + Contact -->
+    <section id="contact" class="cta" data-testid="cta-section">
+      <div class="container cta-grid">
+        <div class="cta-copy">
+          <span class="eyebrow dark">// Let’s build</span>
+          <h2>Ready to put your business <span class="underline-black">in the spotlight?</span></h2>
+          <p>Tell us about your project. We’ll come back within one business day with a clear next step.</p>
+
+          <ul class="cta-meta">
+            <li><i data-lucide="map-pin"></i><div><strong>HQ — Memphis, TN</strong><span>United States</span></div></li>
+            <li><i data-lucide="map-pin"></i><div><strong>Production — Hyderabad</strong><span>India</span></div></li>
+            <li><i data-lucide="mail"></i><div><strong>hello@itniche.com</strong><span>We reply within 24 hours</span></div></li>
+          </ul>
+        </div>
+
+        <form class="cta-form" data-testid="contact-form" novalidate>
+          <div class="field">
+            <input type="text" id="name" name="name" required data-testid="form-name" placeholder=" " />
+            <label for="name">Your name</label>
+          </div>
+          <div class="field">
+            <input type="email" id="email" name="email" required data-testid="form-email" placeholder=" " />
+            <label for="email">Work email</label>
+          </div>
+          <div class="field">
+            <input type="text" id="company" name="company" data-testid="form-company" placeholder=" " />
+            <label for="company">Company (optional)</label>
+          </div>
+          <div class="field">
+            <select id="service" name="service" data-testid="form-service" required>
+              <option value="">Service you need</option>
+              <option>Website Design</option>
+              <option>Hosting</option>
+              <option>Maintenance</option>
+              <option>SEO &amp; Marketing</option>
+              <option>Full Package</option>
+            </select>
+          </div>
+          <div class="field full">
+            <textarea id="message" name="message" rows="4" required data-testid="form-message" placeholder=" "></textarea>
+            <label for="message">Project details</label>
+          </div>
+          <button type="submit" class="btn btn-black full" data-testid="form-submit">Send enquiry →</button>
+          <p class="form-status" id="formStatus" data-testid="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" data-testid="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#top" class="logo logo-dark" data-testid="footer-logo">
+          <span class="logo-mark light" aria-hidden="true"></span>
+          <span class="logo-text">IT<span class="logo-dot">.</span>Niche</span>
+        </a>
+        <p class="muted">Your complete digital solution partner. Custom websites, hosting, marketing &amp; ongoing support.</p>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <a href="#services">Custom Website Design</a>
+        <a href="#services">Dedicated Hosting</a>
+        <a href="#services">Maintenance</a>
+        <a href="#services">SEO &amp; Marketing</a>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <a href="#process">Our Process</a>
+        <a href="#team">Team</a>
+        <a href="#industries">Industries</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h5>Locations</h5>
+        <p class="muted">Memphis, TN — USA<br/><span>Headquarters</span></p>
+        <p class="muted">Hyderabad — India<br/><span>Production Center</span></p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <small>© <span id="year"></span> IT Niche. All rights reserved.</small>
+      <small>Designed for clarity. Built for speed.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
