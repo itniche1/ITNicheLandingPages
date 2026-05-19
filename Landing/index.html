@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Free SEO Site Audit by IT Niche — discover your website's performance, search visibility, and growth opportunities. Get a tailored report in minutes." />
+  <meta name="theme-color" content="#e57119" />
+  <title>Free SEO Site Audit — IT Niche</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" data-testid="site-header">
+    <div class="container nav__inner">
+      <a href="#top" class="brand" data-testid="brand-logo" aria-label="IT Niche Home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="14" cy="14" r="8"/>
+            <path d="m27 27-7-7"/>
+          </svg>
+        </span>
+        <span class="brand__name">IT Niche</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#features" data-testid="nav-features">What's Inside</a>
+        <a href="#process" data-testid="nav-process">Process</a>
+        <a href="#services" data-testid="nav-services">Services</a>
+        <a href="#testimonials" data-testid="nav-testimonials">Reviews</a>
+      </nav>
+
+      <a href="#audit" class="btn btn--primary nav__cta" data-testid="nav-cta-button">
+        Get Free Audit
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+
+      <button class="nav__toggle" aria-label="Toggle menu" data-testid="nav-toggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="navMobile" aria-hidden="true">
+      <a href="#features">What's Inside</a>
+      <a href="#process">Process</a>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#audit" class="btn btn--primary">Get Free Audit</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__grid-bg" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <span class="pill reveal" data-testid="hero-pill">
+            <span class="pill__dot"></span>
+            Free SEO Site Audit · No credit card
+          </span>
+
+          <h1 class="hero__title reveal" data-testid="hero-title">
+            See exactly why your<br/>
+            website isn't <span class="accent">ranking.</span>
+          </h1>
+
+          <p class="hero__sub reveal" data-testid="hero-sub">
+            A tailored report on speed, search visibility and conversion gaps —
+            delivered by humans, not just bots.
+          </p>
+
+          <div class="hero__ctas reveal">
+            <a href="#audit" class="btn btn--primary btn--lg" data-testid="hero-cta-primary">
+              Get My Free Report
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#process" class="btn btn--ghost btn--lg" data-testid="hero-cta-secondary">
+              How it works
+            </a>
+          </div>
+
+          <ul class="hero__trust reveal" aria-label="Trust indicators">
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#e57119" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Delivered in 24h</li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#e57119" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> 100% free</li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#e57119" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> $1,000 in tech credits</li>
+          </ul>
+        </div>
+
+        <!-- Infographic dashboard visual -->
+        <div class="hero__visual reveal" data-testid="hero-visual" aria-hidden="true">
+          <div class="dash">
+            <div class="dash__head">
+              <div class="dash__dots"><span></span><span></span><span></span></div>
+              <div class="dash__url">yoursite.com/audit</div>
+            </div>
+
+            <div class="dash__body">
+              <!-- Score ring -->
+              <div class="ring">
+                <svg viewBox="0 0 120 120" width="160" height="160">
+                  <circle cx="60" cy="60" r="52" stroke="#f1ece6" stroke-width="10" fill="none"/>
+                  <circle class="ring__progress" cx="60" cy="60" r="52" stroke="#e57119" stroke-width="10" fill="none" stroke-linecap="round" transform="rotate(-90 60 60)"/>
+                </svg>
+                <div class="ring__label">
+                  <span class="ring__num" data-count="87">0</span>
+                  <span class="ring__cap">SEO Score</span>
+                </div>
+              </div>
+
+              <div class="dash__metrics">
+                <div class="metric">
+                  <div class="metric__top"><span>Performance</span><span class="metric__val">92</span></div>
+                  <div class="bar"><i style="--w:92%"></i></div>
+                </div>
+                <div class="metric">
+                  <div class="metric__top"><span>Accessibility</span><span class="metric__val">88</span></div>
+                  <div class="bar"><i style="--w:88%"></i></div>
+                </div>
+                <div class="metric">
+                  <div class="metric__top"><span>Best Practices</span><span class="metric__val">95</span></div>
+                  <div class="bar"><i style="--w:95%"></i></div>
+                </div>
+                <div class="metric">
+                  <div class="metric__top"><span>On-page SEO</span><span class="metric__val">81</span></div>
+                  <div class="bar"><i style="--w:81%"></i></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dash__foot">
+              <svg viewBox="0 0 200 60" width="100%" height="60" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M0,45 L25,40 L50,30 L75,32 L100,22 L125,18 L150,12 L175,8 L200,4" fill="none" stroke="#e57119" stroke-width="2.5"/>
+                <path d="M0,45 L25,40 L50,30 L75,32 L100,22 L125,18 L150,12 L175,8 L200,4 L200,60 L0,60 Z" fill="url(#g1)" opacity="0.18"/>
+                <defs>
+                  <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#e57119"/>
+                    <stop offset="1" stop-color="#e57119" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span class="dash__tag">+38% organic traffic in 90 days</span>
+            </div>
+          </div>
+
+          <!-- Floating chips -->
+          <div class="chip chip--a">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#0d8a3a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            Core Web Vitals: Passed
+          </div>
+          <div class="chip chip--b">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#e57119" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            24h delivery
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRUSTED-BY STRIP ============ -->
+    <section class="strip" aria-label="Trusted by">
+      <div class="container strip__inner">
+        <span class="strip__label">Trusted by founders &amp; teams in</span>
+        <ul class="strip__list">
+          <li>Healthcare</li>
+          <li>Finance</li>
+          <li>Real Estate</li>
+          <li>Hospitality</li>
+          <li>SaaS &amp; Tech</li>
+          <li>Manufacturing</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="stats" data-testid="stats-section">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <span class="eyebrow">By the numbers</span>
+          <h2 class="section__title">Two decades. Real results.</h2>
+        </div>
+
+        <div class="stats__grid">
+          <div class="stat reveal" data-testid="stat-years">
+            <div class="stat__num"><span data-count="21">0</span>+</div>
+            <div class="stat__label">Years of experience</div>
+          </div>
+          <div class="stat reveal" data-testid="stat-traffic">
+            <div class="stat__num"><span data-count="38">0</span>%</div>
+            <div class="stat__label">Avg. traffic lift in 90 days</div>
+          </div>
+          <div class="stat reveal" data-testid="stat-credits">
+            <div class="stat__num">$<span data-count="1000">0</span></div>
+            <div class="stat__label">In tech credits, on us</div>
+          </div>
+          <div class="stat reveal" data-testid="stat-delivery">
+            <div class="stat__num"><span data-count="24">0</span>h</div>
+            <div class="stat__label">Audit turnaround</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">What's inside</span>
+          <h2 class="section__title">Everything your site is hiding — in one report.</h2>
+          <p class="section__sub">Six focused checks. Zero jargon. Clear next steps you can act on this week.</p>
+        </div>
+
+        <div class="features__grid">
+          <article class="feature reveal" data-testid="feature-performance">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/>
+              </svg>
+            </div>
+            <h3>Performance &amp; Speed</h3>
+            <p>Page load, Core Web Vitals and rendering bottlenecks affecting rankings.</p>
+          </article>
+
+          <article class="feature reveal" data-testid="feature-visibility">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/>
+              </svg>
+            </div>
+            <h3>Search Visibility</h3>
+            <p>Where you rank, what you're missing, and the keywords worth chasing.</p>
+          </article>
+
+          <article class="feature reveal" data-testid="feature-onpage">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/>
+              </svg>
+            </div>
+            <h3>On-page SEO</h3>
+            <p>Titles, meta, schema, headings &amp; internal links — auto-graded.</p>
+          </article>
+
+          <article class="feature reveal" data-testid="feature-mobile">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="6" y="2" width="12" height="20" rx="2"/><path d="M12 18h.01"/>
+              </svg>
+            </div>
+            <h3>Mobile Experience</h3>
+            <p>Tap targets, viewport, and how Google sees your site on phones.</p>
+          </article>
+
+          <article class="feature reveal" data-testid="feature-conversion">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 5-6"/>
+              </svg>
+            </div>
+            <h3>Conversion Gaps</h3>
+            <p>CTAs, forms, trust signals — what's costing you leads right now.</p>
+          </article>
+
+          <article class="feature reveal" data-testid="feature-security">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3>Security &amp; Health</h3>
+            <p>SSL, broken links, crawl errors, and basic technical hygiene.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="process" id="process">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">How it works</span>
+          <h2 class="section__title">From URL to action plan — in 4 steps.</h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal" data-testid="step-1">
+            <div class="timeline__num">01</div>
+            <div class="timeline__body">
+              <h3>Tell us about your site</h3>
+              <p>Drop your URL and a few quick goals. Takes under 60 seconds.</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal" data-testid="step-2">
+            <div class="timeline__num">02</div>
+            <div class="timeline__body">
+              <h3>We run the deep scan</h3>
+              <p>Automated tools + human review across 60+ ranking factors.</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal" data-testid="step-3">
+            <div class="timeline__num">03</div>
+            <div class="timeline__body">
+              <h3>Get your tailored report</h3>
+              <p>Plain-English findings, prioritized by impact and effort.</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal" data-testid="step-4">
+            <div class="timeline__num">04</div>
+            <div class="timeline__body">
+              <h3>Free 30-min strategy call</h3>
+              <p>We walk through your wins, gaps, and the next 90 days.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Beyond the audit</span>
+          <h2 class="section__title">A growth partner for small business.</h2>
+          <p class="section__sub">Web design, custom solutions and digital marketing — built around your audience.</p>
+        </div>
+
+        <div class="services__grid">
+          <a href="#audit" class="service reveal" data-testid="service-web">
+            <span class="service__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8"/></svg>
+            </span>
+            <h3>Web Design</h3>
+            <p>Brand-led, conversion-focused websites with no upfront cost.</p>
+            <span class="service__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="#audit" class="service reveal" data-testid="service-ecom">
+            <span class="service__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1.5"/><circle cx="18" cy="21" r="1.5"/><path d="M3 3h2l3 13h12l2-9H6"/></svg>
+            </span>
+            <h3>E-commerce</h3>
+            <p>Scalable, secure stores designed to convert and grow with you.</p>
+            <span class="service__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="#audit" class="service reveal" data-testid="service-seo">
+            <span class="service__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>
+            </span>
+            <h3>SEO &amp; Content</h3>
+            <p>Foundational on-page work + ongoing optimization that compounds.</p>
+            <span class="service__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="#audit" class="service reveal" data-testid="service-ppc">
+            <span class="service__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1"/></svg>
+            </span>
+            <h3>PPC &amp; Paid</h3>
+            <p>Data-driven campaigns engineered for reach and measurable ROI.</p>
+            <span class="service__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="#audit" class="service reveal" data-testid="service-social">
+            <span class="service__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5z"/></svg>
+            </span>
+            <h3>Social Media</h3>
+            <p>Targeted content strategies that grow audiences and engagement.</p>
+            <span class="service__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="#audit" class="service reveal" data-testid="service-custom">
+            <span class="service__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 7 4v6c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-4z"/><path d="m9 12 2 2 4-4"/></svg>
+            </span>
+            <h3>Custom Solutions</h3>
+            <p>From e-Realtor to ClickSetGo — automation built for your niche.</p>
+            <span class="service__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY US (split) ============ -->
+    <section class="why">
+      <div class="container why__grid">
+        <div class="why__copy reveal">
+          <span class="eyebrow">Why IT Niche</span>
+          <h2 class="section__title">A digital partner — not just an agency.</h2>
+          <p class="why__lede">
+            Based in Memphis, Tennessee. We've spent 21 years pairing design with
+            technology so small businesses can grow online without the bloat.
+          </p>
+
+          <ul class="why__list">
+            <li>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#e57119" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              <span><strong>Zero upfront cost</strong> on qualifying website builds.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#e57119" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              <span><strong>AI-powered</strong> automations via our ClickSetGo platform.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#e57119" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              <span><strong>Industry-proven</strong> playbooks across 6+ verticals.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#e57119" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              <span><strong>Real humans</strong> reviewing every audit — not just bots.</span>
+            </li>
+          </ul>
+
+          <a href="#audit" class="btn btn--primary btn--lg" data-testid="why-cta">
+            Claim My Free Audit
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="why__visual reveal" aria-hidden="true">
+          <div class="orbit">
+            <div class="orbit__center">
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#e57119" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/>
+              </svg>
+              <span>SEO Audit</span>
+            </div>
+
+            <span class="orbit__node orbit__node--1">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+              Speed
+            </span>
+            <span class="orbit__node orbit__node--2">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18z"/></svg>
+              Visibility
+            </span>
+            <span class="orbit__node orbit__node--3">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+              Mobile
+            </span>
+            <span class="orbit__node orbit__node--4">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 5-6"/></svg>
+              Conversion
+            </span>
+            <span class="orbit__node orbit__node--5">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Security
+            </span>
+            <span class="orbit__node orbit__node--6">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+              On-page
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="quotes" id="testimonials">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <span class="eyebrow">From our clients</span>
+          <h2 class="section__title">Quietly confident. Quoted often.</h2>
+        </div>
+
+        <div class="quotes__grid">
+          <figure class="quote reveal" data-testid="quote-1">
+            <svg class="quote__mark" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M7 7h4v4H8c0 2 1 4 3 5v2c-4-1-6-4-6-8V7zm10 0h4v4h-3c0 2 1 4 3 5v2c-4-1-6-4-6-8V7z"/></svg>
+            <blockquote>“Absolute digital wizards. They provided custom solutions with incredible speed and took our feedback in an amazing way.”</blockquote>
+            <figcaption>
+              <strong>New World Strategies</strong>
+              <span>Founder</span>
+            </figcaption>
+          </figure>
+
+          <figure class="quote reveal" data-testid="quote-2">
+            <svg class="quote__mark" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M7 7h4v4H8c0 2 1 4 3 5v2c-4-1-6-4-6-8V7zm10 0h4v4h-3c0 2 1 4 3 5v2c-4-1-6-4-6-8V7z"/></svg>
+            <blockquote>“They created a sleek, exciting-to-use and easy-to-navigate website for my business. The most amazing web developers.”</blockquote>
+            <figcaption>
+              <strong>William Smith</strong>
+              <span>Founder</span>
+            </figcaption>
+          </figure>
+
+          <figure class="quote reveal" data-testid="quote-3">
+            <svg class="quote__mark" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M7 7h4v4H8c0 2 1 4 3 5v2c-4-1-6-4-6-8V7zm10 0h4v4h-3c0 2 1 4 3 5v2c-4-1-6-4-6-8V7z"/></svg>
+            <blockquote>“He listens, is patient, curious, gracious — and knows his stuff inside and out. Prices are good, too.”</blockquote>
+            <figcaption>
+              <strong>I'm Real Hungry</strong>
+              <span>Founder</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <span class="eyebrow">Good to know</span>
+          <h2 class="section__title">Frequently asked</h2>
+        </div>
+
+        <div class="faq__list">
+          <details class="faq__item" data-testid="faq-1">
+            <summary>Is the SEO audit really free?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <p>Yes. No card, no obligation. You'll also receive $1,000 in technology credits you can apply toward any IT Niche service.</p>
+          </details>
+          <details class="faq__item" data-testid="faq-2">
+            <summary>How long does it take?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <p>Most reports are delivered within 24 hours. Complex sites may take up to 2 business days.</p>
+          </details>
+          <details class="faq__item" data-testid="faq-3">
+            <summary>What do I get in the report?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <p>A plain-English breakdown across performance, search visibility, on-page SEO, mobile UX, conversion gaps and security — with a prioritized action plan.</p>
+          </details>
+          <details class="faq__item" data-testid="faq-4">
+            <summary>Do I have to be technical to use it?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <p>Not at all. The report is built for owners and marketers, not engineers. We translate the technical bits.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA / FORM ============ -->
+    <section class="cta" id="audit">
+      <div class="container">
+        <div class="cta__card">
+          <div class="cta__copy">
+            <span class="eyebrow eyebrow--light">Free SEO Site Audit</span>
+            <h2>Find out what's holding your site back — in 24 hours.</h2>
+            <p>Tell us where to send your tailored report. We'll handle the rest.</p>
+
+            <ul class="cta__bullets">
+              <li><span class="dot"></span>Personalized PDF report</li>
+              <li><span class="dot"></span>30-min strategy call (optional)</li>
+              <li><span class="dot"></span>$1,000 in tech credits</li>
+            </ul>
+          </div>
+
+          <form class="cta__form" id="auditForm" novalidate data-testid="audit-form">
+            <div class="field">
+              <label for="name">Your name</label>
+              <input id="name" name="name" type="text" placeholder="Jane Doe" required data-testid="audit-input-name" />
+            </div>
+            <div class="field">
+              <label for="email">Work email</label>
+              <input id="email" name="email" type="email" placeholder="jane@company.com" required data-testid="audit-input-email" />
+            </div>
+            <div class="field">
+              <label for="url">Website URL</label>
+              <input id="url" name="url" type="url" placeholder="https://yourcompany.com" required data-testid="audit-input-url" />
+            </div>
+            <div class="field">
+              <label for="goal">Primary goal</label>
+              <select id="goal" name="goal" data-testid="audit-input-goal">
+                <option>Generate more leads / sales</option>
+                <option>Improve SEO visibility</option>
+                <option>Update design / rebrand</option>
+                <option>Improve website speed</option>
+                <option>Enhance mobile experience</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg btn--block" data-testid="audit-submit">
+              Send My Free Report
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </button>
+            <p class="cta__fine">By submitting, you agree to receive your report and occasional tips from IT Niche. Unsubscribe anytime.</p>
+
+            <div class="cta__success" id="auditSuccess" role="status" aria-live="polite" data-testid="audit-success">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#0d8a3a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              <div>
+                <strong>Thanks — your report is on the way.</strong>
+                <span>We'll be in touch within 24 hours.</span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#top" class="brand brand--light">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="14" cy="14" r="8"/><path d="m27 27-7-7"/>
+            </svg>
+          </span>
+          <span class="brand__name">IT Niche</span>
+        </a>
+        <p>Memphis, TN — design, technology &amp; digital marketing for small business.</p>
+      </div>
+
+      <div class="footer__cols">
+        <div>
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#">Profile</a>
+          <a href="#">Contact</a>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <a href="#services">Web Design</a>
+          <a href="#services">SEO</a>
+          <a href="#services">PPC</a>
+        </div>
+        <div>
+          <h4>Get Started</h4>
+          <a href="#audit">Free Audit</a>
+          <a href="#audit">Free Quote</a>
+          <a href="#audit">Strategy Call</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottomInner">
+        <span>© <span id="year"></span> IT Niche. All rights reserved.</span>
+        <span>Made with care in Memphis, TN.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
