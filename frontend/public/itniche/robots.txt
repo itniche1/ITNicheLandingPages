@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Block typical low-value paths
+Disallow: /assets/
+
+Sitemap: https://www.itniche.com/sitemap.xml
