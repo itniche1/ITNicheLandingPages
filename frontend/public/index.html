@@ -3,41 +3,1441 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
-        <meta name="description" content="A product of emergent.sh" />
+        <meta name="theme-color" content="#e57119" />
+        <meta name="description" content="IT Niche — Web Design, Custom Solutions & Digital Marketing for small businesses. Free consultation. Get in touch today." />
+        <meta name="keywords" content="IT Niche, web design, custom software, digital marketing, Memphis, Hyderabad, small business technology" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet" />
-        <!--
-        manifest.json provides metadata used when your web app is installed on a
-        user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-        -->
-        <!--
-        Notice the use of %PUBLIC_URL% in the tags above.
-        It will be replaced with the URL of the `public` folder during the build.
-        Only files inside the `public` folder can be referenced from the HTML.
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+        <title>IT Niche — Get in Touch | Web Design, Custom Solutions & Digital Marketing</title>
 
-        Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-        work correctly both with client-side routing and a non-root public URL.
-        Learn how to configure a non-root public URL by running `npm run build`.
-        -->
-        <title>Emergent | Fullstack App</title>
-        <script>window.addEventListener("error",function(e){if(e.error instanceof DOMException&&e.error.name==="DataCloneError"&&e.message&&e.message.includes("PerformanceServerTiming")){e.stopImmediatePropagation();e.preventDefault()}},true);</script>
-        <script src="https://assets.emergent.sh/scripts/emergent-main.js"></script>
+        <style>
+            /* ============ DESIGN TOKENS ============ */
+            :root {
+                --primary: #e57119;
+                --primary-hover: #cc6416;
+                --secondary: #000000;
+                --bg: #ffffff;
+                --bg-alt: #f6f4f1;
+                --bg-soft: #faf8f5;
+                --text: #111111;
+                --text-muted: #555555;
+                --text-dim: #8a8a8a;
+                --border: #e6e3df;
+                --border-strong: #1a1a1a;
+                --success: #16a34a;
+                --error: #dc2626;
+
+                --font: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+                --sp-xs: 0.5rem;
+                --sp-sm: 1rem;
+                --sp-md: 2rem;
+                --sp-lg: 4rem;
+                --sp-xl: 7rem;
+                --sp-xxl: 10rem;
+
+                --radius-sm: 4px;
+                --radius-md: 10px;
+                --max-w: 1240px;
+            }
+
+            /* ============ RESET ============ */
+            *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+            html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+            body {
+                font-family: var(--font);
+                color: var(--text);
+                background: var(--bg);
+                line-height: 1.6;
+                font-weight: 400;
+                font-size: 16px;
+                overflow-x: hidden;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            a { color: inherit; text-decoration: none; }
+            button { font-family: inherit; cursor: pointer; border: none; background: none; }
+            ul { list-style: none; }
+            img, svg { display: block; max-width: 100%; }
+            input, textarea { font-family: inherit; font-size: inherit; color: inherit; }
+            ::selection { background: var(--primary); color: #fff; }
+
+            /* ============ LAYOUT ============ */
+            .container {
+                width: 100%;
+                max-width: var(--max-w);
+                margin: 0 auto;
+                padding: 0 1.5rem;
+            }
+            .section {
+                padding: var(--sp-xl) 0;
+                position: relative;
+            }
+            .eyebrow {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.6rem;
+                font-size: 0.75rem;
+                font-weight: 700;
+                letter-spacing: 0.18em;
+                text-transform: uppercase;
+                color: var(--primary);
+            }
+            .eyebrow::before {
+                content: "";
+                width: 28px;
+                height: 1px;
+                background: var(--primary);
+                display: inline-block;
+            }
+            .section-title {
+                font-size: clamp(2rem, 4.2vw, 3.25rem);
+                font-weight: 900;
+                line-height: 1.05;
+                letter-spacing: -0.02em;
+                margin-top: 1rem;
+                max-width: 720px;
+            }
+            .section-sub {
+                color: var(--text-muted);
+                margin-top: 1rem;
+                max-width: 600px;
+                font-size: 1.05rem;
+            }
+
+            /* ============ BUTTONS ============ */
+            .btn {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.6rem;
+                padding: 0.95rem 1.6rem;
+                font-weight: 700;
+                font-size: 0.95rem;
+                letter-spacing: 0.02em;
+                border-radius: 999px;
+                transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+                border: 1.5px solid transparent;
+                white-space: nowrap;
+            }
+            .btn-primary {
+                background: var(--primary);
+                color: #fff;
+            }
+            .btn-primary:hover {
+                background: var(--primary-hover);
+                transform: translateY(-2px);
+                box-shadow: 0 10px 24px -8px rgba(229, 113, 25, 0.45);
+            }
+            .btn-dark {
+                background: var(--secondary);
+                color: #fff;
+            }
+            .btn-dark:hover {
+                background: var(--primary);
+                transform: translateY(-2px);
+            }
+            .btn-outline {
+                background: transparent;
+                color: var(--secondary);
+                border-color: var(--secondary);
+            }
+            .btn-outline:hover {
+                background: var(--secondary);
+                color: #fff;
+                transform: translateY(-2px);
+            }
+            .btn-ghost {
+                color: var(--text);
+                padding: 0.6rem 0;
+            }
+            .btn .arrow { transition: transform 0.25s ease; }
+            .btn:hover .arrow { transform: translateX(4px); }
+
+            /* ============ NAV ============ */
+            .nav {
+                position: sticky;
+                top: 0;
+                z-index: 100;
+                background: rgba(255, 255, 255, 0.85);
+                backdrop-filter: saturate(180%) blur(14px);
+                -webkit-backdrop-filter: saturate(180%) blur(14px);
+                border-bottom: 1px solid var(--border);
+            }
+            .nav-inner {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1.1rem 0;
+            }
+            .logo {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.55rem;
+                font-weight: 900;
+                font-size: 1.25rem;
+                letter-spacing: -0.02em;
+                color: var(--secondary);
+            }
+            .logo-mark {
+                width: 32px; height: 32px;
+                display: grid; place-items: center;
+                background: var(--secondary);
+                color: #fff;
+                border-radius: 8px;
+                font-weight: 900;
+                font-size: 0.85rem;
+            }
+            .logo-mark::after {
+                content: "";
+                width: 6px; height: 6px;
+                background: var(--primary);
+                border-radius: 50%;
+                position: absolute;
+                transform: translate(13px, 10px);
+            }
+            .logo-dot { width: 7px; height: 7px; background: var(--primary); border-radius: 50%; display: inline-block; }
+            .nav-links {
+                display: flex;
+                gap: 2.2rem;
+                font-size: 0.93rem;
+                color: var(--text-muted);
+                font-weight: 400;
+            }
+            .nav-links a { transition: color 0.2s ease; position: relative; }
+            .nav-links a:hover { color: var(--text); }
+            .nav-links a::after {
+                content: "";
+                position: absolute;
+                left: 0; bottom: -6px;
+                width: 0; height: 2px;
+                background: var(--primary);
+                transition: width 0.25s ease;
+            }
+            .nav-links a:hover::after { width: 100%; }
+            .nav-cta { padding: 0.65rem 1.3rem; font-size: 0.88rem; }
+            .nav-burger { display: none; }
+            .mobile-menu { display: none; }
+
+            @media (max-width: 880px) {
+                .nav-links { display: none; }
+                .nav-cta { display: none; }
+                .nav-burger {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    padding: 0.5rem;
+                }
+                .nav-burger span {
+                    width: 22px; height: 2px; background: var(--secondary); transition: all 0.3s;
+                }
+                .mobile-menu {
+                    display: none;
+                    padding: 1.5rem;
+                    border-top: 1px solid var(--border);
+                    background: #fff;
+                }
+                .mobile-menu.open { display: block; }
+                .mobile-menu a { display: block; padding: 0.7rem 0; color: var(--text); font-weight: 700; }
+            }
+
+            /* ============ HERO ============ */
+            .hero {
+                padding-top: var(--sp-lg);
+                padding-bottom: var(--sp-xl);
+                position: relative;
+                overflow: hidden;
+            }
+            .hero-bg {
+                position: absolute;
+                inset: 0;
+                pointer-events: none;
+                z-index: 0;
+                background-image:
+                    radial-gradient(circle at 1px 1px, rgba(0,0,0,0.08) 1px, transparent 0);
+                background-size: 28px 28px;
+                mask-image: radial-gradient(ellipse at top right, rgba(0,0,0,0.5), transparent 70%);
+                -webkit-mask-image: radial-gradient(ellipse at top right, rgba(0,0,0,0.5), transparent 70%);
+            }
+            .hero-grid {
+                display: grid;
+                grid-template-columns: 1.15fr 1fr;
+                gap: 5rem;
+                align-items: center;
+                position: relative;
+                z-index: 1;
+            }
+            .hero-pill {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.55rem;
+                padding: 0.45rem 0.9rem;
+                background: var(--bg-alt);
+                border: 1px solid var(--border);
+                border-radius: 999px;
+                font-size: 0.78rem;
+                color: var(--text-muted);
+                font-weight: 700;
+                letter-spacing: 0.05em;
+            }
+            .hero-pill .dot {
+                width: 7px; height: 7px; border-radius: 50%;
+                background: var(--success);
+                box-shadow: 0 0 0 3px rgba(22,163,74,0.18);
+            }
+            .hero h1 {
+                font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+                font-weight: 900;
+                line-height: 1.02;
+                letter-spacing: -0.035em;
+                margin-top: 1.5rem;
+            }
+            .hero h1 .accent {
+                position: relative;
+                display: inline-block;
+                color: var(--primary);
+            }
+            .hero h1 .accent::after {
+                content: "";
+                position: absolute;
+                left: 0; right: 0; bottom: 6px;
+                height: 8px;
+                background: rgba(229,113,25,0.18);
+                z-index: -1;
+            }
+            .hero p.lead {
+                margin-top: 1.4rem;
+                font-size: 1.15rem;
+                color: var(--text-muted);
+                max-width: 520px;
+            }
+            .hero-ctas {
+                display: flex;
+                gap: 0.9rem;
+                margin-top: 2.2rem;
+                flex-wrap: wrap;
+            }
+            .hero-meta {
+                display: flex;
+                gap: 2rem;
+                margin-top: 2.8rem;
+                flex-wrap: wrap;
+            }
+            .hero-meta-item {
+                display: flex;
+                align-items: center;
+                gap: 0.7rem;
+                color: var(--text-muted);
+                font-size: 0.88rem;
+            }
+            .hero-meta-item svg { color: var(--primary); flex-shrink: 0; }
+
+            .hero-visual {
+                position: relative;
+                aspect-ratio: 1 / 1;
+                display: grid;
+                place-items: center;
+            }
+            .hero-svg {
+                width: 100%;
+                height: 100%;
+                max-width: 480px;
+            }
+
+            @media (max-width: 960px) {
+                .hero-grid { grid-template-columns: 1fr; gap: 3rem; }
+                .hero-visual { max-width: 420px; margin: 0 auto; }
+            }
+
+            /* ============ STATS ============ */
+            .stats {
+                padding: var(--sp-lg) 0;
+                border-top: 1px solid var(--border);
+                border-bottom: 1px solid var(--border);
+                background: var(--bg-soft);
+            }
+            .stats-grid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 0;
+            }
+            .stat {
+                padding: 1rem 1.5rem;
+                border-right: 1px solid var(--border);
+                text-align: left;
+            }
+            .stat:last-child { border-right: none; }
+            .stat-number {
+                font-size: clamp(2.5rem, 5vw, 3.5rem);
+                font-weight: 900;
+                line-height: 1;
+                letter-spacing: -0.04em;
+                color: var(--secondary);
+                display: inline-flex;
+                align-items: baseline;
+            }
+            .stat-number .plus { color: var(--primary); margin-left: 4px; }
+            .stat-label {
+                margin-top: 0.7rem;
+                font-size: 0.78rem;
+                text-transform: uppercase;
+                letter-spacing: 0.12em;
+                color: var(--text-muted);
+                font-weight: 700;
+            }
+            @media (max-width: 720px) {
+                .stats-grid { grid-template-columns: repeat(2, 1fr); }
+                .stat { border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 1.5rem 1rem; }
+                .stat:nth-child(2n) { border-right: none; }
+                .stat:nth-child(n+3) { border-bottom: none; }
+            }
+
+            /* ============ SERVICES ============ */
+            .services-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.5rem;
+                margin-top: 3.5rem;
+            }
+            .service-card {
+                padding: 2.2rem;
+                border: 1px solid var(--border);
+                border-radius: var(--radius-md);
+                background: var(--bg);
+                transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+                position: relative;
+                overflow: hidden;
+            }
+            .service-card::before {
+                content: "";
+                position: absolute;
+                top: 0; left: 0;
+                width: 100%; height: 3px;
+                background: var(--primary);
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: transform 0.4s ease;
+            }
+            .service-card:hover {
+                transform: translateY(-6px);
+                border-color: var(--secondary);
+                box-shadow: 0 24px 48px -28px rgba(0,0,0,0.18);
+            }
+            .service-card:hover::before { transform: scaleX(1); }
+            .service-icon {
+                width: 56px; height: 56px;
+                display: grid; place-items: center;
+                background: var(--bg-alt);
+                border-radius: 12px;
+                color: var(--primary);
+                margin-bottom: 1.6rem;
+            }
+            .service-title {
+                font-size: 1.4rem;
+                font-weight: 900;
+                letter-spacing: -0.01em;
+            }
+            .service-desc {
+                margin-top: 0.7rem;
+                color: var(--text-muted);
+                font-size: 0.96rem;
+                line-height: 1.65;
+            }
+            .service-list {
+                margin-top: 1.2rem;
+                display: grid;
+                gap: 0.5rem;
+            }
+            .service-list li {
+                display: flex; align-items: center; gap: 0.6rem;
+                font-size: 0.85rem; color: var(--text);
+            }
+            .service-list li::before {
+                content: ""; width: 14px; height: 1px; background: var(--primary);
+            }
+            @media (max-width: 880px) {
+                .services-grid { grid-template-columns: 1fr; }
+            }
+
+            /* ============ WHY (Trust Pillars) ============ */
+            .why {
+                background: var(--bg-soft);
+                border-top: 1px solid var(--border);
+                border-bottom: 1px solid var(--border);
+            }
+            .why-grid {
+                display: grid;
+                grid-template-columns: 1fr 1.4fr;
+                gap: 4rem;
+                align-items: start;
+            }
+            .why-pillars {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1px;
+                background: var(--border);
+                border: 1px solid var(--border);
+                border-radius: var(--radius-md);
+                overflow: hidden;
+            }
+            .pillar {
+                padding: 2rem;
+                background: var(--bg);
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                transition: background 0.3s ease;
+            }
+            .pillar:hover { background: var(--bg-soft); }
+            .pillar-num {
+                font-size: 0.75rem;
+                font-weight: 700;
+                letter-spacing: 0.18em;
+                color: var(--primary);
+            }
+            .pillar-icon {
+                width: 40px; height: 40px;
+                color: var(--secondary);
+            }
+            .pillar-title { font-size: 1.1rem; font-weight: 900; letter-spacing: -0.01em; }
+            .pillar-desc { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; }
+            @media (max-width: 960px) {
+                .why-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+                .why-pillars { grid-template-columns: 1fr; }
+            }
+
+            /* ============ PROCESS / TIMELINE ============ */
+            .process-track {
+                margin-top: 4rem;
+                position: relative;
+            }
+            .process-line {
+                position: absolute;
+                top: 36px; left: 5%; right: 5%;
+                height: 1px;
+                background: repeating-linear-gradient(to right, var(--border) 0 8px, transparent 8px 16px);
+                z-index: 0;
+            }
+            .process-steps {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                gap: 1rem;
+                position: relative;
+                z-index: 1;
+            }
+            .step {
+                text-align: center;
+                padding: 0 0.5rem;
+            }
+            .step-node {
+                width: 72px; height: 72px;
+                margin: 0 auto 1.3rem;
+                background: var(--bg);
+                border: 1.5px solid var(--secondary);
+                border-radius: 50%;
+                display: grid;
+                place-items: center;
+                font-weight: 900;
+                font-size: 1.3rem;
+                color: var(--secondary);
+                position: relative;
+                transition: all 0.3s ease;
+            }
+            .step:hover .step-node {
+                background: var(--primary);
+                border-color: var(--primary);
+                color: #fff;
+                transform: scale(1.08);
+            }
+            .step-title {
+                font-size: 1rem;
+                font-weight: 900;
+                letter-spacing: -0.01em;
+            }
+            .step-desc {
+                margin-top: 0.4rem;
+                font-size: 0.83rem;
+                color: var(--text-muted);
+                line-height: 1.5;
+            }
+            @media (max-width: 880px) {
+                .process-line { display: none; }
+                .process-steps { grid-template-columns: 1fr; gap: 1.5rem; }
+                .step { display: grid; grid-template-columns: 72px 1fr; gap: 1.2rem; text-align: left; }
+                .step-node { margin: 0; }
+                .step-title { margin-top: 0.5rem; }
+            }
+
+            /* ============ CONTACT INFO + FORM ============ */
+            .contact {
+                background: var(--secondary);
+                color: #fff;
+            }
+            .contact .eyebrow { color: var(--primary); }
+            .contact .eyebrow::before { background: var(--primary); }
+            .contact .section-title { color: #fff; }
+            .contact .section-sub { color: rgba(255,255,255,0.6); }
+
+            .contact-grid {
+                display: grid;
+                grid-template-columns: 1fr 1.2fr;
+                gap: 4rem;
+                margin-top: 3.5rem;
+                align-items: start;
+            }
+            .office-cards { display: grid; gap: 1.2rem; }
+            .office-card {
+                padding: 1.8rem;
+                border: 1px solid rgba(255,255,255,0.12);
+                border-radius: var(--radius-md);
+                transition: border-color 0.3s ease, transform 0.3s ease;
+            }
+            .office-card:hover { border-color: var(--primary); transform: translateY(-3px); }
+            .office-header {
+                display: flex;
+                align-items: center;
+                gap: 0.8rem;
+                margin-bottom: 1.2rem;
+            }
+            .office-flag {
+                width: 36px; height: 36px;
+                border-radius: 8px;
+                background: rgba(229,113,25,0.15);
+                color: var(--primary);
+                display: grid; place-items: center;
+            }
+            .office-name { font-weight: 900; font-size: 1.05rem; letter-spacing: -0.01em; }
+            .office-tag { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(255,255,255,0.45); }
+            .office-list { display: grid; gap: 0.7rem; font-size: 0.88rem; }
+            .office-list .row { display: flex; gap: 0.7rem; color: rgba(255,255,255,0.72); }
+            .office-list .row svg { color: var(--primary); flex-shrink: 0; margin-top: 2px; }
+            .office-list a:hover { color: var(--primary); }
+
+            /* Form */
+            .form-card {
+                padding: 2.2rem;
+                background: rgba(255,255,255,0.04);
+                border: 1px solid rgba(255,255,255,0.1);
+                border-radius: var(--radius-md);
+            }
+            .form-title {
+                font-size: 1.25rem;
+                font-weight: 900;
+                letter-spacing: -0.01em;
+                color: #fff;
+            }
+            .form-sub {
+                color: rgba(255,255,255,0.6);
+                margin-top: 0.4rem;
+                font-size: 0.92rem;
+            }
+            .form-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1.2rem 1.2rem;
+                margin-top: 1.8rem;
+            }
+            .field { display: flex; flex-direction: column; gap: 0.4rem; }
+            .field.full { grid-column: 1 / -1; }
+            .field label {
+                font-size: 0.72rem;
+                font-weight: 700;
+                letter-spacing: 0.12em;
+                text-transform: uppercase;
+                color: rgba(255,255,255,0.55);
+            }
+            .field input,
+            .field textarea {
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid rgba(255,255,255,0.2);
+                color: #fff;
+                padding: 0.6rem 0;
+                outline: none;
+                transition: border-color 0.25s ease;
+                width: 100%;
+            }
+            .field input::placeholder,
+            .field textarea::placeholder { color: rgba(255,255,255,0.3); }
+            .field input:focus,
+            .field textarea:focus { border-bottom-color: var(--primary); }
+            .field textarea { min-height: 90px; resize: vertical; font-family: inherit; }
+            .field.error input,
+            .field.error textarea { border-bottom-color: var(--error); animation: shake 0.4s ease; }
+            .field .err-msg {
+                font-size: 0.72rem; color: #ff8585; min-height: 14px;
+            }
+            @keyframes shake {
+                0%, 100% { transform: translateX(0); }
+                25% { transform: translateX(-4px); }
+                75% { transform: translateX(4px); }
+            }
+            .form-submit {
+                margin-top: 2rem;
+                width: 100%;
+                justify-content: center;
+            }
+            @media (max-width: 960px) {
+                .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+                .form-grid { grid-template-columns: 1fr; }
+            }
+
+            /* ============ CTA BANNER ============ */
+            .cta-banner {
+                background: var(--primary);
+                color: #fff;
+                text-align: center;
+                padding: var(--sp-lg) 0;
+                position: relative;
+                overflow: hidden;
+            }
+            .cta-banner::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background-image:
+                    radial-gradient(circle at 1px 1px, rgba(255,255,255,0.18) 1px, transparent 0);
+                background-size: 24px 24px;
+                opacity: 0.4;
+                pointer-events: none;
+            }
+            .cta-banner h2 {
+                font-size: clamp(2rem, 4.5vw, 3.4rem);
+                font-weight: 900;
+                letter-spacing: -0.03em;
+                line-height: 1.05;
+                max-width: 800px;
+                margin: 0 auto;
+                position: relative;
+                z-index: 1;
+            }
+            .cta-banner p {
+                margin-top: 1rem;
+                font-size: 1.1rem;
+                color: rgba(255,255,255,0.85);
+                position: relative;
+                z-index: 1;
+                max-width: 600px;
+                margin-inline: auto;
+            }
+            .cta-banner .btn { margin-top: 2.2rem; position: relative; z-index: 1; }
+
+            /* ============ FOOTER ============ */
+            .footer {
+                background: var(--bg-soft);
+                padding: 4rem 0 2rem;
+                border-top: 1px solid var(--border);
+            }
+            .footer-grid {
+                display: grid;
+                grid-template-columns: 1.5fr 1fr 1fr 1fr;
+                gap: 3rem;
+            }
+            .footer-brand p {
+                margin-top: 1rem;
+                color: var(--text-muted);
+                font-size: 0.92rem;
+                max-width: 320px;
+            }
+            .footer-col h4 {
+                font-size: 0.78rem;
+                font-weight: 900;
+                text-transform: uppercase;
+                letter-spacing: 0.15em;
+                color: var(--secondary);
+                margin-bottom: 1.2rem;
+            }
+            .footer-col ul { display: grid; gap: 0.7rem; }
+            .footer-col a {
+                color: var(--text-muted);
+                font-size: 0.9rem;
+                transition: color 0.2s ease;
+            }
+            .footer-col a:hover { color: var(--primary); }
+            .footer-bottom {
+                margin-top: 3rem;
+                padding-top: 1.5rem;
+                border-top: 1px solid var(--border);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: var(--text-muted);
+                font-size: 0.85rem;
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+            @media (max-width: 880px) {
+                .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+            }
+            @media (max-width: 520px) {
+                .footer-grid { grid-template-columns: 1fr; }
+            }
+
+            /* ============ TOAST ============ */
+            .toast {
+                position: fixed;
+                bottom: 80px;
+                right: 24px;
+                z-index: 1000;
+                background: var(--secondary);
+                color: #fff;
+                padding: 1rem 1.3rem;
+                border-radius: 12px;
+                box-shadow: 0 20px 40px -10px rgba(0,0,0,0.3);
+                display: flex;
+                align-items: center;
+                gap: 0.8rem;
+                transform: translateY(120%);
+                opacity: 0;
+                transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s;
+                max-width: 360px;
+                border-left: 3px solid var(--success);
+            }
+            .toast.show { transform: translateY(0); opacity: 1; }
+            .toast-icon { color: var(--success); flex-shrink: 0; }
+            .toast-text { font-size: 0.9rem; font-weight: 700; }
+            .toast-sub { font-size: 0.78rem; color: rgba(255,255,255,0.65); font-weight: 400; margin-top: 2px; }
+
+            /* ============ REVEAL ANIMATION ============ */
+            .reveal {
+                opacity: 0;
+                transform: translateY(24px);
+                transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+            }
+            .reveal.visible { opacity: 1; transform: translateY(0); }
+
+            /* Hide React root */
+            #root { display: none; }
+
+            /* Adjust emergent badge spacing */
+            #emergent-badge { z-index: 50 !important; }
+        </style>
     </head>
     <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <div id="root"></div>
-        <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+        <!-- ============== NAVIGATION ============== -->
+        <header class="nav" data-testid="site-nav">
+            <div class="container nav-inner">
+                <a href="#" class="logo" data-testid="logo">
+                    <span class="logo-mark">IT</span>
+                    <span>Niche<span class="logo-dot"></span></span>
+                </a>
+                <nav class="nav-links">
+                    <a href="#services" data-testid="nav-services">Services</a>
+                    <a href="#process" data-testid="nav-process">Process</a>
+                    <a href="#why" data-testid="nav-why">Why Us</a>
+                    <a href="#contact" data-testid="nav-contact">Contact</a>
+                </nav>
+                <a href="#contact" class="btn btn-dark nav-cta" data-testid="nav-cta-button">
+                    Free Consultation
+                    <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+                <button class="nav-burger" id="navBurger" aria-label="Open menu" data-testid="nav-burger">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="#services">Services</a>
+                <a href="#process">Process</a>
+                <a href="#why">Why Us</a>
+                <a href="#contact">Contact</a>
+                <a href="#contact" style="color: var(--primary);">Free Consultation →</a>
+            </div>
+        </header>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+        <!-- ============== HERO ============== -->
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <span class="hero-pill" data-testid="hero-pill">
+                            <span class="dot"></span>
+                            Now booking Q1 projects
+                        </span>
+                        <h1 data-testid="hero-headline">
+                            Your feedback is the
+                            <span class="accent">oxygen</span>
+                            we breathe.
+                        </h1>
+                        <p class="lead" data-testid="hero-sub">
+                            Tell us what you’re building. We turn small business ideas into world-class web design, custom software, and digital marketing — without the corporate overhead.
+                        </p>
+                        <div class="hero-ctas">
+                            <a href="#contact" class="btn btn-primary" data-testid="hero-primary-cta">
+                                Start the conversation
+                                <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </a>
+                            <a href="tel:+19014149009" class="btn btn-outline" data-testid="hero-secondary-cta">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+                                (901) 414-9009
+                            </a>
+                        </div>
+                        <div class="hero-meta">
+                            <div class="hero-meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                Free consultation
+                            </div>
+                            <div class="hero-meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                US + India teams
+                            </div>
+                            <div class="hero-meta-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                Response in 24h
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hero Infographic SVG -->
+                    <div class="hero-visual" aria-hidden="true">
+                        <svg class="hero-svg" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <!-- Outer ring -->
+                            <circle cx="240" cy="240" r="220" stroke="#e6e3df" stroke-width="1" stroke-dasharray="3 5"/>
+                            <circle cx="240" cy="240" r="160" stroke="#e6e3df" stroke-width="1"/>
+                            <circle cx="240" cy="240" r="100" stroke="#e6e3df" stroke-width="1"/>
+
+                            <!-- Connecting lines -->
+                            <line x1="240" y1="240" x2="80" y2="120" stroke="#111" stroke-width="1"/>
+                            <line x1="240" y1="240" x2="400" y2="120" stroke="#111" stroke-width="1"/>
+                            <line x1="240" y1="240" x2="80" y2="380" stroke="#111" stroke-width="1"/>
+                            <line x1="240" y1="240" x2="400" y2="380" stroke="#111" stroke-width="1"/>
+                            <line x1="240" y1="240" x2="240" y2="60" stroke="#e57119" stroke-width="1.5"/>
+                            <line x1="240" y1="240" x2="240" y2="420" stroke="#e57119" stroke-width="1.5"/>
+
+                            <!-- Center hub -->
+                            <circle cx="240" cy="240" r="44" fill="#000"/>
+                            <circle cx="240" cy="240" r="44" stroke="#e57119" stroke-width="1" stroke-dasharray="2 4"/>
+                            <path d="M218 232 L234 248 L262 220" stroke="#e57119" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+                            <!-- Node TL: Monitor (Web Design) -->
+                            <g transform="translate(40 80)">
+                                <circle cx="40" cy="40" r="38" fill="#fff" stroke="#111" stroke-width="1.2"/>
+                                <rect x="22" y="28" width="36" height="24" rx="2" stroke="#e57119" stroke-width="1.8" fill="none"/>
+                                <line x1="22" y1="46" x2="58" y2="46" stroke="#e57119" stroke-width="1.5"/>
+                                <line x1="34" y1="58" x2="46" y2="58" stroke="#111" stroke-width="1.5"/>
+                            </g>
+
+                            <!-- Node TR: Code (Custom Solutions) -->
+                            <g transform="translate(360 80)">
+                                <circle cx="40" cy="40" r="38" fill="#fff" stroke="#111" stroke-width="1.2"/>
+                                <polyline points="32,30 22,40 32,50" stroke="#e57119" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                <polyline points="48,30 58,40 48,50" stroke="#e57119" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                <line x1="44" y1="28" x2="36" y2="52" stroke="#111" stroke-width="1.5" stroke-linecap="round"/>
+                            </g>
+
+                            <!-- Node BL: Megaphone (Marketing) -->
+                            <g transform="translate(40 340)">
+                                <circle cx="40" cy="40" r="38" fill="#fff" stroke="#111" stroke-width="1.2"/>
+                                <path d="M25 42 L50 30 L50 54 Z" stroke="#e57119" stroke-width="1.8" fill="none" stroke-linejoin="round"/>
+                                <line x1="50" y1="38" x2="58" y2="36" stroke="#111" stroke-width="1.5" stroke-linecap="round"/>
+                                <line x1="50" y1="46" x2="58" y2="48" stroke="#111" stroke-width="1.5" stroke-linecap="round"/>
+                            </g>
+
+                            <!-- Node BR: Chart -->
+                            <g transform="translate(360 340)">
+                                <circle cx="40" cy="40" r="38" fill="#fff" stroke="#111" stroke-width="1.2"/>
+                                <polyline points="22,54 32,42 40,48 56,28" stroke="#e57119" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="56" cy="28" r="2.5" fill="#e57119"/>
+                            </g>
+
+                            <!-- Node TOP: Chat -->
+                            <g transform="translate(200 20)">
+                                <circle cx="40" cy="40" r="38" fill="#fff" stroke="#e57119" stroke-width="1.5"/>
+                                <path d="M22 36 Q22 28 30 28 H50 Q58 28 58 36 V44 Q58 52 50 52 H38 L30 58 V52 Q22 52 22 44 Z" stroke="#111" stroke-width="1.8" fill="none" stroke-linejoin="round"/>
+                                <circle cx="34" cy="40" r="1.5" fill="#e57119"/>
+                                <circle cx="40" cy="40" r="1.5" fill="#e57119"/>
+                                <circle cx="46" cy="40" r="1.5" fill="#e57119"/>
+                            </g>
+
+                            <!-- Node BOTTOM: Globe -->
+                            <g transform="translate(200 380)">
+                                <circle cx="40" cy="40" r="38" fill="#fff" stroke="#e57119" stroke-width="1.5"/>
+                                <circle cx="40" cy="40" r="20" stroke="#111" stroke-width="1.5" fill="none"/>
+                                <ellipse cx="40" cy="40" rx="8" ry="20" stroke="#111" stroke-width="1.2" fill="none"/>
+                                <line x1="20" y1="40" x2="60" y2="40" stroke="#111" stroke-width="1.2"/>
+                            </g>
+
+                            <!-- Small floating dots -->
+                            <circle cx="120" cy="240" r="3" fill="#e57119"/>
+                            <circle cx="360" cy="240" r="3" fill="#e57119"/>
+                            <circle cx="240" cy="120" r="3" fill="#111"/>
+                            <circle cx="240" cy="360" r="3" fill="#111"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============== STATS ============== -->
+        <section class="stats" data-testid="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat reveal">
+                        <div class="stat-number" data-target="15"><span class="num">0</span><span class="plus">+</span></div>
+                        <div class="stat-label">Years in Business</div>
+                    </div>
+                    <div class="stat reveal">
+                        <div class="stat-number" data-target="500"><span class="num">0</span><span class="plus">+</span></div>
+                        <div class="stat-label">Projects Delivered</div>
+                    </div>
+                    <div class="stat reveal">
+                        <div class="stat-number" data-target="25"><span class="num">0</span><span class="plus">+</span></div>
+                        <div class="stat-label">Countries Served</div>
+                    </div>
+                    <div class="stat reveal">
+                        <div class="stat-number" data-target="99"><span class="num">0</span><span class="plus">%</span></div>
+                        <div class="stat-label">Satisfaction Rate</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============== SERVICES ============== -->
+        <section class="section" id="services">
+            <div class="container">
+                <div class="reveal">
+                    <span class="eyebrow">What we do</span>
+                    <h2 class="section-title">Three disciplines, one focused team.</h2>
+                    <p class="section-sub">We pair strategy with craft to deliver outcomes — not deliverables. Pick a single service or combine all three for end-to-end impact.</p>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card reveal" data-testid="service-web-design">
+                        <div class="service-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><path d="M6 8h6"/><path d="M6 11h4"/></svg>
+                        </div>
+                        <h3 class="service-title">Web Design</h3>
+                        <p class="service-desc">Modern, conversion-tuned websites that look beautiful and load in milliseconds.</p>
+                        <ul class="service-list">
+                            <li>Responsive UI/UX</li>
+                            <li>WordPress & headless CMS</li>
+                            <li>SEO foundations baked in</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card reveal" data-testid="service-custom-solutions">
+                        <div class="service-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <h3 class="service-title">Custom Solutions</h3>
+                        <p class="service-desc">Tailored software, dashboards and integrations engineered around your workflows.</p>
+                        <ul class="service-list">
+                            <li>Web & mobile apps</li>
+                            <li>API & third-party integrations</li>
+                            <li>Internal tools & automation</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card reveal" data-testid="service-digital-marketing">
+                        <div class="service-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-8v18l-18-8z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>
+                        </div>
+                        <h3 class="service-title">Digital Marketing</h3>
+                        <p class="service-desc">Growth playbooks across SEO, paid, and content — measured by revenue, not vanity metrics.</p>
+                        <ul class="service-list">
+                            <li>SEO & content strategy</li>
+                            <li>Performance ads</li>
+                            <li>Analytics & reporting</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============== WHY US ============== -->
+        <section class="section why" id="why">
+            <div class="container">
+                <div class="why-grid">
+                    <div class="reveal">
+                        <span class="eyebrow">Why IT Niche</span>
+                        <h2 class="section-title">Built on trust. Delivered with discipline.</h2>
+                        <p class="section-sub">For over a decade we’ve helped small businesses punch above their weight — with the rigor of an enterprise team and the agility of a boutique studio.</p>
+                    </div>
+
+                    <div class="why-pillars">
+                        <div class="pillar reveal" data-testid="pillar-data-driven">
+                            <div class="pillar-num">01 — Approach</div>
+                            <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>
+                            <div>
+                                <div class="pillar-title">Data-Driven</div>
+                                <p class="pillar-desc">Every decision backed by analytics, A/B tests, and user research.</p>
+                            </div>
+                        </div>
+                        <div class="pillar reveal" data-testid="pillar-security">
+                            <div class="pillar-num">02 — Security</div>
+                            <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            <div>
+                                <div class="pillar-title">Enterprise-Grade</div>
+                                <p class="pillar-desc">Hardened infrastructure, encrypted pipelines, audited code.</p>
+                            </div>
+                        </div>
+                        <div class="pillar reveal" data-testid="pillar-scalable">
+                            <div class="pillar-num">03 — Engineering</div>
+                            <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                            <div>
+                                <div class="pillar-title">Scalable Architecture</div>
+                                <p class="pillar-desc">Solutions that grow with your business — from MVP to millions.</p>
+                            </div>
+                        </div>
+                        <div class="pillar reveal" data-testid="pillar-support">
+                            <div class="pillar-num">04 — Support</div>
+                            <svg class="pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            <div>
+                                <div class="pillar-title">24 / 7 Dedicated</div>
+                                <p class="pillar-desc">US + India teams keep your business running across time zones.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============== PROCESS ============== -->
+        <section class="section" id="process">
+            <div class="container">
+                <div class="reveal">
+                    <span class="eyebrow">How we work</span>
+                    <h2 class="section-title">A five-step process. No surprises.</h2>
+                    <p class="section-sub">From first call to long-term partnership — here’s exactly what working with IT Niche looks like.</p>
+                </div>
+
+                <div class="process-track">
+                    <div class="process-line"></div>
+                    <div class="process-steps">
+                        <div class="step reveal" data-testid="step-1">
+                            <div class="step-node">01</div>
+                            <div>
+                                <div class="step-title">Discover</div>
+                                <p class="step-desc">A free consultation to understand goals, audience, and constraints.</p>
+                            </div>
+                        </div>
+                        <div class="step reveal" data-testid="step-2">
+                            <div class="step-node">02</div>
+                            <div>
+                                <div class="step-title">Design</div>
+                                <p class="step-desc">Wireframes, prototypes, and a visual system tailored to your brand.</p>
+                            </div>
+                        </div>
+                        <div class="step reveal" data-testid="step-3">
+                            <div class="step-node">03</div>
+                            <div>
+                                <div class="step-title">Develop</div>
+                                <p class="step-desc">Clean, performant code reviewed at every milestone.</p>
+                            </div>
+                        </div>
+                        <div class="step reveal" data-testid="step-4">
+                            <div class="step-node">04</div>
+                            <div>
+                                <div class="step-title">Deploy</div>
+                                <p class="step-desc">Production-ready launch with QA, analytics, and SEO setup.</p>
+                            </div>
+                        </div>
+                        <div class="step reveal" data-testid="step-5">
+                            <div class="step-node">05</div>
+                            <div>
+                                <div class="step-title">Support</div>
+                                <p class="step-desc">Ongoing maintenance, growth experiments, and 24/7 response.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============== CONTACT (dark) ============== -->
+        <section class="section contact" id="contact">
+            <div class="container">
+                <div class="reveal">
+                    <span class="eyebrow">Get in touch</span>
+                    <h2 class="section-title">Let’s build something meaningful — together.</h2>
+                    <p class="section-sub">Call, email, or drop a note below. A human (never a bot) replies within one business day.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Office Cards -->
+                    <div class="office-cards">
+                        <div class="office-card" data-testid="contact-card-usa">
+                            <div class="office-header">
+                                <div class="office-flag">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </div>
+                                <div>
+                                    <div class="office-tag">USA · Headquarters</div>
+                                    <div class="office-name">Memphis, Tennessee</div>
+                                </div>
+                            </div>
+                            <ul class="office-list">
+                                <li class="row">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                    <span>748 Crossover Lane, Memphis, TN 38117</span>
+                                </li>
+                                <li class="row">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+                                    <a href="tel:+19014149009">(901) 414-9009</a>
+                                </li>
+                                <li class="row">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    <span>Mon–Fri · 8 AM – 4 PM (CST) · Sat · 8 AM – 1 PM</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="office-card" data-testid="contact-card-india">
+                            <div class="office-header">
+                                <div class="office-flag">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><ellipse cx="12" cy="12" rx="4" ry="10"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+                                </div>
+                                <div>
+                                    <div class="office-tag">India · Engineering</div>
+                                    <div class="office-name">Hyderabad, Telangana</div>
+                                </div>
+                            </div>
+                            <ul class="office-list">
+                                <li class="row">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                    <span>Ashoka Scintilla, Suite 306, Himayath Nagar, Hyderabad 500024</span>
+                                </li>
+                                <li class="row">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+                                    <a href="tel:+919899688938">+91 98996 88938</a>
+                                </li>
+                                <li class="row">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    <span>Mon–Fri · 8 AM – 4 PM (IST) · US DID: (901) 313-8000</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Form -->
+                    <div class="form-card reveal">
+                        <div class="form-title">Tell us about your project</div>
+                        <p class="form-sub">We’ll get back within one business day. No spam, ever.</p>
+
+                        <form id="contactForm" novalidate data-testid="contact-form">
+                            <div class="form-grid">
+                                <div class="field">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" placeholder="Jane" required data-testid="input-first-name"/>
+                                    <span class="err-msg"></span>
+                                </div>
+                                <div class="field">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" placeholder="Doe" required data-testid="input-last-name"/>
+                                    <span class="err-msg"></span>
+                                </div>
+                                <div class="field">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" placeholder="jane@company.com" required data-testid="input-email"/>
+                                    <span class="err-msg"></span>
+                                </div>
+                                <div class="field">
+                                    <label for="phone">Phone *</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required data-testid="input-phone"/>
+                                    <span class="err-msg"></span>
+                                </div>
+                                <div class="field full">
+                                    <label for="company">Company Name *</label>
+                                    <input type="text" id="company" name="company" placeholder="Acme Inc." required data-testid="input-company"/>
+                                    <span class="err-msg"></span>
+                                </div>
+                                <div class="field full">
+                                    <label for="website">Company Website</label>
+                                    <input type="url" id="website" name="website" placeholder="https://" data-testid="input-website"/>
+                                    <span class="err-msg"></span>
+                                </div>
+                                <div class="field full">
+                                    <label for="message">Project Details</label>
+                                    <textarea id="message" name="message" placeholder="Briefly describe what you’re looking to build..." data-testid="input-message"></textarea>
+                                    <span class="err-msg"></span>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary form-submit" data-testid="contact-form-submit">
+                                Send message
+                                <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============== CTA BANNER ============== -->
+        <section class="cta-banner" data-testid="cta-banner">
+            <div class="container">
+                <h2>Ready to transform your digital presence?</h2>
+                <p>Schedule a free 30-minute strategy call. We’ll outline a plan tailored to your business — no obligations, no fluff.</p>
+                <a href="#contact" class="btn btn-dark" data-testid="final-cta-button">
+                    Book a free strategy call
+                    <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- ============== FOOTER ============== -->
+        <footer class="footer" data-testid="site-footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="#" class="logo">
+                            <span class="logo-mark">IT</span>
+                            <span>Niche<span class="logo-dot"></span></span>
+                        </a>
+                        <p>Web design, custom software, and digital marketing for ambitious small businesses worldwide.</p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#process">Process</a></li>
+                            <li><a href="#why">Why Us</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Email Us</h4>
+                        <ul>
+                            <li><a href="mailto:sales@itniche.com">sales@itniche.com</a></li>
+                            <li><a href="mailto:openings@itniche.com">openings@itniche.com</a></li>
+                            <li><a href="mailto:helpdesk@itniche.com">helpdesk@itniche.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Offices</h4>
+                        <ul>
+                            <li>Memphis, USA</li>
+                            <li>Hyderabad, India</li>
+                            <li><a href="tel:+19014149009">(901) 414-9009</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <span>© <span id="copyYear"></span> IT Niche, LLC. All rights reserved.</span>
+                    <span>Crafted with care across two continents.</span>
+                </div>
+            </div>
+        </footer>
+
+        <!-- ============== TOAST ============== -->
+        <div class="toast" id="toast" role="status" aria-live="polite" data-testid="success-toast">
+            <svg class="toast-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <div>
+                <div class="toast-text">Message sent successfully</div>
+                <div class="toast-sub">We’ll get back to you within 24 hours.</div>
+            </div>
+        </div>
+
+        <script>
+            // ============ NAV BURGER ============
+            const burger = document.getElementById("navBurger");
+            const mobileMenu = document.getElementById("mobileMenu");
+            if (burger) {
+                burger.addEventListener("click", () => {
+                    mobileMenu.classList.toggle("open");
+                });
+                mobileMenu.querySelectorAll("a").forEach(a => {
+                    a.addEventListener("click", () => mobileMenu.classList.remove("open"));
+                });
+            }
+
+            // ============ COPY YEAR ============
+            document.getElementById("copyYear").textContent = new Date().getFullYear();
+
+            // ============ REVEAL ON SCROLL ============
+            const revealEls = document.querySelectorAll(".reveal");
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                        io.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+            revealEls.forEach(el => io.observe(el));
+
+            // ============ STAT COUNTER ============
+            const counters = document.querySelectorAll(".stat-number[data-target]");
+            const counterIO = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const el = entry.target;
+                        const numEl = el.querySelector(".num");
+                        const target = parseInt(el.dataset.target, 10);
+                        const duration = 1400;
+                        const start = performance.now();
+                        function tick(now) {
+                            const t = Math.min(1, (now - start) / duration);
+                            const eased = 1 - Math.pow(1 - t, 3);
+                            numEl.textContent = Math.floor(eased * target);
+                            if (t < 1) requestAnimationFrame(tick);
+                            else numEl.textContent = target;
+                        }
+                        requestAnimationFrame(tick);
+                        counterIO.unobserve(el);
+                    }
+                });
+            }, { threshold: 0.5 });
+            counters.forEach(c => counterIO.observe(c));
+
+            // ============ FORM VALIDATION + TOAST ============
+            const form = document.getElementById("contactForm");
+            const toast = document.getElementById("toast");
+
+            const validators = {
+                firstName: v => v.trim().length >= 2 || "Please enter your first name.",
+                lastName: v => v.trim().length >= 2 || "Please enter your last name.",
+                email: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) || "Enter a valid email address.",
+                phone: v => v.trim().replace(/\D/g, "").length >= 7 || "Enter a valid phone number.",
+                company: v => v.trim().length >= 2 || "Please enter your company name."
+            };
+
+            function showError(input, message) {
+                const field = input.closest(".field");
+                field.classList.add("error");
+                const err = field.querySelector(".err-msg");
+                if (err) err.textContent = message;
+            }
+            function clearError(input) {
+                const field = input.closest(".field");
+                field.classList.remove("error");
+                const err = field.querySelector(".err-msg");
+                if (err) err.textContent = "";
+            }
+
+            // live clear
+            form.querySelectorAll("input, textarea").forEach(input => {
+                input.addEventListener("input", () => clearError(input));
+            });
+
+            form.addEventListener("submit", (e) => {
+                e.preventDefault();
+                let valid = true;
+                Object.keys(validators).forEach(name => {
+                    const input = form.elements[name];
+                    if (!input) return;
+                    const res = validators[name](input.value);
+                    if (res !== true) {
+                        showError(input, res);
+                        valid = false;
+                    } else {
+                        clearError(input);
+                    }
+                });
+                if (!valid) {
+                    const firstErr = form.querySelector(".field.error input, .field.error textarea");
+                    if (firstErr) firstErr.focus();
+                    return;
+                }
+                // success
+                toast.classList.add("show");
+                form.reset();
+                setTimeout(() => toast.classList.remove("show"), 4200);
+            });
+        </script>
+
         <a
             id="emergent-badge"
             target="_blank"
@@ -61,7 +1461,7 @@
                     &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;,
                     sans-serif !important;
                 font-size: 12px !important;
-                z-index: 9999 !important;
+                z-index: 50 !important;
             "
         >
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -147,7 +1547,7 @@
             })(document, window.posthog || []);
             posthog.init("phc_xAvL2Iq4tFmANRE7kzbKwaSqp1HJjN7x48s3vr0CMjs", {
                 api_host: "https://us.i.posthog.com",
-                person_profiles: "identified_only", // or 'always' to create profiles for anonymous users as well,
+                person_profiles: "identified_only",
                 session_recording: {
                     recordCrossOriginIframes: true,
                     capturePerformance: false,

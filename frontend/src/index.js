@@ -1,11 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "@/index.css";
-import App from "@/App";
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-);
+// Landing page is served as pure Vanilla HTML/CSS/JS from /public/index.html.
+// React is intentionally not mounted to avoid shadcn CSS variables (--primary, --secondary, etc.)
+// from overriding the landing page's own CSS tokens.
