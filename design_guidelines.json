@@ -1,0 +1,108 @@
+{
+  "theme": "light",
+  "archetype": "Archetype 4: Swiss & High-Contrast (adapted with Brand Orange)",
+  "instructions_to_main_agent": [
+    "Build the page using pure HTML, CSS, and Vanilla JavaScript in a single index.html file (or separate .css/.js).",
+    "NO REACT, NO BUILD STEP. Use Tailwind CSS via CDN (<script src=\"https://cdn.tailwindcss.com\"></script>) to achieve the required padding, typography, and grid systems.",
+    "Do NOT use 'Inter' for headings. Use the provided Google Fonts (Outfit).",
+    "Follow the 'Generous Spacing Philosophy' (p-8, p-12, py-24).",
+    "Ensure high contrast. Use #000000 for primary text/headings, #e57119 for CTAs, highlights, and icons.",
+    "Strictly NO photos of humans. Use the provided generated image URLs and SVG icons (Lucide or Phosphor via CDN).",
+    "Incorporate infographic elements: use large numbers, visual timelines, and progress bars/stats for the Team section instead of human bios.",
+    "Implement Vanilla JS for the animated statistic counters, smooth scrolling, and mobile menu.",
+    "Add 'data-testid' attributes to all interactive elements."
+  ],
+  "colors": {
+    "primary": "#e57119",
+    "primary_hover": "#c95e12",
+    "secondary": "#000000",
+    "background": "#ffffff",
+    "surface": "#f8f9fa",
+    "border": "#e5e7eb",
+    "text_main": "#000000",
+    "text_muted": "#4b5563"
+  },
+  "typography": {
+    "font_imports": [
+      "<link href=\"https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&family=Manrope:wght@400;500;600&display=swap\" rel=\"stylesheet\">"
+    ],
+    "headings": {
+      "family": "'Outfit', sans-serif",
+      "weights": ["300 (Light)", "700 (Bold)", "900 (Black)"],
+      "h1": "text-5xl md:text-6xl+ tracking-tighter leading-none font-black",
+      "h2": "text-3xl md:text-4xl tracking-tight font-bold",
+      "h3": "text-xl md:text-2xl font-medium"
+    },
+    "body": {
+      "family": "'Manrope', sans-serif",
+      "weight": "400",
+      "size": "text-base leading-relaxed text-gray-700"
+    },
+    "labels": "uppercase tracking-[0.2em] text-xs font-bold text-[#e57119]"
+  },
+  "layout_and_spacing": {
+    "philosophy": "Generous Spacing and Grid-based alignment. Use Tailwind scale.",
+    "section_padding": "py-24 md:py-32 px-6 md:px-12 max-w-7xl mx-auto",
+    "grid_system": "Bento-style grids for features and team sections. Use gap-8 or gap-12."
+  },
+  "visual_enhancers": {
+    "borders": "1px solid #e5e7eb on cards, creating a 'Grid Borders' technical look.",
+    "shadows": "Hover states should lift slightly (-translate-y-1) with a sharp, subtle shadow (shadow-lg).",
+    "icons": "Use Lucide icons via CDN (e.g., <script src=\"https://unpkg.com/lucide@latest\"></script>). Render them in #e57119 or #000000.",
+    "animations": "Vanilla JS IntersectionObserver for simple fade-in-up entrance animations on scroll."
+  },
+  "sections_and_components": [
+    {
+      "name": "Header",
+      "layout": "Fixed top, background white with 90% opacity and backdrop blur. Logo left, Nav center (visible on desktop), CTA button right."
+    },
+    {
+      "name": "Hero",
+      "layout": "2-column grid (text left, abstract graphic right). H1 with brand tagline. Subtitle. Primary CTA.",
+      "media": "hero_graphic"
+    },
+    {
+      "name": "Key Statistics (Infographic)",
+      "layout": "4-column grid spanning full width. Large numbers (JS animated counters) with small overline labels. High contrast (Black background with White text and Orange numbers)."
+    },
+    {
+      "name": "Services (Bento Grid)",
+      "layout": "Bento grid (grid-cols-1 md:grid-cols-2 lg:grid-cols-4). Cards for Web Design, Hosting, Maintenance, Support. Each card has a large icon, title, and 1-line description. Hover border turns orange.",
+      "media": "services_graphic"
+    },
+    {
+      "name": "Process Timeline (Infographic)",
+      "layout": "Horizontal flex container with a central connecting line. Nodes for Design, Develop, Deploy, Manage, Enhance, Support. Alternating text top and bottom.",
+      "media": "process_illustration"
+    },
+    {
+      "name": "Team Expertise (Infographic)",
+      "layout": "Large single-card bento box. No faces. Instead, show horizontal progress/stat bars representing the team breakdown: Graphic Design, Web Devs, QA, SEO, Marketing. Minimalist data-viz style."
+    },
+    {
+      "name": "CTA Section",
+      "layout": "Solid #e57119 background. Large bold black text. Contact form with floating labels."
+    },
+    {
+      "name": "Footer",
+      "layout": "Black background. Grid layout. Mention Headquarters (Memphis, TN) and Production Center (Hyderabad, India)."
+    }
+  ],
+  "media_urls": {
+    "hero_graphic": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/e9baf543-c370-4145-a7a2-0fcc5d59b5d0/images/4209eafa9c738d6c408b73431f2d5eb3c6b5c8e35923eb26c02d64fff2d8a67a.png",
+      "description": "Abstract 3D isometric geometric composition representing digital web design (Orange and Black)"
+    },
+    "services_graphic": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/e9baf543-c370-4145-a7a2-0fcc5d59b5d0/images/d026e24ae9b83cea2f1a7720852835af4f633624e034b493351eac7a15733fe6.png",
+      "description": "Abstract geometric illustration representing cloud hosting and server maintenance"
+    },
+    "process_illustration": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/e9baf543-c370-4145-a7a2-0fcc5d59b5d0/images/753c8f1a0e2cee00b9bff4fef075efb15fb5cd7f70e78b840511e813ae8e2127.png",
+      "description": "Abstract line-art illustration of a timeline or process flow"
+    }
+  },
+  "testing": {
+    "attributes": "All interactive elements (buttons, nav links, form inputs) MUST include data-testid in kebab-case."
+  }
+}
