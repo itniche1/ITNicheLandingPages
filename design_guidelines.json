@@ -1,0 +1,194 @@
+{
+  "project_context": {
+    "domain": "IT Niche (Web Design, Custom Solutions, Digital Marketing)",
+    "theme": "light",
+    "archetype": "Archetype 4 (Swiss & High-Contrast) adapted for minimal corporate",
+    "tech_stack": "Pure HTML5, CSS3 (Custom Properties), Vanilla JS",
+    "core_constraints": "No images, no humans. Use ONLY inline SVG line-style illustrations and icons. No CSS/JS frameworks (React, Tailwind, Shadcn are strictly forbidden). Single index.html file."
+  },
+  "design_tokens": {
+    "colors": {
+      "primary": "#e57119",
+      "primary_hover": "#cc6416",
+      "secondary": "#000000",
+      "background_base": "#ffffff",
+      "background_alt": "#f4f4f4",
+      "text_main": "#111111",
+      "text_muted": "#555555",
+      "border_light": "#e0e0e0",
+      "border_dark": "#222222",
+      "success": "#16a34a",
+      "error": "#dc2626"
+    },
+    "typography": {
+      "font_family": "'Lato', sans-serif",
+      "font_weights": {
+        "light": "300",
+        "regular": "400",
+        "bold": "700",
+        "black": "900"
+      },
+      "scales": {
+        "h1": "clamp(3rem, 6vw, 5rem)",
+        "h2": "clamp(2.5rem, 5vw, 4rem)",
+        "h3": "clamp(1.5rem, 3vw, 2rem)",
+        "h4": "clamp(1.25rem, 2vw, 1.5rem)",
+        "body": "1rem",
+        "small": "0.875rem",
+        "micro": "0.75rem"
+      },
+      "line_heights": {
+        "heading": "1.1",
+        "body": "1.6"
+      },
+      "tracking": {
+        "tight": "-0.02em",
+        "wide": "0.1em"
+      }
+    },
+    "spacing": {
+      "xs": "0.5rem",
+      "sm": "1rem",
+      "md": "2rem",
+      "lg": "4rem",
+      "xl": "8rem",
+      "xxl": "12rem"
+    },
+    "borders": {
+      "radius_sm": "4px",
+      "radius_md": "8px",
+      "radius_none": "0px",
+      "width_thin": "1px",
+      "width_thick": "2px"
+    }
+  },
+  "css_architecture": {
+    "global_rules": [
+      "Use CSS variables (:root) for all colors, spacing, and typography.",
+      "Implement a mobile-first 12-column CSS Grid system (.grid-container, .col-span-x).",
+      "Reset default margins and paddings.",
+      "Ensure all interactive elements have visible focus states (outline: 2px solid var(--primary); outline-offset: 2px;).",
+      "Use 'Bento' or 'Control Room' grid aesthetics: visible 1px borders, sharp edges or max 4px radius, creating an infographic blueprint feel."
+    ],
+    "utility_classes_needed": [
+      ".text-primary", ".bg-primary", ".bg-black", ".text-white", 
+      ".grid", ".flex", ".flex-col", ".items-center", ".justify-between",
+      ".section-padding (py-xl)", ".container (max-width: 1200px, mx-auto, px-md)"
+    ]
+  },
+  "sections_layout": {
+    "1_navigation": {
+      "style": "Sticky, minimal, high-contrast bottom border (1px solid #e0e0e0)",
+      "structure": "Flexbox, space-between. Logo left, Nav links center (hidden on mobile), CTA right.",
+      "components": [
+        {"element": "Logo", "style": "Text-based, font-weight: 900, tracking-tight, color: black. Accent dot in primary color."},
+        {"element": "Links", "style": "Lato 400, color: text_muted, hover: text_main, transition 0.2s."},
+        {"element": "CTA Button", "style": "Solid black background, white text, hover: bg-primary. data-testid='nav-cta-button'"}
+      ]
+    },
+    "2_hero": {
+      "layout": "CSS Grid (2 columns on desktop: 7fr / 5fr). Left: Content, Right: Abstract network SVG.",
+      "typography": "H1 extremely large, tight tracking. Subtitle: text_muted, loose line-height.",
+      "visuals": "Right column must feature a bespoke inline SVG representing 'network/connection' using crisp 1px strokes in #000000 and #e57119.",
+      "components": [
+        {"element": "Primary CTA", "style": "Background primary, text white, padding md. data-testid='hero-primary-cta'"},
+        {"element": "Secondary CTA", "style": "Outline button, border black, text black, hover background alt. data-testid='hero-secondary-cta'"}
+      ]
+    },
+    "3_stats_strip": {
+      "layout": "4-column CSS Grid. border-top and border-bottom (1px solid border_light).",
+      "style": "Infographic data-readout style. Each cell has a right border (except last).",
+      "components": [
+        "Massive numbers (Lato Black, color: primary).",
+        "Small uppercase labels (Lato Regular, tracking-wide, color: text_muted)."
+      ],
+      "data": [
+        {"value": "10+", "label": "Years in Business"},
+        {"value": "500+", "label": "Projects Delivered"},
+        {"value": "25+", "label": "Countries Served"},
+        {"value": "99%", "label": "Satisfaction Rate"}
+      ]
+    },
+    "4_services_benefits": {
+      "layout": "3-column CSS Grid, gap-md.",
+      "style": "Cardless aesthetic. 1px solid border, padding-lg, hover: translateY(-5px) & border-primary.",
+      "components": [
+        {"title": "Web Design", "icon_suggestion": "Monitor/Pen tool (SVG line art, primary color)"},
+        {"title": "Custom Solutions", "icon_suggestion": "Code/Brackets (SVG line art, primary color)"},
+        {"title": "Digital Marketing", "icon_suggestion": "Megaphone/Chart (SVG line art, primary color)"}
+      ]
+    },
+    "5_why_choose_us": {
+      "layout": "Asymmetrical infographic layout. Left: Sticky heading & context. Right: 2x2 grid of trust pillars.",
+      "style": "Use connecting SVG lines between the 2x2 grid to look like a flowchart/infographic.",
+      "pillars": [
+        "Data-Driven Approach",
+        "Enterprise-Grade Security",
+        "Scalable Architectures",
+        "24/7 Dedicated Support"
+      ]
+    },
+    "6_process_timeline": {
+      "layout": "Horizontal on desktop, vertical on mobile.",
+      "style": "A continuous SVG line connecting 5 nodes. Each node is a circle with a number inside. Alternating content top/bottom on desktop.",
+      "steps": ["Discover", "Design", "Develop", "Deploy", "Support"],
+      "typography": "Node numbers in primary color. Step titles in black, bold."
+    },
+    "7_contact_info": {
+      "layout": "2-column CSS Grid.",
+      "style": "Dual cards representing locations. Background black, text white. Primary color used for icons and hover states.",
+      "locations": [
+        {"name": "USA (Memphis)", "details": "Address, Phone, Hours. data-testid='contact-card-usa'"},
+        {"name": "India (Hyderabad)", "details": "Address, Phone, Hours. data-testid='contact-card-india'"}
+      ]
+    },
+    "8_contact_form": {
+      "layout": "Grid-based form layout inside a bordered container. 2 columns for inputs.",
+      "style": "Inputs: background transparent, border-bottom 1px solid border_dark, no side/top borders. Focus: border-primary. Minimalist.",
+      "fields": ["Name", "Email", "Phone", "Company", "Message"],
+      "validation": "Vanilla JS client-side validation. Show inline error messages (color: error).",
+      "success_state": "Vanilla JS Toast notification on successful submission. data-testid='contact-form-submit'"
+    },
+    "9_cta_banner": {
+      "layout": "Full width, heavy padding (py-xxl).",
+      "style": "Background primary, text white. Center aligned. Massive typography.",
+      "components": [
+        {"element": "Heading", "text": "Ready to Transform Your Digital Presence?"},
+        {"element": "Button", "style": "Background black, text white, large padding. data-testid='final-cta-button'"}
+      ]
+    },
+    "10_footer": {
+      "layout": "4-column CSS Grid.",
+      "style": "Background alt (#f4f4f4), text muted. Minimal links.",
+      "sections": [
+        "Brand/Logo",
+        "Quick Links",
+        "Email Channels (sales@, openings@, helpdesk@)",
+        "Copyright"
+      ]
+    }
+  },
+  "interactions_and_motion": {
+    "hover_states": "All buttons use a transform: translateY(-2px) and box-shadow addition. Links use an underline expansion (background-size transition).",
+    "scroll_animations": "Use IntersectionObserver in Vanilla JS to add an 'is-visible' class, triggering CSS opacity/transform fade-ins for infographic elements.",
+    "form_validation": "On invalid input, shake animation (CSS keyframes) and red bottom-border."
+  },
+  "svg_guidelines": {
+    "instruction": "DO NOT use external image URLs. Generate inline SVGs directly in the HTML file.",
+    "style": "Stroke-width: 1.5px or 2px. Fill: none. Colors: currentColor or var(--color-primary).",
+    "sources": "Use path data resembling lucide/phosphor icons for geometric, clean, modern tech aesthetics."
+  },
+  "instructions_to_main_agent": {
+    "critical_tech_rules": [
+      "DO NOT use React, Tailwind CSS, Shadcn, or any external frameworks.",
+      "Output EVERYTHING in a single `index.html` file.",
+      "Place all CSS inside a <style> tag in the head.",
+      "Place all JavaScript inside a <script> tag before the closing body tag.",
+      "Define all colors, typography, and spacing as CSS custom properties (:root).",
+      "Ensure semantic HTML5 tags (<header>, <section>, <article>, <footer>, <nav>).",
+      "Embed all icons as <svg> tags directly in the markup. Do not use <img> tags or placeholder images.",
+      "Apply exact data-testid attributes to all buttons, links, and forms for testing."
+    ],
+    "design_translation": "Convert the 'infographic-style' requirement into structural CSS lines using borders, grid gaps, and connected SVG paths between sections. Maintain extremely generous whitespace (padding: 8rem 0) between major sections."
+  }
+}
