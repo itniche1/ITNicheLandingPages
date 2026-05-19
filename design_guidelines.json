@@ -1,0 +1,94 @@
+{
+  "project_context": {
+    "brand_name": "IT Niche",
+    "domain": "Web Design & Digital Marketing",
+    "theme": "Light Theme",
+    "archetype": "Archetype 4 (Swiss & High-Contrast - Minimal Corporate)"
+  },
+  "typography": {
+    "font_family": {
+      "headings": "'Cabinet Grotesk', sans-serif",
+      "body": "'Satoshi', sans-serif"
+    },
+    "scale": {
+      "h1": "text-5xl md:text-6xl lg:text-7xl tracking-tighter font-bold text-black leading-[1.1]",
+      "h2": "text-3xl md:text-4xl lg:text-5xl tracking-tight font-semibold text-black",
+      "h3": "text-xl md:text-2xl tracking-tight font-medium text-black",
+      "h4": "text-sm font-semibold tracking-[0.2em] uppercase text-[#e57119] mb-4",
+      "body": "text-base md:text-lg leading-relaxed font-light text-gray-600",
+      "small": "text-sm text-gray-500"
+    }
+  },
+  "colors": {
+    "primary": {
+      "DEFAULT": "#e57119",
+      "light": "#f58c3b",
+      "transparent": "rgba(229, 113, 25, 0.05)"
+    },
+    "secondary": {
+      "DEFAULT": "#000000",
+      "light": "#1a1a1a"
+    },
+    "background": {
+      "main": "#ffffff",
+      "alt": "#fafafa",
+      "card": "#ffffff"
+    },
+    "text": {
+      "primary": "#000000",
+      "secondary": "#666666",
+      "accent": "#e57119"
+    },
+    "border": {
+      "light": "#eaeaea",
+      "focus": "#e57119"
+    }
+  },
+  "layout_and_spacing": {
+    "container": "max-w-[1400px] mx-auto px-6 md:px-12 lg:px-24",
+    "section_padding": "py-24 md:py-32 lg:py-40",
+    "grid_system": {
+      "hero": "grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-center",
+      "bento_features": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-gray-200 border border-gray-200",
+      "jobs_grid": "grid grid-cols-1 md:grid-cols-2 gap-6"
+    },
+    "card_styles": "border border-[#eaeaea] bg-white p-8 md:p-12 hover:border-[#000000] transition-all duration-300 rounded-none group"
+  },
+  "media": {
+    "image_urls": [
+      {
+        "category": "hero_background",
+        "url": "https://static.prod-images.emergentagent.com/jobs/a53b8355-24be-4840-8140-38ac716e648d/images/94a62c10a125051f8168ecb1d3c604e1c6e05401f3cc3d66309a99e38e3e3899.png",
+        "description": "Minimalist vector line art illustration of a glowing network, connected nodes, abstract digital marketing."
+      },
+      {
+        "category": "benefits_infographic",
+        "url": "https://static.prod-images.emergentagent.com/jobs/a53b8355-24be-4840-8140-38ac716e648d/images/ec0c68662884927489804fe5ddae0ebb3acab2b3cdb16e3050e5fb7f3fc10933.png",
+        "description": "Minimalist infographic illustration, abstract overlapping geometric shapes, growth chart."
+      },
+      {
+        "category": "timeline_path_art",
+        "url": "https://static.prod-images.emergentagent.com/jobs/a53b8355-24be-4840-8140-38ac716e648d/images/ed21aba398fd30213fd4444252bd3bc3a3c749d599e00b681e915b130b75945d.png",
+        "description": "Minimalist abstract timeline infographic illustration, connected path with dots."
+      }
+    ]
+  },
+  "interactions": {
+    "hover_effects": "Cards: subtle border color change to Black, icon color shifts to Orange (#e57119). Job Cards: inner apply arrow translates right by 4px.",
+    "scroll_animations": "Use IntersectionObserver in vanilla JS. Elements start with 'opacity-0 translate-y-8', transitioning to 'opacity-100 translate-y-0' over 700ms ease-out.",
+    "buttons": "Square edges (rounded-none). Primary CTA: solid black background, white text, hover state scales background or shifts to orange (#e57119). Secondary: border-b-2 border-transparent hover:border-[#e57119] pb-1 uppercase text-sm tracking-widest."
+  },
+  "instructions_to_main_agent": [
+    "Strictly use HTML, CSS (Tailwind classes permitted via script tag), and Vanilla JavaScript ONLY. Do not use React or Shadcn.",
+    "Include `<script src=\"https://cdn.tailwindcss.com\"></script>` in the head.",
+    "Include `<link href=\"https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,500,700,400&f[]=satoshi@400,500,700,300&display=swap\" rel=\"stylesheet\">` in the head.",
+    "Include Phosphor icons script: `<script src=\"https://unpkg.com/@phosphor-icons/web\"></script>`. Use icons like `<i class=\"ph ph-arrow-right\"></i>`.",
+    "Configure Tailwind in the head script to use Cabinet Grotesk for 'sans' headings and Satoshi for body.",
+    "Convert all heavy text into infographic-style chunks. For example, turn the recruitment process into a 5-step horizontal or vertical timeline.",
+    "For the Jobs section, create clean, minimal cards featuring the job title, 3 key skills as minimalist pills (e.g., border border-gray-200 px-3 py-1 text-xs), and a minimalist 'Apply Now' CTA.",
+    "Use CSS Grid with 1px gaps on a gray background (bg-gray-200) for the features section to create a seamless border structure ('Technical Look' from Archetype 4). Children elements get bg-white.",
+    "Do not use border-radius (rounded-none). The corporate minimal look relies on sharp edges for Archetype 4.",
+    "All interactive elements (buttons, job links) MUST include a 'data-testid' attribute (e.g., data-testid='apply-php-developer').",
+    "Integrate the generated media URLs as large structural images (for Hero, Benefits, and Process sections) using `object-cover` and grayscale hover transitions to blend the orange accents nicely."
+  ]
+}
