@@ -1,0 +1,221 @@
+{
+  "project_info": {
+    "domain": "itniche.com",
+    "type": "marketing_site_static",
+    "tech_stack": "HTML5, CSS3, Vanilla JavaScript",
+    "theme_archetype": "Swiss & High-Contrast (Archetype 4) + Corporate Bold",
+    "design_philosophy": "Confident, direct, results-oriented, zero jargon. High contrast black/white structure with electric orange accents to drive conversion. Simplify dense text into bento grids, stats, and clear visual hierarchy."
+  },
+  "global_tokens": {
+    "colors": {
+      "light": {
+        "--color-bg": "#ffffff",
+        "--color-surface": "#f8f9fa",
+        "--color-text-main": "#000000",
+        "--color-text-muted": "#555555",
+        "--color-primary": "#e57119",
+        "--color-primary-hover": "#cc6214",
+        "--color-border": "#e5e5e5"
+      },
+      "dark": {
+        "--color-bg": "#0a0a0a",
+        "--color-surface": "#141414",
+        "--color-text-main": "#ffffff",
+        "--color-text-muted": "#a0a0a0",
+        "--color-primary": "#e57119",
+        "--color-primary-hover": "#fa8228",
+        "--color-border": "#2a2a2a"
+      }
+    },
+    "typography": {
+      "family": "'Lato', sans-serif",
+      "weights": {
+        "light": 300,
+        "regular": 400,
+        "bold": 700,
+        "black": 900
+      },
+      "scale": {
+        "--text-h1": "clamp(2.5rem, 5vw, 4rem)",
+        "--text-h2": "clamp(2rem, 4vw, 3rem)",
+        "--text-h3": "clamp(1.5rem, 3vw, 2rem)",
+        "--text-h4": "1.25rem",
+        "--text-body": "1rem",
+        "--text-lg": "1.125rem",
+        "--text-sm": "0.875rem"
+      },
+      "rules": "Headings (H1/H2) must be font-weight: 900 with letter-spacing: -0.02em. Body text must be font-weight: 400 with line-height: 1.6."
+    },
+    "spacing": {
+      "--space-1": "0.25rem",
+      "--space-2": "0.5rem",
+      "--space-3": "0.75rem",
+      "--space-4": "1rem",
+      "--space-6": "1.5rem",
+      "--space-8": "2rem",
+      "--space-12": "3rem",
+      "--space-16": "4rem",
+      "--space-24": "6rem",
+      "--space-32": "8rem",
+      "--radius-sm": "4px",
+      "--radius-md": "8px",
+      "--radius-lg": "12px",
+      "--container-width": "1200px"
+    }
+  },
+  "global_layout": {
+    "header": "Sticky positioned (z-index: 50), background var(--color-bg) with 90% opacity and backdrop-filter: blur(10px). Contains Logo, Nav Links (Home, Services, Portfolio, About, Resources, Contact), Dark Mode Toggle Button, and CTA 'Free Consultation'.",
+    "footer": "Background var(--color-surface). 4 columns: Company Info, Quick Links, Services, Contact/Socials. Bottom bar with copyright."
+  },
+  "illustrations_and_media": {
+    "style_direction": "Abstract Geometric & Monoline Tech",
+    "rules": "Strictly NO stock photography. Use inline SVGs or CSS-based abstract compositions. Focus on crisp geometric lines, isometric technical grids, and soft orange/black mesh gradients for backgrounds. Emphasize negative space."
+  },
+  "ui_components": {
+    "buttons": {
+      "primary": "Background: var(--color-primary), Text: White, Padding: var(--space-4) var(--space-8), Radius: var(--radius-sm), Hover: Transform translateY(-2px), Box-shadow.",
+      "secondary": "Background: Transparent, Border: 2px solid var(--color-text-main), Text: var(--color-text-main), Hover: Background var(--color-text-main), Text var(--color-bg)."
+    },
+    "cards": {
+      "service_card": "Background: var(--color-surface), Padding: var(--space-8), Border: 1px solid var(--color-border). Hover effect: Border color transitions to var(--color-primary), icon scales up slightly."
+    },
+    "forms": {
+      "inputs": "Background: Transparent, Border-bottom: 2px solid var(--color-border) (No side/top borders for modern feel), Padding: var(--space-4) 0. Focus: Border-bottom var(--color-primary), Outline: none. Labels float or sit above input.",
+      "behavior": "Static HTML UI, no backend wiring required."
+    },
+    "accordion": {
+      "faq": "Border-bottom: 1px solid var(--color-border), Padding: var(--space-4) 0. Icon: '+' rotates 45deg to 'x' on open."
+    }
+  },
+  "micro_interactions": {
+    "scroll_reveals": "Use Vanilla JS IntersectionObserver. Elements start with opacity: 0, transform: translateY(20px). On intersection, transition to opacity: 1, transform: translateY(0) over 0.6s cubic-bezier(0.16, 1, 0.3, 1). Stagger children delays by 100ms.",
+    "hover_states": "All interactive elements must transition smoothly (transition: all 0.2s ease). Icons in service cards translate right by 4px on hover.",
+    "dark_mode_toggle": "Vanilla JS appending 'dark-theme' class to body, save preference in localStorage."
+  },
+  "pages_blueprint": [
+    {
+      "name": "Profile / Home",
+      "filename": "index.html",
+      "sections": [
+        "Hero: H1 'Web Design & Software Solutions that Scale.', Subtitle, Primary CTA 'Free Consultation', Secondary CTA 'View Services'. Abstract geometric SVG background.",
+        "Stats Banner: 3 columns (Years in Business, Clients, Projects) - large black font, orange accents.",
+        "Services Bento Grid: 4 cards summarizing Web Design, Software, Marketing, SEO.",
+        "Trust / Client Logos: Monochromatic SVGs in a marquee scroll.",
+        "Testimonial Slider: Minimalist quote text.",
+        "CTA Footer Banner: 'Ready to upgrade your online presence?'"
+      ]
+    },
+    {
+      "name": "Internet Marketing Solutions",
+      "filename": "internet-marketing.html",
+      "sections": [
+        "Hero: H1 'Data-Driven Internet Marketing', SVG illustration of growth charts/nodes.",
+        "Feature Grid: 3-column layout (SEO, PPC, Content Marketing, Social Media) with monoline icons.",
+        "Process Timeline: Vertical timeline showing Strategy -> Execution -> Analytics.",
+        "CTA Block: Link to 'Get Your Free SEO Report'."
+      ]
+    },
+    {
+      "name": "What is a Good Website?",
+      "filename": "good-website.html",
+      "sections": [
+        "Hero: H1 'Anatomy of a Good Website', focus on conversion and speed.",
+        "Interactive Diagram: SVG graphic with hover points explaining features (Mobile Responsive, Fast Load, Clear CTA, Secure).",
+        "Checklist Section: 2-column list with orange checkmark icons.",
+        "CTA: 'Let\\'s build your good website. -> Free Consultation'"
+      ]
+    },
+    {
+      "name": "Products & Portals Overview",
+      "filename": "products-portals.html",
+      "sections": [
+        "Hero: H1 'Custom Products & Portals', SVG of abstract isometric software dashboard.",
+        "Product Showcases: Alternating left/right text-and-svg-mockup layout (E-commerce Portals, Client Dashboards, Inventory Management).",
+        "Tech Stack Banner: Logos of technologies used (HTML5, JS, Node, etc.).",
+        "CTA Block: 'Discuss your custom software needs'."
+      ]
+    },
+    {
+      "name": "Learning Tools (Lunch & Learn)",
+      "filename": "lunch-and-learn.html",
+      "sections": [
+        "Hero: H1 'Lunch & Learn Sessions', Subtitle 'Master digital strategies with our free workshops'.",
+        "Event Schedule/List: Cards detailing upcoming virtual or in-person sessions with dates.",
+        "Registration Form: Static form with Name, Email, Session Dropdown.",
+        "Resource Archive: Links/Cards to past session materials."
+      ]
+    },
+    {
+      "name": "How Much Should My Website Cost?",
+      "filename": "website-cost.html",
+      "sections": [
+        "Hero: H1 'Transparent Pricing. No Surprises.'",
+        "Pricing Tiers: 3-column comparison table (Basic, Business, Custom Portal) with highlighted 'Business' tier.",
+        "Cost Breakdown Chart: Abstract SVG donut chart showing where budget goes (Design, Dev, QA, Management).",
+        "FAQ Accordion: Specific to pricing and payment terms.",
+        "CTA: 'Get a custom quote'."
+      ]
+    },
+    {
+      "name": "Service Overview",
+      "filename": "services.html",
+      "sections": [
+        "Hero: H1 'Comprehensive Digital Services'.",
+        "Grid of Links: Deep dive links to Web Design, Software, Marketing, SEO. Each card has an abstract SVG.",
+        "Our Approach: 4-step process.",
+        "Global CTA: 'Start your project today'."
+      ]
+    },
+    {
+      "name": "Careers",
+      "filename": "careers.html",
+      "sections": [
+        "Hero: H1 'Join the itniche Team'.",
+        "Culture Section: Core values with abstract icons.",
+        "Open Positions: Accordion or List of jobs (Frontend Dev, SEO Specialist, Account Manager).",
+        "Application Form: Static form for resume submission."
+      ]
+    },
+    {
+      "name": "Contact Us",
+      "filename": "contact.html",
+      "sections": [
+        "Hero: H1 'Get in Touch'.",
+        "Split Layout: Left - Contact Form (Name, Email, Subject, Message). Right - Contact Info (Address, Phone, Email) & Abstract Map SVG."
+      ]
+    },
+    {
+      "name": "Get Your Free SEO Report",
+      "filename": "seo-report.html",
+      "sections": [
+        "Hero: H1 'Free SEO Audit'.",
+        "Value Prop: 3 bullet points on what they will learn (Keywords, Backlinks, Speed).",
+        "Audit Form: Prominent form requesting Website URL, Email, Name. Primary CTA button."
+      ]
+    },
+    {
+      "name": "FAQs",
+      "filename": "faqs.html",
+      "sections": [
+        "Hero: H1 'Frequently Asked Questions'.",
+        "Category Filters: Buttons to filter Web Design, Marketing, Pricing.",
+        "Accordion List: The questions and answers.",
+        "Still have questions?: CTA to Contact Us."
+      ]
+    },
+    {
+      "name": "Free Consultation",
+      "filename": "free-consultation.html",
+      "sections": [
+        "Hero: H1 'Book Your Free Consultation'.",
+        "Calendar/Booking UI Mockup: Abstract visual representation of choosing a time slot.",
+        "Consultation Form: Extensive static form to gather project details before the call."
+      ]
+    }
+  ],
+  "accessibility_and_testing": {
+    "data_testid_rules": "All interactive elements (buttons, links, form inputs, toggles, accordions) MUST possess a 'data-testid' attribute formatted in kebab-case representing their role. Example: data-testid='home-primary-cta'.",
+    "contrast": "Ensure var(--color-primary) #e57119 has sufficient contrast against backgrounds. On white, it is 3:1 (large text) but for small text use a darker shade or bold weight. All text must pass WCAG AA.",
+    "focus_states": "All focusable elements must have a visible focus outline: outline: 2px dashed var(--color-primary); outline-offset: 4px;"
+  }
+}
