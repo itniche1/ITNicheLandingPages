@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="IT Niche — Modern web design, custom solutions, SEO, and digital marketing for small businesses. Get up to $1000 in IT Dollars to lower your project cost." />
+  <meta name="theme-color" content="#e57119" />
+  <title>IT Niche — Web Design, Custom Solutions & Digital Marketing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav" data-testid="site-header">
+    <div class="container nav__inner">
+      <a href="#top" class="brand" data-testid="brand-logo" aria-label="IT Niche home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none">
+            <rect x="2" y="2" width="28" height="28" rx="8" fill="#000"/>
+            <path d="M9 22V10M16 22V14M23 22V17" stroke="#e57119" stroke-width="2.4" stroke-linecap="round"/>
+            <circle cx="23" cy="13" r="1.8" fill="#e57119"/>
+          </svg>
+        </span>
+        <span class="brand__text">IT<span class="brand__accent">Niche</span></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#services" data-testid="nav-services">Services</a>
+        <a href="#it-dollars" data-testid="nav-it-dollars">IT Dollars</a>
+        <a href="#process" data-testid="nav-process">Process</a>
+        <a href="#faq" data-testid="nav-faq">FAQ</a>
+      </nav>
+
+      <a href="#cta" class="btn btn--primary nav__cta" data-testid="nav-cta-button">Get Started</a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" data-testid="nav-toggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="navMobile" hidden>
+      <a href="#services">Services</a>
+      <a href="#it-dollars">IT Dollars</a>
+      <a href="#process">Process</a>
+      <a href="#faq">FAQ</a>
+      <a href="#cta" class="btn btn--primary">Get Started</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" data-testid="hero-section">
+      <div class="hero__grid-bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <span class="eyebrow" data-testid="hero-eyebrow">
+            <span class="dot"></span> For small businesses
+          </span>
+          <h1 class="hero__title">
+            Modern websites &amp;<br/>
+            <span class="hl">digital growth</span>,<br/>
+            without the upfront cost.
+          </h1>
+          <p class="hero__sub">
+            Get a fast, conversion-ready website plus SEO, ads, and social media — backed by up to <strong>$1000 in IT Dollars</strong> applied directly to your invoice.
+          </p>
+          <div class="hero__ctas">
+            <a href="#cta" class="btn btn--primary btn--lg" data-testid="hero-primary-cta">Claim $1000 IT Dollars</a>
+            <a href="#services" class="btn btn--ghost btn--lg" data-testid="hero-secondary-cta">Explore Services →</a>
+          </div>
+          <ul class="hero__bullets" data-testid="hero-bullets">
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M5 12.5l4 4L19 7" stroke="#e57119" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> No loans · No interest · No credit checks</li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M5 12.5l4 4L19 7" stroke="#e57119" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Launch in 2–4 weeks</li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M5 12.5l4 4L19 7" stroke="#e57119" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> You own everything</li>
+          </ul>
+        </div>
+
+        <!-- HERO INFOGRAPHIC -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="device">
+            <div class="device__bar">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="device__body">
+              <div class="info-card info-card--lg">
+                <div class="info-card__label">IT Dollars Credit</div>
+                <div class="info-card__value">$1,000</div>
+                <div class="info-card__bar"><i></i></div>
+                <div class="info-card__meta">Applied to your invoice</div>
+              </div>
+              <div class="info-grid">
+                <div class="info-tile">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><rect x="3" y="4" width="18" height="14" rx="2" stroke="#000" stroke-width="1.8"/><path d="M3 8h18" stroke="#000" stroke-width="1.8"/></svg>
+                  <span>Web Design</span>
+                </div>
+                <div class="info-tile">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><circle cx="11" cy="11" r="6" stroke="#000" stroke-width="1.8"/><path d="M20 20l-4-4" stroke="#000" stroke-width="1.8" stroke-linecap="round"/></svg>
+                  <span>SEO</span>
+                </div>
+                <div class="info-tile">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M4 12l16-8-3 18-5-7-8-3z" stroke="#000" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                  <span>Ads</span>
+                </div>
+                <div class="info-tile">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M4 6h16M4 12h10M4 18h16" stroke="#000" stroke-width="1.8" stroke-linecap="round"/></svg>
+                  <span>Social</span>
+                </div>
+              </div>
+              <div class="info-line">
+                <div class="info-line__row"><span>Speed</span><i style="--w:92%"></i><b>92</b></div>
+                <div class="info-line__row"><span>SEO</span><i style="--w:88%"></i><b>88</b></div>
+                <div class="info-line__row"><span>Mobile</span><i style="--w:98%"></i><b>98</b></div>
+              </div>
+            </div>
+          </div>
+          <span class="badge badge--float badge--tl">SSL · Secure</span>
+          <span class="badge badge--float badge--br">99%+ Uptime</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOGO STRIP / TRUST -->
+    <section class="strip" aria-label="Capabilities" data-testid="strip-section">
+      <div class="container strip__inner">
+        <span>Built for:</span>
+        <ul>
+          <li>Restaurants</li>
+          <li>Contractors</li>
+          <li>Medical</li>
+          <li>Legal</li>
+          <li>Retail</li>
+          <li>Salons</li>
+          <li>Nonprofits</li>
+          <li>Startups</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats" data-testid="stats-section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow eyebrow--dark"><span class="dot"></span> By the numbers</span>
+          <h2>Real outcomes for small businesses.</h2>
+        </div>
+        <div class="stats__grid">
+          <article class="stat" data-testid="stat-it-dollars">
+            <div class="stat__num"><span data-counter="1000" data-prefix="$">$0</span></div>
+            <div class="stat__label">In IT Dollars credit per business</div>
+          </article>
+          <article class="stat" data-testid="stat-launch">
+            <div class="stat__num"><span data-counter="4">0</span><em>wk</em></div>
+            <div class="stat__label">Average launch time</div>
+          </article>
+          <article class="stat" data-testid="stat-uptime">
+            <div class="stat__num"><span data-counter="99">0</span><em>%+</em></div>
+            <div class="stat__label">Hosting uptime target</div>
+          </article>
+          <article class="stat" data-testid="stat-devices">
+            <div class="stat__num"><span data-counter="100">0</span><em>%</em></div>
+            <div class="stat__label">Mobile-responsive builds</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services" data-testid="services-section">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow eyebrow--dark"><span class="dot"></span> Services</span>
+          <h2>One partner. End-to-end execution.</h2>
+          <p class="section-head__sub">From the first wireframe to the last ad click — we handle the entire digital stack.</p>
+        </div>
+
+        <div class="services__grid">
+          <article class="service" data-testid="service-web-design">
+            <div class="service__icon">
+              <svg viewBox="0 0 32 32" width="28" height="28" fill="none"><rect x="3" y="5" width="26" height="18" rx="3" stroke="#000" stroke-width="2"/><path d="M3 10h26" stroke="#000" stroke-width="2"/><path d="M8 16h8M8 19h12" stroke="#e57119" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Website Development</h3>
+            <p>Custom or template-based business sites, e-commerce, booking, and web apps. Launch in 2–4 weeks.</p>
+            <ul class="service__list">
+              <li>Responsive · SSL · SEO-ready</li>
+              <li>WordPress &amp; custom builds</li>
+              <li>Migrations from Wix, GoDaddy, Shopify</li>
+            </ul>
+          </article>
+
+          <article class="service" data-testid="service-seo">
+            <div class="service__icon">
+              <svg viewBox="0 0 32 32" width="28" height="28" fill="none"><circle cx="14" cy="14" r="8" stroke="#000" stroke-width="2"/><path d="M27 27l-7-7" stroke="#000" stroke-width="2" stroke-linecap="round"/><path d="M10 14l3 3 6-6" stroke="#e57119" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Search Engine Optimization</h3>
+            <p>Local and national SEO with on-page, off-page, technical audits, and monthly reporting.</p>
+            <ul class="service__list">
+              <li>Google Business Profile</li>
+              <li>Keyword research &amp; content</li>
+              <li>White-hat backlinks</li>
+            </ul>
+          </article>
+
+          <article class="service" data-testid="service-ppc">
+            <div class="service__icon">
+              <svg viewBox="0 0 32 32" width="28" height="28" fill="none"><path d="M5 16l22-10-4 24-7-10-11-4z" stroke="#000" stroke-width="2" stroke-linejoin="round"/><path d="M16 20l5-9" stroke="#e57119" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>PPC Advertising</h3>
+            <p>Google, Meta, Bing, and YouTube ads with tracking, retargeting, and A/B tested creatives.</p>
+            <ul class="service__list">
+              <li>Lead-form &amp; call-only ads</li>
+              <li>Conversion &amp; pixel setup</li>
+              <li>Weekly optimization</li>
+            </ul>
+          </article>
+
+          <article class="service" data-testid="service-smm">
+            <div class="service__icon">
+              <svg viewBox="0 0 32 32" width="28" height="28" fill="none"><circle cx="9" cy="10" r="3" stroke="#000" stroke-width="2"/><circle cx="23" cy="9" r="3" stroke="#000" stroke-width="2"/><circle cx="16" cy="23" r="3" stroke="#e57119" stroke-width="2"/><path d="M11 12l4 9M21 11l-4 10" stroke="#000" stroke-width="2"/></svg>
+            </div>
+            <h3>Social Media Marketing</h3>
+            <p>Facebook, Instagram, LinkedIn, Twitter content, ads, reels, and full community management.</p>
+            <ul class="service__list">
+              <li>Content calendars &amp; design</li>
+              <li>Boosted &amp; retargeting ads</li>
+              <li>Monthly performance reports</li>
+            </ul>
+          </article>
+
+          <article class="service" data-testid="service-hosting">
+            <div class="service__icon">
+              <svg viewBox="0 0 32 32" width="28" height="28" fill="none"><rect x="4" y="6" width="24" height="6" rx="2" stroke="#000" stroke-width="2"/><rect x="4" y="14" width="24" height="6" rx="2" stroke="#000" stroke-width="2"/><circle cx="9" cy="9" r="1.2" fill="#e57119"/><circle cx="9" cy="17" r="1.2" fill="#e57119"/><path d="M11 25h10" stroke="#000" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Hosting &amp; Maintenance</h3>
+            <p>Secure US &amp; global hosting, SSL, backups, malware monitoring, and AMC support.</p>
+            <ul class="service__list">
+              <li>Daily/weekly backups</li>
+              <li>Plugin &amp; security updates</li>
+              <li>Emergency support</li>
+            </ul>
+          </article>
+
+          <article class="service" data-testid="service-security">
+            <div class="service__icon">
+              <svg viewBox="0 0 32 32" width="28" height="28" fill="none"><path d="M16 4l11 4v9c0 7-5 11-11 11S5 24 5 17V8l11-4z" stroke="#000" stroke-width="2" stroke-linejoin="round"/><path d="M11 16l4 4 7-8" stroke="#e57119" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Security &amp; Compliance</h3>
+            <p>SSL, firewalls, malware scans, off-site backups, GDPR/CCPA &amp; PCI-compliant payments.</p>
+            <ul class="service__list">
+              <li>Login &amp; brute-force protection</li>
+              <li>Vulnerability scans</li>
+              <li>Hack recovery &amp; cleanup</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- IT DOLLARS INFOGRAPHIC -->
+    <section class="dollars" id="it-dollars" data-testid="it-dollars-section">
+      <div class="container dollars__inner">
+        <div class="dollars__copy">
+          <span class="eyebrow"><span class="dot"></span> Signature program</span>
+          <h2>$1,000 in IT Dollars.<br/><span class="hl">No loan. No interest.</span></h2>
+          <p>IT Dollars are real credits — not coupons — applied directly to your invoice for websites, SEO, marketing, hosting, and more.</p>
+          <div class="dollars__pillars">
+            <div class="pillar" data-testid="pillar-not-loan">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M5 12.5l4 4L19 7" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div><b>Not a loan</b><span>No repayment required</span></div>
+            </div>
+            <div class="pillar" data-testid="pillar-no-credit">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M5 12.5l4 4L19 7" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div><b>No credit check</b><span>Qualify by business needs</span></div>
+            </div>
+            <div class="pillar" data-testid="pillar-applied">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M5 12.5l4 4L19 7" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div><b>Applied instantly</b><span>Visible on your invoice</span></div>
+            </div>
+            <div class="pillar" data-testid="pillar-flexible">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M5 12.5l4 4L19 7" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div><b>Flexible use</b><span>Web, SEO, SMM, hosting</span></div>
+            </div>
+          </div>
+          <a href="#cta" class="btn btn--invert btn--lg" data-testid="dollars-cta">Check if you qualify →</a>
+        </div>
+
+        <div class="dollars__visual" aria-hidden="true">
+          <div class="invoice">
+            <div class="invoice__head">
+              <span>INVOICE PREVIEW</span>
+              <span class="invoice__id">#IN-2026-0142</span>
+            </div>
+            <div class="invoice__row"><span>Website Development</span><b>$2,400</b></div>
+            <div class="invoice__row"><span>SEO Setup</span><b>$650</b></div>
+            <div class="invoice__row"><span>Hosting (Yearly)</span><b>$180</b></div>
+            <div class="invoice__row invoice__row--sub"><span>Subtotal</span><b>$3,230</b></div>
+            <div class="invoice__row invoice__row--credit">
+              <span>IT Dollars Credit</span><b>− $1,000</b>
+            </div>
+            <div class="invoice__row invoice__row--total"><span>You pay</span><b>$2,230</b></div>
+            <div class="invoice__stamp">CREDIT APPLIED</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS / TIMELINE -->
+    <section class="process" id="process" data-testid="process-section">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow eyebrow--dark"><span class="dot"></span> How it works</span>
+          <h2>From idea to live site in four clear steps.</h2>
+        </div>
+
+        <ol class="timeline" data-testid="process-timeline">
+          <li class="timeline__item">
+            <div class="timeline__num">01</div>
+            <h3>Consult &amp; Qualify</h3>
+            <p>Share your business goals. We confirm IT Dollars eligibility and scope your project.</p>
+          </li>
+          <li class="timeline__item">
+            <div class="timeline__num">02</div>
+            <h3>Design &amp; Approve</h3>
+            <p>We build wireframes and visual designs. 2–3 rounds of revisions included.</p>
+          </li>
+          <li class="timeline__item">
+            <div class="timeline__num">03</div>
+            <h3>Develop &amp; Optimize</h3>
+            <p>Responsive build, SEO setup, integrations, analytics, and Core Web Vitals tuning.</p>
+          </li>
+          <li class="timeline__item">
+            <div class="timeline__num">04</div>
+            <h3>Launch &amp; Grow</h3>
+            <p>Go live, then layer on SEO, ads, and social to drive consistent leads.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- BENEFITS / WHY US -->
+    <section class="benefits" data-testid="benefits-section">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow eyebrow--dark"><span class="dot"></span> Why IT Niche</span>
+          <h2>Built around small businesses.</h2>
+        </div>
+        <div class="benefits__grid">
+          <div class="benefit"><div class="benefit__icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><path d="M12 2v20M2 12h20" stroke="#e57119" stroke-width="2" stroke-linecap="round"/></svg>
+          </div><h4>Lower upfront cost</h4><p>IT Dollars reduce or eliminate initial payments.</p></div>
+          <div class="benefit"><div class="benefit__icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><path d="M5 12.5l4 4L19 7" stroke="#e57119" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div><h4>You own everything</h4><p>Domain, code, content, and ad accounts — all yours.</p></div>
+          <div class="benefit"><div class="benefit__icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><circle cx="12" cy="12" r="9" stroke="#e57119" stroke-width="2"/><path d="M12 7v5l3 2" stroke="#e57119" stroke-width="2" stroke-linecap="round"/></svg>
+          </div><h4>Fast turnaround</h4><p>Most sites launch in 2 to 4 weeks.</p></div>
+          <div class="benefit"><div class="benefit__icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><path d="M4 6h16M4 12h10M4 18h16" stroke="#e57119" stroke-width="2" stroke-linecap="round"/></svg>
+          </div><h4>Clear communication</h4><p>One team, one point of contact, simple updates.</p></div>
+          <div class="benefit"><div class="benefit__icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><path d="M12 3l9 4v6c0 5-4 8-9 9-5-1-9-4-9-9V7l9-4z" stroke="#e57119" stroke-width="2" stroke-linejoin="round"/></svg>
+          </div><h4>Security included</h4><p>SSL, backups, malware scans, and updates baked in.</p></div>
+          <div class="benefit"><div class="benefit__icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><path d="M3 17l5-5 4 4 8-8" stroke="#e57119" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div><h4>Built to convert</h4><p>SEO, speed, and UX engineered to bring in leads.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq" data-testid="faq-section">
+      <div class="container faq__inner">
+        <div class="faq__head">
+          <span class="eyebrow eyebrow--dark"><span class="dot"></span> FAQ</span>
+          <h2>Answers to common questions.</h2>
+          <p>Quick takes on IT Dollars, websites, SEO, and ongoing support.</p>
+        </div>
+
+        <div class="faq__list" data-testid="faq-list">
+          <details class="faq__item" data-testid="faq-item-1">
+            <summary>What are IT Dollars?</summary>
+            <p>IT Dollars are a financial credit provided by IT Niche to small businesses to reduce upfront costs for website development, marketing, or IT services. They work like real credits applied directly to your invoice.</p>
+          </details>
+          <details class="faq__item" data-testid="faq-item-2">
+            <summary>How does the $1000 IT Dollars program work?</summary>
+            <p>Eligible small businesses receive up to $1000 in IT Dollars, applied toward approved services to lower the initial cost and make projects more affordable.</p>
+          </details>
+          <details class="faq__item" data-testid="faq-item-3">
+            <summary>Are IT Dollars a loan or do I need to repay them?</summary>
+            <p>No. IT Dollars are not loans, do not require repayment, and are not tied to personal credit. They're credits applied to your project.</p>
+          </details>
+          <details class="faq__item" data-testid="faq-item-4">
+            <summary>How long does it take to build a website?</summary>
+            <p>Most small-business websites take 2–4 weeks depending on size, content, and feedback speed. Larger or custom builds may take longer.</p>
+          </details>
+          <details class="faq__item" data-testid="faq-item-5">
+            <summary>Do you build mobile-responsive, SEO-friendly websites?</summary>
+            <p>Yes. Every website is fully responsive, secure with SSL, and built with on-page SEO best practices from day one.</p>
+          </details>
+          <details class="faq__item" data-testid="faq-item-6">
+            <summary>How long does SEO take to show results?</summary>
+            <p>SEO typically takes 3–6 months to show strong improvements, depending on competition, industry, and current website quality.</p>
+          </details>
+          <details class="faq__item" data-testid="faq-item-7">
+            <summary>Can you redesign or migrate my existing website?</summary>
+            <p>Yes. We redesign outdated sites and migrate from Wix, GoDaddy, Squarespace, WordPress, Shopify, and custom platforms.</p>
+          </details>
+          <details class="faq__item" data-testid="faq-item-8">
+            <summary>Do I own my website after it's completed?</summary>
+            <p>Yes. Once delivered, you fully own the website, content, domain, and ad accounts.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="cta" data-testid="cta-section">
+      <div class="container cta__inner">
+        <div class="cta__copy">
+          <h2>Ready to launch with <span class="hl">$1,000 in credit</span>?</h2>
+          <p>Tell us about your business. We'll confirm eligibility and send a clear, fixed-price proposal — usually within 24 hours.</p>
+        </div>
+        <form class="cta__form" id="ctaForm" data-testid="cta-form" novalidate>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" placeholder="Jane Doe" required data-testid="form-name"/>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="jane@business.com" required data-testid="form-email"/>
+          </div>
+          <div class="field">
+            <label for="biz">Business type</label>
+            <input id="biz" name="biz" type="text" placeholder="Restaurant, contractor, retail…" data-testid="form-biz"/>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg btn--block" data-testid="form-submit">Request my proposal</button>
+          <p class="cta__note" data-testid="form-note">By submitting, you agree to be contacted about your project. No spam.</p>
+          <div class="cta__success" id="ctaSuccess" hidden data-testid="form-success">
+            ✓ Thanks! We'll reach out within one business day.
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" data-testid="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#top" class="brand">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="24" height="24" fill="none">
+              <rect x="2" y="2" width="28" height="28" rx="8" fill="#e57119"/>
+              <path d="M9 22V10M16 22V14M23 22V17" stroke="#000" stroke-width="2.4" stroke-linecap="round"/>
+              <circle cx="23" cy="13" r="1.8" fill="#000"/>
+            </svg>
+          </span>
+          <span class="brand__text">IT<span class="brand__accent brand__accent--light">Niche</span></span>
+        </a>
+        <p>Web design, custom solutions &amp; digital marketing for small businesses.</p>
+      </div>
+      <div class="footer__cols">
+        <div>
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#services">Website Development</a></li>
+            <li><a href="#services">SEO</a></li>
+            <li><a href="#services">PPC Advertising</a></li>
+            <li><a href="#services">Social Media</a></li>
+            <li><a href="#services">Hosting &amp; Maintenance</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Programs</h5>
+          <ul>
+            <li><a href="#it-dollars">IT Dollars</a></li>
+            <li><a href="#process">Our Process</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Get in touch</h5>
+          <ul>
+            <li><a href="#cta">Start a project</a></li>
+            <li><a href="#cta">Request a quote</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__base">
+      <div class="container footer__base-inner">
+        <span>© <span id="year"></span> IT Niche. All rights reserved.</span>
+        <span>Designed for small business growth.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
