@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="Careers at IT Niche — Join a world-class team building custom web design, digital marketing & SEO solutions. Apply directly at hiring@itniche.com"
+    />
+    <meta
+      name="keywords"
+      content="IT Niche Careers, Web Developer Jobs, SEO Jobs, UI Designer Jobs, PHP Developer, Testing Engineer, Digital Marketing Careers"
+    />
+    <meta property="og:title" content="Careers at IT Niche — Build a Career, Not Just a Job" />
+    <meta
+      property="og:description"
+      content="Open positions for PHP Developers, SEO Specialists, Testing Engineers and UI Designers. Apply at hiring@itniche.com"
+    />
+    <meta property="og:type" content="website" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23000'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dy='.3em' font-family='Arial' font-size='18' font-weight='900' fill='%23e57119'%3EIT%3C/text%3E%3C/svg%3E"
+    />
+
+    <title>Careers at IT Niche — Build a Career, Not Just a Job</title>
+
+    <!-- Fonts: Cabinet Grotesk (headings) + Satoshi (body) -->
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,700,500,400&f[]=satoshi@400,500,700,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Tailwind theme extension (must run before Tailwind builds utilities) -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Satoshi', 'system-ui', 'sans-serif'],
+              display: ['Cabinet Grotesk', 'system-ui', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                DEFAULT: '#e57119',
+                light: '#f58c3b',
+                soft: 'rgba(229,113,25,0.06)',
+              },
+              ink: {
+                DEFAULT: '#000000',
+                soft: '#1a1a1a',
+              },
+              line: '#eaeaea',
+              paper: '#fafafa',
+            },
+            letterSpacing: {
+              tightest: '-0.04em',
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="bg-white text-black antialiased">
+    <!-- ============ TOP MARQUEE ============ -->
+    <div class="bg-black text-white overflow-hidden border-b border-black">
+      <div class="marquee-track flex whitespace-nowrap py-3 text-xs tracking-[0.3em] uppercase font-medium">
+        <div class="flex shrink-0 gap-12 pr-12">
+          <span>Now hiring · PHP Developers</span>
+          <span class="text-brand">●</span>
+          <span>SEO Specialists</span>
+          <span class="text-brand">●</span>
+          <span>Testing Engineers</span>
+          <span class="text-brand">●</span>
+          <span>UI Designers</span>
+          <span class="text-brand">●</span>
+          <span>Apply · hiring@itniche.com</span>
+          <span class="text-brand">●</span>
+        </div>
+        <div class="flex shrink-0 gap-12 pr-12" aria-hidden="true">
+          <span>Now hiring · PHP Developers</span>
+          <span class="text-brand">●</span>
+          <span>SEO Specialists</span>
+          <span class="text-brand">●</span>
+          <span>Testing Engineers</span>
+          <span class="text-brand">●</span>
+          <span>UI Designers</span>
+          <span class="text-brand">●</span>
+          <span>Apply · hiring@itniche.com</span>
+          <span class="text-brand">●</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ NAVIGATION ============ -->
+    <header
+      class="sticky top-0 z-50 bg-white/85 backdrop-blur-md border-b border-line"
+      data-testid="site-header"
+    >
+      <nav
+        class="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-20 flex items-center justify-between h-20"
+      >
+        <a href="#hero" class="flex items-center gap-2 group" data-testid="logo-home">
+          <div class="w-9 h-9 bg-black flex items-center justify-center">
+            <span class="font-display font-extrabold text-brand text-sm leading-none">IT</span>
+          </div>
+          <span class="font-display font-bold text-lg tracking-tight">IT Niche</span>
+        </a>
+
+        <div class="hidden lg:flex items-center gap-10 text-sm font-medium">
+          <a href="#stats" class="nav-link" data-testid="nav-stats">Impact</a>
+          <a href="#why" class="nav-link" data-testid="nav-why">Why Join</a>
+          <a href="#jobs" class="nav-link" data-testid="nav-jobs">Openings</a>
+          <a href="#process" class="nav-link" data-testid="nav-process">Process</a>
+          <a href="#about" class="nav-link" data-testid="nav-about">About</a>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <a
+            href="mailto:hiring@itniche.com?subject=Application%20-%20IT%20Niche%20Careers"
+            class="hidden md:inline-flex btn-primary text-sm"
+            data-testid="nav-apply-cta"
+          >
+            Apply Now
+            <i class="ph ph-arrow-up-right arrow"></i>
+          </a>
+          <button
+            class="lg:hidden w-10 h-10 border border-line flex items-center justify-center"
+            id="menu-toggle"
+            aria-label="Toggle navigation"
+            data-testid="mobile-menu-toggle"
+          >
+            <i class="ph ph-list text-xl"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile menu -->
+      <div
+        id="mobile-menu"
+        class="mobile-menu lg:hidden absolute top-full left-0 right-0 bg-white border-b border-line"
+      >
+        <div class="px-6 py-8 flex flex-col gap-6 text-base font-medium">
+          <a href="#stats" data-testid="mobile-nav-stats">Impact</a>
+          <a href="#why" data-testid="mobile-nav-why">Why Join</a>
+          <a href="#jobs" data-testid="mobile-nav-jobs">Openings</a>
+          <a href="#process" data-testid="mobile-nav-process">Process</a>
+          <a href="#about" data-testid="mobile-nav-about">About</a>
+          <a
+            href="mailto:hiring@itniche.com"
+            class="btn-primary mt-2 justify-center"
+            data-testid="mobile-nav-apply"
+          >
+            Apply Now <i class="ph ph-arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ============ HERO ============ -->
+    <section
+      id="hero"
+      class="relative overflow-hidden border-b border-line"
+      data-testid="hero-section"
+    >
+      <div class="grain"></div>
+
+      <!-- Decorative orbs -->
+      <div class="ring-orb w-[520px] h-[520px] -right-40 -top-40 hidden md:block"></div>
+      <div class="ring-orb w-[320px] h-[320px] -right-10 top-10 hidden md:block"></div>
+
+      <div
+        class="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-20 pt-16 pb-24 md:pt-24 md:pb-32 lg:pt-32 lg:pb-40 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-end relative"
+      >
+        <div class="lg:col-span-8 reveal">
+          <div class="eyebrow mb-8" data-testid="hero-eyebrow">Career @ IT Niche · Now Hiring</div>
+
+          <h1
+            class="font-display font-extrabold text-black leading-[0.95] tracking-tightest text-5xl sm:text-6xl md:text-7xl lg:text-[8.5rem]"
+            data-testid="hero-headline"
+          >
+            Build a <span class="italic font-medium text-brand">career</span>.<br />
+            Not just a job.
+          </h1>
+
+          <p
+            class="mt-10 max-w-2xl text-lg md:text-xl text-gray-600 leading-relaxed font-light"
+            data-testid="hero-subtext"
+          >
+            We don't filter people by degrees. We hire
+            <span class="text-black font-medium">knowledge, hunger and craft</span>. Join a global
+            team building world-class web, design &amp; marketing for businesses everywhere.
+          </p>
+
+          <div class="mt-12 flex flex-wrap items-center gap-6">
+            <a href="#jobs" class="btn-primary" data-testid="hero-explore-cta">
+              Explore Open Roles
+              <i class="ph ph-arrow-down-right arrow"></i>
+            </a>
+            <a
+              href="mailto:hiring@itniche.com?subject=Application%20-%20IT%20Niche%20Careers"
+              class="btn-ghost text-black"
+              data-testid="hero-mail-cta"
+            >
+              <i class="ph ph-paper-plane-tilt"></i>
+              hiring@itniche.com
+            </a>
+          </div>
+        </div>
+
+        <!-- Right ornamental infographic -->
+        <div class="lg:col-span-4 relative reveal" data-testid="hero-graphic">
+          <div class="relative aspect-square border border-line bg-paper">
+            <svg viewBox="0 0 200 200" class="absolute inset-0 w-full h-full" aria-hidden="true">
+              <defs>
+                <pattern id="dots" width="8" height="8" patternUnits="userSpaceOnUse">
+                  <circle cx="1" cy="1" r="0.8" fill="#000" opacity="0.15" />
+                </pattern>
+              </defs>
+              <rect width="200" height="200" fill="url(#dots)" />
+              <circle cx="100" cy="100" r="70" fill="none" stroke="#000" stroke-width="0.5" />
+              <circle cx="100" cy="100" r="48" fill="none" stroke="#e57119" stroke-width="1" />
+              <circle cx="100" cy="100" r="22" fill="#000" />
+              <circle cx="100" cy="100" r="8" fill="#e57119" />
+              <line x1="100" y1="20" x2="100" y2="180" stroke="#000" stroke-width="0.3" />
+              <line x1="20" y1="100" x2="180" y2="100" stroke="#000" stroke-width="0.3" />
+              <circle cx="170" cy="100" r="3" fill="#e57119" />
+              <circle cx="30" cy="100" r="3" fill="#e57119" />
+              <circle cx="100" cy="30" r="3" fill="#e57119" />
+              <circle cx="100" cy="170" r="3" fill="#e57119" />
+            </svg>
+            <div
+              class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-[10px] tracking-[0.25em] uppercase font-bold text-black"
+            >
+              <span>Memphis, TN</span>
+              <span class="text-brand">↗ Global</span>
+            </div>
+            <div
+              class="absolute top-4 left-4 text-[10px] tracking-[0.25em] uppercase font-bold text-black"
+            >
+              IT/01 · Careers
+            </div>
+          </div>
+
+          <!-- Floating mini-card -->
+          <div
+            class="hidden md:flex absolute -bottom-8 -left-8 bg-black text-white p-5 w-56 flex-col gap-2 shadow-2xl"
+            data-testid="hero-callout-card"
+          >
+            <div
+              class="flex items-center gap-2 text-brand text-[10px] tracking-[0.3em] uppercase font-bold"
+            >
+              <i class="ph ph-circle-fill text-[8px] animate-pulse"></i> Live
+            </div>
+            <p class="text-sm leading-snug font-medium">
+              4 open positions across engineering, design &amp; marketing.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom strip -->
+      <div class="border-t border-line">
+        <div
+          class="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-20 py-6 flex flex-wrap items-center justify-between gap-4 text-xs tracking-[0.25em] uppercase font-semibold text-gray-500"
+        >
+          <span><span class="text-brand">●</span> Scroll to discover</span>
+          <span>Web Design · Digital Marketing · Custom Solutions</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section id="stats" class="border-b border-line bg-paper" data-testid="stats-section">
+      <div class="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-20 py-24 md:py-32">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-16 items-end">
+          <div class="md:col-span-5 reveal">
+            <div class="eyebrow mb-6">By the numbers</div>
+            <h2
+              class="font-display font-semibold text-4xl md:text-5xl tracking-tight leading-[1.05]"
+            >
+              Small team.<br />Global footprint.
+            </h2>
+          </div>
+          <div class="md:col-span-6 md:col-start-7 reveal">
+            <p class="text-gray-600 text-lg leading-relaxed font-light">
+              A converging pool of talent from different countries, cultures and languages — united
+              by one motto of professionalism.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 border-t border-l border-line">
+          <div
+            class="border-r border-b border-line p-8 md:p-10 reveal"
+            data-testid="stat-experience"
+          >
+            <div class="stat-num text-black" data-count="15" data-suffix="+">0+</div>
+            <div
+              class="mt-4 text-xs tracking-[0.25em] uppercase font-semibold text-gray-500"
+            >
+              Years building the web
+            </div>
+          </div>
+          <div class="border-r border-b border-line p-8 md:p-10 reveal" data-testid="stat-roles">
+            <div class="stat-num text-brand" data-count="4" data-suffix="">0</div>
+            <div class="mt-4 text-xs tracking-[0.25em] uppercase font-semibold text-gray-500">
+              Open positions today
+            </div>
+          </div>
+          <div class="border-r border-b border-line p-8 md:p-10 reveal" data-testid="stat-clients">
+            <div class="stat-num text-black" data-count="500" data-suffix="+">0+</div>
+            <div class="mt-4 text-xs tracking-[0.25em] uppercase font-semibold text-gray-500">
+              Projects shipped worldwide
+            </div>
+          </div>
+          <div
+            class="border-r border-b border-line p-8 md:p-10 reveal"
+            data-testid="stat-countries"
+          >
+            <div class="stat-num text-black" data-count="20" data-suffix="+">0+</div>
+            <div class="mt-4 text-xs tracking-[0.25em] uppercase font-semibold text-gray-500">
+              Countries we serve
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY JOIN (BENTO) ============ -->
+    <section id="why" class="border-b border-line" data-testid="why-section">
+      <div class="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-20 py-24 md:py-32">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-16 items-end">
+          <div class="md:col-span-7 reveal">
+            <div class="eyebrow mb-6">Why IT Niche</div>
+            <h2
+              class="font-display font-semibold text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.05]"
+            >
+              We value <span class="italic font-medium text-brand">knowledge</span>,<br />not just
+              literacy.
+            </h2>
+          </div>
+          <div class="md:col-span-5 reveal">
+            <p class="text-gray-600 text-lg leading-relaxed font-light">
+              Degrees matter. But knowledge matters more. If you're sure you can perform — we're
+              sure we'll give your talent a platform to grow.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-line border border-line reveal">
+          <div class="bento-cell" data-testid="why-card-knowledge">
+            <i class="ph ph-brain bento-icon"></i>
+            <h3 class="mt-6 font-display font-semibold text-xl tracking-tight">
+              Knowledge over degrees
+            </h3>
+            <p class="mt-3 text-gray-600 leading-relaxed">
+              Performance is the only filter. Show us what you can build.
+            </p>
+          </div>
+          <div class="bento-cell" data-testid="why-card-global">
+            <i class="ph ph-globe-hemisphere-west bento-icon"></i>
+            <h3 class="mt-6 font-display font-semibold text-xl tracking-tight">Global, by design</h3>
+            <p class="mt-3 text-gray-600 leading-relaxed">
+              Work alongside people from many cultures with one motto: professionalism.
+            </p>
+          </div>
+          <div class="bento-cell" data-testid="why-card-profit">
+            <i class="ph ph-trend-up bento-icon"></i>
+            <h3 class="mt-6 font-display font-semibold text-xl tracking-tight">Profit, shared</h3>
+            <p class="mt-3 text-gray-600 leading-relaxed">
+              When we win, you win. Profit-sharing is never an issue at IT Niche.
+            </p>
+          </div>
+          <div class="bento-cell" data-testid="why-card-learning">
+            <i class="ph ph-graduation-cap bento-icon"></i>
+            <h3 class="mt-6 font-display font-semibold text-xl tracking-tight">Always learning</h3>
+            <p class="mt-3 text-gray-600 leading-relaxed">
+              A workspace built for sharp minds. Tools, peers &amp; projects that level you up.
+            </p>
+          </div>
+
+          <div class="bento-cell" data-testid="why-card-clients">
+            <i class="ph ph-buildings bento-icon"></i>
+            <h3 class="mt-6 font-display font-semibold text-xl tracking-tight">World-class clients</h3>
+            <p class="mt-3 text-gray-600 leading-relaxed">
+              Ship for businesses big and small — every project sharpens your craft.
+            </p>
+          </div>
+          <div class="bento-cell" data-testid="why-card-creativity">
+            <i class="ph ph-paint-brush-broad bento-icon"></i>
+            <h3 class="mt-6 font-display font-semibold text-xl tracking-tight">Creativity rewarded</h3>
+            <p class="mt-3 text-gray-600 leading-relaxed">
+              We back innovation. Bring ideas; we'll help you ship them.
+            </p>
+          </div>
+          <div class="bento-cell" data-testid="why-card-safe">
+            <i class="ph ph-shield-check bento-icon"></i>
+            <h3 class="mt-6 font-display font-semibold text-xl tracking-tight">Safe, fair workplace</h3>
+            <p class="mt-3 text-gray-600 leading-relaxed">
+              Equal opportunity. Zero discrimination. A workplace built on respect.
+            </p>
+          </div>
+          <div class="bento-cell" data-testid="why-card-tech">
+            <i class="ph ph-rocket-launch bento-icon"></i>
+            <h3 class="mt-6 font-display font-semibold text-xl tracking-tight">Cutting-edge stack</h3>
+            <p class="mt-3 text-gray-600 leading-relaxed">
+              Modern tooling, clean code, real ownership. Build the future, daily.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OPEN POSITIONS ============ -->
+    <section id="jobs" class="border-b border-line bg-paper" data-testid="jobs-section">
+      <div class="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-20 py-24 md:py-32">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-16 items-end">
+          <div class="md:col-span-7 reveal">
+            <div class="eyebrow mb-6">Open Positions · India</div>
+            <h2
+              class="font-display font-semibold text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.05]"
+            >
+              Roles open<br />right now.
+            </h2>
+          </div>
+          <div class="md:col-span-4 md:col-start-9 reveal text-right">
+            <a href="mailto:hiring@itniche.com" class="btn-ghost text-black" data-testid="jobs-mail-link">
+              <i class="ph ph-paper-plane-tilt"></i> hiring@itniche.com
+            </a>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Job 1: PHP -->
+          <article class="job-card reveal" data-testid="job-card-php">
+            <div class="flex items-start justify-between">
+              <div>
+                <span class="text-xs tracking-[0.25em] uppercase font-semibold text-brand">Engineering</span>
+                <h3 class="mt-3 font-display font-semibold text-2xl md:text-3xl tracking-tight">
+                  PHP / MySQL Web Developer
+                </h3>
+              </div>
+              <i class="ph ph-code text-3xl text-black"></i>
+            </div>
+            <p class="text-gray-600 leading-relaxed">
+              Build web applications, APIs &amp; custom WordPress experiences. 3+ years Core PHP +
+              WordPress expertise required.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="pill">PHP · MySQL</span>
+              <span class="pill">WordPress</span>
+              <span class="pill">JS · jQuery · AJAX</span>
+              <span class="pill">CMS · Joomla · Drupal</span>
+            </div>
+            <div class="flex items-center justify-between pt-4 border-t border-line">
+              <span class="text-xs tracking-[0.2em] uppercase font-semibold text-gray-500">
+                3+ Years · Full-time
+              </span>
+              <a
+                href="mailto:hiring@itniche.com?subject=Application%20-%20PHP%2FMySQL%20Web%20Developer"
+                class="inline-flex items-center gap-2 font-semibold text-sm"
+                data-testid="apply-php-developer"
+              >
+                Apply <i class="ph ph-arrow-right apply-arrow"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Job 2: SEO -->
+          <article class="job-card reveal" data-testid="job-card-seo">
+            <div class="flex items-start justify-between">
+              <div>
+                <span class="text-xs tracking-[0.25em] uppercase font-semibold text-brand">Marketing</span>
+                <h3 class="mt-3 font-display font-semibold text-2xl md:text-3xl tracking-tight">
+                  SEO Specialist
+                </h3>
+              </div>
+              <i class="ph ph-magnifying-glass text-3xl text-black"></i>
+            </div>
+            <p class="text-gray-600 leading-relaxed">
+              Drive organic growth — on-page, off-page, PPC, social &amp; link-building. Own monthly
+              Analytics reporting.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="pill">On-page · Off-page</span>
+              <span class="pill">Google Analytics</span>
+              <span class="pill">PPC · Social</span>
+              <span class="pill">Link Building</span>
+            </div>
+            <div class="flex items-center justify-between pt-4 border-t border-line">
+              <span class="text-xs tracking-[0.2em] uppercase font-semibold text-gray-500">
+                2+ Years · Full-time
+              </span>
+              <a
+                href="mailto:hiring@itniche.com?subject=Application%20-%20SEO%20Specialist"
+                class="inline-flex items-center gap-2 font-semibold text-sm"
+                data-testid="apply-seo"
+              >
+                Apply <i class="ph ph-arrow-right apply-arrow"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Job 3: Testing -->
+          <article class="job-card reveal" data-testid="job-card-testing">
+            <div class="flex items-start justify-between">
+              <div>
+                <span class="text-xs tracking-[0.25em] uppercase font-semibold text-brand">Quality</span>
+                <h3 class="mt-3 font-display font-semibold text-2xl md:text-3xl tracking-tight">
+                  Testing Engineer
+                </h3>
+              </div>
+              <i class="ph ph-test-tube text-3xl text-black"></i>
+            </div>
+            <p class="text-gray-600 leading-relaxed">
+              Author test plans &amp; scripts. Ship quality across PHP/MySQL/CMS apps. Partial
+              US-hours overlap.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="pill">Manual · Automated</span>
+              <span class="pill">QA Run · WinRunner</span>
+              <span class="pill">PHP · MySQL · CMS</span>
+              <span class="pill">US Hours</span>
+            </div>
+            <div class="flex items-center justify-between pt-4 border-t border-line">
+              <span class="text-xs tracking-[0.2em] uppercase font-semibold text-gray-500">
+                2+ Years · Full-time
+              </span>
+              <a
+                href="mailto:hiring@itniche.com?subject=Application%20-%20Testing%20Engineer"
+                class="inline-flex items-center gap-2 font-semibold text-sm"
+                data-testid="apply-testing-engineer"
+              >
+                Apply <i class="ph ph-arrow-right apply-arrow"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Job 4: UI -->
+          <article class="job-card reveal" data-testid="job-card-ui">
+            <div class="flex items-start justify-between">
+              <div>
+                <span class="text-xs tracking-[0.25em] uppercase font-semibold text-brand">Design</span>
+                <h3 class="mt-3 font-display font-semibold text-2xl md:text-3xl tracking-tight">
+                  UI Developer / Designer
+                </h3>
+              </div>
+              <i class="ph ph-palette text-3xl text-black"></i>
+            </div>
+            <p class="text-gray-600 leading-relaxed">
+              Translate layouts to pixel-perfect HTML/CSS. W3C compliant, responsive, themed for
+              CMS.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="pill">HTML5 · CSS3</span>
+              <span class="pill">jQuery · AJAX</span>
+              <span class="pill">Bootstrap · Responsive</span>
+              <span class="pill">Adobe Suite</span>
+            </div>
+            <div class="flex items-center justify-between pt-4 border-t border-line">
+              <span class="text-xs tracking-[0.2em] uppercase font-semibold text-gray-500">
+                Mid-level · Full-time
+              </span>
+              <a
+                href="mailto:hiring@itniche.com?subject=Application%20-%20UI%20Developer%20Designer"
+                class="inline-flex items-center gap-2 font-semibold text-sm"
+                data-testid="apply-ui-designer"
+              >
+                Apply <i class="ph ph-arrow-right apply-arrow"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HIRING PROCESS / TIMELINE ============ -->
+    <section id="process" class="border-b border-line" data-testid="process-section">
+      <div class="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-20 py-24 md:py-32">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-20 items-end">
+          <div class="md:col-span-7 reveal">
+            <div class="eyebrow mb-6">Our Hiring Process</div>
+            <h2
+              class="font-display font-semibold text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.05]"
+            >
+              Five steps.<br />Zero guesswork.
+            </h2>
+          </div>
+          <div class="md:col-span-5 reveal">
+            <p class="text-gray-600 text-lg leading-relaxed font-light">
+              We respect your time. The process is transparent — built to test what matters:
+              knowledge, ownership and teamwork.
+            </p>
+          </div>
+        </div>
+
+        <div class="relative reveal">
+          <div class="hidden lg:block absolute top-[58px] left-0 right-0 h-px bg-line"></div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-px bg-line border border-line">
+            <!-- Step 1 -->
+            <div class="bg-white p-8 lg:p-10 relative" data-testid="process-step-1">
+              <div class="step-num text-brand">STEP 01</div>
+              <div
+                class="w-12 h-12 mt-4 border border-black bg-white flex items-center justify-center relative z-10"
+              >
+                <i class="ph ph-paper-plane-tilt text-xl"></i>
+              </div>
+              <h3 class="mt-6 font-display font-semibold text-xl tracking-tight">Send your resume</h3>
+              <p class="mt-2 text-gray-600 leading-relaxed text-sm">
+                Mail to hiring@itniche.com with desired &amp; current salary.
+              </p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="bg-white p-8 lg:p-10 relative" data-testid="process-step-2">
+              <div class="step-num text-brand">STEP 02</div>
+              <div
+                class="w-12 h-12 mt-4 border border-black bg-white flex items-center justify-center relative z-10"
+              >
+                <i class="ph ph-clipboard-text text-xl"></i>
+              </div>
+              <h3 class="mt-6 font-display font-semibold text-xl tracking-tight">Share references</h3>
+              <p class="mt-2 text-gray-600 leading-relaxed text-sm">
+                Tenure at each job + 3 professional references.
+              </p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="bg-white p-8 lg:p-10 relative" data-testid="process-step-3">
+              <div class="step-num text-brand">STEP 03</div>
+              <div
+                class="w-12 h-12 mt-4 border border-black bg-white flex items-center justify-center relative z-10"
+              >
+                <i class="ph ph-chats-circle text-xl"></i>
+              </div>
+              <h3 class="mt-6 font-display font-semibold text-xl tracking-tight">
+                Face-to-face interview
+              </h3>
+              <p class="mt-2 text-gray-600 leading-relaxed text-sm">
+                Soft skills assessment with HR + hiring manager.
+              </p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="bg-white p-8 lg:p-10 relative" data-testid="process-step-4">
+              <div class="step-num text-brand">STEP 04</div>
+              <div
+                class="w-12 h-12 mt-4 border border-black bg-white flex items-center justify-center relative z-10"
+              >
+                <i class="ph ph-laptop text-xl"></i>
+              </div>
+              <h3 class="mt-6 font-display font-semibold text-xl tracking-tight">Machine test</h3>
+              <p class="mt-2 text-gray-600 leading-relaxed text-sm">
+                Hands-on technical test for your role.
+              </p>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="bg-black text-white p-8 lg:p-10 relative" data-testid="process-step-5">
+              <div class="step-num text-brand">STEP 05</div>
+              <div
+                class="w-12 h-12 mt-4 border border-brand bg-black flex items-center justify-center relative z-10"
+              >
+                <i class="ph ph-handshake text-xl text-brand"></i>
+              </div>
+              <h3 class="mt-6 font-display font-semibold text-xl tracking-tight">Welcome onboard</h3>
+              <p class="mt-2 text-gray-300 leading-relaxed text-sm">
+                Offer letter, induction &amp; your first project.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT IT NICHE ============ -->
+    <section id="about" class="border-b border-line bg-paper" data-testid="about-section">
+      <div class="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-20 py-24 md:py-32">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+          <div class="lg:col-span-5 reveal">
+            <div class="eyebrow mb-6">About IT Niche</div>
+            <h2 class="font-display font-semibold text-4xl md:text-5xl tracking-tight leading-[1.05]">
+              A marketing firm.<br />
+              <span class="italic font-medium text-brand">An engineering studio.</span>
+            </h2>
+            <p class="mt-8 text-gray-600 text-lg leading-relaxed font-light">
+              Based in Memphis, Tennessee, IT Niche helps businesses of every size enhance their
+              online presence — custom websites, hosting, support and full-stack digital marketing
+              at a price that fits any budget.
+            </p>
+
+            <div class="mt-10 flex flex-wrap gap-4">
+              <div class="flex items-center gap-2 text-sm font-medium">
+                <i class="ph ph-map-pin text-brand"></i> Memphis, TN
+              </div>
+              <div class="flex items-center gap-2 text-sm font-medium">
+                <i class="ph ph-buildings text-brand"></i> India Office
+              </div>
+              <div class="flex items-center gap-2 text-sm font-medium">
+                <i class="ph ph-globe text-brand"></i> Global Clients
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 reveal">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-px bg-line border border-line">
+              <div class="bg-white p-6 md:p-8 flex flex-col gap-3" data-testid="service-web-design">
+                <i class="ph ph-browsers text-2xl text-black"></i>
+                <h4 class="font-display font-semibold text-base tracking-tight">Custom Web Design</h4>
+              </div>
+              <div class="bg-white p-6 md:p-8 flex flex-col gap-3" data-testid="service-hosting">
+                <i class="ph ph-cloud text-2xl text-black"></i>
+                <h4 class="font-display font-semibold text-base tracking-tight">Hosting</h4>
+              </div>
+              <div class="bg-white p-6 md:p-8 flex flex-col gap-3" data-testid="service-maintenance">
+                <i class="ph ph-wrench text-2xl text-black"></i>
+                <h4 class="font-display font-semibold text-base tracking-tight">Maintenance &amp; Support</h4>
+              </div>
+              <div class="bg-white p-6 md:p-8 flex flex-col gap-3" data-testid="service-seo">
+                <i class="ph ph-magnifying-glass-plus text-2xl text-black"></i>
+                <h4 class="font-display font-semibold text-base tracking-tight">Search Optimization</h4>
+              </div>
+              <div class="bg-white p-6 md:p-8 flex flex-col gap-3" data-testid="service-sem">
+                <i class="ph ph-megaphone text-2xl text-black"></i>
+                <h4 class="font-display font-semibold text-base tracking-tight">Search Marketing</h4>
+              </div>
+              <div class="bg-white p-6 md:p-8 flex flex-col gap-3" data-testid="service-social">
+                <i class="ph ph-share-network text-2xl text-black"></i>
+                <h4 class="font-display font-semibold text-base tracking-tight">Social Marketing</h4>
+              </div>
+            </div>
+
+            <div
+              class="mt-8 p-8 bg-black text-white flex flex-col md:flex-row md:items-center justify-between gap-6"
+            >
+              <div>
+                <div class="text-brand text-[11px] tracking-[0.3em] uppercase font-bold mb-2">
+                  Our Promise
+                </div>
+                <p class="font-display text-xl md:text-2xl font-medium tracking-tight max-w-lg">
+                  "If you're one of us, you should be as prosperous as any one of us."
+                </p>
+              </div>
+              <a href="mailto:hiring@itniche.com" class="btn-ghost text-white" data-testid="about-mail-cta">
+                <i class="ph ph-paper-plane-tilt"></i> Apply Today
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FINAL CTA ============ -->
+    <section class="bg-black text-white relative overflow-hidden" data-testid="final-cta-section">
+      <div class="grain"></div>
+
+      <div class="absolute -right-32 -bottom-32 w-[500px] h-[500px] border border-white/10 rounded-full"></div>
+      <div class="absolute -right-12 bottom-12 w-[300px] h-[300px] border border-white/10 rounded-full"></div>
+
+      <div class="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-20 py-24 md:py-40 relative">
+        <div class="max-w-3xl reveal">
+          <div class="eyebrow mb-8" style="color: #e57119">
+            <span
+              style="background: #e57119; width: 28px; height: 1px; display: inline-block; margin-right: 0.65rem"
+            ></span>
+            Ready to Apply
+          </div>
+          <h2
+            class="font-display font-extrabold text-5xl md:text-7xl lg:text-8xl tracking-tightest leading-[0.95]"
+          >
+            Bring your<br />
+            <span class="italic font-medium text-brand">best work.</span><br />
+            We'll bring the platform.
+          </h2>
+          <p class="mt-10 text-lg md:text-xl text-gray-300 font-light leading-relaxed max-w-xl">
+            One email. Two hard-copy resumes. A face-to-face conversation. That's all it takes to
+            start a career — not just a job.
+          </p>
+          <div class="mt-12 flex flex-wrap items-center gap-6">
+            <a
+              href="mailto:hiring@itniche.com?subject=Application%20-%20IT%20Niche%20Careers"
+              class="inline-flex items-center gap-3 bg-brand text-black px-8 py-5 font-semibold tracking-wide hover:bg-white transition-colors"
+              data-testid="final-cta-apply"
+            >
+              <i class="ph-bold ph-paper-plane-tilt"></i>
+              hiring@itniche.com
+              <i class="ph ph-arrow-up-right"></i>
+            </a>
+            <a href="#jobs" class="btn-ghost text-white" data-testid="final-cta-jobs">
+              <i class="ph ph-list-magnifying-glass"></i> See open roles
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="bg-black text-white border-t border-white/10" data-testid="site-footer">
+      <div class="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-20 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+          <div class="md:col-span-5">
+            <a href="#hero" class="flex items-center gap-2">
+              <div class="w-9 h-9 bg-white flex items-center justify-center">
+                <span class="font-display font-extrabold text-brand text-sm leading-none">IT</span>
+              </div>
+              <span class="font-display font-bold text-lg tracking-tight">IT Niche</span>
+            </a>
+            <p class="mt-6 text-gray-400 leading-relaxed max-w-md font-light">
+              A marketing firm designed to help businesses enhance their online presence and
+              branding. Memphis, TN · India.
+            </p>
+          </div>
+
+          <div class="md:col-span-3">
+            <h5 class="text-xs tracking-[0.25em] uppercase font-bold text-brand mb-5">Careers</h5>
+            <ul class="space-y-3 text-sm text-gray-300">
+              <li><a href="#jobs" class="hover:text-brand transition-colors">PHP Developer</a></li>
+              <li><a href="#jobs" class="hover:text-brand transition-colors">SEO Specialist</a></li>
+              <li><a href="#jobs" class="hover:text-brand transition-colors">Testing Engineer</a></li>
+              <li><a href="#jobs" class="hover:text-brand transition-colors">UI Developer</a></li>
+            </ul>
+          </div>
+
+          <div class="md:col-span-4">
+            <h5 class="text-xs tracking-[0.25em] uppercase font-bold text-brand mb-5">Contact</h5>
+            <ul class="space-y-3 text-sm text-gray-300">
+              <li class="flex items-center gap-2">
+                <i class="ph ph-envelope"></i> hiring@itniche.com
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="ph ph-map-pin"></i> Memphis, Tennessee
+              </li>
+              <li class="flex items-center gap-2"><i class="ph ph-globe"></i> itniche.com</li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="mt-14 pt-8 border-t border-white/10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-xs tracking-[0.2em] uppercase text-gray-500"
+        >
+          <span>© <span id="year"></span> IT Niche · All rights reserved</span>
+          <span>Crafted for thinkers, builders &amp; doers.</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============ VANILLA JS ============ -->
+    <script src="script.js" defer></script>
+  </body>
+</html>
