@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="What makes a website actually good? Speed, clarity, mobile-first, conversion. Here is the anatomy." />
+  <title>What Makes a Good Website? | itniche</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-testid="page-good-website">
+
+  <header class="site-header" data-testid="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" class="brand" data-testid="brand-logo"><span class="brand-mark">i</span><span class="brand-name">it<span class="accent">niche</span></span></a>
+        <ul class="nav-links" data-testid="nav-links">
+          <li><a href="index.html" data-testid="nav-home">Home</a></li>
+          <li><a href="services.html" data-testid="nav-services">Services</a></li>
+          <li><a href="products-portals.html" data-testid="nav-products">Products</a></li>
+          <li><a href="good-website.html" data-testid="nav-resources">Resources</a></li>
+          <li><a href="careers.html" data-testid="nav-careers">Careers</a></li>
+          <li><a href="contact.html" data-testid="nav-contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle" data-testid="theme-toggle" aria-label="Toggle dark mode">
+            <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <a href="free-consultation.html" class="btn btn-primary" data-testid="header-cta-consultation">Free Consultation</a>
+          <button class="mobile-toggle" data-testid="mobile-menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero" data-testid="goodweb-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><a href="services.html">Resources</a><span class="sep">/</span><span>What is a Good Website?</span></div>
+      <div class="reveal" style="max-width:780px">
+        <span class="hero-eyebrow">Resources · 4 min read</span>
+        <h1>The anatomy of a <span class="accent">good website.</span></h1>
+        <p class="lead">A good website isn't pretty. It's fast, clear, mobile-first, and built to convert. Here's the 7-point checklist we use on every project.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="split">
+        <div class="reveal">
+          <h2>It works on the phone first.</h2>
+          <p>Over 60% of your visitors are on mobile. If your site isn't fast and finger-friendly on a phone, you're losing money.</p>
+          <ul class="feature-list">
+            <li>Loads in under 2 seconds on 4G</li>
+            <li>Tap targets at least 44px tall</li>
+            <li>No horizontal scroll, ever</li>
+            <li>Forms that actually work on mobile keyboards</li>
+          </ul>
+        </div>
+        <div class="illus-wrap reveal" data-delay="150">
+          <svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="140" y="20" width="120" height="240" rx="20" fill="var(--color-bg)" stroke="var(--color-text-main)" stroke-width="3"/>
+            <rect x="140" y="20" width="120" height="30" rx="20" fill="var(--color-text-main)"/>
+            <circle cx="200" cy="35" r="3" fill="#e57119"/>
+            <rect x="155" y="70" width="90" height="14" rx="3" fill="var(--color-text-main)"/>
+            <rect x="155" y="92" width="70" height="6" rx="2" fill="var(--color-text-muted)"/>
+            <rect x="155" y="104" width="80" height="6" rx="2" fill="var(--color-text-muted)"/>
+            <rect x="155" y="130" width="90" height="40" rx="6" fill="var(--color-surface)" stroke="var(--color-border)"/>
+            <rect x="155" y="180" width="90" height="30" rx="6" fill="#e57119"/>
+            <rect x="170" y="190" width="60" height="10" rx="2" fill="#ffffff"/>
+            <text x="200" y="248" text-anchor="middle" font-family="Lato" font-weight="900" font-size="9" fill="var(--color-text-main)">MOBILE FIRST</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--color-surface)">
+    <div class="container">
+      <div class="section-title reveal text-center mx-auto">
+        <span class="eyebrow">The checklist</span>
+        <h2>7 things every good website does.</h2>
+      </div>
+      <div class="checklist">
+        <div class="check-item reveal" data-testid="check-speed">
+          <div class="check-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div><h4>Loads in &lt; 2 seconds</h4><p>Speed is your #1 SEO ranking factor and conversion lever.</p></div>
+        </div>
+        <div class="check-item reveal" data-delay="50">
+          <div class="check-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div><h4>One clear call-to-action</h4><p>Tell the visitor exactly what to do next. Just one thing per screen.</p></div>
+        </div>
+        <div class="check-item reveal" data-delay="100">
+          <div class="check-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div><h4>HTTPS &amp; secure</h4><p>SSL is table stakes. So is a privacy policy and clean cookie handling.</p></div>
+        </div>
+        <div class="check-item reveal" data-delay="150">
+          <div class="check-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div><h4>Accessible to everyone</h4><p>WCAG 2.1 AA color contrast, keyboard nav, alt text, screen-reader friendly.</p></div>
+        </div>
+        <div class="check-item reveal" data-delay="200">
+          <div class="check-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div><h4>Built for search</h4><p>Semantic HTML, structured data, clean URLs, sitemap. Google should love it.</p></div>
+        </div>
+        <div class="check-item reveal" data-delay="250">
+          <div class="check-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div><h4>Trust signals everywhere</h4><p>Reviews, logos, case studies, real photos, real names — visible above the fold.</p></div>
+        </div>
+        <div class="check-item reveal" data-delay="300">
+          <div class="check-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div><h4>Tracked &amp; measured</h4><p>If you can't see what's working, you can't fix it. Analytics from day one.</p></div>
+        </div>
+        <div class="check-item reveal" data-delay="350">
+          <div class="check-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div><h4>Maintainable by you</h4><p>You shouldn't need a developer to fix a typo. Friendly CMS, clear docs.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <div><h2>Let's build your "good" website.</h2><p>Tell us what you need. We'll show you what's possible — free.</p></div>
+        <div class="cta-banner-actions"><a href="free-consultation.html" class="btn btn-primary" data-testid="goodweb-cta">Book Free Consultation</a></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer" data-testid="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <a href="index.html" class="brand"><span class="brand-mark">i</span><span class="brand-name">it<span class="accent">niche</span></span></a>
+          <p>Web design, custom software & digital marketing that converts. Helping small businesses scale online since 2003.</p>
+          <div class="socials"><a href="#" aria-label="Twitter"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 5.8a8.5 8.5 0 0 1-2.4.7 4.2 4.2 0 0 0 1.8-2.3 8.4 8.4 0 0 1-2.6 1 4.2 4.2 0 0 0-7.2 3.8A11.9 11.9 0 0 1 3 4.7a4.2 4.2 0 0 0 1.3 5.6A4.2 4.2 0 0 1 2.4 10v.1a4.2 4.2 0 0 0 3.4 4.1 4.2 4.2 0 0 1-1.9.1 4.2 4.2 0 0 0 3.9 2.9A8.4 8.4 0 0 1 2 18.6 11.9 11.9 0 0 0 8.3 20c7.5 0 11.6-6.3 11.6-11.6v-.5A8.3 8.3 0 0 0 22 5.8z"/></svg></a><a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zM8.3 18.3H5.7V9.7h2.6v8.6zM7 8.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm11.3 9.8h-2.6v-4.2c0-1 0-2.3-1.4-2.3s-1.6 1.1-1.6 2.2v4.3h-2.6V9.7h2.5v1.2h0a2.8 2.8 0 0 1 2.5-1.4c2.7 0 3.2 1.8 3.2 4v4.8z"/></svg></a><a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H8v-2.9h2.4V9.8c0-2.4 1.4-3.7 3.6-3.7 1 0 2.1.2 2.1.2v2.3h-1.2c-1.2 0-1.5.7-1.5 1.5v1.8h2.6l-.4 2.9h-2.2v7A10 10 0 0 0 22 12z"/></svg></a><a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.4A4 4 0 1 1 12.6 8 4 4 0 0 1 16 11.4z"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a></div>
+        </div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="index.html">About</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li><li><a href="lunch-and-learn.html">Lunch &amp; Learn</a></li></ul></div>
+        <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html">All Services</a></li><li><a href="good-website.html">Web Design</a></li><li><a href="products-portals.html">Custom Software</a></li><li><a href="internet-marketing.html">Digital Marketing</a></li></ul></div>
+        <div class="footer-col"><h4>Resources</h4><ul><li><a href="website-cost.html">Pricing</a></li><li><a href="seo-report.html">Free SEO Audit</a></li><li><a href="faqs.html">FAQs</a></li><li><a href="free-consultation.html">Book a Call</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>© <span data-year></span> itniche. All rights reserved.</span><div class="links"><a href="contact.html">Privacy</a><a href="contact.html">Terms</a><a href="faqs.html">Support</a></div></div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

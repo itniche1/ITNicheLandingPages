@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get a free SEO audit. See exactly where your site is leaking traffic in 48 hours." />
+  <title>Free SEO Audit | itniche</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-testid="page-seo-report">
+
+  <header class="site-header" data-testid="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" class="brand" data-testid="brand-logo"><span class="brand-mark">i</span><span class="brand-name">it<span class="accent">niche</span></span></a>
+        <ul class="nav-links" data-testid="nav-links">
+          <li><a href="index.html" data-testid="nav-home">Home</a></li>
+          <li><a href="services.html" data-testid="nav-services">Services</a></li>
+          <li><a href="products-portals.html" data-testid="nav-products">Products</a></li>
+          <li><a href="good-website.html" data-testid="nav-resources">Resources</a></li>
+          <li><a href="careers.html" data-testid="nav-careers">Careers</a></li>
+          <li><a href="contact.html" data-testid="nav-contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle" data-testid="theme-toggle" aria-label="Toggle dark mode">
+            <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <a href="free-consultation.html" class="btn btn-primary" data-testid="header-cta-consultation">Free Consultation</a>
+          <button class="mobile-toggle" data-testid="mobile-menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" data-testid="seo-hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="reveal">
+          <span class="hero-eyebrow">Free SEO audit · 48 hr turnaround</span>
+          <h1>See where your site is <span class="accent">leaking traffic.</span></h1>
+          <p class="lead">A real SEO specialist runs a 47-point audit on your site and sends you a personalized PDF with the exact fixes that will move the needle.</p>
+          <ul class="feature-list" style="max-width:520px;margin-bottom:var(--space-8)">
+            <li>Technical SEO audit (speed, crawl, schema)</li>
+            <li>Keyword opportunity analysis</li>
+            <li>Backlink &amp; competitor benchmark</li>
+            <li>Top 5 quick wins to implement this week</li>
+          </ul>
+        </div>
+        <div class="reveal" data-delay="100">
+          <div class="form-card" data-testid="seo-form-wrap">
+            <h3 style="margin-bottom:var(--space-6)">Get your free report</h3>
+            <form class="form" data-testid="seo-form" onsubmit="event.preventDefault();this.querySelector('button').textContent='Audit requested ✓';">
+              <div class="field"><label for="sr-url">Your website URL *</label><input id="sr-url" type="url" placeholder="https://" required data-testid="seo-url"/></div>
+              <div class="field"><label for="sr-name">Name *</label><input id="sr-name" type="text" required data-testid="seo-name"/></div>
+              <div class="field"><label for="sr-email">Work email *</label><input id="sr-email" type="email" required data-testid="seo-email"/></div>
+              <div class="field"><label for="sr-phone">Phone (optional)</label><input id="sr-phone" type="tel" data-testid="seo-phone"/></div>
+              <div class="field"><label for="sr-goal">Your #1 SEO goal</label>
+                <select id="sr-goal" data-testid="seo-goal">
+                  <option>More organic traffic</option>
+                  <option>Rank for specific keywords</option>
+                  <option>Recover from a traffic drop</option>
+                  <option>Local SEO / Google Maps</option>
+                  <option>E-commerce SEO</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block" data-testid="seo-submit">Send My Free Audit</button>
+              <p class="muted small text-center">No credit card. No sales pitch. Just a useful report.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--color-surface)">
+    <div class="container">
+      <div class="section-title reveal text-center mx-auto"><span class="eyebrow">What you'll learn</span><h2>Three reports. One PDF.</h2></div>
+      <div class="card-grid cols-3">
+        <article class="card reveal" data-testid="audit-keywords">
+          <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-1 4 8.5 8.5 0 0 1-15 0A8.5 8.5 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5z"/><path d="M12 7v5l3 2"/></svg></div>
+          <h3>Keyword gaps</h3><p>Which valuable terms your competitors rank for — and you don't.</p>
+        </article>
+        <article class="card reveal" data-delay="100" data-testid="audit-backlinks">
+          <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7 0l4-4a5 5 0 1 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-4 4a5 5 0 1 0 7 7l1-1"/></svg></div>
+          <h3>Backlink profile</h3><p>Who's linking to you, who's linking to competitors, where to win next.</p>
+        </article>
+        <article class="card reveal" data-delay="200" data-testid="audit-speed">
+          <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9z"/></svg></div>
+          <h3>Speed &amp; tech</h3><p>Core Web Vitals, mobile issues, crawl errors, schema, security.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="testimonial reveal" style="max-width:880px;margin-inline:auto">
+        <blockquote>"The audit alone uncovered $40k of wasted ad spend. We ended up hiring them on the spot."</blockquote>
+        <cite>Marcus T. <span>— Director, Edison Dental Group</span></cite>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer" data-testid="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <a href="index.html" class="brand"><span class="brand-mark">i</span><span class="brand-name">it<span class="accent">niche</span></span></a>
+          <p>Web design, custom software & digital marketing that converts. Helping small businesses scale online since 2003.</p>
+          <div class="socials"><a href="#" aria-label="Twitter"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 5.8a8.5 8.5 0 0 1-2.4.7 4.2 4.2 0 0 0 1.8-2.3 8.4 8.4 0 0 1-2.6 1 4.2 4.2 0 0 0-7.2 3.8A11.9 11.9 0 0 1 3 4.7a4.2 4.2 0 0 0 1.3 5.6A4.2 4.2 0 0 1 2.4 10v.1a4.2 4.2 0 0 0 3.4 4.1 4.2 4.2 0 0 1-1.9.1 4.2 4.2 0 0 0 3.9 2.9A8.4 8.4 0 0 1 2 18.6 11.9 11.9 0 0 0 8.3 20c7.5 0 11.6-6.3 11.6-11.6v-.5A8.3 8.3 0 0 0 22 5.8z"/></svg></a><a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zM8.3 18.3H5.7V9.7h2.6v8.6zM7 8.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm11.3 9.8h-2.6v-4.2c0-1 0-2.3-1.4-2.3s-1.6 1.1-1.6 2.2v4.3h-2.6V9.7h2.5v1.2h0a2.8 2.8 0 0 1 2.5-1.4c2.7 0 3.2 1.8 3.2 4v4.8z"/></svg></a><a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H8v-2.9h2.4V9.8c0-2.4 1.4-3.7 3.6-3.7 1 0 2.1.2 2.1.2v2.3h-1.2c-1.2 0-1.5.7-1.5 1.5v1.8h2.6l-.4 2.9h-2.2v7A10 10 0 0 0 22 12z"/></svg></a><a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.4A4 4 0 1 1 12.6 8 4 4 0 0 1 16 11.4z"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a></div>
+        </div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="index.html">About</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li><li><a href="lunch-and-learn.html">Lunch &amp; Learn</a></li></ul></div>
+        <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html">All Services</a></li><li><a href="good-website.html">Web Design</a></li><li><a href="products-portals.html">Custom Software</a></li><li><a href="internet-marketing.html">Digital Marketing</a></li></ul></div>
+        <div class="footer-col"><h4>Resources</h4><ul><li><a href="website-cost.html">Pricing</a></li><li><a href="seo-report.html">Free SEO Audit</a></li><li><a href="faqs.html">FAQs</a></li><li><a href="free-consultation.html">Book a Call</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>© <span data-year></span> itniche. All rights reserved.</span><div class="links"><a href="contact.html">Privacy</a><a href="contact.html">Terms</a><a href="faqs.html">Support</a></div></div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

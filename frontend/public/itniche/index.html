@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="itniche — web design, custom software solutions & digital marketing built to scale small businesses online." />
+  <title>itniche | Web Design, Software & Digital Marketing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-testid="page-home">
+
+  <!-- ============== HEADER ============== -->
+  <header class="site-header" data-testid="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" class="brand" data-testid="brand-logo">
+          <span class="brand-mark">i</span>
+          <span class="brand-name">it<span class="accent">niche</span></span>
+        </a>
+        <ul class="nav-links" data-testid="nav-links">
+          <li><a href="index.html" data-testid="nav-home">Home</a></li>
+          <li><a href="services.html" data-testid="nav-services">Services</a></li>
+          <li><a href="products-portals.html" data-testid="nav-products">Products</a></li>
+          <li><a href="good-website.html" data-testid="nav-resources">Resources</a></li>
+          <li><a href="careers.html" data-testid="nav-careers">Careers</a></li>
+          <li><a href="contact.html" data-testid="nav-contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle" data-testid="theme-toggle" aria-label="Toggle dark mode">
+            <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <a href="free-consultation.html" class="btn btn-primary" data-testid="header-cta-consultation">Free Consultation</a>
+          <button class="mobile-toggle" data-testid="mobile-menu-toggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============== HERO ============== -->
+  <section class="hero" data-testid="home-hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="reveal">
+          <span class="hero-eyebrow"><span style="width:6px;height:6px;background:var(--color-primary);border-radius:50%"></span> Web design + software + marketing</span>
+          <h1>Websites &amp; software that <span class="accent">grow your business.</span></h1>
+          <p class="lead">We build fast, beautiful, conversion-focused websites and custom software for small businesses. No jargon. No fluff. Just results.</p>
+          <div class="hero-actions">
+            <a href="free-consultation.html" class="btn btn-primary" data-testid="home-hero-cta-primary">Book Free Consultation
+              <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+            <a href="services.html" class="btn btn-secondary" data-testid="home-hero-cta-secondary">View Services</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal" data-delay="150">
+          <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#e57119" stop-opacity="0.9"/>
+                <stop offset="100%" stop-color="#e57119" stop-opacity="0.2"/>
+              </linearGradient>
+            </defs>
+            <!-- Background grid -->
+            <g stroke="currentColor" stroke-opacity="0.08" stroke-width="1">
+              <line x1="0" y1="100" x2="500" y2="100"/>
+              <line x1="0" y1="200" x2="500" y2="200"/>
+              <line x1="0" y1="300" x2="500" y2="300"/>
+              <line x1="0" y1="400" x2="500" y2="400"/>
+              <line x1="100" y1="0" x2="100" y2="500"/>
+              <line x1="200" y1="0" x2="200" y2="500"/>
+              <line x1="300" y1="0" x2="300" y2="500"/>
+              <line x1="400" y1="0" x2="400" y2="500"/>
+            </g>
+            <!-- Browser window mock -->
+            <rect x="60" y="80" width="380" height="280" rx="10" fill="var(--color-surface)" stroke="var(--color-border)" stroke-width="2"/>
+            <rect x="60" y="80" width="380" height="36" rx="10" fill="var(--color-text-main)"/>
+            <circle cx="80" cy="98" r="5" fill="#e57119"/>
+            <circle cx="98" cy="98" r="5" fill="#ffffff" opacity="0.4"/>
+            <circle cx="116" cy="98" r="5" fill="#ffffff" opacity="0.4"/>
+            <!-- Content blocks -->
+            <rect x="80" y="135" width="180" height="14" rx="3" fill="var(--color-text-main)"/>
+            <rect x="80" y="158" width="240" height="8" rx="3" fill="var(--color-text-muted)" opacity="0.5"/>
+            <rect x="80" y="175" width="200" height="8" rx="3" fill="var(--color-text-muted)" opacity="0.5"/>
+            <rect x="80" y="205" width="100" height="32" rx="4" fill="#e57119"/>
+            <!-- Chart -->
+            <polyline points="80,330 130,300 180,310 230,260 280,275 330,220 380,240 420,180" stroke="#e57119" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="420" cy="180" r="6" fill="#e57119"/>
+            <!-- Floating cards -->
+            <g transform="translate(330,290) rotate(8)">
+              <rect width="120" height="80" rx="8" fill="var(--color-bg)" stroke="#e57119" stroke-width="2"/>
+              <rect x="14" y="16" width="50" height="10" rx="2" fill="#e57119"/>
+              <rect x="14" y="34" width="80" height="6" rx="2" fill="var(--color-text-muted)" opacity="0.5"/>
+              <rect x="14" y="46" width="70" height="6" rx="2" fill="var(--color-text-muted)" opacity="0.5"/>
+              <rect x="14" y="58" width="60" height="6" rx="2" fill="var(--color-text-muted)" opacity="0.5"/>
+            </g>
+            <g transform="translate(40,260) rotate(-6)">
+              <rect width="110" height="70" rx="8" fill="var(--color-text-main)"/>
+              <circle cx="22" cy="22" r="10" fill="#e57119"/>
+              <rect x="40" y="16" width="50" height="6" rx="2" fill="#ffffff" opacity="0.9"/>
+              <rect x="40" y="26" width="36" height="6" rx="2" fill="#ffffff" opacity="0.5"/>
+              <rect x="14" y="46" width="84" height="6" rx="2" fill="#ffffff" opacity="0.3"/>
+            </g>
+            <!-- Orbit dots -->
+            <circle cx="450" cy="60" r="6" fill="#e57119"/>
+            <circle cx="30" cy="450" r="8" fill="#e57119" opacity="0.5"/>
+            <circle cx="470" cy="430" r="4" fill="var(--color-text-main)"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== STATS ============== -->
+  <section class="stats" data-testid="home-stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat reveal" data-testid="stat-years">
+          <div class="stat-num">20+</div>
+          <div class="stat-label">Years in business</div>
+        </div>
+        <div class="stat reveal" data-delay="100">
+          <div class="stat-num">500+</div>
+          <div class="stat-label">Projects shipped</div>
+        </div>
+        <div class="stat reveal" data-delay="200">
+          <div class="stat-num">98%</div>
+          <div class="stat-label">Client retention</div>
+        </div>
+        <div class="stat reveal" data-delay="300">
+          <div class="stat-num">3.2x</div>
+          <div class="stat-label">Avg. traffic lift</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SERVICES BENTO ============== -->
+  <section class="section" data-testid="home-services">
+    <div class="container">
+      <div class="section-title reveal">
+        <span class="eyebrow">What we do</span>
+        <h2>Everything you need to win online.</h2>
+        <p>From the first click to the final conversion — we cover design, code, content, and growth under one roof.</p>
+      </div>
+      <div class="card-grid cols-4">
+        <article class="card reveal" data-testid="service-card-web-design">
+          <div class="icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+          </div>
+          <h3>Web Design</h3>
+          <p>Sites that look premium, load fast, and turn visitors into customers.</p>
+          <a href="good-website.html" class="link">Learn more
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </article>
+        <article class="card reveal" data-delay="100" data-testid="service-card-software">
+          <div class="icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Custom Software</h3>
+          <p>Portals, dashboards & internal tools — built around your workflow.</p>
+          <a href="products-portals.html" class="link">Learn more
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </article>
+        <article class="card reveal" data-delay="200" data-testid="service-card-marketing">
+          <div class="icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/></svg>
+          </div>
+          <h3>Digital Marketing</h3>
+          <p>SEO, PPC, content & social — campaigns that pay for themselves.</p>
+          <a href="internet-marketing.html" class="link">Learn more
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </article>
+        <article class="card reveal" data-delay="300" data-testid="service-card-seo">
+          <div class="icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          </div>
+          <h3>SEO Audits</h3>
+          <p>Free, no-strings audit to see exactly where your site is leaking traffic.</p>
+          <a href="seo-report.html" class="link">Get free report
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== TRUST MARQUEE ============== -->
+  <section class="marquee reveal" data-testid="home-trust">
+    <div class="marquee-track">
+      <span>Healthcare</span><span>Real Estate</span><span>Legal</span><span>Education</span><span>E-Commerce</span><span>Finance</span><span>Hospitality</span><span>Manufacturing</span>
+      <span>Healthcare</span><span>Real Estate</span><span>Legal</span><span>Education</span><span>E-Commerce</span><span>Finance</span><span>Hospitality</span><span>Manufacturing</span>
+    </div>
+  </section>
+
+  <!-- ============== TESTIMONIAL ============== -->
+  <section class="section" data-testid="home-testimonial">
+    <div class="container">
+      <div class="testimonial reveal" style="max-width:880px;margin-inline:auto">
+        <blockquote>"itniche didn't just redesign our site — they rebuilt our entire pipeline. Leads doubled in 90 days."</blockquote>
+        <cite>Sara K. <span>— Founder, Northbridge Realty</span></cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CTA BANNER ============== -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner reveal" data-testid="home-cta-banner">
+        <div>
+          <h2>Ready to upgrade your online presence?</h2>
+          <p>Get a free consultation and a custom growth plan within 24 hours.</p>
+        </div>
+        <div class="cta-banner-actions">
+          <a href="free-consultation.html" class="btn btn-primary" data-testid="home-cta-banner-primary">Book Now</a>
+          <a href="seo-report.html" class="btn btn-secondary" data-testid="home-cta-banner-secondary">Free SEO Audit</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="site-footer" data-testid="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <a href="index.html" class="brand">
+            <span class="brand-mark">i</span>
+            <span class="brand-name">it<span class="accent">niche</span></span>
+          </a>
+          <p>Web design, custom software & digital marketing that converts. Helping small businesses scale online since 2003.</p>
+          <div class="socials">
+            <a href="#" aria-label="Twitter" data-testid="social-twitter"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 5.8a8.5 8.5 0 0 1-2.4.7 4.2 4.2 0 0 0 1.8-2.3 8.4 8.4 0 0 1-2.6 1 4.2 4.2 0 0 0-7.2 3.8A11.9 11.9 0 0 1 3 4.7a4.2 4.2 0 0 0 1.3 5.6A4.2 4.2 0 0 1 2.4 10v.1a4.2 4.2 0 0 0 3.4 4.1 4.2 4.2 0 0 1-1.9.1 4.2 4.2 0 0 0 3.9 2.9A8.4 8.4 0 0 1 2 18.6 11.9 11.9 0 0 0 8.3 20c7.5 0 11.6-6.3 11.6-11.6v-.5A8.3 8.3 0 0 0 22 5.8z"/></svg></a>
+            <a href="#" aria-label="LinkedIn" data-testid="social-linkedin"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zM8.3 18.3H5.7V9.7h2.6v8.6zM7 8.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm11.3 9.8h-2.6v-4.2c0-1 0-2.3-1.4-2.3s-1.6 1.1-1.6 2.2v4.3h-2.6V9.7h2.5v1.2h0a2.8 2.8 0 0 1 2.5-1.4c2.7 0 3.2 1.8 3.2 4v4.8z"/></svg></a>
+            <a href="#" aria-label="Facebook" data-testid="social-facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H8v-2.9h2.4V9.8c0-2.4 1.4-3.7 3.6-3.7 1 0 2.1.2 2.1.2v2.3h-1.2c-1.2 0-1.5.7-1.5 1.5v1.8h2.6l-.4 2.9h-2.2v7A10 10 0 0 0 22 12z"/></svg></a>
+            <a href="#" aria-label="Instagram" data-testid="social-instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.4A4 4 0 1 1 12.6 8 4 4 0 0 1 16 11.4z"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="lunch-and-learn.html">Lunch &amp; Learn</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">All Services</a></li>
+            <li><a href="good-website.html">Web Design</a></li>
+            <li><a href="products-portals.html">Custom Software</a></li>
+            <li><a href="internet-marketing.html">Digital Marketing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="website-cost.html">Pricing</a></li>
+            <li><a href="seo-report.html">Free SEO Audit</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="free-consultation.html">Book a Call</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year></span> itniche. All rights reserved.</span>
+        <div class="links">
+          <a href="contact.html">Privacy</a>
+          <a href="contact.html">Terms</a>
+          <a href="faqs.html">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
