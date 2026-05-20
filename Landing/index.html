@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Free, no-obligation consultation with IT Niche — Web design, development, SEO and custom apps for small businesses in Memphis and beyond." />
+  <meta name="theme-color" content="#e57119" />
+  <title>IT Niche — Free Consultation for Web, SEO & Custom Apps</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ====================== NAV ====================== -->
+  <header class="nav" data-testid="site-nav">
+    <div class="container nav__inner">
+      <a href="#top" class="brand" data-testid="brand-logo" aria-label="IT Niche home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h16"/></svg>
+        </span>
+        <span class="brand__text">IT<span class="brand__dot">.</span>Niche</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#services" data-testid="nav-services">Services</a>
+        <a href="#stats" data-testid="nav-stats">Impact</a>
+        <a href="#process" data-testid="nav-process">Process</a>
+        <a href="#why" data-testid="nav-why">Why us</a>
+        <a href="#lunch" data-testid="nav-lunch">Lunch &amp; Learn</a>
+      </nav>
+
+      <button class="btn btn--primary nav__cta" data-open-form data-testid="nav-cta-button">
+        Book Free Consult
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </button>
+
+      <button class="nav__toggle" aria-label="Toggle menu" data-nav-toggle data-testid="nav-toggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ====================== HERO ====================== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="eyebrow" data-testid="hero-eyebrow">
+            <span class="eyebrow__dot"></span> Free · No-obligation · 30 minutes
+          </span>
+
+          <h1 id="hero-title" class="hero__title" data-testid="hero-title">
+            Your <span class="accent">free</span> strategy consult — <br/>
+            built for small business growth.
+          </h1>
+
+          <p class="hero__sub" data-testid="hero-sub">
+            Web design, content, SEO and custom apps. One conversation to map the
+            shortest path from where you are to where your customers are.
+          </p>
+
+          <div class="hero__actions">
+            <button class="btn btn--primary btn--lg" data-open-form data-testid="hero-cta-primary">
+              Book my free consult
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </button>
+            <a href="#services" class="btn btn--ghost btn--lg" data-testid="hero-cta-secondary">
+              See what we do
+            </a>
+          </div>
+
+          <ul class="hero__trust" data-testid="hero-trust">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> No contracts to start</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Memphis-based, US support</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Transparent pricing</li>
+          </ul>
+        </div>
+
+        <!-- Hero infographic -->
+        <div class="hero__viz" aria-hidden="true">
+          <div class="viz">
+            <div class="viz__ring viz__ring--1"></div>
+            <div class="viz__ring viz__ring--2"></div>
+            <div class="viz__ring viz__ring--3"></div>
+
+            <div class="viz__center">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="14" rx="2"/>
+                <path d="M3 8h18M7 12h4M7 15h7"/>
+              </svg>
+              <span>itniche.com</span>
+            </div>
+
+            <span class="viz__chip viz__chip--a">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+              SEO
+            </span>
+            <span class="viz__chip viz__chip--b">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M11 18h2"/></svg>
+              Mobile
+            </span>
+            <span class="viz__chip viz__chip--c">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4z"/><path d="M4 10h16"/></svg>
+              CMS
+            </span>
+            <span class="viz__chip viz__chip--d">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l4-4 4 4 4-4 4 4"/><path d="M3 18h18"/></svg>
+              Growth
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Web Design</span><span aria-hidden="true">·</span>
+          <span>Custom Apps</span><span aria-hidden="true">·</span>
+          <span>SEO</span><span aria-hidden="true">·</span>
+          <span>CMS</span><span aria-hidden="true">·</span>
+          <span>Branding</span><span aria-hidden="true">·</span>
+          <span>e-Commerce</span><span aria-hidden="true">·</span>
+          <span>Web Design</span><span aria-hidden="true">·</span>
+          <span>Custom Apps</span><span aria-hidden="true">·</span>
+          <span>SEO</span><span aria-hidden="true">·</span>
+          <span>CMS</span><span aria-hidden="true">·</span>
+          <span>Branding</span><span aria-hidden="true">·</span>
+          <span>e-Commerce</span><span aria-hidden="true">·</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== STATS ====================== -->
+    <section class="stats" id="stats" aria-labelledby="stats-title">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow"><span class="eyebrow__dot"></span> By the numbers</span>
+          <h2 id="stats-title" class="section__title">A small team. A measurable footprint.</h2>
+        </div>
+
+        <ul class="stats__grid" data-testid="stats-grid">
+          <li class="stat">
+            <span class="stat__num" data-count="15" data-suffix="+">0</span>
+            <span class="stat__label">Years building for SMBs</span>
+          </li>
+          <li class="stat">
+            <span class="stat__num" data-count="500" data-suffix="+">0</span>
+            <span class="stat__label">Projects shipped</span>
+          </li>
+          <li class="stat">
+            <span class="stat__num" data-count="4" data-suffix="">0</span>
+            <span class="stat__label">Core service pillars</span>
+          </li>
+          <li class="stat">
+            <span class="stat__num" data-count="30" data-suffix="m">0</span>
+            <span class="stat__label">Free strategy session</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ====================== SERVICES ====================== -->
+    <section class="services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section__head section__head--split">
+          <div>
+            <span class="eyebrow"><span class="eyebrow__dot"></span> Services</span>
+            <h2 id="services-title" class="section__title">Four pillars. One playbook for growth.</h2>
+          </div>
+          <p class="section__lede">Pick one. Combine them. We tailor scope and pricing to what
+            actually moves your numbers — no bloated retainers.</p>
+        </div>
+
+        <div class="cards" data-testid="services-cards">
+          <article class="card" data-testid="service-card-web">
+            <div class="card__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="6" y="8" width="36" height="26" rx="3"/>
+                <path d="M6 16h36"/>
+                <circle cx="11" cy="12" r="0.8" fill="currentColor"/>
+                <circle cx="14" cy="12" r="0.8" fill="currentColor"/>
+                <path d="M14 24l4 4-4 4M22 32h6"/>
+              </svg>
+            </div>
+            <h3>Web Design &amp; Development</h3>
+            <p>Hand-crafted, conversion-focused sites. Built fast, built to last.</p>
+            <ul class="card__list">
+              <li>Responsive design</li>
+              <li>Modern frameworks</li>
+              <li>Built for speed &amp; SEO</li>
+            </ul>
+          </article>
+
+          <article class="card" data-testid="service-card-cms">
+            <div class="card__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="6" y="6" width="36" height="36" rx="3"/>
+                <path d="M6 16h36M16 16v26M22 22h14M22 28h14M22 34h10"/>
+              </svg>
+            </div>
+            <h3>Web Content Management</h3>
+            <p>Update pages, posts and products in minutes — no developer required.</p>
+            <ul class="card__list">
+              <li>WordPress &amp; headless CMS</li>
+              <li>Editor training</li>
+              <li>Ongoing maintenance</li>
+            </ul>
+          </article>
+
+          <article class="card" data-testid="service-card-seo">
+            <div class="card__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="20" cy="20" r="12"/>
+                <path d="M29 29l12 12"/>
+                <path d="M14 22l4 4 8-10"/>
+              </svg>
+            </div>
+            <h3>SEO &amp; Internet Marketing</h3>
+            <p>On-page, off-page and social — measurable rankings, qualified traffic.</p>
+            <ul class="card__list">
+              <li>Technical audits</li>
+              <li>Content strategy</li>
+              <li>Social media campaigns</li>
+            </ul>
+          </article>
+
+          <article class="card" data-testid="service-card-mobile">
+            <div class="card__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="14" y="4" width="20" height="40" rx="4"/>
+                <path d="M22 38h4"/>
+                <path d="M20 12h8M20 18h8M20 24h5"/>
+              </svg>
+            </div>
+            <h3>Mobile Web &amp; Custom Apps</h3>
+            <p>From PWAs to native — apps that work where your customers already are.</p>
+            <ul class="card__list">
+              <li>iOS &amp; Android</li>
+              <li>Cross-platform builds</li>
+              <li>API &amp; backend integration</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== PROCESS ====================== -->
+    <section class="process" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section__head section__head--split">
+          <div>
+            <span class="eyebrow"><span class="eyebrow__dot"></span> Process</span>
+            <h2 id="process-title" class="section__title">From hello to launch in five clear steps.</h2>
+          </div>
+          <p class="section__lede">Predictable, transparent, no surprises. You always know
+            what we're doing — and what's next.</p>
+        </div>
+
+        <ol class="timeline" data-testid="process-timeline">
+          <li class="timeline__step">
+            <span class="timeline__num">01</span>
+            <h3>Discover</h3>
+            <p>30-min free consult. We listen to goals, constraints, audience.</p>
+          </li>
+          <li class="timeline__step">
+            <span class="timeline__num">02</span>
+            <h3>Strategy</h3>
+            <p>Scope, sitemap, timeline and a fixed quote — no hidden line items.</p>
+          </li>
+          <li class="timeline__step">
+            <span class="timeline__num">03</span>
+            <h3>Design</h3>
+            <p>Wireframes &amp; visual direction. You approve before any code is written.</p>
+          </li>
+          <li class="timeline__step">
+            <span class="timeline__num">04</span>
+            <h3>Build</h3>
+            <p>Iterative development with weekly demos. Tested across devices.</p>
+          </li>
+          <li class="timeline__step">
+            <span class="timeline__num">05</span>
+            <h3>Launch &amp; Grow</h3>
+            <p>Go-live, training, then SEO &amp; content support to keep momentum.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ====================== WHY US ====================== -->
+    <section class="why" id="why" aria-labelledby="why-title">
+      <div class="container why__grid">
+        <div class="why__intro">
+          <span class="eyebrow"><span class="eyebrow__dot"></span> Why IT Niche</span>
+          <h2 id="why-title" class="section__title">Built for owners who wear every hat.</h2>
+          <p class="section__lede">We're not an agency that hides behind account managers.
+            You'll talk directly with the people doing the work.</p>
+          <button class="btn btn--primary" data-open-form data-testid="why-cta">Start with a free consult</button>
+        </div>
+
+        <ul class="why__list" data-testid="why-list">
+          <li>
+            <span class="why__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg>
+            </span>
+            <div>
+              <h4>Senior-only team</h4>
+              <p>No junior hand-offs. The expert you meet is the expert who builds it.</p>
+            </div>
+          </li>
+          <li>
+            <span class="why__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </span>
+            <div>
+              <h4>On-time, every time</h4>
+              <p>Weekly check-ins and fixed milestones. We hit dates because we plan honestly.</p>
+            </div>
+          </li>
+          <li>
+            <span class="why__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l3-3 4 4 7-7 4 4"/><path d="M3 20h18"/></svg>
+            </span>
+            <div>
+              <h4>Outcomes, not deliverables</h4>
+              <p>We measure success in traffic, leads and revenue — not page count.</p>
+            </div>
+          </li>
+          <li>
+            <span class="why__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M4 9h16M9 4v16"/></svg>
+            </span>
+            <div>
+              <h4>Own your stack</h4>
+              <p>No proprietary lock-in. Code, content and CMS — it's yours to keep.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ====================== LUNCH & LEARN ====================== -->
+    <section class="lunch" id="lunch" aria-labelledby="lunch-title">
+      <div class="container lunch__inner">
+        <div class="lunch__badge" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 22c0-6 7-10 16-10s16 4 16 10"/>
+            <path d="M8 22h32l-2 8H10z"/>
+            <path d="M14 36h20"/>
+            <path d="M22 6c0 2 2 2 2 4M28 6c0 2 2 2 2 4"/>
+          </svg>
+        </div>
+        <div class="lunch__content">
+          <span class="eyebrow eyebrow--light"><span class="eyebrow__dot"></span> Ask about it</span>
+          <h2 id="lunch-title" class="section__title section__title--light">Bring lunch. Leave with a roadmap.</h2>
+          <p>Our <strong>Lunch &amp; Learn</strong> program brings the whiteboard to your office.
+            One hour, one focused topic — SEO, conversion, mobile, or content — for you and your team.</p>
+          <button class="btn btn--white" data-open-form data-prefill="lunch" data-testid="lunch-cta">Reserve a Lunch &amp; Learn</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== CTA ====================== -->
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="container cta__inner">
+        <div>
+          <h2 id="cta-title" class="section__title">Ready when you are.</h2>
+          <p class="section__lede">Tell us about your project. We'll match you with the right
+            subject-matter expert — usually within one business day.</p>
+        </div>
+        <div class="cta__actions">
+          <button class="btn btn--primary btn--lg" data-open-form data-testid="cta-primary">Book free consult</button>
+          <a href="mailto:sales@itniche.com" class="cta__mail" data-testid="cta-mail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4z"/><path d="M4 6l8 7 8-7"/></svg>
+            sales@itniche.com
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer class="footer" data-testid="site-footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#top" class="brand brand--light" aria-label="IT Niche home">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h16"/></svg>
+          </span>
+          <span class="brand__text">IT<span class="brand__dot">.</span>Niche</span>
+        </a>
+        <p class="footer__tag">Web design experts in Memphis &mdash; and beyond.</p>
+      </div>
+
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Web Design</a></li>
+          <li><a href="#services">Content Management</a></li>
+          <li><a href="#services">SEO &amp; Marketing</a></li>
+          <li><a href="#services">Custom Apps</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#process">Our Process</a></li>
+          <li><a href="#why">Why us</a></li>
+          <li><a href="#lunch">Lunch &amp; Learn</a></li>
+          <li><a href="mailto:sales@itniche.com">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Get a free consult</h4>
+        <p class="footer__small">30 minutes. No obligation. Real answers.</p>
+        <button class="btn btn--primary" data-open-form data-testid="footer-cta">Book now</button>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <small>&copy; <span id="year"></span> IT Niche. All rights reserved.</small>
+      <small>Made with care · sales@itniche.com</small>
+    </div>
+  </footer>
+
+  <!-- ====================== FORM MODAL ====================== -->
+  <div class="modal" id="consult-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden data-testid="consult-modal">
+    <div class="modal__backdrop" data-close-form></div>
+    <div class="modal__panel" role="document">
+      <button class="modal__close" aria-label="Close" data-close-form data-testid="modal-close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M6 18L18 6"/></svg>
+      </button>
+
+      <div class="modal__head">
+        <span class="eyebrow"><span class="eyebrow__dot"></span> Free · 30 minutes</span>
+        <h2 id="modal-title">Tell us about your project.</h2>
+        <p>We'll match you with the right subject-matter expert. Need to send files? Email <a href="mailto:sales@itniche.com">sales@itniche.com</a>.</p>
+      </div>
+
+      <form class="form" id="consult-form" novalidate data-testid="consult-form">
+        <div class="form__row">
+          <label class="form__field">
+            <span>First name *</span>
+            <input type="text" name="firstName" required data-testid="form-first-name" />
+          </label>
+          <label class="form__field">
+            <span>Last name</span>
+            <input type="text" name="lastName" data-testid="form-last-name" />
+          </label>
+        </div>
+
+        <div class="form__row">
+          <label class="form__field">
+            <span>Business name *</span>
+            <input type="text" name="business" required data-testid="form-business" />
+          </label>
+          <label class="form__field">
+            <span>Phone *</span>
+            <input type="tel" name="phone" required data-testid="form-phone" />
+          </label>
+        </div>
+
+        <div class="form__row">
+          <label class="form__field">
+            <span>Email *</span>
+            <input type="email" name="email" required data-testid="form-email" />
+          </label>
+          <label class="form__field">
+            <span>Existing website</span>
+            <input type="url" name="website" placeholder="https://" data-testid="form-website" />
+          </label>
+        </div>
+
+        <div class="form__row">
+          <label class="form__field">
+            <span>Best time to call</span>
+            <select name="time" data-testid="form-time">
+              <option value="">Select…</option>
+              <option>Morning</option>
+              <option>Afternoon</option>
+              <option>Evening</option>
+            </select>
+          </label>
+          <label class="form__field">
+            <span>Time zone</span>
+            <select name="zone" data-testid="form-zone">
+              <option value="">Select…</option>
+              <option>Eastern (EST)</option>
+              <option>Central (CST)</option>
+              <option>Mountain (MST)</option>
+              <option>Pacific (PST)</option>
+            </select>
+          </label>
+        </div>
+
+        <fieldset class="form__chips" data-testid="form-services">
+          <legend>What are you interested in?</legend>
+          <label><input type="checkbox" name="interest" value="Web Design" /><span>Web Design</span></label>
+          <label><input type="checkbox" name="interest" value="Custom App" /><span>Custom App</span></label>
+          <label><input type="checkbox" name="interest" value="SEO" /><span>SEO</span></label>
+          <label><input type="checkbox" name="interest" value="Social Media" /><span>Social Media</span></label>
+          <label><input type="checkbox" name="interest" value="Content Management" /><span>Content Mgmt</span></label>
+          <label><input type="checkbox" name="interest" value="Lunch & Learn" /><span>Lunch &amp; Learn</span></label>
+        </fieldset>
+
+        <label class="form__field">
+          <span>Project message</span>
+          <textarea name="message" rows="4" placeholder="Tell us a little about goals, timeline or anything else useful." data-testid="form-message"></textarea>
+        </label>
+
+        <div class="form__actions">
+          <button type="submit" class="btn btn--primary btn--lg" data-testid="form-submit">
+            Send my request
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </button>
+          <small class="form__note">By submitting you agree to be contacted about your project. We never share your info.</small>
+        </div>
+
+        <div class="form__success" id="form-success" hidden data-testid="form-success">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+          <div>
+            <strong>Thanks — we got it.</strong>
+            <p>An expert will reach out within one business day.</p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
