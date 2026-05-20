@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Modern, custom website solutions designed for churches and ministries. 15+ functional modules including event calendar, member registration, prayer requests, and more." />
+  <meta name="keywords" content="church website, church solutions, e-church, ministry website, faith-based digital solutions" />
+  <title>e-Church — Modern Solutions for Modern Churches</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ============ NAV ============ -->
+  <header class="nav" data-testid="site-nav">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo" data-testid="nav-logo">
+        <span class="nav__logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2v20M5 9l7-7 7 7M5 22h14"/>
+          </svg>
+        </span>
+        <span class="nav__logo-text">e-Church</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#features" data-testid="nav-link-features">Features</a>
+        <a href="#how" data-testid="nav-link-how">Modules</a>
+        <a href="#cta" data-testid="nav-link-contact">Contact</a>
+      </nav>
+
+      <a href="#cta" class="btn btn--primary nav__cta" data-testid="nav-cta-button">
+        Get Started
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+
+      <button class="nav__menu" id="navMenu" aria-label="Open menu" data-testid="mobile-menu-button">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" data-testid="hero-section">
+    <div class="container hero__grid">
+      <div class="hero__content reveal">
+        <div class="eyebrow" data-testid="hero-eyebrow">
+          <span class="eyebrow__dot"></span>
+          Built for Faith-Based Organizations
+        </div>
+
+        <h1 class="hero__title" data-testid="hero-title">
+          Modern Solutions<br/>
+          for <span class="accent">Modern Churches.</span>
+        </h1>
+
+        <p class="hero__lede" data-testid="hero-description">
+          A complete custom website platform with 15+ functional modules — purpose-built to connect your congregation, simplify operations, and amplify your mission.
+        </p>
+
+        <div class="hero__ctas">
+          <a href="#cta" class="btn btn--primary btn--lg" data-testid="hero-cta-primary">
+            Start Your Church Site
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#features" class="btn btn--ghost btn--lg" data-testid="hero-cta-secondary">
+            Explore Modules
+          </a>
+        </div>
+
+        <ul class="hero__stats" data-testid="hero-stats">
+          <li><strong data-counter="15">0</strong><span>+ Modules</span></li>
+          <li><strong data-counter="100">0</strong><span>% Custom</span></li>
+          <li><strong data-counter="24">0</strong><span>/7 Support</span></li>
+        </ul>
+      </div>
+
+      <!-- Hero Infographic -->
+      <div class="hero__visual reveal" aria-hidden="true">
+        <div class="orbit">
+          <div class="orbit__center">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v20M5 9l7-7 7 7M5 22h14"/>
+            </svg>
+            <span>e-Church</span>
+          </div>
+
+          <span class="orbit__ring orbit__ring--1"></span>
+          <span class="orbit__ring orbit__ring--2"></span>
+          <span class="orbit__ring orbit__ring--3"></span>
+
+          <!-- floating nodes -->
+          <div class="node node--1" style="--d:0s">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          </div>
+          <div class="node node--2" style="--d:.6s">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="node node--3" style="--d:1.2s">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <div class="node node--4" style="--d:1.8s">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M4 9h16M9 4v16"/></svg>
+          </div>
+          <div class="node node--5" style="--d:2.4s">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92V21a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 1 5.18 2 2 0 0 1 3 3h4.09a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 11.09a16 16 0 0 0 6.82 6.82l1.45-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7a2 2 0 0 1 1.72 2z"/></svg>
+          </div>
+          <div class="node node--6" style="--d:3s">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+        </div>
+
+        <div class="visual__chip visual__chip--a" data-testid="visual-chip-modules">15+ Modules</div>
+        <div class="visual__chip visual__chip--b" data-testid="visual-chip-realtime">Real-time Outreach</div>
+      </div>
+    </div>
+
+    <!-- decorative ticker -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Member Registration</span><span class="dot"></span>
+        <span>Event Calendar</span><span class="dot"></span>
+        <span>Prayer Requests</span><span class="dot"></span>
+        <span>Blog &amp; Media</span><span class="dot"></span>
+        <span>Electronic Mailer</span><span class="dot"></span>
+        <span>Message Board</span><span class="dot"></span>
+        <span>Classifieds</span><span class="dot"></span>
+        <span>Content Management</span><span class="dot"></span>
+        <!-- duplicate for seamless scroll -->
+        <span>Member Registration</span><span class="dot"></span>
+        <span>Event Calendar</span><span class="dot"></span>
+        <span>Prayer Requests</span><span class="dot"></span>
+        <span>Blog &amp; Media</span><span class="dot"></span>
+        <span>Electronic Mailer</span><span class="dot"></span>
+        <span>Message Board</span><span class="dot"></span>
+        <span>Classifieds</span><span class="dot"></span>
+        <span>Content Management</span><span class="dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="features" id="features" data-testid="features-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow"><span class="eyebrow__dot"></span> Everything You Need</div>
+        <h2 class="section-head__title" data-testid="features-title">
+          Eight powerful modules,<br/>one unified platform.
+        </h2>
+        <p class="section-head__lede">
+          Each module is designed to solve a real ministry challenge — from connecting members to managing media. Modular, scalable, and built around how your church works.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <!-- 1 -->
+        <article class="feature-card reveal" data-testid="feature-card-1">
+          <div class="feature-card__num">01</div>
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Member Registration</h3>
+          <p>Let members join your congregation online with a friendly, frictionless sign-up flow.</p>
+        </article>
+
+        <!-- 2 -->
+        <article class="feature-card reveal" data-testid="feature-card-2">
+          <div class="feature-card__num">02</div>
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          </div>
+          <h3>Event Calendar</h3>
+          <p>Publish public or private events with a single click. Keep your congregation in sync.</p>
+        </article>
+
+        <!-- 3 -->
+        <article class="feature-card reveal" data-testid="feature-card-3">
+          <div class="feature-card__num">03</div>
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>Message Board</h3>
+          <p>Share announcements with the whole community or selected groups — all in one place.</p>
+        </article>
+
+        <!-- 4 -->
+        <article class="feature-card reveal" data-testid="feature-card-4">
+          <div class="feature-card__num">04</div>
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </div>
+          <h3>Blog &amp; Media</h3>
+          <p>Publish sermons, articles, photos, and video — a powerful storytelling tool for your ministry.</p>
+        </article>
+
+        <!-- 5 -->
+        <article class="feature-card reveal" data-testid="feature-card-5">
+          <div class="feature-card__num">05</div>
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3>Prayer Requests</h3>
+          <p>Members submit prayer requests online — routed automatically to the right pastor or group.</p>
+        </article>
+
+        <!-- 6 -->
+        <article class="feature-card reveal" data-testid="feature-card-6">
+          <div class="feature-card__num">06</div>
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M7 12h10M10 18h4"/></svg>
+          </div>
+          <h3>Classifieds</h3>
+          <p>Empower members to share offerings or needs with a built-in community classifieds board.</p>
+        </article>
+
+        <!-- 7 -->
+        <article class="feature-card reveal" data-testid="feature-card-7">
+          <div class="feature-card__num">07</div>
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M4 9h16M9 4v16"/></svg>
+          </div>
+          <h3>Content Management</h3>
+          <p>Manage every page, image, and post with an intuitive click-and-publish interface.</p>
+        </article>
+
+        <!-- 8 -->
+        <article class="feature-card reveal" data-testid="feature-card-8">
+          <div class="feature-card__num">08</div>
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+          </div>
+          <h3>Electronic Mailer</h3>
+          <p>Send newsletters, invitations, updates, and minutes — to one member or to thousands.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW (module visualization) ============ -->
+  <section class="how" id="how" data-testid="how-section">
+    <div class="container how__grid">
+      <div class="reveal">
+        <div class="eyebrow"><span class="eyebrow__dot"></span> Unique by Design</div>
+        <h2 class="section-head__title" data-testid="how-title">
+          Your church is unique.<br/>Your website should be too.
+        </h2>
+        <p class="how__lede">
+          We understand a church is an endowment-based institution — every dollar matters. e-Church gives you enterprise-grade tools at a price built for ministry, so you can focus on what matters most: your people.
+        </p>
+
+        <ul class="checklist" data-testid="how-checklist">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            Affordable, ministry-friendly pricing
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            Real-time outreach to the entire congregation
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            Tools that scale as your ministry grows
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            Built and supported by a dedicated team
+          </li>
+        </ul>
+      </div>
+
+      <div class="mockup reveal" aria-hidden="true">
+        <div class="mockup__bar">
+          <span></span><span></span><span></span>
+          <div class="mockup__url">yourchurch.org</div>
+        </div>
+        <div class="mockup__body">
+          <div class="mockup__head"></div>
+          <div class="mockup__hero">
+            <div class="mockup__hero-text">
+              <div class="line line--lg"></div>
+              <div class="line line--md"></div>
+              <div class="line line--sm"></div>
+              <div class="line__btn"></div>
+            </div>
+            <div class="mockup__hero-art">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M5 9l7-7 7 7M5 22h14"/></svg>
+            </div>
+          </div>
+          <div class="mockup__cards">
+            <div class="mock-card"><span></span><i></i><i></i></div>
+            <div class="mock-card"><span></span><i></i><i></i></div>
+            <div class="mock-card"><span></span><i></i><i></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta" id="cta" data-testid="cta-section">
+    <div class="container">
+      <div class="cta__card reveal">
+        <div class="cta__pattern" aria-hidden="true"></div>
+
+        <div class="cta__content">
+          <div class="eyebrow eyebrow--light"><span class="eyebrow__dot"></span> Ready When You Are</div>
+          <h2 class="cta__title" data-testid="cta-title">
+            Bring your congregation<br/>online — beautifully.
+          </h2>
+          <p class="cta__lede">
+            Let's build a website that does more than exist — one that connects, inspires, and serves your ministry every single day.
+          </p>
+
+          <form class="cta__form" id="ctaForm" data-testid="cta-form" novalidate>
+            <label class="sr-only" for="ctaEmail">Email address</label>
+            <input
+              type="email"
+              id="ctaEmail"
+              name="email"
+              placeholder="you@yourchurch.org"
+              required
+              data-testid="cta-email-input"
+            />
+            <button type="submit" class="btn btn--primary btn--lg" data-testid="cta-submit-button">
+              Request a Demo
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+          </form>
+          <p class="cta__note" id="ctaNote" data-testid="cta-note">
+            No credit card. No commitments. Just a quick conversation.
+          </p>
+        </div>
+
+        <div class="cta__metrics" aria-hidden="true">
+          <div class="metric">
+            <strong>15<sup>+</sup></strong>
+            <span>Functional<br/>Modules</span>
+          </div>
+          <div class="metric">
+            <strong>100<sup>%</sup></strong>
+            <span>Custom<br/>Designed</span>
+          </div>
+          <div class="metric">
+            <strong>24<sup>/7</sup></strong>
+            <span>Dedicated<br/>Support</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" data-testid="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="nav__logo">
+          <span class="nav__logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M5 9l7-7 7 7M5 22h14"/></svg>
+          </span>
+          <span class="nav__logo-text">e-Church</span>
+        </a>
+        <p>Modern websites for modern ministries.</p>
+      </div>
+
+      <div class="footer__links">
+        <a href="#features" data-testid="footer-link-features">Features</a>
+        <a href="#how" data-testid="footer-link-how">Why Us</a>
+        <a href="#cta" data-testid="footer-link-contact">Contact</a>
+      </div>
+
+      <p class="footer__copy">© <span id="year"></span> e-Church. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
