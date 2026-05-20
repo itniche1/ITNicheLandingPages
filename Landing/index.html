@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Virtual Client Office (VCO) — your dedicated offshore team for web design, custom software, and digital marketing. US-based, globally delivered. Save up to 75% on CTC." />
+  <meta name="theme-color" content="#e57119" />
+  <title>Virtual Client Office — Your Team on Beck &amp; Call</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ============== NAVBAR ============== -->
+  <header class="nav" data-testid="site-header">
+    <div class="container nav__inner">
+      <a href="#top" class="brand" data-testid="brand-logo" aria-label="IT Niche home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="2" width="28" height="28" rx="6" stroke="currentColor" stroke-width="2"/>
+            <path d="M10 22V10h4l4 8V10h4v12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand__text">IT Niche<span class="brand__dot">.</span></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#what" data-testid="nav-what">What is VCO</a>
+        <a href="#services" data-testid="nav-services">Services</a>
+        <a href="#how" data-testid="nav-how">How it Works</a>
+        <a href="#why" data-testid="nav-why">Why Us</a>
+      </nav>
+
+      <a href="#contact" class="btn btn--primary nav__cta" data-testid="nav-cta-button">
+        Book a Demo
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+
+      <button class="nav__burger" data-testid="mobile-menu-button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="nav__mobile" data-testid="mobile-menu" hidden>
+      <a href="#what">What is VCO</a>
+      <a href="#services">Services</a>
+      <a href="#how">How it Works</a>
+      <a href="#why">Why Us</a>
+      <a href="#contact" class="btn btn--primary">Book a Demo</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============== HERO ============== -->
+    <section class="hero" data-testid="hero-section">
+      <div class="container hero__grid">
+        <div class="hero__copy reveal">
+          <span class="eyebrow" data-testid="hero-eyebrow">
+            <span class="eyebrow__dot"></span> Converging Global Workspace
+          </span>
+          <h1 class="hero__title">
+            Your own team,<br/>
+            on <span class="ink">beck &amp; call</span>
+            <span class="accent">mode.</span>
+          </h1>
+          <p class="hero__sub">
+            Virtual Client Office (VCO) gives you a dedicated offshore team — US-managed
+            from Memphis, TN. Same quality, a fraction of the cost.
+          </p>
+
+          <div class="hero__ctas">
+            <a href="#contact" class="btn btn--primary btn--lg" data-testid="hero-primary-cta">
+              Schedule a 1-on-1
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#services" class="btn btn--ghost btn--lg" data-testid="hero-secondary-cta">
+              Explore Services
+            </a>
+          </div>
+
+          <ul class="hero__trust" aria-label="Trust badges">
+            <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> US legal entity</li>
+            <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Headquartered in Memphis, TN</li>
+            <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> 24×7 Offshore Delivery</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual reveal" data-testid="hero-visual" aria-hidden="true">
+          <!-- Infographic illustration: orbiting globe + workspace cards -->
+          <div class="orbit">
+            <svg class="orbit__svg" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="g1" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#e57119" stop-opacity=".10"/>
+                  <stop offset="100%" stop-color="#e57119" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+              <circle cx="240" cy="240" r="220" fill="url(#g1)"/>
+              <circle cx="240" cy="240" r="180" fill="none" stroke="#111" stroke-width="1" stroke-dasharray="2 6" opacity=".25"/>
+              <circle cx="240" cy="240" r="130" fill="none" stroke="#111" stroke-width="1" opacity=".15"/>
+              <circle cx="240" cy="240" r="80" fill="#fff" stroke="#111" stroke-width="1.5"/>
+              <!-- meridian lines -->
+              <ellipse cx="240" cy="240" rx="80" ry="30" fill="none" stroke="#111" stroke-width="1" opacity=".4"/>
+              <ellipse cx="240" cy="240" rx="80" ry="60" fill="none" stroke="#111" stroke-width="1" opacity=".4"/>
+              <line x1="160" y1="240" x2="320" y2="240" stroke="#111" stroke-width="1" opacity=".4"/>
+              <line x1="240" y1="160" x2="240" y2="320" stroke="#111" stroke-width="1" opacity=".4"/>
+              <!-- pins -->
+              <g>
+                <circle cx="200" cy="220" r="6" fill="#e57119"/>
+                <circle cx="200" cy="220" r="12" fill="#e57119" opacity=".25"/>
+              </g>
+              <g>
+                <circle cx="285" cy="255" r="6" fill="#000"/>
+                <circle cx="285" cy="255" r="12" fill="#000" opacity=".15"/>
+              </g>
+              <line x1="200" y1="220" x2="285" y2="255" stroke="#e57119" stroke-width="2" stroke-dasharray="3 4"/>
+            </svg>
+
+            <div class="orbit__card orbit__card--a">
+              <span class="dot dot--green"></span>
+              <div>
+                <p class="orbit__k">Memphis, TN</p>
+                <p class="orbit__v">Client &amp; Strategy</p>
+              </div>
+            </div>
+            <div class="orbit__card orbit__card--b">
+              <span class="dot dot--orange"></span>
+              <div>
+                <p class="orbit__k">Offshore Hub</p>
+                <p class="orbit__v">Delivery 24×7</p>
+              </div>
+            </div>
+            <div class="orbit__card orbit__card--c">
+              <p class="orbit__big">75<span>%</span></p>
+              <p class="orbit__v">CTC saved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== STATS STRIP ============== -->
+    <section class="stats" aria-label="Key statistics" data-testid="stats-section">
+      <div class="container stats__grid">
+        <div class="stat reveal">
+          <p class="stat__num" data-count="75" data-suffix="%">0</p>
+          <p class="stat__lbl">Average savings on CTC</p>
+        </div>
+        <div class="stat reveal">
+          <p class="stat__num" data-count="24" data-suffix="×7">0</p>
+          <p class="stat__lbl">Offshore coverage</p>
+        </div>
+        <div class="stat reveal">
+          <p class="stat__num" data-count="1" data-prefix="#">0</p>
+          <p class="stat__lbl">India — software support exporter</p>
+        </div>
+        <div class="stat reveal">
+          <p class="stat__num" data-count="100" data-suffix="%">0</p>
+          <p class="stat__lbl">US compliant delivery</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== WHAT IS VCO ============== -->
+    <section class="section" id="what" data-testid="what-section">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker">01 — The Concept</span>
+          <h2 class="section__title">A mature model. <span class="accent">A modern advantage.</span></h2>
+          <p class="section__lede">
+            The world is borderless for great work. VCO turns that idea into your
+            day-to-day operating model — without the overhead of building it yourself.
+          </p>
+        </div>
+
+        <div class="pillars">
+          <article class="pillar reveal">
+            <div class="pillar__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+            </div>
+            <h3>Borderless workspace</h3>
+            <p>Bandwidth, smart devices and near-zero call costs erase distance — work happens where talent lives.</p>
+          </article>
+
+          <article class="pillar reveal">
+            <div class="pillar__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg>
+            </div>
+            <h3>US-rooted entity</h3>
+            <p>A legal US company, headquartered in Memphis, TN — compliant, accountable, familiar.</p>
+          </article>
+
+          <article class="pillar reveal">
+            <div class="pillar__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Your team, on call</h3>
+            <p>A dedicated offshore squad — engineers, designers, marketers — ready when you need them.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== SERVICES ============== -->
+    <section class="section section--alt" id="services" data-testid="services-section">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker">02 — What we deliver</span>
+          <h2 class="section__title">Four practices. <span class="accent">One dedicated team.</span></h2>
+        </div>
+
+        <div class="services">
+          <a href="#contact" class="service reveal" data-testid="service-web-design">
+            <span class="service__num">01</span>
+            <div class="service__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4M6 7h.01M9 7h.01M12 7h.01"/></svg>
+            </div>
+            <h3>Web Design</h3>
+            <p>Conversion-first sites — fast, accessible, brand-true.</p>
+            <span class="service__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="#contact" class="service reveal" data-testid="service-custom-solutions">
+            <span class="service__num">02</span>
+            <div class="service__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m8 6-6 6 6 6M16 6l6 6-6 6M14 4 10 20"/></svg>
+            </div>
+            <h3>Custom Solutions</h3>
+            <p>Software built around your workflow — not the other way around.</p>
+            <span class="service__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="#contact" class="service reveal" data-testid="service-digital-marketing">
+            <span class="service__num">03</span>
+            <div class="service__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 4-4 4 4 5-6"/></svg>
+            </div>
+            <h3>Digital Marketing</h3>
+            <p>SEO, content, ads — measured to revenue, not vanity.</p>
+            <span class="service__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="#contact" class="service reveal" data-testid="service-support">
+            <span class="service__num">04</span>
+            <div class="service__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 18 0v6a3 3 0 0 1-3 3h-2v-8h5"/><path d="M3 12v6a3 3 0 0 0 3 3h2v-8H3"/></svg>
+            </div>
+            <h3>Software Support</h3>
+            <p>Around-the-clock support from the world's #1 export hub.</p>
+            <span class="service__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== HOW IT WORKS ============== -->
+    <section class="section" id="how" data-testid="how-section">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker">03 — How it works</span>
+          <h2 class="section__title">From intro call <span class="accent">to live team</span> in days.</h2>
+        </div>
+
+        <ol class="timeline" data-testid="timeline">
+          <li class="t-step reveal">
+            <span class="t-step__num">01</span>
+            <h3>Discovery</h3>
+            <p>One call with our offshore managers. We map your scope, stack and timezone overlap.</p>
+          </li>
+          <li class="t-step reveal">
+            <span class="t-step__num">02</span>
+            <h3>Working Demo</h3>
+            <p>See the exact people, process and tools — live. No slideware.</p>
+          </li>
+          <li class="t-step reveal">
+            <span class="t-step__num">03</span>
+            <h3>Spin-up</h3>
+            <p>Dedicated team assembled, onboarded, and aligned to your rituals.</p>
+          </li>
+          <li class="t-step reveal">
+            <span class="t-step__num">04</span>
+            <h3>Deliver &amp; Scale</h3>
+            <p>Ship continuously. Add or trim seats as your roadmap evolves.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============== WHY US — INFOGRAPHIC SPLIT ============== -->
+    <section class="section section--dark" id="why" data-testid="why-section">
+      <div class="container why__grid">
+        <div class="why__copy reveal">
+          <span class="kicker kicker--light">04 — Why VCO</span>
+          <h2 class="section__title section__title--light">
+            Same quality. <span class="accent">A quarter of the cost.</span>
+          </h2>
+          <p class="why__lede">
+            Why carry a US prevailing-wage line item when the same caliber of work
+            ships from our offshore center — under your US contract?
+          </p>
+
+          <ul class="checks" data-testid="why-checks">
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> US contract &amp; accountability</li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Ready offshore facility</li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Strong-dollar leverage</li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Familiar with your way of work</li>
+          </ul>
+        </div>
+
+        <div class="why__viz reveal" aria-hidden="true">
+          <!-- Cost comparison bars -->
+          <div class="bars">
+            <div class="bars__row">
+              <div class="bars__label">US in-house</div>
+              <div class="bars__track">
+                <div class="bars__fill bars__fill--gray" style="--w:100%">
+                  <span>100% CTC</span>
+                </div>
+              </div>
+            </div>
+            <div class="bars__row">
+              <div class="bars__label">VCO offshore</div>
+              <div class="bars__track">
+                <div class="bars__fill bars__fill--orange" data-fill="25" style="--w:25%">
+                  <span>25%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="bars__diff">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              You keep <strong>75%</strong> on the balance sheet
+            </div>
+          </div>
+
+          <!-- circular split -->
+          <div class="ring">
+            <svg viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="80" cy="80" r="64" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="14"/>
+              <circle class="ring__arc" cx="80" cy="80" r="64" fill="none" stroke="#e57119" stroke-width="14" stroke-linecap="round" stroke-dasharray="402" stroke-dashoffset="402" transform="rotate(-90 80 80)"/>
+            </svg>
+            <div class="ring__center">
+              <p class="ring__num">75<span>%</span></p>
+              <p class="ring__lbl">Saved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== GLOBAL PRESENCE ============== -->
+    <section class="section" data-testid="presence-section">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker">05 — One team, two timezones</span>
+          <h2 class="section__title">Memphis <span class="accent">⇄</span> Offshore</h2>
+          <p class="section__lede">Hand-offs that feel like a relay — not a wait.</p>
+        </div>
+
+        <div class="presence reveal" data-testid="presence-graphic">
+          <div class="presence__node">
+            <span class="presence__pin presence__pin--black" aria-hidden="true"></span>
+            <p class="presence__city">Memphis, TN</p>
+            <p class="presence__role">Client &amp; Strategy</p>
+            <p class="presence__time">9am — 6pm CST</p>
+          </div>
+
+          <div class="presence__link" aria-hidden="true">
+            <svg viewBox="0 0 200 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+              <path d="M2 20 Q 100 -10 198 20" fill="none" stroke="#e57119" stroke-width="2" stroke-dasharray="4 5"/>
+              <circle cx="2" cy="20" r="3" fill="#000"/>
+              <circle cx="198" cy="20" r="3" fill="#e57119"/>
+            </svg>
+            <span class="presence__cap">Seamless handoff</span>
+          </div>
+
+          <div class="presence__node">
+            <span class="presence__pin presence__pin--orange" aria-hidden="true"></span>
+            <p class="presence__city">Offshore Hub</p>
+            <p class="presence__role">Build &amp; Deliver</p>
+            <p class="presence__time">Round the clock</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== CTA ============== -->
+    <section class="cta" id="contact" data-testid="cta-section">
+      <div class="container cta__inner">
+        <div class="cta__copy reveal">
+          <h2 class="cta__title">Let's work <span class="accent">together.</span></h2>
+          <p class="cta__sub">Book a working demo with our offshore managers. See the people, the process, the price — in one call.</p>
+        </div>
+        <form class="cta__form reveal" data-testid="cta-form" onsubmit="return window.__vcoSubmit(event)">
+          <label class="sr-only" for="cta-email">Email address</label>
+          <input id="cta-email" data-testid="cta-email-input" type="email" required placeholder="you@company.com" autocomplete="email"/>
+          <button type="submit" class="btn btn--primary btn--lg" data-testid="cta-submit-button">
+            Request demo
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </button>
+          <p class="cta__note" data-testid="cta-note">No spam. One reply from a human — usually within a business day.</p>
+          <p class="cta__success" data-testid="cta-success" hidden>Thanks — we'll be in touch shortly.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="foot" data-testid="site-footer">
+    <div class="container foot__grid">
+      <div class="foot__brand">
+        <a href="#top" class="brand brand--light">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="28" height="28" rx="6" stroke="currentColor" stroke-width="2"/>
+              <path d="M10 22V10h4l4 8V10h4v12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="brand__text">IT Niche<span class="brand__dot">.</span></span>
+        </a>
+        <p>Virtual Client Office — your dedicated offshore team, US-managed.</p>
+      </div>
+
+      <div class="foot__col">
+        <h4>Explore</h4>
+        <a href="#what">What is VCO</a>
+        <a href="#services">Services</a>
+        <a href="#how">How it Works</a>
+        <a href="#why">Why Us</a>
+      </div>
+
+      <div class="foot__col">
+        <h4>Contact</h4>
+        <p>Memphis, Tennessee</p>
+        <p>Mon — Fri · 9am–6pm CST</p>
+        <a href="#contact">Book a demo →</a>
+      </div>
+    </div>
+    <div class="container foot__bar">
+      <p>© <span data-testid="footer-year">2025</span> IT Niche · All rights reserved.</p>
+      <p>Crafted with whitespace.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
