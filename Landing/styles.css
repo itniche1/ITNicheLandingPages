@@ -697,6 +697,152 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
 .mock-card i:nth-child(2) { width: 90%; }
 .mock-card i:nth-child(3) { width: 60%; }
 
+/* =========================================================
+   PROMO SPLIT (Tour + Lunch & Learn)
+   ========================================================= */
+.promo {
+  padding: 120px 0 0;
+  background: var(--bg);
+}
+.promo__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.promo-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  padding: 56px 48px;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-decoration: none;
+  isolation: isolate;
+  transition: transform .35s var(--ease), box-shadow .35s var(--ease);
+}
+.promo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.promo-card--dark {
+  background: var(--ink);
+  color: #fff;
+}
+.promo-card--dark::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(420px 280px at 90% 110%, rgba(229,113,25,.35) 0%, transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,.02) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+.promo-card--orange {
+  background: var(--primary);
+  color: #fff;
+}
+.promo-card--orange::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(380px 240px at 10% 110%, rgba(0,0,0,.18) 0%, transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,.08) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.promo-card__bg {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  transform: translateY(-50%);
+  width: 320px;
+  height: 320px;
+  color: currentColor;
+  opacity: .12;
+  z-index: 0;
+  transition: transform .6s var(--ease), opacity .35s var(--ease);
+  pointer-events: none;
+}
+.promo-card--orange .promo-card__bg { opacity: .18; }
+.promo-card:hover .promo-card__bg {
+  transform: translateY(-50%) rotate(8deg) scale(1.05);
+  opacity: .22;
+}
+.promo-card__bg svg { width: 100%; height: 100%; }
+
+.promo-card__body {
+  position: relative;
+  z-index: 1;
+  max-width: 80%;
+}
+
+.promo-card__tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  color: #fff;
+}
+.promo-card--orange .promo-card__tag {
+  background: rgba(0,0,0,.12);
+  border-color: rgba(0,0,0,.18);
+}
+
+.promo-card__title {
+  font-size: clamp(26px, 2.6vw, 34px);
+  line-height: 1.15;
+  letter-spacing: -.015em;
+  font-weight: 900;
+  margin: 0 0 14px;
+  color: #fff;
+}
+.promo-card__hl { color: var(--primary); }
+.promo-card__hl--light { color: var(--ink); }
+
+.promo-card__lede {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0 0 28px;
+  color: rgba(255,255,255,.78);
+}
+.promo-card--orange .promo-card__lede {
+  color: rgba(255,255,255,.92);
+}
+
+.promo-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: .02em;
+  color: #fff;
+  padding-bottom: 4px;
+  border-bottom: 2px solid rgba(255,255,255,.35);
+  transition: border-color .25s var(--ease), gap .25s var(--ease);
+  align-self: flex-start;
+}
+.promo-card__cta svg { width: 16px; height: 16px; transition: transform .25s var(--ease); }
+.promo-card:hover .promo-card__cta {
+  border-color: #fff;
+  gap: 14px;
+}
+.promo-card:hover .promo-card__cta svg { transform: translateX(4px); }
+
+
 
 /* =========================================================
    CTA
@@ -917,6 +1063,11 @@ button { font-family: inherit; cursor: pointer; border: 0; background: none; }
   .nav__menu { display: flex; }
 
   .features, .how, .cta { padding: 80px 0; }
+  .promo { padding: 80px 0 0; }
+  .promo__grid { grid-template-columns: 1fr; gap: 16px; }
+  .promo-card { padding: 40px 32px; min-height: 280px; }
+  .promo-card__body { max-width: 100%; }
+  .promo-card__bg { width: 240px; height: 240px; right: -60px; }
 
   .hero__stats { gap: 24px; padding-top: 24px; }
   .hero__stats strong { font-size: 30px; }
