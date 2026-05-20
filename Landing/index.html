@@ -80,41 +80,93 @@
         </ul>
       </div>
 
-      <!-- HERO INFOGRAPHIC -->
+      <!-- HERO INFOGRAPHIC: Business Blueprint -->
       <div class="hero__visual" aria-hidden="true" data-testid="hero-visual">
-        <div class="orbit">
-          <div class="orbit__ring orbit__ring--outer"></div>
-          <div class="orbit__ring orbit__ring--mid"></div>
-          <div class="orbit__ring orbit__ring--inner"></div>
+        <div class="blueprint">
+          <span class="bp__glow" aria-hidden="true"></span>
+          <span class="bp__grid" aria-hidden="true"></span>
 
-          <div class="orbit__core">
-            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="8" y="14" width="48" height="32" rx="4"/>
-              <path d="M8 22h48"/>
-              <circle cx="13" cy="18" r="1"/>
-              <circle cx="17" cy="18" r="1"/>
-              <path d="M20 32h12M20 38h20"/>
-            </svg>
+          <!-- Main dashboard panel -->
+          <div class="bp__panel bp__panel--main">
+            <div class="bp__panel-bar">
+              <span class="bp__dot"></span>
+              <span class="bp__dot"></span>
+              <span class="bp__dot"></span>
+              <span class="bp__panel-title">business / overview</span>
+            </div>
+
+            <div class="bp__panel-body">
+              <div class="bp__head-row">
+                <div class="bp__kpi-block">
+                  <span class="bp__kpi-label">Revenue</span>
+                  <span class="bp__kpi-value">$248K <em>+18%</em></span>
+                </div>
+                <svg class="bp__spark" viewBox="0 0 100 32" preserveAspectRatio="none">
+                  <defs>
+                    <linearGradient id="bpFill" x1="0" x2="0" y1="0" y2="1">
+                      <stop offset="0%" stop-color="#e57119" stop-opacity="0.22"/>
+                      <stop offset="100%" stop-color="#e57119" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                  <path d="M0,24 L14,18 L28,21 L42,12 L58,15 L72,7 L88,10 L100,4 L100,32 L0,32 Z" fill="url(#bpFill)"/>
+                  <polyline points="0,24 14,18 28,21 42,12 58,15 72,7 88,10 100,4" fill="none" stroke="#e57119" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="100" cy="4" r="2.2" fill="#e57119"/>
+                </svg>
+              </div>
+
+              <div class="bp__bars">
+                <span style="--h:38%"></span>
+                <span style="--h:62%"></span>
+                <span style="--h:48%"></span>
+                <span style="--h:78%"></span>
+                <span style="--h:55%"></span>
+                <span style="--h:92%" class="is-accent"></span>
+                <span style="--h:70%"></span>
+              </div>
+
+              <div class="bp__tiles">
+                <div class="bp__tile">
+                  <span class="bp__tile-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
+                  </span>
+                  <span class="bp__tile-meta">
+                    <span class="bp__tile-label">Orders</span>
+                    <span class="bp__tile-value">1,284</span>
+                  </span>
+                </div>
+                <div class="bp__tile">
+                  <span class="bp__tile-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                  </span>
+                  <span class="bp__tile-meta">
+                    <span class="bp__tile-label">Conversion</span>
+                    <span class="bp__tile-value">4.7%</span>
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <span class="orbit__node orbit__node--1" style="--i:0">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
-          </span>
-          <span class="orbit__node orbit__node--2" style="--i:1">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-          </span>
-          <span class="orbit__node orbit__node--3" style="--i:2">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
-          </span>
-          <span class="orbit__node orbit__node--4" style="--i:3">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 12 22 2"/></svg>
-          </span>
-          <span class="orbit__node orbit__node--5" style="--i:4">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 8h20M6 14h4"/></svg>
-          </span>
-          <span class="orbit__node orbit__node--6" style="--i:5">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>
-          </span>
+          <!-- Mini KPI ring card -->
+          <div class="bp__panel bp__panel--mini">
+            <svg class="bp__ring" viewBox="0 0 36 36">
+              <circle cx="18" cy="18" r="15" fill="none" stroke="rgba(15,17,21,0.08)" stroke-width="3"/>
+              <circle cx="18" cy="18" r="15" fill="none" stroke="#e57119" stroke-width="3" stroke-dasharray="92 100" stroke-linecap="round" transform="rotate(-90 18 18)"/>
+            </svg>
+            <span class="bp__mini-meta">
+              <span class="bp__mini-label">Process Score</span>
+              <span class="bp__mini-value">98<em>/100</em></span>
+            </span>
+          </div>
+
+          <!-- People · Process · Projects flow -->
+          <div class="bp__flow">
+            <span class="bp__pill">People</span>
+            <span class="bp__link"></span>
+            <span class="bp__pill">Process</span>
+            <span class="bp__link"></span>
+            <span class="bp__pill bp__pill--accent">Projects</span>
+          </div>
         </div>
       </div>
     </div>
