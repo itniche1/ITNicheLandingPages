@@ -56,7 +56,7 @@
 
   /* --------- Reveal on scroll --------- */
   const revealCandidates = document.querySelectorAll(
-    '.hero__copy, .hero__visual, .stat, .card, .timeline__step, .section-head, .cta__content, .trust'
+    '.hero__copy, .hero__visual, .stat, .card, .partner, .timeline__step, .section-head, .cta__content, .trust'
   );
   revealCandidates.forEach((el) => el.classList.add('reveal'));
 
