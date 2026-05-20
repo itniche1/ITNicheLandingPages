@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <title>e-Restaurant — A custom &amp; powerful website for your restaurant</title>
+  <meta name="description" content="A modern restaurant website platform — online menus, reservations, and promotions. Built for small businesses with custom web design and digital marketing." />
+  <meta name="keywords" content="restaurant website, online reservation, digital menu, restaurant marketing, custom web design" />
+  <meta name="author" content="IT Niche — e-Restaurant" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="e-Restaurant — Built for hospitality." />
+  <meta property="og:description" content="A 100% custom website with online menu, reservations and promotions for your restaurant." />
+
+  <!-- Preload font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-testid="landing-page">
+
+  <!-- ░░░░░░░░░░░░ NAV ░░░░░░░░░░░░ -->
+  <header class="nav" data-testid="site-nav">
+    <a href="#" class="brand" data-testid="brand-logo" aria-label="e-Restaurant home">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 3v8a3 3 0 0 0 3 3v7"/>
+          <path d="M7 3v8"/>
+          <path d="M17 3c-2 0-3 2-3 5s1 5 3 5v8"/>
+        </svg>
+      </span>
+      <span class="brand__text">e-Restaurant<em>.</em></span>
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#features" data-testid="nav-features">Features</a>
+      <a href="#how" data-testid="nav-how">How it works</a>
+      <a href="#cta" data-testid="nav-cta">Get started</a>
+    </nav>
+
+    <a href="#cta" class="btn btn--ghost nav__cta" data-testid="nav-demo-btn">
+      Book a demo
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+    </a>
+
+    <button class="nav__burger" type="button" aria-label="Open menu" data-testid="nav-burger">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ░░░░░░░░░░░░ HERO ░░░░░░░░░░░░ -->
+  <section class="hero" id="top" data-testid="hero-section">
+    <div class="hero__grid-bg" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <span class="eyebrow" data-testid="hero-eyebrow">
+          <span class="dot"></span> Built for hospitality &mdash; since 2008
+        </span>
+
+        <h1 class="hero__title" data-testid="hero-title">
+          Introduce your restaurant&mdash;<span class="ink">in style</span>.
+        </h1>
+
+        <p class="hero__lede" data-testid="hero-lede">
+          A 100% custom website with an always&#8209;available menu, instant reservations
+          and built&#8209;in promotions. One platform. Zero friction.
+        </p>
+
+        <div class="hero__ctas">
+          <a href="#cta" class="btn btn--primary" data-testid="hero-primary-cta">
+            Launch my restaurant site
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#features" class="btn btn--text" data-testid="hero-secondary-cta">
+            See features
+          </a>
+        </div>
+
+        <ul class="hero__stats" data-testid="hero-stats">
+          <li>
+            <strong data-counter="15">0</strong><span>+ yrs hospitality focus</span>
+          </li>
+          <li>
+            <strong data-counter="100">0</strong><span>% custom design</span>
+          </li>
+          <li>
+            <strong data-counter="24">0</strong><span>/7 always-on menu</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Hero infographic: a stylized line-art "browser" with menu + reservation -->
+      <div class="hero__art" aria-hidden="true" data-testid="hero-art">
+        <div class="art-window">
+          <div class="art-window__bar">
+            <span></span><span></span><span></span>
+            <div class="art-window__url">restaurant.com / menu</div>
+          </div>
+
+          <div class="art-window__body">
+            <div class="art-row art-row--head">
+              <div class="art-chip">Menu</div>
+              <div class="art-chip art-chip--ghost">Reserve</div>
+              <div class="art-chip art-chip--ghost">Offers</div>
+            </div>
+
+            <div class="art-menu">
+              <div class="art-menu__item">
+                <div class="art-menu__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>
+                </div>
+                <div class="art-menu__lines">
+                  <div class="ln ln--lg"></div>
+                  <div class="ln ln--sm"></div>
+                </div>
+                <div class="art-menu__price">$ 14</div>
+              </div>
+              <div class="art-menu__item">
+                <div class="art-menu__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M6 7l1 12h10l1-12"/></svg>
+                </div>
+                <div class="art-menu__lines">
+                  <div class="ln ln--lg"></div>
+                  <div class="ln ln--sm"></div>
+                </div>
+                <div class="art-menu__price">$ 22</div>
+              </div>
+              <div class="art-menu__item is-accent">
+                <div class="art-menu__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.6L20 9.3l-4 4 1 5.7L12 16l-5 3 1-5.7-4-4 5.4-.7L12 3z"/></svg>
+                </div>
+                <div class="art-menu__lines">
+                  <div class="ln ln--lg"></div>
+                  <div class="ln ln--sm"></div>
+                </div>
+                <div class="art-menu__price">$ 18</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- floating cards -->
+        <div class="art-float art-float--reserve">
+          <div class="art-float__head">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>
+            <span>Reservation</span>
+          </div>
+          <div class="art-float__meta">
+            <strong>Fri · 7:30 PM</strong>
+            <em>Party of 4 · Confirmed</em>
+          </div>
+        </div>
+
+        <div class="art-float art-float--promo">
+          <div class="art-float__head">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12l-8 8-8-8 8-8 8 8z"/><circle cx="9" cy="9" r="1.4"/></svg>
+            <span>Coupon live</span>
+          </div>
+          <div class="art-float__meta">
+            <strong>−20% Today</strong>
+            <em>Auto-pushed to listings</em>
+          </div>
+        </div>
+
+        <div class="art-ring" aria-hidden="true"></div>
+        <div class="art-blob" aria-hidden="true"></div>
+      </div>
+    </div>
+
+    <!-- ticker / trust strip -->
+    <div class="ticker" data-testid="trust-ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Custom Web Design</span><span>·</span>
+        <span>Online Reservations</span><span>·</span>
+        <span>Digital Menu</span><span>·</span>
+        <span>Coupons &amp; Promotions</span><span>·</span>
+        <span>SMS &amp; Email Campaigns</span><span>·</span>
+        <span>Free Listing on imrealhungry</span><span>·</span>
+        <span>Custom Web Design</span><span>·</span>
+        <span>Online Reservations</span><span>·</span>
+        <span>Digital Menu</span><span>·</span>
+        <span>Coupons &amp; Promotions</span><span>·</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░░░ FEATURES ░░░░░░░░░░░░ -->
+  <section class="features" id="features" data-testid="features-section">
+    <div class="section__head">
+      <span class="eyebrow eyebrow--dark"><span class="dot"></span> Capabilities</span>
+      <h2 class="section__title">
+        Everything your restaurant needs<br/>
+        <span class="ink">on a single, calm canvas.</span>
+      </h2>
+      <p class="section__lede">
+        Four engineered features replace a dozen plugins &mdash; faster pages,
+        easier ordering, fewer no&#8209;shows.
+      </p>
+    </div>
+
+    <div class="feature-grid" data-testid="feature-grid">
+
+      <!-- 01 -->
+      <article class="feature feature--lg" data-testid="feature-freeze-frame">
+        <header class="feature__head">
+          <span class="feature__num">01</span>
+          <h3 class="feature__title">Freeze&#8209;Frame Design</h3>
+        </header>
+        <p class="feature__desc">
+          Always-available navigation eliminates reloads.
+          Pages feel instant; ordering feels effortless.
+        </p>
+
+        <!-- infographic bars -->
+        <div class="feature__art">
+          <div class="bars">
+            <div class="bars__row">
+              <span class="bars__label">Traditional</span>
+              <div class="bars__bar"><i style="--w:78%"></i></div>
+              <span class="bars__val">3.4s</span>
+            </div>
+            <div class="bars__row is-accent">
+              <span class="bars__label">Freeze&#8209;Frame</span>
+              <div class="bars__bar"><i style="--w:18%"></i></div>
+              <span class="bars__val">0.8s</span>
+            </div>
+          </div>
+          <p class="feature__caption">Avg. page load</p>
+        </div>
+      </article>
+
+      <!-- 02 -->
+      <article class="feature" data-testid="feature-reservation">
+        <header class="feature__head">
+          <span class="feature__num">02</span>
+          <h3 class="feature__title">Online Reservation</h3>
+        </header>
+        <p class="feature__desc">
+          Guests pick party size and time slot in seconds.
+          You get notified instantly &mdash; tables fill themselves.
+        </p>
+        <div class="feature__art feature__art--icon">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="8" y="14" width="48" height="42" rx="4"/>
+            <path d="M8 24h48"/>
+            <path d="M20 10v8M44 10v8"/>
+            <rect x="16" y="32" width="10" height="8" rx="1"/>
+            <rect x="30" y="32" width="10" height="8" rx="1" class="hl"/>
+            <rect x="44" y="32" width="6" height="8" rx="1"/>
+            <rect x="16" y="44" width="10" height="8" rx="1"/>
+            <rect x="30" y="44" width="10" height="8" rx="1"/>
+          </svg>
+        </div>
+      </article>
+
+      <!-- 03 -->
+      <article class="feature" data-testid="feature-menu">
+        <header class="feature__head">
+          <span class="feature__num">03</span>
+          <h3 class="feature__title">Always&#8209;Available Menu</h3>
+        </header>
+        <p class="feature__desc">
+          Every category visible at once. No back&#8209;clicks.
+          Update prices and items in a few clicks, anytime.
+        </p>
+        <div class="feature__art feature__art--icon">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="12" y="8" width="40" height="48" rx="3"/>
+            <path d="M20 18h24M20 26h24M20 34h16M20 42h20" />
+            <circle cx="48" cy="42" r="3" class="hl"/>
+          </svg>
+        </div>
+      </article>
+
+      <!-- 04 -->
+      <article class="feature feature--lg" data-testid="feature-recent-orders">
+        <header class="feature__head">
+          <span class="feature__num">04</span>
+          <h3 class="feature__title">Always&#8209;Available Recent Orders</h3>
+        </header>
+        <p class="feature__desc">
+          Returning guests reorder in one tap. You see what sells
+          and suggest the right dish at the right moment.
+        </p>
+
+        <!-- mini timeline infographic -->
+        <div class="feature__art">
+          <ul class="timeline">
+            <li><span class="timeline__dot"></span><strong>Tue</strong><em>Margherita ×2</em></li>
+            <li class="is-accent"><span class="timeline__dot"></span><strong>Thu</strong><em>Truffle Risotto</em></li>
+            <li><span class="timeline__dot"></span><strong>Sun</strong><em>Tiramisu</em></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 05 - Promotions / Coupons -->
+      <article class="feature" data-testid="feature-promotions">
+        <header class="feature__head">
+          <span class="feature__num">05</span>
+          <h3 class="feature__title">Coupons &amp; Promotions</h3>
+        </header>
+        <p class="feature__desc">
+          Push daily offers to your site and the free
+          <em>imrealhungry</em> listing &mdash; in real time.
+        </p>
+        <div class="feature__art feature__art--icon">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M34 8L8 34l22 22 26-26V8H34z"/>
+            <circle cx="44" cy="20" r="3" class="hl"/>
+            <path d="M22 32l10 10"/>
+          </svg>
+        </div>
+      </article>
+
+      <!-- 06 - SMS & Email -->
+      <article class="feature" data-testid="feature-campaigns">
+        <header class="feature__head">
+          <span class="feature__num">06</span>
+          <h3 class="feature__title">SMS &amp; Email Campaigns</h3>
+        </header>
+        <p class="feature__desc">
+          Reach your client base where it lands &mdash; inbox or pocket.
+          Built&#8209;in mass relays included.
+        </p>
+        <div class="feature__art feature__art--icon">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="6" y="16" width="40" height="28" rx="3"/>
+            <path d="M6 20l20 14 20-14"/>
+            <rect x="40" y="32" width="18" height="22" rx="3" class="hl"/>
+            <path d="M44 38h10M44 44h10"/>
+          </svg>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░░░ CTA ░░░░░░░░░░░░ -->
+  <section class="cta" id="cta" data-testid="cta-section">
+    <div class="cta__inner">
+      <div class="cta__copy">
+        <span class="eyebrow eyebrow--light"><span class="dot"></span> Ready when you are</span>
+        <h2 class="cta__title">
+          Let&rsquo;s build a restaurant site<br/>
+          <span class="ink-orange">people actually come back to.</span>
+        </h2>
+        <p class="cta__lede">
+          A custom design, a calmer menu, and marketing built in.
+          Tell us about your restaurant &mdash; we&rsquo;ll handle the rest.
+        </p>
+      </div>
+
+      <form class="cta__form" data-testid="cta-form" novalidate>
+        <div class="field">
+          <label for="rest-name">Restaurant name</label>
+          <input id="rest-name" name="name" type="text" placeholder="e.g. Vino &amp; Olive" required data-testid="form-name" />
+        </div>
+        <div class="field">
+          <label for="rest-email">Email</label>
+          <input id="rest-email" name="email" type="email" placeholder="owner@yourplace.com" required data-testid="form-email" />
+        </div>
+        <div class="field">
+          <label for="rest-need">What do you need?</label>
+          <select id="rest-need" name="need" data-testid="form-need">
+            <option>Custom restaurant website</option>
+            <option>Online reservations</option>
+            <option>Digital menu &amp; ordering</option>
+            <option>Digital marketing &amp; promotions</option>
+            <option>All of the above</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--block" data-testid="form-submit">
+          Request my free proposal
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+        </button>
+
+        <p class="cta__note" data-testid="form-note">
+          No credit card. No spam. A real human replies within 24h.
+        </p>
+      </form>
+    </div>
+
+    <div class="cta__bg" aria-hidden="true">
+      <div class="cta__ring"></div>
+      <div class="cta__ring cta__ring--2"></div>
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░░░ FOOTER (slim) ░░░░░░░░░░░░ -->
+  <footer class="foot" data-testid="site-footer">
+    <div class="foot__inner">
+      <div class="foot__brand">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 3v8a3 3 0 0 0 3 3v7"/><path d="M7 3v8"/>
+            <path d="M17 3c-2 0-3 2-3 5s1 5 3 5v8"/>
+          </svg>
+        </span>
+        <span>e-Restaurant — A product by IT Niche.</span>
+      </div>
+      <small>© <span data-testid="foot-year"></span> All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
