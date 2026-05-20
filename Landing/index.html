@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="IT Niche delivers professional e-commerce solutions — secure payments, product management, and mobile-first storefronts that help small businesses grow online." />
+  <meta name="theme-color" content="#e57119" />
+  <title>IT Niche — E-Commerce Solutions that Grow With You</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============== HEADER ============== -->
+  <header class="site-header" data-testid="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand" data-testid="brand-logo" aria-label="IT Niche home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 22 L12 12 L18 18 L28 6"/>
+            <circle cx="28" cy="6" r="2.2" fill="currentColor" stroke="none"/>
+          </svg>
+        </span>
+        <span class="brand-text">IT&nbsp;Niche</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#process" data-testid="nav-process">Process</a>
+        <a href="#capabilities" data-testid="nav-capabilities">Capabilities</a>
+        <a href="#why" data-testid="nav-why">Why Us</a>
+        <a href="#contact" data-testid="nav-contact">Contact</a>
+      </nav>
+
+      <a href="#contact" class="btn btn-primary header-cta" data-testid="header-cta">
+        Free Consultation
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" data-testid="menu-toggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav" data-testid="mobile-nav" hidden>
+      <a href="#process">Process</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#why">Why Us</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn btn-primary">Free Consultation</a>
+    </div>
+  </header>
+
+  <!-- ============== HERO ============== -->
+  <section class="hero" data-testid="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow" data-testid="hero-eyebrow">
+          <span class="dot"></span> E-Commerce Solutions
+        </span>
+        <h1 class="hero-title" data-testid="hero-title">
+          E-Commerce isn’t a&nbsp;transaction. <span class="accent">It’s a way of life.</span>
+        </h1>
+        <p class="hero-sub" data-testid="hero-sub">
+          We help small &amp; mid-size businesses launch, scale and grow online — from secure checkout to inventory, fulfilment and beyond.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary btn-lg" data-testid="hero-primary-cta">
+            Get a Free Consultation
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#process" class="btn btn-ghost btn-lg" data-testid="hero-secondary-cta">See how it works</a>
+        </div>
+
+        <ul class="hero-bullets" aria-label="Highlights">
+          <li><span class="check" aria-hidden="true">✓</span> No-obligation consultation</li>
+          <li><span class="check" aria-hidden="true">✓</span> Mobile-first builds</li>
+          <li><span class="check" aria-hidden="true">✓</span> Secure payment gateways</li>
+        </ul>
+      </div>
+
+      <!-- Decorative infographic -->
+      <div class="hero-visual" aria-hidden="true" data-testid="hero-visual">
+        <div class="orbit">
+          <div class="orbit-ring ring-1"></div>
+          <div class="orbit-ring ring-2"></div>
+          <div class="orbit-ring ring-3"></div>
+
+          <div class="orbit-core">
+            <svg viewBox="0 0 64 64" width="56" height="56" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 14h6l4 28h32l4-20H18"/>
+              <circle cx="24" cy="52" r="3.5"/>
+              <circle cx="46" cy="52" r="3.5"/>
+            </svg>
+          </div>
+
+          <span class="orbit-chip chip-1">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/></svg>
+            Payments
+          </span>
+          <span class="orbit-chip chip-2">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 12l9 4 9-4M3 17l9 4 9-4"/></svg>
+            Inventory
+          </span>
+          <span class="orbit-chip chip-3">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 4h16v16H4z"/><path d="M4 9h16M9 4v16"/></svg>
+            Catalog
+          </span>
+          <span class="orbit-chip chip-4">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M12 3v9l6 3"/></svg>
+            Fulfilment
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats strip -->
+    <div class="container">
+      <div class="stats" data-testid="hero-stats">
+        <div class="stat">
+          <div class="stat-num">15<span>+</span></div>
+          <div class="stat-label">Years building stores</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">100<span>%</span></div>
+          <div class="stat-label">Mobile-first design</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">24<span>/7</span></div>
+          <div class="stat-label">Secure transactions</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">0<span>$</span></div>
+          <div class="stat-label">Consultation cost</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SIMPLISTIC PROCESS MAP ============== -->
+  <section class="section" id="process" data-testid="simple-process">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow"><span class="dot"></span> Simplistic Process Map</span>
+        <h2>Four steps. One happy transaction.</h2>
+        <p class="section-sub">The abridged model behind every great e-commerce experience.</p>
+      </div>
+
+      <ol class="steps" aria-label="Simple e-commerce process">
+        <li class="step" data-testid="step-1">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+          </div>
+          <div class="step-num">01</div>
+          <h3>Engage User</h3>
+          <p>Attract the right visitor with a fast, focused storefront.</p>
+        </li>
+        <li class="step" data-testid="step-2">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8l-9-5-9 5v8l9 5 9-5z"/><path d="M3.3 7.5L12 12l8.7-4.5M12 22V12"/></svg>
+          </div>
+          <div class="step-num">02</div>
+          <h3>Offer Product</h3>
+          <p>Showcase products and services with clarity and trust.</p>
+        </li>
+        <li class="step" data-testid="step-3">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M2 10h20M6 15h4"/></svg>
+          </div>
+          <div class="step-num">03</div>
+          <h3>Facilitate Sale</h3>
+          <p>Secure, frictionless checkout with trusted gateways.</p>
+        </li>
+        <li class="step" data-testid="step-4">
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+          </div>
+          <div class="step-num">04</div>
+          <h3>Conclude Happily</h3>
+          <p>Confirm, deliver, and turn buyers into loyal customers.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============== EXTENSIVE PROCESS MAP ============== -->
+  <section class="section section-dark" id="capabilities" data-testid="extensive-process">
+    <div class="container">
+      <div class="section-head light">
+        <span class="eyebrow light"><span class="dot"></span> Extensive Process Map</span>
+        <h2>The full operating system of your online business.</h2>
+        <p class="section-sub">From the first click to the last invoice — we cover the entire chain.</p>
+      </div>
+
+      <div class="timeline" role="list">
+        <div class="timeline-line" aria-hidden="true"></div>
+
+        <article class="t-card" role="listitem" data-testid="cap-1">
+          <span class="t-num">01</span>
+          <div class="t-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+          </div>
+          <h4>Engage User</h4>
+          <p>Conversion-led UX that captures attention.</p>
+        </article>
+
+        <article class="t-card" role="listitem" data-testid="cap-2">
+          <span class="t-num">02</span>
+          <div class="t-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg>
+          </div>
+          <h4>Display Product</h4>
+          <p>Rich catalog, search and merchandising.</p>
+        </article>
+
+        <article class="t-card" role="listitem" data-testid="cap-3">
+          <span class="t-num">03</span>
+          <div class="t-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M2 10h20"/></svg>
+          </div>
+          <h4>Facilitate Sale</h4>
+          <p>Payment gateways, taxes and discounts.</p>
+        </article>
+
+        <article class="t-card" role="listitem" data-testid="cap-4">
+          <span class="t-num">04</span>
+          <div class="t-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 12l9 4 9-4M3 17l9 4 9-4"/></svg>
+          </div>
+          <h4>Manage Supplier</h4>
+          <p>Vendor onboarding and reorder workflows.</p>
+        </article>
+
+        <article class="t-card" role="listitem" data-testid="cap-5">
+          <span class="t-num">05</span>
+          <div class="t-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18l-2 12H5L3 6z"/><path d="M16 6a4 4 0 0 0-8 0"/></svg>
+          </div>
+          <h4>Order Fulfilment</h4>
+          <p>Pick, pack and ship — fully tracked.</p>
+        </article>
+
+        <article class="t-card" role="listitem" data-testid="cap-6">
+          <span class="t-num">06</span>
+          <div class="t-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M7 22h10M12 18v4"/></svg>
+          </div>
+          <h4>Point of Sale</h4>
+          <p>Unify retail and online into one system.</p>
+        </article>
+
+        <article class="t-card" role="listitem" data-testid="cap-7">
+          <span class="t-num">07</span>
+          <div class="t-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v4H4zM4 10h16v4H4zM4 16h16v4H4z"/></svg>
+          </div>
+          <h4>Inventory</h4>
+          <p>Live stock counts across channels.</p>
+        </article>
+
+        <article class="t-card" role="listitem" data-testid="cap-8">
+          <span class="t-num">08</span>
+          <div class="t-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M5 6h11a3 3 0 0 1 0 6H8a3 3 0 0 0 0 6h11"/></svg>
+          </div>
+          <h4>Accounting</h4>
+          <p>Revenue in, disbursements out, taxes filed.</p>
+        </article>
+
+        <article class="t-card" role="listitem" data-testid="cap-9">
+          <span class="t-num">09</span>
+          <div class="t-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M12 3v9l6 3"/></svg>
+          </div>
+          <h4>Order Processing</h4>
+          <p>Automated routing and exception handling.</p>
+        </article>
+
+        <article class="t-card" role="listitem" data-testid="cap-10">
+          <span class="t-num">10</span>
+          <div class="t-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0"/><circle cx="17" cy="9" r="3"/><path d="M22 20a5 5 0 0 0-5-5"/></svg>
+          </div>
+          <h4>Client Management</h4>
+          <p>CRM, support and loyalty in one view.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== WHY IT NICHE ============== -->
+  <section class="section" id="why" data-testid="why-section">
+    <div class="container why-grid">
+      <div class="why-copy">
+        <span class="eyebrow"><span class="dot"></span> Why IT Niche</span>
+        <h2>We grow when you grow — even when you outgrow us.</h2>
+        <p class="section-sub">
+          From small business to mid-range to enterprise, we scale with your business. When you’re ready to take it in-house, we become your premium advisor — not a bottleneck.
+        </p>
+
+        <div class="value-list">
+          <div class="value">
+            <div class="value-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4.5L18 22l-6-4-6 4 1.5-8.5L2 9h7z"/></svg>
+            </div>
+            <div>
+              <h4>No risk consultation</h4>
+              <p>Every conversation is a chance to add value — not a sales pitch.</p>
+            </div>
+          </div>
+          <div class="value">
+            <div class="value-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l4 4L21 4"/></svg>
+            </div>
+            <div>
+              <h4>Plain-English answers</h4>
+              <p>If we can’t help, we’ll tell you who can. Honest, always.</p>
+            </div>
+          </div>
+          <div class="value">
+            <div class="value-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-12V5l-8-3-8 3v5c0 8 8 12 8 12z"/></svg>
+            </div>
+            <div>
+              <h4>Built for trust</h4>
+              <p>Secure stacks, transparent pricing, and a partnership that lasts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="why-card" data-testid="why-card">
+        <div class="why-card-head">
+          <span class="badge">Quick Snapshot</span>
+        </div>
+        <div class="snapshot">
+          <div class="snap-item">
+            <div class="snap-num">01</div>
+            <div>
+              <div class="snap-title">Small Business</div>
+              <div class="snap-sub">Launch a store fast</div>
+            </div>
+          </div>
+          <div class="snap-item">
+            <div class="snap-num">02</div>
+            <div>
+              <div class="snap-title">Web Design</div>
+              <div class="snap-sub">Conversion-focused UI</div>
+            </div>
+          </div>
+          <div class="snap-item">
+            <div class="snap-num">03</div>
+            <div>
+              <div class="snap-title">Custom Solutions</div>
+              <div class="snap-sub">Built around your model</div>
+            </div>
+          </div>
+          <div class="snap-item">
+            <div class="snap-num">04</div>
+            <div>
+              <div class="snap-title">Digital Marketing</div>
+              <div class="snap-sub">Grow what you launch</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============== CTA ============== -->
+  <section class="cta" id="contact" data-testid="cta-section">
+    <div class="container cta-inner">
+      <div class="cta-copy">
+        <span class="eyebrow light"><span class="dot"></span> Get on the band wagon</span>
+        <h2>Send us your business plan. We’ll send back clarity.</h2>
+        <p>A no-obligation consultation. No risk. Everything to gain.</p>
+      </div>
+
+      <div class="cta-actions">
+        <a href="tel:+19014149009" class="btn btn-primary btn-lg" data-testid="cta-call">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.9.36 1.78.7 2.62a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.46-1.27a2 2 0 0 1 2.11-.45c.84.34 1.72.57 2.62.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call (901) 414-9009
+        </a>
+        <a href="mailto:helpdesk@itniche.com" class="btn btn-outline-light btn-lg" data-testid="cta-email">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          helpdesk@itniche.com
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="footer" data-testid="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="brand brand-light">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22 L12 12 L18 18 L28 6"/><circle cx="28" cy="6" r="2.2" fill="currentColor" stroke="none"/></svg>
+          </span>
+          <span class="brand-text">IT Niche</span>
+        </a>
+        <p>Enable, facilitate, and grow your e-commerce business — without the buzzwords.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Solutions</h5>
+        <a href="#">Web Design</a>
+        <a href="#">E-Commerce</a>
+        <a href="#">Custom Solutions</a>
+        <a href="#">Digital Marketing</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Company</h5>
+        <a href="#process">Process</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <a href="tel:+19014149009">(901) 414-9009</a>
+        <a href="mailto:helpdesk@itniche.com">helpdesk@itniche.com</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <small>© <span id="year"></span> IT Niche. All rights reserved.</small>
+      <small>Built with clarity. Designed for growth.</small>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
