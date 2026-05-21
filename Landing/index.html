@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="e-Restaurant by ITNiche — a complete digital solution for restaurants. Custom websites, online menus, reservations, coupons, promotions and free listing on imrealhungry.com." />
+  <meta name="theme-color" content="#e57119" />
+  <title>e-Restaurant — Modern Digital Solutions for Restaurants | ITNiche</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" data-testid="main-nav">
+    <a href="#top" class="nav__brand" data-testid="brand-logo">
+      <span class="nav__brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 12c0-5 4-9 9-9s9 4 9 9-4 9-9 9"/>
+          <path d="M8 12h8M12 8v8"/>
+        </svg>
+      </span>
+      <span>ITNiche<span class="nav__brand-dot">.</span></span>
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#features" data-testid="nav-features">Features</a>
+      <a href="#stats" data-testid="nav-stats">Why us</a>
+      <a href="#demo" data-testid="nav-demo">Demo</a>
+      <a href="#hungry" data-testid="nav-hungry">I'm Real Hungry</a>
+    </nav>
+
+    <a href="#cta" class="btn btn--solid nav__cta" data-testid="nav-cta-btn">
+      Get Started
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section id="top" class="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__bg-grid"></div>
+      <div class="hero__bg-blob hero__bg-blob--a"></div>
+      <div class="hero__bg-blob hero__bg-blob--b"></div>
+    </div>
+
+    <div class="hero__inner container">
+      <div class="hero__copy">
+        <span class="eyebrow reveal" data-testid="hero-eyebrow">
+          <span class="eyebrow__dot"></span>
+          e-Restaurant by ITNiche
+        </span>
+        <h1 class="hero__title reveal" data-testid="hero-title">
+          Introduce your <span class="hl">restaurant</span><br/>
+          — in style.
+        </h1>
+        <p class="hero__lede reveal" data-testid="hero-lede">
+          A complete on-line marketing solution. 100% custom website, full control over menus, coupons &amp; promotions — plus a free listing on <strong>imrealhungry.com</strong> for extra reach.
+        </p>
+
+        <div class="hero__cta reveal">
+          <a href="#cta" class="btn btn--solid" data-testid="hero-primary-cta">
+            Start your restaurant site
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#demo" class="btn btn--ghost" data-testid="hero-secondary-cta">
+            Watch demo
+          </a>
+        </div>
+
+        <ul class="hero__chips reveal" aria-label="At a glance">
+          <li><span class="chip__num">100%</span> Custom design</li>
+          <li><span class="chip__num">24/7</span> Online ordering</li>
+          <li><span class="chip__num">∞</span> Menu updates</li>
+        </ul>
+      </div>
+
+      <!-- ANIMATED SVG INFOGRAPHIC -->
+      <div class="hero__art reveal" data-parallax="0.15" aria-hidden="true">
+        <svg class="art" viewBox="0 0 560 560" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="plateGrad" cx="50%" cy="40%" r="60%">
+              <stop offset="0%" stop-color="#fff7ee"/>
+              <stop offset="100%" stop-color="#fde3ca"/>
+            </radialGradient>
+          </defs>
+
+          <!-- Orbit rings -->
+          <g class="orbits" fill="none" stroke="#111" stroke-opacity=".12" stroke-dasharray="2 6">
+            <circle cx="280" cy="280" r="250"/>
+            <circle cx="280" cy="280" r="200"/>
+            <circle cx="280" cy="280" r="150"/>
+          </g>
+
+          <!-- Center plate -->
+          <g class="plate">
+            <circle cx="280" cy="280" r="120" fill="url(#plateGrad)" stroke="#111" stroke-width="2"/>
+            <circle cx="280" cy="280" r="92" fill="none" stroke="#111" stroke-width="1.4" stroke-dasharray="3 5"/>
+            <!-- Cutlery -->
+            <g stroke="#111" stroke-width="2.2" stroke-linecap="round" fill="none">
+              <path d="M230 250c0 12 0 22 0 38M230 232v18"/>
+              <path d="M222 232v22M238 232v22"/>
+              <path d="M330 232c8 0 12 8 12 18s-4 16-12 16v44"/>
+            </g>
+            <!-- Steam -->
+            <g class="steam" stroke="#e57119" stroke-width="2.4" stroke-linecap="round" fill="none">
+              <path d="M260 188c0-10 10-10 10-20s-10-10-10-20"/>
+              <path d="M280 188c0-10 10-10 10-20s-10-10-10-20"/>
+              <path d="M300 188c0-10 10-10 10-20s-10-10-10-20"/>
+            </g>
+          </g>
+
+          <!-- Orbiting feature pills -->
+          <g class="orbit orbit--1">
+            <g transform="translate(280 30)">
+              <g class="pill">
+                <rect x="-70" y="-22" width="140" height="44" rx="22" fill="#000"/>
+                <text x="0" y="5" text-anchor="middle" fill="#fff" font-family="Lato, sans-serif" font-size="14" font-weight="700">ONLINE MENU</text>
+              </g>
+            </g>
+          </g>
+          <g class="orbit orbit--2">
+            <g transform="translate(530 280)">
+              <g class="pill">
+                <rect x="-72" y="-22" width="144" height="44" rx="22" fill="#e57119"/>
+                <text x="0" y="5" text-anchor="middle" fill="#fff" font-family="Lato, sans-serif" font-size="14" font-weight="700">RESERVATIONS</text>
+              </g>
+            </g>
+          </g>
+          <g class="orbit orbit--3">
+            <g transform="translate(280 530)">
+              <g class="pill">
+                <rect x="-64" y="-22" width="128" height="44" rx="22" fill="#fff" stroke="#111" stroke-width="2"/>
+                <text x="0" y="5" text-anchor="middle" fill="#111" font-family="Lato, sans-serif" font-size="13" font-weight="700">COUPONS</text>
+              </g>
+            </g>
+          </g>
+          <g class="orbit orbit--4">
+            <g transform="translate(30 280)">
+              <g class="pill">
+                <rect x="-66" y="-22" width="132" height="44" rx="22" fill="#fff" stroke="#111" stroke-width="2"/>
+                <text x="0" y="5" text-anchor="middle" fill="#111" font-family="Lato, sans-serif" font-size="13" font-weight="700">SMS &amp; EMAIL</text>
+              </g>
+            </g>
+          </g>
+
+          <!-- Small floating dots -->
+          <g class="float-dots" fill="#e57119">
+            <circle cx="110" cy="120" r="5"/>
+            <circle cx="470" cy="140" r="4"/>
+            <circle cx="500" cy="440" r="6"/>
+            <circle cx="90"  cy="430" r="4"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Marquee strip -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Custom Websites</span><span>•</span>
+        <span>Online Reservations</span><span>•</span>
+        <span>Always-On Menus</span><span>•</span>
+        <span>Mass Mailing</span><span>•</span>
+        <span>SMS Relay</span><span>•</span>
+        <span>imrealhungry.com</span><span>•</span>
+        <span>Coupons &amp; Promotions</span><span>•</span>
+        <span>Custom Websites</span><span>•</span>
+        <span>Online Reservations</span><span>•</span>
+        <span>Always-On Menus</span><span>•</span>
+        <span>Mass Mailing</span><span>•</span>
+        <span>SMS Relay</span><span>•</span>
+        <span>imrealhungry.com</span><span>•</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section id="stats" class="stats">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span class="eyebrow__dot"></span>By the numbers</span>
+        <h2 class="section-title">A platform built for <span class="hl">growth</span>.</h2>
+        <p class="section-sub">Speed, control and outreach — engineered to convert hungry visitors into loyal customers.</p>
+      </div>
+
+      <div class="stats__grid">
+        <article class="stat reveal" data-testid="stat-1">
+          <div class="stat__num" data-count="100" data-suffix="%">0%</div>
+          <div class="stat__label">Custom-built websites</div>
+          <p class="stat__desc">You own every pixel — design, content, menu and promotions.</p>
+        </article>
+        <article class="stat reveal" data-testid="stat-2">
+          <div class="stat__num" data-count="24" data-suffix="/7">0/7</div>
+          <div class="stat__label">Reservations &amp; ordering</div>
+          <p class="stat__desc">Take bookings while your kitchen sleeps. Never miss a table again.</p>
+        </article>
+        <article class="stat reveal" data-testid="stat-3">
+          <div class="stat__num" data-count="3" data-suffix="x">0x</div>
+          <div class="stat__label">Faster page loads</div>
+          <p class="stat__desc">Freeze-frame architecture keeps essentials always available.</p>
+        </article>
+        <article class="stat reveal" data-testid="stat-4">
+          <div class="stat__num" data-count="0" data-prefix="$" data-suffix="">$0</div>
+          <div class="stat__label">Free listing</div>
+          <p class="stat__desc">Get discovered on imrealhungry.com — no extra cost, more eyes.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section id="features" class="features">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span class="eyebrow__dot"></span>Core Features</span>
+        <h2 class="section-title">Everything your restaurant needs,<br/><span class="hl">none of the clutter.</span></h2>
+        <p class="section-sub">Purpose-built modules that make ordering effortless and management painless.</p>
+      </div>
+
+      <div class="features__grid">
+        <!-- Feature 1 -->
+        <article class="feature reveal" data-testid="feature-freeze-frame">
+          <div class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="6" y="9" width="36" height="26" rx="3"/>
+              <path d="M6 16h36"/>
+              <circle cx="11" cy="12.5" r="1"/>
+              <circle cx="15" cy="12.5" r="1"/>
+              <path d="M14 24l5 5 9-10"/>
+              <path d="M18 41h12"/>
+            </svg>
+          </div>
+          <h3 class="feature__title">Freeze-Frame Design</h3>
+          <p class="feature__desc">Minimal reloads. Always-available info on every page for a fast, frustration-free ordering experience.</p>
+          <span class="feature__meta">01 / Speed</span>
+        </article>
+
+        <!-- Feature 2 -->
+        <article class="feature reveal" data-testid="feature-reservation">
+          <div class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="7" y="10" width="34" height="30" rx="3"/>
+              <path d="M7 18h34"/>
+              <path d="M15 6v8M33 6v8"/>
+              <circle cx="24" cy="29" r="4"/>
+              <path d="M24 27v2l1.5 1"/>
+            </svg>
+          </div>
+          <h3 class="feature__title">Online Reservation</h3>
+          <p class="feature__desc">Book a table in seconds — choose party size and time slot. Zero phone tag.</p>
+          <span class="feature__meta">02 / Convenience</span>
+        </article>
+
+        <!-- Feature 3 -->
+        <article class="feature reveal" data-testid="feature-menu">
+          <div class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 6h22a4 4 0 0 1 4 4v32H14a4 4 0 0 1-4-4V6z"/>
+              <path d="M10 38a4 4 0 0 0 4 4"/>
+              <path d="M16 14h14M16 20h14M16 26h10"/>
+            </svg>
+          </div>
+          <h3 class="feature__title">Always-On Menu</h3>
+          <p class="feature__desc">Browse categories without clicking back and forth. Update items in a few clicks, any time.</p>
+          <span class="feature__meta">03 / Control</span>
+        </article>
+
+        <!-- Feature 4 -->
+        <article class="feature reveal" data-testid="feature-recent-orders">
+          <div class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="24" cy="24" r="16"/>
+              <path d="M24 14v10l7 4"/>
+              <path d="M40 14l-3 3-3-3"/>
+            </svg>
+          </div>
+          <h3 class="feature__title">Recent Orders</h3>
+          <p class="feature__desc">Customers re-order favorites in one tap. You spot your top dishes and trends instantly.</p>
+          <span class="feature__meta">04 / Insight</span>
+        </article>
+
+        <!-- Feature 5 -->
+        <article class="feature reveal" data-testid="feature-coupons">
+          <div class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 16a3 3 0 0 1 3-3h30a3 3 0 0 1 3 3v4a3 3 0 0 0 0 6v4a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3v-4a3 3 0 0 0 0-6v-4z"/>
+              <path d="M20 18l8 12"/>
+              <circle cx="20" cy="20" r="1.5"/>
+              <circle cx="28" cy="28" r="1.5"/>
+            </svg>
+          </div>
+          <h3 class="feature__title">Coupons &amp; Promotions</h3>
+          <p class="feature__desc">Launch real-time campaigns. Drive foot-traffic and online orders with zero dev cycles.</p>
+          <span class="feature__meta">05 / Marketing</span>
+        </article>
+
+        <!-- Feature 6 -->
+        <article class="feature reveal" data-testid="feature-outreach">
+          <div class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 12h36v22H18l-8 8V12z"/>
+              <path d="M14 22h20M14 28h14"/>
+            </svg>
+          </div>
+          <h3 class="feature__title">Mass-Mail &amp; SMS</h3>
+          <p class="feature__desc">Reach your client base with newsletters and SMS relay — built right in.</p>
+          <span class="feature__meta">06 / Outreach</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS — TIMELINE ============ -->
+  <section class="timeline">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span class="eyebrow__dot"></span>How it works</span>
+        <h2 class="section-title">From sign-up to <span class="hl">first order</span> — fast.</h2>
+      </div>
+
+      <ol class="timeline__list">
+        <li class="timeline__step reveal">
+          <div class="timeline__num">01</div>
+          <h3>Tell us about your restaurant</h3>
+          <p>Cuisine, audience, brand. We map your goals to a launch plan.</p>
+        </li>
+        <li class="timeline__step reveal">
+          <div class="timeline__num">02</div>
+          <h3>We design your custom site</h3>
+          <p>100% bespoke layout, on-brand visuals, lightning-fast pages.</p>
+        </li>
+        <li class="timeline__step reveal">
+          <div class="timeline__num">03</div>
+          <h3>You control menu &amp; promotions</h3>
+          <p>Edit items, prices, coupons in clicks. No tickets, no waiting.</p>
+        </li>
+        <li class="timeline__step reveal">
+          <div class="timeline__num">04</div>
+          <h3>Reach more diners</h3>
+          <p>Free listing on imrealhungry.com + optional email/SMS campaigns.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ LUNCH AND LEARN DEMO (image-based) ============ -->
+  <section id="demo" class="showcase">
+    <div class="container showcase__grid">
+      <div class="showcase__media reveal" data-parallax="0.08">
+        <div class="showcase__img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1481833761820-0509d3217039?auto=format&fit=crop&w=1400&q=80"
+            alt="Restaurant website preview on a laptop"
+            loading="lazy"
+            data-testid="demo-image"
+          />
+          <div class="showcase__badge">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3l14 9-14 9V3z"/></svg>
+            Live walkthrough
+          </div>
+          <div class="showcase__sticker showcase__sticker--a">30 min</div>
+          <div class="showcase__sticker showcase__sticker--b">free</div>
+        </div>
+      </div>
+
+      <div class="showcase__copy reveal">
+        <span class="eyebrow"><span class="eyebrow__dot"></span>Lunch &amp; Learn Demo</span>
+        <h2 class="section-title">See e-Restaurant in action <span class="hl">over lunch.</span></h2>
+        <p class="section-sub">A 30-minute live walkthrough tailored to your restaurant. We'll show menus, reservations, coupons and how to launch campaigns in real time.</p>
+
+        <ul class="checklist">
+          <li><span class="checklist__tick" aria-hidden="true">✓</span> Personalized to your cuisine &amp; brand</li>
+          <li><span class="checklist__tick" aria-hidden="true">✓</span> Q&amp;A with a product specialist</li>
+          <li><span class="checklist__tick" aria-hidden="true">✓</span> No obligation — bring your team</li>
+        </ul>
+
+        <a href="#cta" class="btn btn--solid" data-testid="demo-cta">
+          Book a demo
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ I'M REAL HUNGRY (image-based) ============ -->
+  <section id="hungry" class="showcase showcase--flip">
+    <div class="container showcase__grid">
+      <div class="showcase__copy reveal">
+        <span class="eyebrow eyebrow--invert"><span class="eyebrow__dot"></span>Free Listing</span>
+        <h2 class="section-title section-title--invert">Get found on <span class="hl hl--invert">imrealhungry.com</span></h2>
+        <p class="section-sub section-sub--invert">Post daily coupons and promotions to a hungry, ready-to-order audience. Real-time campaign capabilities — totally free.</p>
+
+        <div class="kpis">
+          <div class="kpi">
+            <div class="kpi__num">Free</div>
+            <div class="kpi__label">Listing &amp; setup</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi__num">Live</div>
+            <div class="kpi__label">Campaign updates</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi__num">More</div>
+            <div class="kpi__label">Walk-in traffic</div>
+          </div>
+        </div>
+
+        <a href="#cta" class="btn btn--invert" data-testid="hungry-cta">
+          Claim your free listing
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+
+      <div class="showcase__media reveal" data-parallax="0.1">
+        <div class="showcase__img-wrap showcase__img-wrap--dark">
+          <img
+            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1400&q=80"
+            alt="Plated restaurant dish — coupons and promotions"
+            loading="lazy"
+            data-testid="hungry-image"
+          />
+          <div class="showcase__badge showcase__badge--invert">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12V8H6a2 2 0 0 1 0-4h12v4"/><path d="M4 6v12a2 2 0 0 0 2 2h14v-4"/><path d="M18 12a2 2 0 0 0 0 4h4v-4z"/></svg>
+            $0 to join
+          </div>
+          <div class="showcase__sticker showcase__sticker--invert showcase__sticker--a">daily deals</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AUDIENCE / WHO WE SERVE ============ -->
+  <section class="audience">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span class="eyebrow__dot"></span>Who we serve</span>
+        <h2 class="section-title">Built for <span class="hl">small businesses.</span></h2>
+        <p class="section-sub">From single-location eateries to growing franchises — we cover the full digital stack.</p>
+      </div>
+
+      <div class="audience__grid">
+        <div class="audience__card reveal" data-testid="audience-web">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="audience__icon">
+            <circle cx="24" cy="24" r="18"/>
+            <path d="M6 24h36M24 6c5 5 8 11 8 18s-3 13-8 18c-5-5-8-11-8-18s3-13 8-18z"/>
+          </svg>
+          <h3>Web Design</h3>
+          <p>Bespoke restaurant websites that look stunning on every device.</p>
+        </div>
+        <div class="audience__card reveal" data-testid="audience-custom">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="audience__icon">
+            <path d="M10 8h28v32H10z"/>
+            <path d="M16 16h16M16 24h16M16 32h10"/>
+          </svg>
+          <h3>Custom Solutions</h3>
+          <p>Reservation, ordering and loyalty modules tailored to your flow.</p>
+        </div>
+        <div class="audience__card reveal" data-testid="audience-marketing">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="audience__icon">
+            <path d="M6 30V18l24-10v32L6 30z"/>
+            <path d="M30 14l10 4v12l-10 4"/>
+            <path d="M14 30v6a4 4 0 0 0 8 0v-3"/>
+          </svg>
+          <h3>Digital Marketing</h3>
+          <p>Email, SMS and free listings — outreach that drives real orders.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section id="cta" class="cta">
+    <div class="container cta__inner">
+      <div class="cta__art" aria-hidden="true">
+        <svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.4">
+          <circle cx="100" cy="100" r="92"/>
+          <circle cx="100" cy="100" r="68" stroke-dasharray="3 6"/>
+          <circle cx="100" cy="100" r="44"/>
+          <path d="M100 8v184M8 100h184"/>
+        </svg>
+      </div>
+
+      <h2 class="cta__title">Ready to put your restaurant <span class="hl hl--invert">online — in style?</span></h2>
+      <p class="cta__sub">Tell us a little about your venue. We'll get back within one business day.</p>
+
+      <form class="cta__form" novalidate data-testid="cta-form">
+        <label class="sr-only" for="name">Your name</label>
+        <input id="name" type="text" placeholder="Your name" required data-testid="cta-name" />
+
+        <label class="sr-only" for="email">Email</label>
+        <input id="email" type="email" placeholder="Email address" required data-testid="cta-email" />
+
+        <label class="sr-only" for="restaurant">Restaurant</label>
+        <input id="restaurant" type="text" placeholder="Restaurant name" data-testid="cta-restaurant" />
+
+        <button type="submit" class="btn btn--invert" data-testid="cta-submit">
+          Request a callback
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+      </form>
+      <p class="cta__note" data-testid="cta-note">We respect your inbox. No spam, ever.</p>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#top" class="nav__brand nav__brand--footer">
+          <span class="nav__brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 12c0-5 4-9 9-9s9 4 9 9-4 9-9 9"/>
+              <path d="M8 12h8M12 8v8"/>
+            </svg>
+          </span>
+          <span>ITNiche<span class="nav__brand-dot">.</span></span>
+        </a>
+        <p class="footer__tag">e-Restaurant — a complete on-line marketing solution.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Product</h4>
+        <a href="#features">Features</a>
+        <a href="#stats">Why us</a>
+        <a href="#demo">Demo</a>
+      </div>
+      <div class="footer__col">
+        <h4>Reach</h4>
+        <a href="#hungry">imrealhungry.com</a>
+        <a href="#cta">Email &amp; SMS</a>
+        <a href="#cta">Coupons</a>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <a href="#cta">Contact</a>
+        <a href="#cta">Get started</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year">2025</span> ITNiche · All rights reserved.</span>
+      <span>Made for restaurants that move fast.</span>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
