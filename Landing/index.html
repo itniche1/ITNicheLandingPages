@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Strategic branding and digital campaign services for small businesses. Build a recognizable brand, drive conversions, and grow online with IT Niche." />
+  <meta name="theme-color" content="#e57119" />
+  <title>Branding & Digital Campaigns — A Brand Worth Remembering</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" data-testid="site-nav">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__brand" aria-label="IT Niche home" data-testid="nav-brand">
+        <span class="nav__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28">
+            <circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="16" cy="16" r="6" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="nav__name">IT<em>Niche</em></span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#branding" data-testid="nav-link-branding">Branding</a>
+        <a href="#campaign" data-testid="nav-link-campaign">Digital Campaign</a>
+        <a href="#process" data-testid="nav-link-process">Process</a>
+        <a href="#contact" class="nav__cta" data-testid="nav-link-contact">Talk to us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__grain"></div>
+        <span class="float float--1"></span>
+        <span class="float float--2"></span>
+        <span class="float float--3"></span>
+      </div>
+
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <span class="eyebrow" data-testid="hero-eyebrow">
+            <span class="dot"></span> Branding · Digital Campaigns
+          </span>
+          <h1 id="hero-title" class="hero__title" data-testid="hero-title">
+            Build a brand <br/>
+            <span class="ink">worth</span> <span class="accent">remembering.</span>
+          </h1>
+          <p class="hero__sub" data-testid="hero-sub">
+            Strategy, identity, and digital campaigns engineered to turn small businesses
+            into instantly recognizable brands.
+          </p>
+          <div class="hero__cta">
+            <a href="#contact" class="btn btn--primary" data-testid="hero-cta-primary">
+              Schedule a free consult
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="#branding" class="btn btn--ghost" data-testid="hero-cta-secondary">See what we create</a>
+          </div>
+
+          <ul class="hero__meta" aria-label="Trust signals">
+            <li><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"/></svg> W3C compliant builds</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"/></svg> ROI-tracked campaigns</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"/></svg> Trained & handed over</li>
+          </ul>
+        </div>
+
+        <!-- Animated Brand Orbit Infographic -->
+        <div class="hero__art" aria-hidden="true" data-parallax="0.15">
+          <svg class="orbit" viewBox="0 0 480 480" role="img" aria-label="Brand ecosystem diagram">
+            <defs>
+              <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#e57119" stop-opacity="0.18"/>
+                <stop offset="100%" stop-color="#e57119" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+
+            <circle cx="240" cy="240" r="220" fill="url(#glow)"/>
+            <circle class="ring ring--1" cx="240" cy="240" r="200" fill="none" stroke="#000" stroke-opacity="0.08" stroke-dasharray="2 6"/>
+            <circle class="ring ring--2" cx="240" cy="240" r="150" fill="none" stroke="#000" stroke-opacity="0.12" stroke-dasharray="4 8"/>
+            <circle class="ring ring--3" cx="240" cy="240" r="100" fill="none" stroke="#e57119" stroke-opacity="0.45" stroke-width="1.5"/>
+
+            <!-- Center logo mark -->
+            <g transform="translate(240 240)">
+              <circle r="46" fill="#000"/>
+              <circle r="46" fill="none" stroke="#e57119" stroke-width="2"/>
+              <text y="6" text-anchor="middle" font-family="Lato, sans-serif" font-weight="900" font-size="20" fill="#fff" letter-spacing="2">BRAND</text>
+            </g>
+
+            <!-- Orbit nodes -->
+            <g class="orbit__nodes">
+              <g class="node" transform="translate(240 40)">
+                <circle r="26" fill="#fff" stroke="#000" stroke-width="1.5"/>
+                <path d="M-10 0 L-2 8 L10 -6" fill="none" stroke="#e57119" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <g class="node" transform="translate(420 200)">
+                <circle r="26" fill="#fff" stroke="#000" stroke-width="1.5"/>
+                <rect x="-10" y="-8" width="20" height="16" fill="none" stroke="#000" stroke-width="2" rx="2"/>
+                <path d="M-7 -4 L0 2 L7 -4" fill="none" stroke="#e57119" stroke-width="2" stroke-linecap="round"/>
+              </g>
+              <g class="node" transform="translate(380 380)">
+                <circle r="26" fill="#fff" stroke="#000" stroke-width="1.5"/>
+                <circle r="6" cx="-4" cy="-4" fill="none" stroke="#000" stroke-width="2"/>
+                <path d="M0 0 L8 8" stroke="#e57119" stroke-width="2.5" stroke-linecap="round"/>
+              </g>
+              <g class="node" transform="translate(140 420)">
+                <circle r="26" fill="#fff" stroke="#000" stroke-width="1.5"/>
+                <path d="M-8 -6 H8 M-8 0 H4 M-8 6 H8" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+              </g>
+              <g class="node" transform="translate(40 260)">
+                <circle r="26" fill="#fff" stroke="#000" stroke-width="1.5"/>
+                <path d="M-10 6 L-3 -2 L2 3 L10 -7" fill="none" stroke="#e57119" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <g class="node" transform="translate(90 90)">
+                <circle r="26" fill="#fff" stroke="#000" stroke-width="1.5"/>
+                <path d="M0 -10 L3 -3 L10 -3 L4 2 L6 9 L0 5 L-6 9 L-4 2 L-10 -3 L-3 -3 Z" fill="#e57119"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Marquee strip -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Logo Identity</span><span>•</span>
+          <span>Web Presence</span><span>•</span>
+          <span>Social Media</span><span>•</span>
+          <span>Email Campaigns</span><span>•</span>
+          <span>Print Collateral</span><span>•</span>
+          <span>Digital Ads</span><span>•</span>
+          <span>Brand Strategy</span><span>•</span>
+          <span>Logo Identity</span><span>•</span>
+          <span>Web Presence</span><span>•</span>
+          <span>Social Media</span><span>•</span>
+          <span>Email Campaigns</span><span>•</span>
+          <span>Print Collateral</span><span>•</span>
+          <span>Digital Ads</span><span>•</span>
+          <span>Brand Strategy</span><span>•</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS / COUNTERS ============ -->
+    <section class="stats" aria-label="Impact in numbers">
+      <div class="container stats__grid">
+        <div class="stat" data-testid="stat-brands">
+          <span class="stat__num" data-count="500" data-suffix="+">0</span>
+          <span class="stat__label">Brands crafted</span>
+        </div>
+        <div class="stat" data-testid="stat-years">
+          <span class="stat__num" data-count="12" data-suffix="+">0</span>
+          <span class="stat__label">Years in the game</span>
+        </div>
+        <div class="stat" data-testid="stat-roi">
+          <span class="stat__num" data-count="3.5" data-suffix="x" data-decimals="1">0</span>
+          <span class="stat__label">Average campaign ROI</span>
+        </div>
+        <div class="stat" data-testid="stat-retention">
+          <span class="stat__num" data-count="98" data-suffix="%">0</span>
+          <span class="stat__label">Client retention</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BRANDING ============ -->
+    <section id="branding" class="section section--branding" aria-labelledby="branding-title">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow"><span class="dot"></span> 01 / Branding</span>
+          <h2 id="branding-title" class="section__title" data-testid="branding-title">
+            Branding isn't a logo. <br/>
+            It's the <span class="accent">whole experience</span>.
+          </h2>
+          <p class="section__sub">
+            A consistent, aesthetic presence across every touchpoint — print, web, social, mail.
+            We design the system, not just the symbol.
+          </p>
+        </header>
+
+        <div class="cards" data-testid="branding-cards">
+          <!-- Card 1 -->
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 48 48" width="36" height="36" aria-hidden="true">
+                <circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M16 24l6 6 12-14" fill="none" stroke="#e57119" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Company Logo</h3>
+            <p class="card__text">A mark that anchors your identity across every surface.</p>
+            <span class="card__num">01</span>
+          </article>
+          <!-- Card 2 -->
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 48 48" width="36" height="36" aria-hidden="true">
+                <rect x="6" y="10" width="36" height="26" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M6 18h36" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="11" cy="14" r="1" fill="#e57119"/>
+                <circle cx="15" cy="14" r="1" fill="#e57119"/>
+                <circle cx="19" cy="14" r="1" fill="#e57119"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Web Presence</h3>
+            <p class="card__text">Responsive, fast, W3C-compliant websites that complement the brand.</p>
+            <span class="card__num">02</span>
+          </article>
+          <!-- Card 3 -->
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 48 48" width="36" height="36" aria-hidden="true">
+                <path d="M8 36V18l8-6 8 6 8-6 8 6v18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M14 36v-8h6v8M28 36v-8h6v8" fill="none" stroke="#e57119" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Digital Media Strategy</h3>
+            <p class="card__text">A unified plan so every channel reinforces the same story.</p>
+            <span class="card__num">03</span>
+          </article>
+          <!-- Card 4 -->
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 48 48" width="36" height="36" aria-hidden="true">
+                <rect x="10" y="8" width="28" height="32" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M16 16h16M16 22h16M16 28h10" stroke="#e57119" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Print Media</h3>
+            <p class="card__text">Cards, brochures, and ads that mirror your digital identity — pixel-perfect on paper.</p>
+            <span class="card__num">04</span>
+          </article>
+          <!-- Card 5 -->
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 48 48" width="36" height="36" aria-hidden="true">
+                <path d="M24 6v8M24 34v8M6 24h8M34 24h8M11 11l6 6M31 31l6 6M11 37l6-6M31 17l6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="24" cy="24" r="6" fill="none" stroke="#e57119" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Marketing Campaigns</h3>
+            <p class="card__text">Integrated campaigns across every channel, tracked and optimized.</p>
+            <span class="card__num">05</span>
+          </article>
+          <!-- Card 6 -->
+          <article class="card">
+            <div class="card__icon">
+              <svg viewBox="0 0 48 48" width="36" height="36" aria-hidden="true">
+                <path d="M8 14a4 4 0 014-4h18a4 4 0 014 4v12a4 4 0 01-4 4H20l-8 6v-6h0a4 4 0 01-4-4z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M16 18h10M16 22h6" stroke="#e57119" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Client Communication</h3>
+            <p class="card__text">Continuous, on-brand touchpoints that keep customers coming back.</p>
+            <span class="card__num">06</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DIGITAL CAMPAIGN ============ -->
+    <section id="campaign" class="section section--campaign" aria-labelledby="campaign-title">
+      <div class="container">
+        <header class="section__head section__head--center">
+          <span class="eyebrow"><span class="dot"></span> 02 / Digital Campaign</span>
+          <h2 id="campaign-title" class="section__title" data-testid="campaign-title">
+            A website is the start. <br/>
+            <span class="accent">Visibility</span> is the work.
+          </h2>
+          <p class="section__sub">
+            We don't just launch — we run, measure, and improve. Tools, templates,
+            and trained teams so your campaigns compound over time.
+          </p>
+        </header>
+
+        <div class="cards cards--4" data-testid="campaign-cards">
+          <article class="card card--dark">
+            <div class="card__icon card__icon--light">
+              <svg viewBox="0 0 48 48" width="36" height="36" aria-hidden="true">
+                <rect x="8" y="10" width="32" height="28" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M14 18h20M14 24h20M14 30h12" stroke="#e57119" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Digital Stationery</h3>
+            <p class="card__text">Invoices, letterheads, and email templates — branded and ready to send.</p>
+          </article>
+
+          <article class="card card--dark">
+            <div class="card__icon card__icon--light">
+              <svg viewBox="0 0 48 48" width="36" height="36" aria-hidden="true">
+                <path d="M6 14l18 12 18-12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <rect x="6" y="12" width="36" height="24" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="38" cy="14" r="5" fill="#e57119"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Mass Mailing Tools</h3>
+            <p class="card__text">List managers and mailing platforms with deliverability that converts.</p>
+          </article>
+
+          <article class="card card--dark">
+            <div class="card__icon card__icon--light">
+              <svg viewBox="0 0 48 48" width="36" height="36" aria-hidden="true">
+                <circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="18" cy="20" r="3" fill="#e57119"/>
+                <circle cx="30" cy="20" r="3" fill="#e57119"/>
+                <circle cx="24" cy="32" r="3" fill="#e57119"/>
+                <path d="M18 20l6 12M30 20l-6 12" stroke="currentColor" stroke-width="1.2"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Social Customization</h3>
+            <p class="card__text">Profiles tuned for each platform — same brand, native to each feed.</p>
+          </article>
+
+          <article class="card card--dark">
+            <div class="card__icon card__icon--light">
+              <svg viewBox="0 0 48 48" width="36" height="36" aria-hidden="true">
+                <path d="M8 28V20a4 4 0 014-4h10l16-8v32l-16-8H12a4 4 0 01-4-4z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <circle cx="38" cy="24" r="3" fill="#e57119"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Digital Ads</h3>
+            <p class="card__text">Search, social, and display ads designed and managed for measurable ROI.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS TIMELINE ============ -->
+    <section id="process" class="section section--process" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow"><span class="dot"></span> 03 / How it works</span>
+          <h2 id="process-title" class="section__title" data-testid="process-title">
+            Four steps. <br/>
+            One <span class="accent">compounding system</span>.
+          </h2>
+        </header>
+
+        <ol class="timeline" data-testid="process-timeline">
+          <li class="timeline__step">
+            <span class="timeline__num">01</span>
+            <div class="timeline__icon">
+              <svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true">
+                <circle cx="16" cy="16" r="12" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="16" cy="16" r="3" fill="#e57119"/>
+              </svg>
+            </div>
+            <h3 class="timeline__title">Strategy</h3>
+            <p class="timeline__text">Audit your brand, audience, and channels. Define what to say and where.</p>
+          </li>
+          <li class="timeline__step">
+            <span class="timeline__num">02</span>
+            <div class="timeline__icon">
+              <svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true">
+                <rect x="6" y="6" width="20" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M11 16h10M16 11v10" stroke="#e57119" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="timeline__title">Setup</h3>
+            <p class="timeline__text">Build the identity system, tools, templates, and tracking.</p>
+          </li>
+          <li class="timeline__step">
+            <span class="timeline__num">03</span>
+            <div class="timeline__icon">
+              <svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true">
+                <path d="M6 22l6-6 4 4 10-12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M20 8h6v6" fill="none" stroke="#e57119" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="timeline__title">Launch</h3>
+            <p class="timeline__text">Roll out across channels with consistent messaging and creative.</p>
+          </li>
+          <li class="timeline__step">
+            <span class="timeline__num">04</span>
+            <div class="timeline__icon">
+              <svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true">
+                <path d="M16 4v6M16 22v6M4 16h6M22 16h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="16" cy="16" r="5" fill="none" stroke="#e57119" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="timeline__title">Optimize</h3>
+            <p class="timeline__text">Measure ROI, refine creative, scale what works. We train you along the way.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section id="contact" class="cta" aria-labelledby="cta-title">
+      <div class="cta__bg" aria-hidden="true">
+        <svg viewBox="0 0 800 400" preserveAspectRatio="none" width="100%" height="100%">
+          <defs>
+            <linearGradient id="ctaGrad" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0%" stop-color="#e57119" stop-opacity="0.18"/>
+              <stop offset="100%" stop-color="#e57119" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <circle cx="120" cy="100" r="220" fill="url(#ctaGrad)"/>
+          <circle cx="700" cy="320" r="180" fill="url(#ctaGrad)"/>
+        </svg>
+      </div>
+      <div class="container cta__inner">
+        <span class="eyebrow eyebrow--light"><span class="dot"></span> Ready when you are</span>
+        <h2 id="cta-title" class="cta__title" data-testid="cta-title">
+          Let's build a brand <br/> people <span class="accent">remember</span>.
+        </h2>
+        <p class="cta__sub">
+          Book a free consult or join a Lunch & Learn — we'll map your next campaign in 30 minutes.
+        </p>
+        <div class="cta__actions">
+          <a href="mailto:hello@itniche.com" class="btn btn--primary btn--lg" data-testid="cta-consult">
+            Schedule free consult
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#" class="btn btn--outline btn--lg" data-testid="cta-lunch">Lunch & Learn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" data-testid="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="24" height="24">
+            <circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="16" cy="16" r="6" fill="currentColor"/>
+          </svg>
+        </span>
+        <span>IT<em>Niche</em> — Branding & Digital Campaigns</span>
+      </div>
+      <p class="footer__meta">© <span id="year"></span> IT Niche. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
