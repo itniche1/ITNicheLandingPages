@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ongoing website enhancements, updates, and support services to keep your business secure, fast, and ahead of the curve." />
+  <meta name="theme-color" content="#e57119" />
+  <title>Ongoing Enhancements & Support — Always On, Always Improving</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ░░░ NAVIGATION ░░░ -->
+  <header class="nav" data-testid="site-header">
+    <div class="container nav__inner">
+      <a href="#" class="nav__brand" data-testid="nav-brand" aria-label="IT Niche Home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 20 L12 12 L18 18 L28 8" />
+            <circle cx="28" cy="8" r="2.4" fill="currentColor" stroke="none" />
+          </svg>
+        </span>
+        <span class="brand__text">IT<span class="brand__accent">Niche</span></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#overview" data-testid="nav-overview">Overview</a>
+        <a href="#approach" data-testid="nav-approach">Approach</a>
+        <a href="#process" data-testid="nav-process">Process</a>
+        <a href="#cta" class="nav__cta" data-testid="nav-cta-btn">Get Support →</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ░░░ HERO ░░░ -->
+    <section class="hero" data-testid="hero-section">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__blob" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__copy reveal">
+          <span class="eyebrow" data-testid="hero-eyebrow">
+            <span class="eyebrow__dot"></span> Ongoing Enhancements &amp; Support
+          </span>
+
+          <h1 class="hero__title" data-testid="hero-title">
+            Your website,<br/>
+            <span class="title-accent">always improving.</span>
+          </h1>
+
+          <p class="hero__sub" data-testid="hero-sub">
+            Keep your business secure, fast, and ahead of the curve — without lifting a finger. Continuous updates, agile improvements, and expert support, every single day.
+          </p>
+
+          <div class="hero__cta-row">
+            <a href="#cta" class="btn btn--primary" data-testid="hero-cta-primary">Start Free Audit</a>
+            <a href="#overview" class="btn btn--ghost" data-testid="hero-cta-secondary">
+              See How It Works
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <ul class="hero__chips" data-testid="hero-chips">
+            <li><span class="chip__icon">✓</span> No long-term contracts</li>
+            <li><span class="chip__icon">✓</span> Memphis-based experts</li>
+            <li><span class="chip__icon">✓</span> Daily user testing</li>
+          </ul>
+        </div>
+
+        <!-- Infographic illustration -->
+        <div class="hero__art reveal" data-testid="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 480 480" class="hero__svg" xmlns="http://www.w3.org/2000/svg">
+            <!-- soft backdrop -->
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0" stop-color="#e57119" stop-opacity=".18"/>
+                <stop offset="1" stop-color="#e57119" stop-opacity="0"/>
+              </linearGradient>
+              <linearGradient id="g2" x1="0" x2="1">
+                <stop offset="0" stop-color="#e57119"/>
+                <stop offset="1" stop-color="#ff944d"/>
+              </linearGradient>
+            </defs>
+
+            <circle cx="240" cy="240" r="200" fill="url(#g1)"/>
+
+            <!-- Browser window -->
+            <g class="float-slow">
+              <rect x="80" y="110" width="320" height="220" rx="18" fill="#ffffff" stroke="#000" stroke-width="2"/>
+              <rect x="80" y="110" width="320" height="36" rx="18" fill="#000"/>
+              <circle cx="100" cy="128" r="4" fill="#e57119"/>
+              <circle cx="116" cy="128" r="4" fill="#fff" opacity=".5"/>
+              <circle cx="132" cy="128" r="4" fill="#fff" opacity=".5"/>
+              <rect x="170" y="120" width="200" height="16" rx="8" fill="#222"/>
+
+              <!-- chart bars -->
+              <rect x="106" y="270" width="22" height="40" rx="3" fill="#000"/>
+              <rect x="138" y="250" width="22" height="60" rx="3" fill="#000" opacity=".75"/>
+              <rect x="170" y="220" width="22" height="90" rx="3" fill="url(#g2)"/>
+              <rect x="202" y="240" width="22" height="70" rx="3" fill="#000" opacity=".55"/>
+              <rect x="234" y="200" width="22" height="110" rx="3" fill="url(#g2)"/>
+
+              <!-- line chart -->
+              <polyline points="280,250 310,220 340,235 370,180" fill="none" stroke="#e57119" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="280" cy="250" r="4" fill="#e57119"/>
+              <circle cx="310" cy="220" r="4" fill="#e57119"/>
+              <circle cx="340" cy="235" r="4" fill="#e57119"/>
+              <circle cx="370" cy="180" r="5" fill="#000" stroke="#e57119" stroke-width="2"/>
+            </g>
+
+            <!-- Floating gear -->
+            <g class="spin-slow" transform="translate(390 100)">
+              <circle r="34" fill="#000"/>
+              <g fill="#e57119">
+                <rect x="-3" y="-40" width="6" height="12" rx="1"/>
+                <rect x="-3" y="28" width="6" height="12" rx="1"/>
+                <rect x="-40" y="-3" width="12" height="6" rx="1"/>
+                <rect x="28" y="-3" width="12" height="6" rx="1"/>
+                <rect x="-30" y="-30" width="10" height="6" rx="1" transform="rotate(-45)"/>
+                <rect x="20" y="20" width="10" height="6" rx="1" transform="rotate(-45)"/>
+                <rect x="-30" y="22" width="10" height="6" rx="1" transform="rotate(45)"/>
+                <rect x="20" y="-28" width="10" height="6" rx="1" transform="rotate(45)"/>
+              </g>
+              <circle r="10" fill="#fff"/>
+            </g>
+
+            <!-- Shield floating -->
+            <g class="float" transform="translate(70 360)">
+              <path d="M0 -28 L24 -18 L24 8 C24 22 12 32 0 36 C-12 32 -24 22 -24 8 L-24 -18 Z" fill="#fff" stroke="#000" stroke-width="2"/>
+              <path d="M-10 4 L-2 12 L12 -6" fill="none" stroke="#e57119" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+
+            <!-- Sparkle -->
+            <g class="twinkle" transform="translate(60 130)" fill="#e57119">
+              <path d="M0 -10 L2 -2 L10 0 L2 2 L0 10 L-2 2 L-10 0 L-2 -2 Z"/>
+            </g>
+            <g class="twinkle delay" transform="translate(420 320)" fill="#000">
+              <path d="M0 -8 L1.6 -1.6 L8 0 L1.6 1.6 L0 8 L-1.6 1.6 L-8 0 L-1.6 -1.6 Z"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Marquee stats bar -->
+      <div class="hero__strip" data-testid="hero-strip">
+        <div class="container strip__row">
+          <div class="strip__item"><b>99.9%</b><span>Uptime maintained</span></div>
+          <div class="strip__sep" aria-hidden="true"></div>
+          <div class="strip__item"><b>24/7</b><span>Monitoring &amp; alerts</span></div>
+          <div class="strip__sep" aria-hidden="true"></div>
+          <div class="strip__item"><b>Daily</b><span>User testing cycles</span></div>
+          <div class="strip__sep" aria-hidden="true"></div>
+          <div class="strip__item"><b>12+ yrs</b><span>Web design expertise</span></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ░░░ PAGE INFO ░░░ -->
+    <section id="overview" class="info" data-testid="info-section">
+      <div class="container">
+
+        <div class="section-head reveal">
+          <span class="eyebrow eyebrow--dark"><span class="eyebrow__dot"></span> Why ongoing support matters</span>
+          <h2 class="section-title" data-testid="info-title">
+            A website is never <em>finished</em>.<br/>
+            It’s either evolving — or falling behind.
+          </h2>
+          <p class="section-sub" data-testid="info-sub">
+            We keep your platform updated with new trending technologies, agile improvements, and quality engineering — so your business stays in the spotlight.
+          </p>
+        </div>
+
+        <!-- Value pillars -->
+        <div class="pillars" data-testid="pillars-grid">
+          <article class="pillar reveal" data-testid="pillar-stay-updated">
+            <div class="pillar__icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/>
+              </svg>
+            </div>
+            <h3>Always Updated</h3>
+            <p>Technologies, frameworks, and security patches — applied continuously so you never run on yesterday’s stack.</p>
+            <span class="pillar__no">01</span>
+          </article>
+
+          <article class="pillar reveal" data-testid="pillar-agile">
+            <div class="pillar__icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+              </svg>
+            </div>
+            <h3>Agile by Design</h3>
+            <p>Small, frequent course corrections. Daily progress. Daily user acceptance. No surprises at launch.</p>
+            <span class="pillar__no">02</span>
+          </article>
+
+          <article class="pillar reveal" data-testid="pillar-quality">
+            <div class="pillar__icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/>
+              </svg>
+            </div>
+            <h3>Quality at Speed</h3>
+            <p>Most teams trade one for the other. We match your pace without compromising the craft.</p>
+            <span class="pillar__no">03</span>
+          </article>
+
+          <article class="pillar reveal" data-testid="pillar-local">
+            <div class="pillar__icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s-7-7-7-13a7 7 0 0 1 14 0c0 6-7 13-7 13z"/><circle cx="12" cy="9" r="2.5"/>
+              </svg>
+            </div>
+            <h3>Local. Personal.</h3>
+            <p>Memphis-based experts — same time zone, same language, same goals. No 12-hour delays or cultural chasms.</p>
+            <span class="pillar__no">04</span>
+          </article>
+        </div>
+
+
+        <!-- Approach: comparison infographic -->
+        <div id="approach" class="approach" data-testid="approach-block">
+          <div class="approach__head reveal">
+            <h3 class="approach__title">Offshore vs. <span class="title-accent">IT Niche</span></h3>
+            <p class="approach__sub">A lower hourly rate is only “cheaper” until quality, speed, and clarity vanish. Here’s how we compare.</p>
+          </div>
+
+          <div class="compare">
+            <div class="compare__col compare__col--bad reveal" data-testid="compare-offshore">
+              <header>
+                <span class="tag tag--muted">Typical Offshore</span>
+                <h4>Cheap on paper.<br/>Expensive in practice.</h4>
+              </header>
+              <ul>
+                <li><span class="x">—</span> 12-hour time zone gap</li>
+                <li><span class="x">—</span> Language &amp; cultural barriers</li>
+                <li><span class="x">—</span> Communication via web-conf only</li>
+                <li><span class="x">—</span> Agile becomes a non-starter</li>
+                <li><span class="x">—</span> Quality often sacrificed for cost</li>
+              </ul>
+            </div>
+
+            <div class="compare__divider" aria-hidden="true">
+              <span>VS</span>
+            </div>
+
+            <div class="compare__col compare__col--good reveal" data-testid="compare-itniche">
+              <header>
+                <span class="tag tag--primary">IT Niche</span>
+                <h4>Built around your<br/>business clock.</h4>
+              </header>
+              <ul>
+                <li><span class="check">✓</span> Same time-zone collaboration</li>
+                <li><span class="check">✓</span> High-context, fluent communication</li>
+                <li><span class="check">✓</span> Daily progress &amp; daily UAT</li>
+                <li><span class="check">✓</span> Agile that actually works</li>
+                <li><span class="check">✓</span> Quality matched to your pace</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Process timeline -->
+        <div id="process" class="timeline-wrap" data-testid="timeline-block">
+          <div class="section-head section-head--center reveal">
+            <span class="eyebrow eyebrow--dark"><span class="eyebrow__dot"></span> Our process</span>
+            <h3 class="section-title section-title--sm">A rhythm, not a project.</h3>
+          </div>
+
+          <ol class="timeline" data-testid="timeline-list">
+            <li class="timeline__step reveal">
+              <div class="timeline__dot">01</div>
+              <h4>Audit</h4>
+              <p>We benchmark performance, security, SEO, and UX gaps in your current site.</p>
+            </li>
+            <li class="timeline__step reveal">
+              <div class="timeline__dot">02</div>
+              <h4>Plan</h4>
+              <p>Tiny, prioritized backlog — what’ll move the needle this week.</p>
+            </li>
+            <li class="timeline__step reveal">
+              <div class="timeline__dot">03</div>
+              <h4>Ship</h4>
+              <p>Updates deployed in short cycles. You see progress every single day.</p>
+            </li>
+            <li class="timeline__step reveal">
+              <div class="timeline__dot">04</div>
+              <h4>Improve</h4>
+              <p>User feedback loops feed the next sprint. The site keeps getting sharper.</p>
+            </li>
+          </ol>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ░░░ CTA ░░░ -->
+    <section id="cta" class="cta" data-testid="cta-section">
+      <div class="container">
+        <div class="cta__card reveal">
+          <div class="cta__bg" aria-hidden="true">
+            <svg viewBox="0 0 600 200" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="ctaG" x1="0" x2="1">
+                  <stop offset="0" stop-color="#ff944d" stop-opacity=".35"/>
+                  <stop offset="1" stop-color="#e57119" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <path d="M0 140 C 120 60 240 200 360 120 S 600 60 600 140 L600 200 L0 200 Z" fill="url(#ctaG)"/>
+            </svg>
+          </div>
+
+          <div class="cta__content">
+            <span class="eyebrow"><span class="eyebrow__dot"></span> Ready when you are</span>
+            <h2 class="cta__title" data-testid="cta-title">
+              Let’s keep your site<br/>
+              <span class="title-accent">in the spotlight.</span>
+            </h2>
+            <p class="cta__sub" data-testid="cta-sub">
+              Tell us about your website. We’ll send back a free, no-obligation enhancement plan within 48 hours.
+            </p>
+
+            <form class="cta__form" data-testid="cta-form" onsubmit="event.preventDefault(); window.handleCTASubmit(this);">
+              <div class="field">
+                <input type="text" name="name" required placeholder="Your name" data-testid="cta-input-name" aria-label="Your name" />
+              </div>
+              <div class="field">
+                <input type="email" name="email" required placeholder="you@company.com" data-testid="cta-input-email" aria-label="Email address" />
+              </div>
+              <div class="field field--full">
+                <input type="url" name="website" placeholder="https://yourwebsite.com" data-testid="cta-input-website" aria-label="Website URL" />
+              </div>
+              <button type="submit" class="btn btn--primary btn--lg" data-testid="cta-submit-btn">
+                Request Free Audit
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+              </button>
+              <p class="cta__note" data-testid="cta-note">No spam. No contracts. Just a clear plan.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ░░░ FOOTER ░░░ -->
+  <footer class="footer" data-testid="site-footer">
+    <div class="container footer__row">
+      <div class="footer__brand">
+        <span class="brand__text">IT<span class="brand__accent">Niche</span></span>
+        <p>Web Design Experts in Memphis… and beyond.</p>
+      </div>
+      <div class="footer__meta">
+        <span>© <span id="year"></span> IT Niche. All rights reserved.</span>
+        <span class="footer__dot" aria-hidden="true">•</span>
+        <a href="#">Privacy</a>
+        <span class="footer__dot" aria-hidden="true">•</span>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
