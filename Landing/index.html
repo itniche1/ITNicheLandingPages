@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Online Marketing Methodologies — proven strategies, SEO, content, and customer intelligence for small businesses, web design, and digital marketing growth." />
+  <meta name="keywords" content="online marketing, SEO, customer intelligence, digital marketing, small business, web design" />
+  <meta name="theme-color" content="#e57119" />
+  <title>Online Marketing Methodologies — Built for Growth</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" data-testid="site-nav">
+    <a href="#" class="nav__logo" data-testid="nav-logo" aria-label="Home">
+      <span class="logo-mark" aria-hidden="true"></span>
+      <span class="logo-text">Niche<em>.</em></span>
+    </a>
+    <nav class="nav__links" aria-label="primary">
+      <a href="#methodology" data-testid="nav-link-methodology">Methodology</a>
+      <a href="#techniques" data-testid="nav-link-techniques">Techniques</a>
+      <a href="#cta" data-testid="nav-link-contact">Contact</a>
+    </nav>
+    <a href="#cta" class="btn btn--ghost nav__cta" data-testid="nav-cta">Get Started →</a>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero" data-testid="hero-section">
+    <div class="hero__grid" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <span class="eyebrow" data-testid="hero-eyebrow">
+        <span class="dot"></span> Online Marketing Methodologies
+      </span>
+
+      <h1 class="hero__title" data-testid="hero-title">
+        Is your business <br/>
+        in the <span class="accent">spotlight</span>?
+      </h1>
+
+      <p class="hero__sub" data-testid="hero-subtitle">
+        The instant solution for your world-wide market. Modern,
+        data-driven marketing for small business, web design and
+        custom digital growth.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#cta" class="btn btn--primary" data-testid="hero-cta-primary">Start Growing</a>
+        <a href="#techniques" class="btn btn--link" data-testid="hero-cta-secondary">
+          Explore techniques
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <!-- Hero stats infographic -->
+      <div class="hero__stats" data-testid="hero-stats">
+        <div class="stat">
+          <div class="stat__num" data-count="60">0</div>
+          <div class="stat__label">% lift in targeted campaign performance</div>
+        </div>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="stat">
+          <div class="stat__num"><span data-count="5">0</span>+</div>
+          <div class="stat__label">core techniques, mastered end-to-end</div>
+        </div>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="stat">
+          <div class="stat__num">∞</div>
+          <div class="stat__label">channels, one unified strategy</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Decorative infographic -->
+    <div class="hero__visual" aria-hidden="true">
+      <svg viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg" class="orbit">
+        <defs>
+          <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#e57119"/>
+            <stop offset="100%" stop-color="#000000"/>
+          </linearGradient>
+        </defs>
+        <circle cx="210" cy="210" r="200" fill="none" stroke="#0000000d" stroke-width="1"/>
+        <circle cx="210" cy="210" r="150" fill="none" stroke="#00000014" stroke-width="1"/>
+        <circle cx="210" cy="210" r="100" fill="none" stroke="#0000001f" stroke-width="1"/>
+        <circle cx="210" cy="210" r="50"  fill="none" stroke="url(#ringGrad)" stroke-width="1.5"/>
+
+        <!-- orbit nodes -->
+        <g class="orbit-node"><circle cx="210" cy="10"  r="6" fill="#e57119"/></g>
+        <g class="orbit-node"><circle cx="410" cy="210" r="5" fill="#000"/></g>
+        <g class="orbit-node"><circle cx="210" cy="410" r="6" fill="#000"/></g>
+        <g class="orbit-node"><circle cx="10"  cy="210" r="5" fill="#e57119"/></g>
+
+        <!-- center cluster -->
+        <g transform="translate(210 210)">
+          <circle r="36" fill="#fff" stroke="#000" stroke-width="1.2"/>
+          <path d="M-14 0 L-4 10 L16 -12" stroke="#e57119" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+
+        <!-- corner labels -->
+        <g font-family="Lato" font-size="11" fill="#000" font-weight="700">
+          <text x="210" y="30"  text-anchor="middle">SEO</text>
+          <text x="395" y="214" text-anchor="end">CONTENT</text>
+          <text x="210" y="396" text-anchor="middle">SOCIAL</text>
+          <text x="25"  y="214">TRENDS</text>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- METHODOLOGY / PAGE INFO -->
+  <section class="info" id="methodology" data-testid="info-section">
+    <div class="section-head">
+      <span class="eyebrow"><span class="dot"></span> Our methodology</span>
+      <h2 class="section-title">
+        Marketing has evolved.<br/>
+        <span class="muted">Your strategy should too.</span>
+      </h2>
+    </div>
+
+    <div class="info__grid">
+      <article class="info-card" data-testid="info-card-listen">
+        <div class="info-card__num">01</div>
+        <h3>Know &amp; understand</h3>
+        <p>Today brands must talk <em>with</em> users — not at them. Listen across channels and treat customers as co-creators.</p>
+      </article>
+
+      <article class="info-card" data-testid="info-card-data">
+        <div class="info-card__num">02</div>
+        <h3>Multi-channel data</h3>
+        <p>Gather implicit signals from every touchpoint to learn what your audience actually wants — before they say it.</p>
+      </article>
+
+      <article class="info-card info-card--accent" data-testid="info-card-ci">
+        <div class="info-card__num">03</div>
+        <h3>Customer intelligence</h3>
+        <p>Personalize and automate campaigns using behaviour, frequency and intent — the right offer, person, moment.</p>
+        <div class="info-card__chip">+60% targeted performance</div>
+      </article>
+
+      <article class="info-card" data-testid="info-card-convert">
+        <div class="info-card__num">04</div>
+        <h3>Convert &amp; compound</h3>
+        <p>Granular segmentation turns one-time visitors into a measurable, repeatable conversion engine.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- TECHNIQUES -->
+  <section class="techniques" id="techniques" data-testid="techniques-section">
+    <div class="section-head">
+      <span class="eyebrow"><span class="dot"></span> The playbook</span>
+      <h2 class="section-title">Here are some <span class="accent">techniques</span>.</h2>
+      <p class="section-lead">
+        Five interlocking practices that turn attention into measurable growth — kept simple, applied with discipline.
+      </p>
+    </div>
+
+    <div class="techniques__grid">
+
+      <article class="tech" data-testid="tech-card-1">
+        <div class="tech__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="24" cy="18" r="7"/>
+            <path d="M10 40c2-7 8-11 14-11s12 4 14 11"/>
+            <path d="M36 8l4 4M40 8l-4 4"/>
+          </svg>
+        </div>
+        <span class="tech__index">01</span>
+        <h3>Diffusion of profile</h3>
+        <p>Your profile is your business card, expertise and references — broadcast it across blogs, newsletters and social.</p>
+      </article>
+
+      <article class="tech" data-testid="tech-card-2">
+        <div class="tech__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 12h32M8 24h22M8 36h28"/>
+            <circle cx="40" cy="24" r="3"/>
+            <circle cx="36" cy="36" r="3"/>
+          </svg>
+        </div>
+        <span class="tech__index">02</span>
+        <h3>Distribution of content</h3>
+        <p>Use bookmarking, micro-blogging and a regularly animated blog. Reply to comments — feedback is fuel.</p>
+      </article>
+
+      <article class="tech tech--accent" data-testid="tech-card-3">
+        <div class="tech__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="6" y="10" width="36" height="24" rx="3"/>
+            <path d="M20 20l8 4-8 4z" fill="currentColor" stroke="none"/>
+            <path d="M14 40h20"/>
+          </svg>
+        </div>
+        <span class="tech__index">03</span>
+        <h3>Evolve your content</h3>
+        <p>Adapt media to each platform — slides, podcasts, videos, images. Stay K.I.S.S.: Keep It Simple.</p>
+      </article>
+
+      <article class="tech" data-testid="tech-card-4">
+        <div class="tech__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="22" cy="22" r="12"/>
+            <path d="M31 31l9 9"/>
+            <path d="M22 16v6l4 3"/>
+          </svg>
+        </div>
+        <span class="tech__index">04</span>
+        <h3>Search engine optimization</h3>
+        <p>Position yourself where buyers already search. Keywords, content quality and social signals work as one.</p>
+      </article>
+
+      <article class="tech" data-testid="tech-card-5">
+        <div class="tech__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 36l10-12 8 6 14-18"/>
+            <path d="M30 12h8v8"/>
+          </svg>
+        </div>
+        <span class="tech__index">05</span>
+        <h3>Control of trends</h3>
+        <p>Monitor mentions, opinions and momentum in real time — then respond before the conversation moves on.</p>
+      </article>
+
+      <article class="tech tech--quote" data-testid="tech-card-quote">
+        <p class="tech__quote">
+          “Online marketing will evolve with the evolution of the Web.”
+        </p>
+        <span class="tech__byline">— Our principle, since day one</span>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="cta" data-testid="cta-section">
+    <div class="cta__inner">
+      <div class="cta__text">
+        <span class="eyebrow eyebrow--light"><span class="dot"></span> Let's talk</span>
+        <h2 class="cta__title">
+          Put your business <br/>
+          in the <span class="accent">spotlight</span>.
+        </h2>
+        <p class="cta__sub">
+          Web design, custom solutions and digital marketing —
+          built for small businesses ready to grow.
+        </p>
+      </div>
+
+      <form class="cta__form" data-testid="cta-form" onsubmit="return false;">
+        <label class="sr-only" for="email">Your email</label>
+        <input id="email" type="email" placeholder="you@company.com" required data-testid="cta-email-input" />
+        <button type="submit" class="btn btn--primary" data-testid="cta-submit">
+          Request a strategy call
+        </button>
+        <small class="cta__note" data-testid="cta-note">
+          No spam. We reply within one business day.
+        </small>
+      </form>
+    </div>
+
+    <footer class="foot" data-testid="site-footer">
+      <span>© <span id="year"></span> Niche. All rights reserved.</span>
+      <span class="foot__meta">Built for small business · Web design · Custom solutions · Digital marketing</span>
+    </footer>
+  </section>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
