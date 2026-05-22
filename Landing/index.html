@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="IT Niche — Modern lead generation strategies, web design and digital marketing for small businesses. Proven processes that convert traffic into qualified leads." />
+  <meta name="theme-color" content="#e57119" />
+  <title>Lead Generation Process — IT Niche</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============== NAV ============== -->
+  <header class="nav" data-testid="site-header">
+    <div class="container nav__inner">
+      <a href="#" class="logo" data-testid="logo-link" aria-label="IT Niche home">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 20l8-8 6 6 10-10"/>
+            <path d="M20 8h8v8"/>
+          </svg>
+        </span>
+        <span class="logo__text">IT<span>Niche</span></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#process" data-testid="nav-process">Process</a>
+        <a href="#stages" data-testid="nav-stages">Stages</a>
+        <a href="#channels" data-testid="nav-channels">Channels</a>
+        <a href="#roi" data-testid="nav-roi">ROI</a>
+      </nav>
+
+      <a href="#contact" class="btn btn--primary nav__cta" data-testid="nav-cta-button">
+        Start a project
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 5l7 7-7 7"/></svg>
+      </a>
+
+      <button class="nav__burger" id="navBurger" aria-label="Toggle menu" data-testid="nav-burger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="navMobile" aria-hidden="true">
+      <a href="#process">Process</a>
+      <a href="#stages">Stages</a>
+      <a href="#channels">Channels</a>
+      <a href="#roi">ROI</a>
+      <a href="#contact" class="btn btn--primary">Start a project</a>
+    </div>
+  </header>
+
+  <!-- ============== HERO ============== -->
+  <section class="hero" data-testid="hero-section">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="grid-lines"></div>
+      <div class="orb orb--a"></div>
+      <div class="orb orb--b"></div>
+    </div>
+
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <span class="eyebrow" data-testid="hero-eyebrow">
+          <i></i> Lead Generation · Process
+        </span>
+        <h1 data-testid="hero-title">
+          Turn traffic into <span class="accent">qualified leads.</span>
+        </h1>
+        <p class="lead" data-testid="hero-subtitle">
+          A clear, infographic-driven process for small businesses — web design,
+          custom solutions and digital marketing that pay back.
+        </p>
+
+        <div class="hero__cta">
+          <a href="#contact" class="btn btn--primary btn--lg" data-testid="hero-primary-cta">
+            Get a free strategy call
+          </a>
+          <a href="#process" class="btn btn--ghost btn--lg" data-testid="hero-secondary-cta">
+            See the process
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12l7 7 7-7"/></svg>
+          </a>
+        </div>
+
+        <ul class="hero__meta" aria-label="Highlights">
+          <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> No long contracts</li>
+          <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> ROI-first roadmap</li>
+          <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Memphis & worldwide</li>
+        </ul>
+      </div>
+
+      <!-- Hero infographic -->
+      <div class="hero__visual" aria-hidden="true" data-testid="hero-visual">
+        <div class="info-card info-card--main">
+          <div class="info-card__head">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="info-card__title">Funnel · Live</span>
+          </div>
+          <div class="funnel">
+            <div class="funnel__row"><span>Visitors</span><b>12,480</b></div>
+            <div class="bar"><div class="bar__fill" style="--w:100%"></div></div>
+            <div class="funnel__row"><span>Engaged</span><b>4,212</b></div>
+            <div class="bar"><div class="bar__fill" style="--w:68%"></div></div>
+            <div class="funnel__row"><span>Leads</span><b>1,108</b></div>
+            <div class="bar"><div class="bar__fill" style="--w:38%"></div></div>
+            <div class="funnel__row"><span>Qualified</span><b>342</b></div>
+            <div class="bar"><div class="bar__fill" style="--w:18%"></div></div>
+          </div>
+        </div>
+
+        <div class="info-card info-card--float info-card--a">
+          <div class="kpi">
+            <span class="kpi__label">Conv. rate</span>
+            <span class="kpi__value">+38%</span>
+          </div>
+          <svg class="kpi__chart" viewBox="0 0 120 40" preserveAspectRatio="none">
+            <polyline points="0,32 15,28 30,30 45,22 60,24 75,16 90,18 105,8 120,12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+          </svg>
+        </div>
+
+        <div class="info-card info-card--float info-card--b">
+          <div class="ring">
+            <svg viewBox="0 0 36 36" width="56" height="56">
+              <circle cx="18" cy="18" r="15.9" fill="none" stroke="rgba(0,0,0,.08)" stroke-width="3"/>
+              <circle cx="18" cy="18" r="15.9" fill="none" stroke="#e57119" stroke-width="3" stroke-dasharray="78 100" stroke-linecap="round" transform="rotate(-90 18 18)"/>
+            </svg>
+            <div class="ring__num">78<small>%</small></div>
+          </div>
+          <span class="kpi__label">Qualified leads</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="trust-strip" data-testid="trust-strip">
+      <div class="container trust-strip__inner">
+        <span>Trusted by growth-driven teams</span>
+        <div class="logos">
+          <span>NORTHSTAR</span>
+          <span>Helix.io</span>
+          <span>Brightway</span>
+          <span>Orbit Labs</span>
+          <span>Kindred &amp; Co</span>
+          <span>Lumen</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== INTRO / WHAT ============== -->
+  <section class="section section--intro" id="process" data-testid="intro-section">
+    <div class="container intro__grid">
+      <div class="intro__left">
+        <span class="eyebrow eyebrow--dark">What we do</span>
+        <h2>Lead generation, <span class="accent">re-engineered.</span></h2>
+        <p>
+          More than ads. We design an intensive, step-by-step system —
+          research, tools, technology and content — woven directly into
+          your website to attract, qualify and convert.
+        </p>
+      </div>
+
+      <div class="intro__right">
+        <div class="pill-list">
+          <div class="pill"><span>01</span> Research</div>
+          <div class="pill"><span>02</span> Strategy</div>
+          <div class="pill"><span>03</span> Build</div>
+          <div class="pill"><span>04</span> Optimize</div>
+          <div class="pill"><span>05</span> Convert</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== GOALS ============== -->
+  <section class="section section--goals" data-testid="goals-section">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow eyebrow--dark">Lead generation goals</span>
+        <h2>Three outcomes <span class="accent">we obsess over.</span></h2>
+      </div>
+
+      <div class="cards-3">
+        <article class="goal-card" data-testid="goal-card-1">
+          <div class="goal-card__icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>
+            </svg>
+          </div>
+          <h3>Quality &amp; quantity</h3>
+          <p>A lead engine that wins on both fronts — qualified contacts at meaningful volume.</p>
+          <span class="goal-card__num">01</span>
+        </article>
+
+        <article class="goal-card" data-testid="goal-card-2">
+          <div class="goal-card__icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3>Right partners</h3>
+          <p>Identify mechanical, relevant sources and channels matched to your audience.</p>
+          <span class="goal-card__num">02</span>
+        </article>
+
+        <article class="goal-card" data-testid="goal-card-3">
+          <div class="goal-card__icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2l3 6 6 .9-4.5 4.4 1 6.2L12 16.9 6.5 19.5l1-6.2L3 8.9 9 8z"/>
+            </svg>
+          </div>
+          <h3>Smart tooling</h3>
+          <p>Leverage modern tools and automation to streamline every step of the funnel.</p>
+          <span class="goal-card__num">03</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== STAGES / TIMELINE ============== -->
+  <section class="section section--stages" id="stages" data-testid="stages-section">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow eyebrow--dark">Key stages of design</span>
+        <h2>From idea to <span class="accent">launch-ready.</span></h2>
+        <p class="section__sub">A focused, six-step path — kept lean so projects move fast and stay on budget.</p>
+      </div>
+
+      <ol class="timeline" data-testid="timeline">
+        <li class="timeline__item">
+          <div class="timeline__dot"><span>01</span></div>
+          <div class="timeline__card">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+            <h4>Analyze the need</h4>
+            <p>Understand the audience, market and the real business problem to solve.</p>
+          </div>
+        </li>
+        <li class="timeline__item">
+          <div class="timeline__dot"><span>02</span></div>
+          <div class="timeline__card">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M21 11l-2-2 2-2"/></svg>
+            <h4>Identify key players</h4>
+            <p>Map stakeholders, owners and decision-makers across the design process.</p>
+          </div>
+        </li>
+        <li class="timeline__item">
+          <div class="timeline__dot"><span>03</span></div>
+          <div class="timeline__card">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M4 9h16M9 4v16"/></svg>
+            <h4>Frame the project</h4>
+            <p>A short launch note that aligns goals, scope and how we'll communicate.</p>
+          </div>
+        </li>
+        <li class="timeline__item">
+          <div class="timeline__dot"><span>04</span></div>
+          <div class="timeline__card">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            <h4>Realistic schedule</h4>
+            <p>Milestones that respect engineering reality — no fantasy timelines.</p>
+          </div>
+        </li>
+        <li class="timeline__item">
+          <div class="timeline__dot"><span>05</span></div>
+          <div class="timeline__card">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            <h4>Budget the project</h4>
+            <p>Transparent budgets aligned to outcomes — no surprises, no hidden line items.</p>
+          </div>
+        </li>
+        <li class="timeline__item">
+          <div class="timeline__dot"><span>06</span></div>
+          <div class="timeline__card">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1A2 2 0 1 1 4.4 17l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1 1.7 1.7 0 0 0-.3-1.8l-.1-.1A2 2 0 1 1 7 4.4l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1A2 2 0 1 1 19.6 7l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
+            <h4>Organize &amp; control</h4>
+            <p>Manage the development cycle with rigor — measure, iterate, ship.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============== CHANNELS ============== -->
+  <section class="section section--channels" id="channels" data-testid="channels-section">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow eyebrow--dark">Ways to generate leads</span>
+        <h2>Four channels. <span class="accent">One orchestrated engine.</span></h2>
+      </div>
+
+      <div class="channels">
+        <div class="channel" data-testid="channel-1">
+          <div class="channel__icon">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l9 6 9-6"/><rect x="3" y="5" width="18" height="14" rx="2"/></svg>
+          </div>
+          <h4>Direct marketing</h4>
+          <p>Email, outreach and retargeting flows that bring qualified eyes back.</p>
+        </div>
+        <div class="channel" data-testid="channel-2">
+          <div class="channel__icon">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+          </div>
+          <h4>Web &amp; social</h4>
+          <p>SEO, paid social and content that earns trust at every touchpoint.</p>
+        </div>
+        <div class="channel" data-testid="channel-3">
+          <div class="channel__icon">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="13" rx="2"/><path d="M16 3v4M8 3v4M2 12h20"/></svg>
+          </div>
+          <h4>Events &amp; webinars</h4>
+          <p>High-intent moments designed to convert attendees into pipeline.</p>
+        </div>
+        <div class="channel" data-testid="channel-4">
+          <div class="channel__icon">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92V20a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2 4.18 2 2 0 0 1 4 2h3.09a2 2 0 0 1 2 1.72c.12.89.32 1.76.59 2.6a2 2 0 0 1-.45 2.11L8 9.91a16 16 0 0 0 6 6l1.48-1.23a2 2 0 0 1 2.11-.45c.84.27 1.71.47 2.6.59A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <h4>Telemarketing</h4>
+          <p>Human conversations that turn warm interest into booked meetings.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== STATS ============== -->
+  <section class="section section--stats" data-testid="stats-section">
+    <div class="container">
+      <div class="stats">
+        <div class="stat" data-testid="stat-1">
+          <div class="stat__num" data-count="38">0<span>%</span></div>
+          <div class="stat__label">Avg. lift in conversion</div>
+        </div>
+        <div class="stat" data-testid="stat-2">
+          <div class="stat__num" data-count="120">0<span>+</span></div>
+          <div class="stat__label">Campaigns shipped</div>
+        </div>
+        <div class="stat" data-testid="stat-3">
+          <div class="stat__num" data-count="3">0<span>x</span></div>
+          <div class="stat__label">Pipeline growth</div>
+        </div>
+        <div class="stat" data-testid="stat-4">
+          <div class="stat__num" data-count="98">0<span>%</span></div>
+          <div class="stat__label">Client retention</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== ROI CTA ============== -->
+  <section class="section section--roi" id="roi" data-testid="roi-section">
+    <div class="container">
+      <div class="roi">
+        <div class="roi__decor" aria-hidden="true">
+          <svg viewBox="0 0 200 200" preserveAspectRatio="none">
+            <defs>
+              <pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse">
+                <circle cx="1.5" cy="1.5" r="1.2" fill="rgba(255,255,255,.12)"/>
+              </pattern>
+            </defs>
+            <rect width="200" height="200" fill="url(#dots)"/>
+          </svg>
+        </div>
+
+        <div class="roi__copy">
+          <span class="eyebrow eyebrow--light">ROI &amp; rewards</span>
+          <h2>Justifying your ROI — <span class="accent-light">the name of the game.</span></h2>
+          <p>From traffic acquisition to landing-page optimization, we work every key step so you don't just target the right users — you convert them into qualified leads.</p>
+
+          <div class="roi__cta">
+            <a href="#contact" class="btn btn--white btn--lg" data-testid="roi-cta-button">
+              Book a discovery call
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#contact" class="btn btn--outline-light btn--lg" data-testid="roi-secondary-cta">
+              See pricing
+            </a>
+          </div>
+        </div>
+
+        <div class="roi__visual" aria-hidden="true">
+          <div class="meter">
+            <div class="meter__head">
+              <span>ROI projection</span>
+              <b>+312%</b>
+            </div>
+            <div class="meter__bars">
+              <div class="meter__bar"><i style="--h:32%"></i><span>Q1</span></div>
+              <div class="meter__bar"><i style="--h:52%"></i><span>Q2</span></div>
+              <div class="meter__bar"><i style="--h:74%"></i><span>Q3</span></div>
+              <div class="meter__bar"><i style="--h:96%"></i><span>Q4</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CONTACT ============== -->
+  <section class="section section--contact" id="contact" data-testid="contact-section">
+    <div class="container contact__grid">
+      <div class="contact__left">
+        <span class="eyebrow eyebrow--dark">Let's talk</span>
+        <h2>Tell us about <span class="accent">your project.</span></h2>
+        <p>Drop a few details — we'll get back the same day with a tailored plan to discuss your goals and ROI.</p>
+
+        <ul class="contact__list">
+          <li>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92V20a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2 4.18 2 2 0 0 1 4 2h3.09a2 2 0 0 1 2 1.72c.12.89.32 1.76.59 2.6a2 2 0 0 1-.45 2.11L8 9.91a16 16 0 0 0 6 6l1.48-1.23a2 2 0 0 1 2.11-.45c.84.27 1.71.47 2.6.59A2 2 0 0 1 22 16.92z"/></svg>
+            <span>Same-day response</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Memphis · Serving worldwide</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M4 8l8 5 8-5"/></svg>
+            <span>hello@itniche.com</span>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact__form" id="contactForm" novalidate data-testid="contact-form">
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required placeholder="Jane Doe" data-testid="contact-name" />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="jane@company.com" data-testid="contact-email" />
+        </div>
+        <div class="field">
+          <label for="company">Company</label>
+          <input id="company" name="company" type="text" placeholder="Acme Inc." data-testid="contact-company" />
+        </div>
+        <div class="field">
+          <label for="message">What do you need?</label>
+          <textarea id="message" name="message" rows="4" required placeholder="Web design, lead generation, custom solution…" data-testid="contact-message"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--lg btn--block" data-testid="contact-submit">
+          Send message
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+        </button>
+        <p class="form__note" id="formNote" data-testid="form-note" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="footer" data-testid="site-footer">
+    <div class="container footer__inner">
+      <a href="#" class="logo logo--footer">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 20l8-8 6 6 10-10"/>
+            <path d="M20 8h8v8"/>
+          </svg>
+        </span>
+        <span class="logo__text">IT<span>Niche</span></span>
+      </a>
+      <p>© <span id="year"></span> IT Niche · Lead generation, web design &amp; custom solutions.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
