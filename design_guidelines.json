@@ -1,0 +1,99 @@
+{
+  "theme": "dark",
+  "archetype": "Swiss & High-Contrast (Archetype 4)",
+  "colors": {
+    "background": "#050505",
+    "surface": "#111111",
+    "surface_hover": "#1A1A1A",
+    "primary": "#E57119",
+    "primary_hover": "#F28533",
+    "text_main": "#F5F5F0",
+    "text_muted": "#A0A0A0",
+    "border": "rgba(255, 255, 255, 0.1)",
+    "border_active": "rgba(229, 113, 25, 0.5)"
+  },
+  "typography": {
+    "family": "Lato, sans-serif",
+    "headings": {
+      "weight": "900",
+      "style": "tracking-tighter uppercase",
+      "h1": "text-4xl sm:text-5xl lg:text-7xl",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl",
+      "h3": "text-xl sm:text-2xl"
+    },
+    "body": {
+      "weight": "300",
+      "style": "leading-relaxed",
+      "base": "text-base",
+      "small": "text-sm"
+    },
+    "overlines": "uppercase tracking-[0.2em] text-xs font-bold text-[#E57119]"
+  },
+  "layout_and_spacing": {
+    "philosophy": "Generous Spacing, Grid Borders, Asymmetry",
+    "section_padding": "py-24 sm:py-32",
+    "container": "max-w-7xl mx-auto px-6 sm:px-8",
+    "grid_bento": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/10 border border-white/10"
+  },
+  "surfaces": {
+    "glass": "backdrop-blur-xl bg-black/60 border-b border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.12)]",
+    "card": "bg-[#050505] p-8 md:p-10 hover:bg-[#111111] transition-colors duration-300 relative overflow-hidden group",
+    "technical_grid": "border-collapse border-white/10"
+  },
+  "motion_and_interactions": {
+    "hover_state": "Slight lift, border color changes to primary, text color brightens, large background number moves slightly",
+    "scroll_reveal": "Fade in and translate up from 20px, staggered for lists",
+    "buttons": "Relative overflow-hidden, with an orange tracing beam or fill animation on hover"
+  },
+  "components_instructions": {
+    "header": "Sticky nav, glassmorphism surface, visible navigation links on desktop, primary CTA 'Contact Experts'.",
+    "hero": "Full height (min-h-[80vh]), geometric background with bg-black/60 overlay. Text aligned left. Giant H1 typography. Scroll down indicator.",
+    "at_a_glance_summary": "Two massive columns. Left: 'WE DO' (positive, checkmarks, orange accents). Right: 'WE DON\\'T' (negative, crosses, muted accents). High contrast typography.",
+    "infographic_flow": "Horizontal or vertical connected steps (Collection -> Processing -> Protection -> Deletion) using glowing orange lines over the technical grid background.",
+    "policy_breakdown": "9-cell technical grid (1px borders between cells). Each cell represents a policy point. Large faded background numbers (01-09, text-white/5) in each card. Lucide icons (stroke-width 1.5). Very concise text.",
+    "mailers_section": "Edge-to-edge container with solid #E57119 background and black text. Emphasize 'Total Control Over Your Inbox'.",
+    "footer": "Massive 'IT NICHE' typography (text-[10vw]). Simple links. Darkest background (#000000)."
+  },
+  "icons": {
+    "library": "lucide-react",
+    "style": "stroke-width 1.5, size 24 or 32, geometric and clean"
+  },
+  "media": {
+    "hero_background": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/5054d87c-16da-4574-9a6a-7672b409d721/images/7cd69526c8f80fb7d37a84d9fb586880e361dd22fe8229f985ea817e79f6d841.png",
+      "description": "Abstract high-contrast 3D geometric composition featuring dark matte black surfaces and glowing warm orange spherical and cubic elements",
+      "placement": "Hero section background with overlay"
+    },
+    "infographic_background": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/5054d87c-16da-4574-9a6a-7672b409d721/images/f5edb723e872057ca217fc93277cc7ac3885cf821809bc9e5cef150b83b4ef45.png",
+      "description": "Minimalist infographic background featuring thin warm orange grid lines on a rich matte black background",
+      "placement": "Background for the 'How we handle your data' flow section"
+    }
+  },
+  "content_mapping": {
+    "policy_points": [
+      {"id": "01", "title": "Data Sharing", "text": "We do not rent, sell, or share personal info except for service delivery with your permission.", "icon": "Share2"},
+      {"id": "02", "title": "Trusted Partners", "text": "We work with trusted partners under strict confidentiality agreements.", "icon": "ShieldCheck"},
+      {"id": "03", "title": "Legal Compliance", "text": "We comply with subpoenas, court orders, and legal processes.", "icon": "Scale"},
+      {"id": "04", "title": "Fraud Prevention", "text": "Information is shared only to prevent illegal activities, fraud, or threats.", "icon": "AlertTriangle"},
+      {"id": "05", "title": "Business Transfer", "text": "Data transferred only in the event of an acquisition or merger.", "icon": "Building2"},
+      {"id": "06", "title": "User Information", "text": "Your name and email are used solely as intended. You can opt out anytime.", "icon": "UserCircle"},
+      {"id": "07", "title": "IP Addresses", "text": "Used purely for diagnostics. Never linked to your personal identity.", "icon": "Network"},
+      {"id": "08", "title": "Third-Party Links", "text": "We are not responsible for the privacy practices of external third-party sites.", "icon": "ExternalLink"},
+      {"id": "09", "title": "Mailers & Comms", "text": "Promotional emails contain clear unsubscribe links for total control.", "icon": "Mail"}
+    ]
+  },
+  "accessibility_and_testing": {
+    "contrast": "Ensure APCA/WCAG AA contrast for text over backgrounds.",
+    "test_ids": "All interactive and key informational elements MUST include a data-testid attribute in kebab-case."
+  },
+  "instructions_to_main_agent": [
+    "Build a single-page React app using Tailwind CSS and Lucide React icons.",
+    "Install Google Fonts 'Lato' (Weights: 300, 400, 900). Use font-black for headings and font-light for body.",
+    "Implement the 'Technical Grid' layout for the 9 policy points: a grid container with gap-px and bg-white/10, where child cards have bg-[#050505]. This perfectly creates 1px borders between all cards.",
+    "Do NOT use rounded corners on the policy cards to match the Swiss Brutalist aesthetic.",
+    "Use framer-motion for staggering the entrance of the cards and infographic flow elements.",
+    "The Hero section background image must have a bg-black/60 overlay applied via an absolute positioning or background-blend-mode.",
+    "Ensure all interactive elements have data-testid attributes."
+  ]
+}
