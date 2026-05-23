@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ITNiche Terms of Use — clear, transparent policies for our web design, custom software and digital marketing services." />
+  <meta name="theme-color" content="#e57119" />
+  <title>Terms of Use · ITNiche</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ====== NAVBAR ====== -->
+  <header class="nav" data-testid="site-header">
+    <div class="nav__inner container">
+      <a href="#top" class="brand" data-testid="brand-logo" aria-label="ITNiche home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h6l2-6 4 12 2-6h2"/></svg>
+        </span>
+        <span class="brand__name">IT<em>Niche</em></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#overview" data-testid="nav-overview">Overview</a>
+        <a href="#principles" data-testid="nav-principles">Principles</a>
+        <a href="#policies" data-testid="nav-policies">Policies</a>
+        <a href="#support" data-testid="nav-support">Support</a>
+      </nav>
+
+      <a href="#cta" class="btn btn--primary nav__cta" data-testid="nav-cta-button">
+        Get in touch
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+
+      <button class="nav__burger" aria-label="Open menu" aria-expanded="false" data-testid="mobile-menu-toggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ====== HERO ====== -->
+    <section class="hero" data-testid="hero-section">
+      <div class="hero__grid container">
+        <div class="hero__copy">
+          <span class="eyebrow" data-testid="hero-eyebrow">
+            <span class="eyebrow__dot"></span> Legal · Terms of Use
+          </span>
+
+          <h1 class="hero__title" data-testid="hero-title">
+            Clear terms.<br />
+            <span class="title-accent">Trusted partnership.</span>
+          </h1>
+
+          <p class="hero__lead" data-testid="hero-lead">
+            Transparent guidelines that shape how small businesses, design partners and digital marketers
+            engage with ITNiche — distilled into the essentials you actually need to know.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#policies" class="btn btn--primary" data-testid="hero-primary-cta">
+              Read the terms
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#support" class="btn btn--ghost" data-testid="hero-secondary-cta">Talk to support</a>
+          </div>
+
+          <ul class="hero__meta" aria-label="Document metadata">
+            <li><strong>v3.2</strong><span>Current revision</span></li>
+            <li><strong>2 min</strong><span>Avg. read time</span></li>
+            <li><strong>9 sections</strong><span>Plain-language</span></li>
+          </ul>
+        </div>
+
+        <!-- Infographic visual -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="orbit">
+            <div class="orbit__ring orbit__ring--1"></div>
+            <div class="orbit__ring orbit__ring--2"></div>
+            <div class="orbit__ring orbit__ring--3"></div>
+
+            <div class="orbit__core">
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3l8 4v5c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V7l8-4z"/>
+                <path d="M9 12l2 2 4-4"/>
+              </svg>
+            </div>
+
+            <span class="chip chip--1"><i></i> Web Design</span>
+            <span class="chip chip--2"><i></i> Custom Solutions</span>
+            <span class="chip chip--3"><i></i> Digital Marketing</span>
+            <span class="chip chip--4"><i></i> Small Business</span>
+
+            <svg class="orbit__lines" viewBox="0 0 400 400" preserveAspectRatio="none">
+              <path d="M200 200 L60 80"  stroke="currentColor" stroke-dasharray="2 4" />
+              <path d="M200 200 L340 90" stroke="currentColor" stroke-dasharray="2 4" />
+              <path d="M200 200 L70 320" stroke="currentColor" stroke-dasharray="2 4" />
+              <path d="M200 200 L340 320" stroke="currentColor" stroke-dasharray="2 4" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- marquee strip -->
+      <div class="marquee" data-testid="trust-strip" aria-label="Audience">
+        <div class="marquee__track">
+          <span>Small Business</span><span aria-hidden="true">·</span>
+          <span>Web Design</span><span aria-hidden="true">·</span>
+          <span>Custom Software</span><span aria-hidden="true">·</span>
+          <span>Digital Marketing</span><span aria-hidden="true">·</span>
+          <span>Memphis &amp; Beyond</span><span aria-hidden="true">·</span>
+          <span>Since the early web</span><span aria-hidden="true">·</span>
+          <!-- duplicate for seamless loop -->
+          <span>Small Business</span><span aria-hidden="true">·</span>
+          <span>Web Design</span><span aria-hidden="true">·</span>
+          <span>Custom Software</span><span aria-hidden="true">·</span>
+          <span>Digital Marketing</span><span aria-hidden="true">·</span>
+          <span>Memphis &amp; Beyond</span><span aria-hidden="true">·</span>
+          <span>Since the early web</span><span aria-hidden="true">·</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== OVERVIEW STATS ====== -->
+    <section id="overview" class="stats section" data-testid="stats-section">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow"><span class="eyebrow__dot"></span> At a glance</span>
+          <h2 class="section__title">The agreement, in four numbers.</h2>
+          <p class="section__sub">A snapshot of what these Terms of Use cover — without the legal fog.</p>
+        </header>
+
+        <div class="stats__grid">
+          <article class="stat" data-testid="stat-card-1">
+            <div class="stat__num"><span data-count="9">0</span></div>
+            <h3 class="stat__label">Core sections</h3>
+            <p class="stat__desc">From content rights to privacy &amp; billing.</p>
+          </article>
+          <article class="stat" data-testid="stat-card-2">
+            <div class="stat__num"><span data-count="100">0</span><em>%</em></div>
+            <h3 class="stat__label">Your data, private</h3>
+            <p class="stat__desc">Never shared with any third party.</p>
+          </article>
+          <article class="stat" data-testid="stat-card-3">
+            <div class="stat__num"><span data-count="24">0</span><em>/7</em></div>
+            <h3 class="stat__label">Online &amp; monitored</h3>
+            <p class="stat__desc">Site availability tracked continuously.</p>
+          </article>
+          <article class="stat" data-testid="stat-card-4">
+            <div class="stat__num"><span data-count="9">0</span><em>h</em></div>
+            <h3 class="stat__label">Live support window</h3>
+            <p class="stat__desc">Mon–Fri · 8:00 AM – 5:00 PM CST.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== PRINCIPLES ====== -->
+    <section id="principles" class="principles section section--alt" data-testid="principles-section">
+      <div class="container">
+        <header class="section__head section__head--center">
+          <span class="eyebrow"><span class="eyebrow__dot"></span> Guiding principles</span>
+          <h2 class="section__title">Built on four quiet commitments.</h2>
+          <p class="section__sub">The values behind every line of these Terms.</p>
+        </header>
+
+        <div class="principles__grid">
+          <article class="principle" data-testid="principle-card-1">
+            <span class="principle__index">01</span>
+            <span class="principle__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4v6c0 5-3.5 9-9 10-5.5-1-9-5-9-10V6l9-4z"/></svg>
+            </span>
+            <h3>Trust</h3>
+            <p>Your information stays with us. We never sell or share user data with third parties.</p>
+          </article>
+
+          <article class="principle" data-testid="principle-card-2">
+            <span class="principle__index">02</span>
+            <span class="principle__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>
+            </span>
+            <h3>Clarity</h3>
+            <p>Plain language, no surprises. Updates are documented and timestamped.</p>
+          </article>
+
+          <article class="principle" data-testid="principle-card-3">
+            <span class="principle__index">03</span>
+            <span class="principle__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M8 4v5"/></svg>
+            </span>
+            <h3>Ownership</h3>
+            <p>Content, code and visuals on the site belong to ITNiche — used only with consent.</p>
+          </article>
+
+          <article class="principle" data-testid="principle-card-4">
+            <span class="principle__index">04</span>
+            <span class="principle__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h16"/></svg>
+            </span>
+            <h3>Fair use</h3>
+            <p>Boundaries that protect both sides — what you can do, and what we ask you not to.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== POLICIES — INFOGRAPHIC GRID ====== -->
+    <section id="policies" class="policies section" data-testid="policies-section">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow"><span class="eyebrow__dot"></span> Terms of Use</span>
+          <h2 class="section__title">Nine sections. <span class="title-accent">Plain language.</span></h2>
+          <p class="section__sub">The full agreement, mapped into bite-sized cards — designed for scanning, not skimming over.</p>
+        </header>
+
+        <div class="policies__grid">
+
+          <article class="policy" data-testid="policy-acceptance">
+            <div class="policy__top">
+              <span class="policy__num">01</span>
+              <span class="policy__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              </span>
+            </div>
+            <h3>Acceptance of terms</h3>
+            <p>By using <strong>itniche.com</strong>, you agree to these Terms. Section-specific terms override the general ones where applicable.</p>
+            <span class="policy__tag">Agreement</span>
+          </article>
+
+          <article class="policy" data-testid="policy-access">
+            <div class="policy__top">
+              <span class="policy__num">02</span>
+              <span class="policy__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M8 8V6a4 4 0 018 0v2"/></svg>
+              </span>
+            </div>
+            <h3>Access &amp; monitoring</h3>
+            <p>ITNiche may monitor site access and revoke user access at any time. Critical clauses survive termination.</p>
+            <span class="policy__tag">Access</span>
+          </article>
+
+          <article class="policy" data-testid="policy-ip">
+            <div class="policy__top">
+              <span class="policy__num">03</span>
+              <span class="policy__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg>
+              </span>
+            </div>
+            <h3>Intellectual property</h3>
+            <p>All software, text, images, video and audio are property of ITNiche, LLC. Reuse requires written consent.</p>
+            <span class="policy__tag">Copyright</span>
+          </article>
+
+          <article class="policy" data-testid="policy-warranty">
+            <div class="policy__top">
+              <span class="policy__num">04</span>
+              <span class="policy__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/></svg>
+              </span>
+            </div>
+            <h3>Warranty disclaimer</h3>
+            <p>Services are provided “as is” and “as available”. No implied warranties of merchantability or fitness.</p>
+            <span class="policy__tag">As-is</span>
+          </article>
+
+          <article class="policy" data-testid="policy-liability">
+            <div class="policy__top">
+              <span class="policy__num">05</span>
+              <span class="policy__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l4-8h10l4 8-9 10-9-10z"/></svg>
+              </span>
+            </div>
+            <h3>Limitation of liability</h3>
+            <p>ITNiche is not liable for direct, incidental or consequential damages arising from site use, where permitted by law.</p>
+            <span class="policy__tag">Liability</span>
+          </article>
+
+          <article class="policy" data-testid="policy-indemnity">
+            <div class="policy__top">
+              <span class="policy__num">06</span>
+              <span class="policy__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4v6c0 5-3.5 9-9 10-5.5-1-9-5-9-10V6l9-4z"/></svg>
+              </span>
+            </div>
+            <h3>Indemnification</h3>
+            <p>Users agree to indemnify ITNiche from losses or costs arising from misuse of site content and services.</p>
+            <span class="policy__tag">User duty</span>
+          </article>
+
+          <article class="policy" data-testid="policy-privacy">
+            <div class="policy__top">
+              <span class="policy__num">07</span>
+              <span class="policy__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="3"/><path d="M4 21a8 8 0 0116 0"/></svg>
+              </span>
+            </div>
+            <h3>Privacy</h3>
+            <p>Your information is never shared with third parties. We may use it to personalize your experience.</p>
+            <span class="policy__tag">Data</span>
+          </article>
+
+          <article class="policy" data-testid="policy-thirdparty">
+            <div class="policy__top">
+              <span class="policy__num">08</span>
+              <span class="policy__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 005.66 0l3-3a4 4 0 10-5.66-5.66L11 7"/><path d="M14 10a4 4 0 00-5.66 0l-3 3a4 4 0 105.66 5.66L13 17"/></svg>
+              </span>
+            </div>
+            <h3>Third-party links</h3>
+            <p>External content is not controlled or endorsed by ITNiche. Use at your own discretion and risk.</p>
+            <span class="policy__tag">External</span>
+          </article>
+
+          <article class="policy" data-testid="policy-billing">
+            <div class="policy__top">
+              <span class="policy__num">09</span>
+              <span class="policy__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M7 15h3"/></svg>
+              </span>
+            </div>
+            <h3>Billing</h3>
+            <p>Charges appear as <em>“IT Niche”</em> on bank statements. Reach billing for any account-related queries.</p>
+            <span class="policy__tag">Payments</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== TIMELINE ====== -->
+    <section class="timeline section section--alt" data-testid="timeline-section">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow"><span class="eyebrow__dot"></span> How it works</span>
+          <h2 class="section__title">From visit to engagement.</h2>
+          <p class="section__sub">Your journey through itniche.com — and where these Terms apply.</p>
+        </header>
+
+        <ol class="timeline__list" data-testid="timeline-list">
+          <li class="timeline__item">
+            <span class="timeline__dot"></span>
+            <div>
+              <span class="timeline__step">Step 01</span>
+              <h3>Browse</h3>
+              <p>Explore services freely. By browsing, you accept these Terms of Use.</p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__dot"></span>
+            <div>
+              <span class="timeline__step">Step 02</span>
+              <h3>Engage</h3>
+              <p>Reach out for web design, custom solutions or digital marketing inquiries.</p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__dot"></span>
+            <div>
+              <span class="timeline__step">Step 03</span>
+              <h3>Agree</h3>
+              <p>Project-specific terms may extend the general Terms when applicable.</p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__dot"></span>
+            <div>
+              <span class="timeline__step">Step 04</span>
+              <h3>Launch</h3>
+              <p>We deliver, you grow — supported by a transparent billing and privacy policy.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ====== SUPPORT / CONTACT ====== -->
+    <section id="support" class="support section" data-testid="support-section">
+      <div class="container support__grid">
+
+        <div class="support__copy">
+          <span class="eyebrow"><span class="eyebrow__dot"></span> Support &amp; billing</span>
+          <h2 class="section__title">Questions?<br /><span class="title-accent">We’re a message away.</span></h2>
+          <p class="section__sub">Reach the team for technical help, account queries, or to revise an active engagement.</p>
+
+          <ul class="hours" aria-label="Office hours">
+            <li><strong>Mon – Fri</strong><span>8:00 AM – 5:00 PM CST</span></li>
+            <li><strong>Sat – Sun</strong><span>Email only · 24h reply</span></li>
+          </ul>
+        </div>
+
+        <div class="support__cards">
+          <a href="mailto:support@itniche.com" class="contact-card" data-testid="contact-support">
+            <span class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a4 4 0 01-4 4H8l-5 4V7a4 4 0 014-4h10a4 4 0 014 4z"/></svg>
+            </span>
+            <div>
+              <h3>Technical support</h3>
+              <p>support@itniche.com</p>
+            </div>
+            <span class="contact-card__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+
+          <a href="mailto:billing@itniche.com" class="contact-card" data-testid="contact-billing">
+            <span class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M7 15h3"/></svg>
+            </span>
+            <div>
+              <h3>Billing &amp; accounts</h3>
+              <p>billing@itniche.com</p>
+            </div>
+            <span class="contact-card__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+
+          <a href="tel:+19014149009" class="contact-card" data-testid="contact-phone">
+            <span class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92V21a1 1 0 01-1.11 1 19 19 0 01-8.27-3.13 18.5 18.5 0 01-6-6A19 19 0 013.49 4.61 1 1 0 014.5 3.5h4.09a1 1 0 011 .75c.13.84.36 1.65.68 2.42a1 1 0 01-.23 1.05L8.21 9.21a16 16 0 006 6l1.49-1.49a1 1 0 011.05-.23c.77.32 1.58.55 2.42.68a1 1 0 01.83 1z"/></svg>
+            </span>
+            <div>
+              <h3>Call ITNiche</h3>
+              <p>(901) 414-9009</p>
+            </div>
+            <span class="contact-card__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====== CTA ====== -->
+    <section id="cta" class="cta" data-testid="cta-section">
+      <div class="container cta__inner">
+        <div class="cta__bg" aria-hidden="true">
+          <span class="cta__shape cta__shape--1"></span>
+          <span class="cta__shape cta__shape--2"></span>
+          <span class="cta__shape cta__shape--3"></span>
+        </div>
+
+        <div class="cta__content">
+          <span class="eyebrow eyebrow--light"><span class="eyebrow__dot"></span> Ready when you are</span>
+          <h2 class="cta__title">Put your business in the&nbsp;spotlight.</h2>
+          <p class="cta__sub">Web design, custom software and digital marketing — built on transparent terms and lasting partnerships.</p>
+
+          <div class="cta__actions">
+            <a href="mailto:support@itniche.com" class="btn btn--light" data-testid="cta-primary">
+              Start a project
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#policies" class="btn btn--outline-light" data-testid="cta-secondary">Re-read terms</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer" data-testid="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#top" class="brand brand--footer">
+          <span class="brand__mark brand__mark--footer" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h6l2-6 4 12 2-6h2"/></svg>
+          </span>
+          <span class="brand__name">IT<em>Niche</em></span>
+        </a>
+        <p>Web design experts in Memphis &mdash; and beyond. Crafting digital experiences for small businesses since the early web.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Sections</h4>
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#principles">Principles</a></li>
+          <li><a href="#policies">Policies</a></li>
+          <li><a href="#support">Support</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Services</h4>
+        <ul>
+          <li>Web Design</li>
+          <li>Custom Solutions</li>
+          <li>Digital Marketing</li>
+          <li>Small Business Suite</li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:support@itniche.com">support@itniche.com</a></li>
+          <li><a href="mailto:billing@itniche.com">billing@itniche.com</a></li>
+          <li><a href="tel:+19014149009">(901) 414-9009</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© <span id="year">2025</span> IT Niche, LLC · All rights reserved.</p>
+      <p>Terms of Use · Privacy · Cookies</p>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Back to top" data-testid="back-to-top">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
