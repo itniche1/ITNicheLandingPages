@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="IT Niche — Web Design, Custom Solutions & Digital Marketing. Explore our portfolio of premium websites and digital products built for small businesses." />
+  <meta name="keywords" content="IT Niche, Web Design, Custom Solutions, Digital Marketing, Portfolio, e-Church, e-Restaurant, e-Realtor" />
+  <meta name="theme-color" content="#e57119" />
+  <title>Our Work — IT Niche | Web Design, Custom Solutions & Digital Marketing</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ============== NAV ============== -->
+  <header class="nav" data-testid="site-nav">
+    <div class="nav__wrap">
+      <a href="#top" class="brand" data-testid="brand-logo" aria-label="IT Niche home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="22" height="22">
+            <path d="M4 16 L12 4 L20 16 L12 28 Z" fill="#e57119"/>
+            <path d="M14 16 L22 4 L30 16 L22 28 Z" fill="#000"/>
+          </svg>
+        </span>
+        <span class="brand__name">IT <em>Niche</em></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#work" data-testid="nav-link-work">Our Work</a>
+        <a href="#process" data-testid="nav-link-process">Process</a>
+        <a href="#contact" data-testid="nav-link-contact">Contact</a>
+      </nav>
+
+      <a href="#contact" class="btn btn--primary nav__cta" data-testid="nav-cta">
+        Start a Project
+        <span class="btn__arrow" aria-hidden="true">→</span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" data-testid="nav-toggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============== HERO ============== -->
+    <section class="hero" data-testid="hero-section">
+      <div class="hero__grid" aria-hidden="true"></div>
+
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <span class="eyebrow" data-testid="hero-eyebrow">
+            <span class="eyebrow__dot"></span> Our Work · Portfolio 2025
+          </span>
+
+          <h1 class="hero__title" data-testid="hero-title">
+            Crafted <em>websites</em>,
+            <br />
+            built for <span class="accent">small business</span>.
+          </h1>
+
+          <p class="hero__lead" data-testid="hero-lead">
+            We turn ideas into pixel-perfect digital products — custom websites,
+            niche portals, and growth-ready marketing systems.
+          </p>
+
+          <div class="hero__cta">
+            <a href="#work" class="btn btn--primary" data-testid="hero-cta-primary">
+              View Sample Work <span class="btn__arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="#contact" class="btn btn--ghost" data-testid="hero-cta-secondary">
+              Request Lunch &amp; Learn
+            </a>
+          </div>
+
+          <ul class="hero__stats" data-testid="hero-stats">
+            <li>
+              <strong data-counter="500">0</strong><span>+ Projects Delivered</span>
+            </li>
+            <li>
+              <strong data-counter="18">0</strong><span> Years Experience</span>
+            </li>
+            <li>
+              <strong data-counter="4">0</strong><span> Industry Portals</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- INFOGRAPHIC -->
+        <div class="hero__art" data-testid="hero-infographic" aria-hidden="true">
+          <div class="orbit">
+            <div class="orbit__ring orbit__ring--1"></div>
+            <div class="orbit__ring orbit__ring--2"></div>
+            <div class="orbit__ring orbit__ring--3"></div>
+
+            <div class="orbit__core">
+              <svg viewBox="0 0 64 64" width="42" height="42" fill="none" stroke="#fff" stroke-width="2.5">
+                <rect x="6" y="10" width="52" height="36" rx="3"/>
+                <path d="M6 20h52"/>
+                <circle cx="12" cy="15" r="1.2" fill="#fff"/>
+                <circle cx="17" cy="15" r="1.2" fill="#fff"/>
+                <circle cx="22" cy="15" r="1.2" fill="#fff"/>
+                <path d="M22 54h20"/>
+                <path d="M32 46v8"/>
+              </svg>
+              <span>Web<br/>Studio</span>
+            </div>
+
+            <div class="orbit__node orbit__node--1">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#e57119" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+              </svg>
+              <span>Code</span>
+            </div>
+            <div class="orbit__node orbit__node--2">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#e57119" stroke-width="2">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h0a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h0a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v0a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+              </svg>
+              <span>Custom</span>
+            </div>
+            <div class="orbit__node orbit__node--3">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#e57119" stroke-width="2">
+                <path d="M3 3v18h18"/>
+                <path d="M7 14l4-4 4 3 5-6"/>
+              </svg>
+              <span>Growth</span>
+            </div>
+            <div class="orbit__node orbit__node--4">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#e57119" stroke-width="2">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="M2 8h20"/>
+              </svg>
+              <span>UI/UX</span>
+            </div>
+
+            <span class="orbit__chip orbit__chip--a">HTML · CSS · JS</span>
+            <span class="orbit__chip orbit__chip--b">SEO Ready</span>
+            <span class="orbit__chip orbit__chip--c">Mobile First</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPI bar -->
+      <div class="kpibar" data-testid="kpi-bar">
+        <div class="kpi"><span>01</span> Discover</div>
+        <div class="kpi"><span>02</span> Design</div>
+        <div class="kpi"><span>03</span> Develop</div>
+        <div class="kpi"><span>04</span> Deliver</div>
+      </div>
+    </section>
+
+    <!-- ============== OUR WORK ============== -->
+    <section class="work" id="work" data-testid="work-section">
+      <div class="section__head">
+        <span class="eyebrow eyebrow--dark">
+          <span class="eyebrow__dot"></span> Sample Work
+        </span>
+        <h2 class="section__title" data-testid="work-title">
+          Pick a category. <em>See the proof.</em>
+        </h2>
+        <p class="section__lead" data-testid="work-lead">
+          A glance at the kind of work we ship — from bespoke custom sites to
+          industry-focused portals built for scale.
+        </p>
+      </div>
+
+      <!-- Category Tabs -->
+      <div class="tabs" role="tablist" data-testid="work-tabs">
+        <button class="tab is-active" role="tab" data-tab="custom" data-testid="tab-custom">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+          </svg>
+          Custom Website
+        </button>
+        <button class="tab" role="tab" data-tab="church" data-testid="tab-church">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2l3 4h-2v3h4v3h-4v9H11v-9H7V9h4V6H9z"/>
+          </svg>
+          e-Church
+        </button>
+        <button class="tab" role="tab" data-tab="restaurant" data-testid="tab-restaurant">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 3v8a3 3 0 003 3v7"/><path d="M8 3v8"/><path d="M12 3v8a3 3 0 01-3 3"/>
+            <path d="M18 3c-2 0-3 2-3 5s1 5 3 5v8"/>
+          </svg>
+          e-Restaurant
+        </button>
+        <button class="tab" role="tab" data-tab="realtor" data-testid="tab-realtor">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 10l9-7 9 7"/><path d="M5 9v11h14V9"/>
+          </svg>
+          e-Realtor
+        </button>
+      </div>
+
+      <!-- Cards Grid -->
+      <div class="cards" id="cardsGrid" data-testid="work-cards">
+        <!-- Cards injected by JS -->
+      </div>
+
+      <p class="work__note" data-testid="work-note">
+        Need more? Request <strong>Sample Work Access</strong> to view 100&#39;s of
+        completed projects.
+      </p>
+    </section>
+
+    <!-- ============== PROCESS / INFOGRAPHIC ============== -->
+    <section class="process" id="process" data-testid="process-section">
+      <div class="section__head">
+        <span class="eyebrow eyebrow--dark">
+          <span class="eyebrow__dot"></span> How we work
+        </span>
+        <h2 class="section__title" data-testid="process-title">
+          Four steps. <em>Zero guesswork.</em>
+        </h2>
+      </div>
+
+      <ol class="timeline" data-testid="process-timeline">
+        <li>
+          <div class="timeline__num">01</div>
+          <h3>Discover</h3>
+          <p>Workshop your goals, audience and KPIs.</p>
+        </li>
+        <li>
+          <div class="timeline__num">02</div>
+          <h3>Design</h3>
+          <p>Wireframes, brand language, hi-fi visuals.</p>
+        </li>
+        <li>
+          <div class="timeline__num">03</div>
+          <h3>Develop</h3>
+          <p>Clean code, accessible, SEO &amp; mobile-first.</p>
+        </li>
+        <li>
+          <div class="timeline__num">04</div>
+          <h3>Deliver</h3>
+          <p>Launch, train, measure, and iterate.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============== CTA ============== -->
+    <section class="cta" id="contact" data-testid="cta-section">
+      <div class="cta__inner">
+        <div class="cta__shape" aria-hidden="true">
+          <svg viewBox="0 0 200 200" width="100%" height="100%">
+            <circle cx="100" cy="100" r="80" fill="none" stroke="#e57119" stroke-width="1" opacity=".35"/>
+            <circle cx="100" cy="100" r="60" fill="none" stroke="#e57119" stroke-width="1" opacity=".55"/>
+            <circle cx="100" cy="100" r="40" fill="none" stroke="#e57119" stroke-width="1" opacity=".8"/>
+            <circle cx="100" cy="100" r="6" fill="#e57119"/>
+          </svg>
+        </div>
+
+        <span class="eyebrow eyebrow--light">
+          <span class="eyebrow__dot"></span> Let&apos;s build
+        </span>
+        <h2 class="cta__title" data-testid="cta-title">
+          Your next project — <em>made with intent</em>.
+        </h2>
+        <p class="cta__lead" data-testid="cta-lead">
+          Tell us about your business. We&apos;ll reply with ideas, timelines, and a clear path forward.
+        </p>
+
+        <form class="cta__form" id="ctaForm" data-testid="cta-form" novalidate>
+          <label class="sr-only" for="ctaEmail">Email address</label>
+          <input
+            type="email"
+            id="ctaEmail"
+            name="email"
+            placeholder="you@company.com"
+            required
+            data-testid="cta-email-input"
+          />
+          <button type="submit" class="btn btn--primary" data-testid="cta-submit">
+            Get a Free Quote <span class="btn__arrow" aria-hidden="true">→</span>
+          </button>
+        </form>
+        <p class="cta__msg" id="ctaMsg" data-testid="cta-msg" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="footer" data-testid="site-footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="brand">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="22" height="22">
+              <path d="M4 16 L12 4 L20 16 L12 28 Z" fill="#e57119"/>
+              <path d="M14 16 L22 4 L30 16 L22 28 Z" fill="#000"/>
+            </svg>
+          </span>
+          <span class="brand__name">IT <em>Niche</em></span>
+        </span>
+        <p>Web Design · Custom Solutions · Digital Marketing.</p>
+      </div>
+
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#work">Our Work</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <p class="footer__copy">© <span id="year"></span> IT Niche. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
