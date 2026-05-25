@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#e57119" />
+  <title>IT Niche — Digital Strategy, Web Design & Marketing</title>
+  <meta name="description" content="IT Niche partners with businesses to deliver custom websites, smart SEO, and integrated digital marketing — built for long-term growth." />
+  <meta name="keywords" content="web design, custom solutions, digital marketing, SEO, small business, Memphis" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="IT Niche — Digital Strategy, Web Design & Marketing" />
+  <meta property="og:description" content="Empowering businesses with custom websites, smart SEO, and digital marketing strategies built for long-term growth." />
+  <meta property="og:type" content="website" />
+
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" data-testid="site-header">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo" aria-label="IT Niche home" data-testid="nav-logo">
+        <span class="nav__logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M4 9h16"/><path d="M9 4v16"/></svg>
+        </span>
+        <span class="nav__logo-text">IT<em>Niche</em></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#vision" data-testid="nav-link-vision">Vision</a>
+        <a href="#services" data-testid="nav-link-services">Services</a>
+        <a href="#process" data-testid="nav-link-process">Process</a>
+        <a href="#why" data-testid="nav-link-why">Why Us</a>
+        <a href="#testimonials" data-testid="nav-link-testimonials">Clients</a>
+      </nav>
+
+      <a href="#contact" class="btn btn--primary nav__cta" data-testid="nav-cta-contact">
+        Contact Us
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu" data-testid="nav-toggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="nav__mobile" id="mobileMenu" hidden>
+      <a href="#vision" data-testid="mobile-link-vision">Vision</a>
+      <a href="#services" data-testid="mobile-link-services">Services</a>
+      <a href="#process" data-testid="mobile-link-process">Process</a>
+      <a href="#why" data-testid="mobile-link-why">Why Us</a>
+      <a href="#testimonials" data-testid="mobile-link-testimonials">Clients</a>
+      <a href="#contact" class="btn btn--primary" data-testid="mobile-cta-contact">Contact Us</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__copy reveal">
+          <span class="eyebrow" data-testid="hero-eyebrow">
+            <span class="eyebrow__dot"></span> Digital Strategy · Est. 2003
+          </span>
+          <h1 id="hero-title" class="hero__title" data-testid="hero-title">
+            Bridging the gap between your <em>business</em> and your <em>objectives</em>.
+          </h1>
+          <p class="hero__sub" data-testid="hero-subtitle">
+            Custom websites, smart SEO and integrated marketing — engineered for measurable, long-term growth.
+          </p>
+
+          <div class="hero__cta">
+            <a href="#contact" class="btn btn--primary btn--lg" data-testid="hero-cta-primary">
+              Start a Project
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+            </a>
+            <a href="#services" class="btn btn--ghost btn--lg" data-testid="hero-cta-secondary">See Services</a>
+          </div>
+
+          <ul class="hero__points" aria-label="Highlights">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Zero upfront cost</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> 21+ years experience</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Memphis, TN · global delivery</li>
+          </ul>
+        </div>
+
+        <!-- HERO INFOGRAPHIC -->
+        <div class="hero__art reveal" aria-hidden="true">
+          <div class="hero__ring hero__ring--1"></div>
+          <div class="hero__ring hero__ring--2"></div>
+          <div class="hero__grid-bg"></div>
+
+          <div class="hero__chip hero__chip--1">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+            <span>SEO +148%</span>
+          </div>
+          <div class="hero__chip hero__chip--2">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            <span>ROI Focused</span>
+          </div>
+          <div class="hero__chip hero__chip--3">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 4-4 4 4 5-5"/></svg>
+            <span>Growth ▲</span>
+          </div>
+
+          <div class="hero__core">
+            <svg viewBox="0 0 120 120" class="hero__core-svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="60" cy="60" r="34" />
+              <path d="M60 26v68M26 60h68" />
+              <circle cx="60" cy="60" r="10" fill="currentColor" stroke="none"/>
+            </svg>
+            <span class="hero__core-label">IT Niche</span>
+          </div>
+
+          <div class="hero__node hero__node--n">Web</div>
+          <div class="hero__node hero__node--e">SEO</div>
+          <div class="hero__node hero__node--s">Apps</div>
+          <div class="hero__node hero__node--w">Marketing</div>
+        </div>
+      </div>
+
+      <!-- Stats strip -->
+      <div class="container">
+        <div class="stats reveal" data-testid="stats-strip">
+          <div class="stats__item">
+            <div class="stats__num" data-count="21">0</div>
+            <div class="stats__label">Years experience</div>
+          </div>
+          <div class="stats__divider"></div>
+          <div class="stats__item">
+            <div class="stats__num" data-count="500">0</div>
+            <div class="stats__label">Projects launched</div>
+          </div>
+          <div class="stats__divider"></div>
+          <div class="stats__item">
+            <div class="stats__num" data-count="97" data-suffix="%">0</div>
+            <div class="stats__label">Client retention</div>
+          </div>
+          <div class="stats__divider"></div>
+          <div class="stats__item">
+            <div class="stats__num" data-count="0" data-prefix="$">$0</div>
+            <div class="stats__label">Upfront cost</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VISION ============ -->
+    <section class="section vision" id="vision" aria-labelledby="vision-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow"><span class="eyebrow__dot"></span> Our Vision</span>
+          <h2 id="vision-title" class="section__title" data-testid="vision-title">
+            A leading technology partner — built around <em>your</em> outcomes.
+          </h2>
+          <p class="section__sub">
+            We deliver value-added services that exceed expectations and increase productivity, profitability and competitive advantage.
+          </p>
+        </div>
+
+        <div class="vision__grid">
+          <article class="v-card reveal" data-testid="vision-card-leadership">
+            <div class="v-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4.5L6 21l1.5-7.5L2 9h7z"/></svg>
+            </div>
+            <h3>Leadership</h3>
+            <p>Be a leading IT solution provider that consistently raises the standard for digital craft.</p>
+          </article>
+
+          <article class="v-card reveal" data-testid="vision-card-partner">
+            <div class="v-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Preferred Partner</h3>
+            <p>The trusted outsourcing partner that delivers a real competitive advantage — not just deliverables.</p>
+          </article>
+
+          <article class="v-card reveal" data-testid="vision-card-value">
+            <div class="v-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 4-4 4 4 5-5"/></svg>
+            </div>
+            <h3>Value-Added Growth</h3>
+            <p>Strategies that drive measurable productivity, profitability and long-term brand visibility.</p>
+          </article>
+
+          <article class="v-card reveal" data-testid="vision-card-future">
+            <div class="v-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </div>
+            <h3>Future-Ready</h3>
+            <p>AI-driven strategy, automation and integrated marketing — built for what comes next.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow"><span class="eyebrow__dot"></span> Services</span>
+          <h2 id="services-title" class="section__title" data-testid="services-title">
+            Customized services <em>designed for your audience</em>.
+          </h2>
+          <p class="section__sub">Precision-driven solutions tailored to your organizational scale.</p>
+        </div>
+
+        <div class="services__grid">
+          <article class="s-card reveal" data-testid="service-websites">
+            <div class="s-card__num">01</div>
+            <div class="s-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 4v5"/></svg>
+            </div>
+            <h3>Websites</h3>
+            <p>Compelling digital experiences that integrate your brand into every interaction.</p>
+          </article>
+
+          <article class="s-card reveal" data-testid="service-ecommerce">
+            <div class="s-card__num">02</div>
+            <div class="s-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M3 4h2l2.4 12.2A2 2 0 0 0 9.4 18H19l2-9H6"/></svg>
+            </div>
+            <h3>E-Commerce</h3>
+            <p>Scalable, secure storefronts engineered for performance and conversion.</p>
+          </article>
+
+          <article class="s-card reveal" data-testid="service-seo">
+            <div class="s-card__num">03</div>
+            <div class="s-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M8 11h6M11 8v6"/></svg>
+            </div>
+            <h3>SEO</h3>
+            <p>On-page foundations plus continuous refinement to compound visibility over time.</p>
+          </article>
+
+          <article class="s-card reveal" data-testid="service-ppc">
+            <div class="s-card__num">04</div>
+            <div class="s-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 7v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V7z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <h3>PPC Campaigns</h3>
+            <p>Data-driven ads engineered for reach, engagement and ROI you can defend.</p>
+          </article>
+
+          <article class="s-card reveal" data-testid="service-social">
+            <div class="s-card__num">05</div>
+            <div class="s-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/></svg>
+            </div>
+            <h3>Social Media</h3>
+            <p>Targeted content that strengthens connections and expands your audience.</p>
+          </article>
+
+          <article class="s-card reveal" data-testid="service-migration">
+            <div class="s-card__num">06</div>
+            <div class="s-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="m7.5 4.2 9 5.2M16.5 4.2l-9 5.2M12 22V12"/></svg>
+            </div>
+            <h3>Migration</h3>
+            <p>Reliable transitions backed by proven expertise and meticulous execution.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS / TIMELINE ============ -->
+    <section class="section process" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow"><span class="eyebrow__dot"></span> How we work</span>
+          <h2 id="process-title" class="section__title" data-testid="process-title">
+            A clear, four-step path from <em>idea</em> to <em>impact</em>.
+          </h2>
+        </div>
+
+        <ol class="timeline" aria-label="Our process">
+          <li class="t-step reveal" data-testid="process-step-1">
+            <div class="t-step__index">01</div>
+            <div class="t-step__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V6a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg>
+            </div>
+            <h3>Discover</h3>
+            <p>We listen, define objectives and map short- and long-term ambitions.</p>
+          </li>
+          <li class="t-step reveal" data-testid="process-step-2">
+            <div class="t-step__index">02</div>
+            <div class="t-step__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+            </div>
+            <h3>Design</h3>
+            <p>Brand-aligned UI, accessible flows, conversion-first information design.</p>
+          </li>
+          <li class="t-step reveal" data-testid="process-step-3">
+            <div class="t-step__index">03</div>
+            <div class="t-step__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
+            </div>
+            <h3>Build</h3>
+            <p>Robust engineering, secure architecture and fast, scalable delivery.</p>
+          </li>
+          <li class="t-step reveal" data-testid="process-step-4">
+            <div class="t-step__index">04</div>
+            <div class="t-step__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 4-4 4 4 5-5"/></svg>
+            </div>
+            <h3>Grow</h3>
+            <p>Continuous SEO, analytics and marketing to compound results over time.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ WHY CHOOSE US ============ -->
+    <section class="section why" id="why" aria-labelledby="why-title">
+      <div class="container why__wrap">
+        <div class="why__head reveal">
+          <span class="eyebrow"><span class="eyebrow__dot"></span> Why choose us</span>
+          <h2 id="why-title" class="section__title" data-testid="why-title">
+            Strategy, craft and accountability — under <em>one roof</em>.
+          </h2>
+          <p class="section__sub">
+            A consultative partner that aligns digital execution with the metrics that move your business.
+          </p>
+
+          <div class="why__badges">
+            <span class="badge" data-testid="why-badge-upfront">No upfront cost</span>
+            <span class="badge">AI-driven strategy</span>
+            <span class="badge">Memphis · Global</span>
+          </div>
+        </div>
+
+        <ul class="why__grid">
+          <li class="w-card reveal" data-testid="why-card-experience">
+            <div class="w-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4"/><path d="M17 4H7a1 1 0 0 0-1 1v6a6 6 0 0 0 12 0V5a1 1 0 0 0-1-1z"/><path d="M6 6H3v2a3 3 0 0 0 3 3M18 6h3v2a3 3 0 0 1-3 3"/></svg>
+            </div>
+            <h3>21+ Years</h3>
+            <p>Two decades of shipping work that performs in the real world.</p>
+          </li>
+          <li class="w-card reveal" data-testid="why-card-custom">
+            <div class="w-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 1 1 3 3L7 19l-4 1 1-4z"/></svg>
+            </div>
+            <h3>Fully Custom</h3>
+            <p>No templates. Every project is engineered for your specific audience.</p>
+          </li>
+          <li class="w-card reveal" data-testid="why-card-zero">
+            <div class="w-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3>Zero Upfront</h3>
+            <p>We invest in your growth from day one — because your success is ours.</p>
+          </li>
+          <li class="w-card reveal" data-testid="why-card-fullstack">
+            <div class="w-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <h3>Full-Service</h3>
+            <p>Design, dev, SEO, PPC, social and automation — coordinated, not siloed.</p>
+          </li>
+          <li class="w-card reveal" data-testid="why-card-roi">
+            <div class="w-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3>ROI-Focused</h3>
+            <p>Every decision tied to a metric. Every metric tied to growth.</p>
+          </li>
+          <li class="w-card reveal" data-testid="why-card-support">
+            <div class="w-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 1 1-17 0 8.5 8.5 0 0 1 17 0z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></svg>
+            </div>
+            <h3>Always-On Support</h3>
+            <p>A responsive team that treats your roadmap like our own.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section testimonials" id="testimonials" aria-labelledby="t-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow"><span class="eyebrow__dot"></span> Client voices</span>
+          <h2 id="t-title" class="section__title" data-testid="testimonials-title">
+            What our partners <em>say about us</em>.
+          </h2>
+        </div>
+
+        <div class="t-grid">
+          <figure class="t-card reveal" data-testid="testimonial-1">
+            <svg class="t-card__quote" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.17 6A5.17 5.17 0 0 0 2 11.17V18h6.83v-6.83H5.17A2 2 0 0 1 7.17 9zM17.17 6A5.17 5.17 0 0 0 12 11.17V18h6.83v-6.83H15.17a2 2 0 0 1 2-2.17z"/></svg>
+            <blockquote>Absolute digital wizards. Custom solutions delivered with incredible speed and an amazing approach to feedback.</blockquote>
+            <figcaption><strong>New World Strategies</strong><span>Founder</span></figcaption>
+          </figure>
+
+          <figure class="t-card reveal" data-testid="testimonial-2">
+            <svg class="t-card__quote" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.17 6A5.17 5.17 0 0 0 2 11.17V18h6.83v-6.83H5.17A2 2 0 0 1 7.17 9zM17.17 6A5.17 5.17 0 0 0 12 11.17V18h6.83v-6.83H15.17a2 2 0 0 1 2-2.17z"/></svg>
+            <blockquote>They created a sleek, exciting and easy-to-navigate website for my business. If you need the best, this is it.</blockquote>
+            <figcaption><strong>William Smith</strong><span>Founder</span></figcaption>
+          </figure>
+
+          <figure class="t-card reveal" data-testid="testimonial-3">
+            <svg class="t-card__quote" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.17 6A5.17 5.17 0 0 0 2 11.17V18h6.83v-6.83H5.17A2 2 0 0 1 7.17 9zM17.17 6A5.17 5.17 0 0 0 12 11.17V18h6.83v-6.83H15.17a2 2 0 0 1 2-2.17z"/></svg>
+            <blockquote>Patient, curious, gracious — and he knows his stuff inside and out. Built exactly what we asked for, only better.</blockquote>
+            <figcaption><strong>I'm Real Hungry</strong><span>Founder</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA / CONTACT ============ -->
+    <section class="cta" id="contact" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta__card reveal">
+          <div class="cta__bg" aria-hidden="true">
+            <span class="cta__orb cta__orb--1"></span>
+            <span class="cta__orb cta__orb--2"></span>
+            <span class="cta__grid"></span>
+          </div>
+
+          <div class="cta__content">
+            <span class="eyebrow eyebrow--light"><span class="eyebrow__dot"></span> Ready when you are</span>
+            <h2 id="cta-title" class="cta__title" data-testid="cta-title">
+              Let&rsquo;s build something <em>worth scaling</em>.
+            </h2>
+            <p class="cta__sub">
+              Get a custom website with no upfront fee. We&rsquo;ll map your goals and turn them into a measurable plan.
+            </p>
+
+            <form class="cta__form" id="contactForm" novalidate data-testid="cta-form">
+              <label class="visually-hidden" for="email">Email address</label>
+              <input id="email" name="email" type="email" required placeholder="you@company.com" autocomplete="email" data-testid="cta-input-email" />
+              <button type="submit" class="btn btn--primary btn--lg" data-testid="cta-submit">
+                Contact Us
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+              </button>
+            </form>
+            <p class="cta__hint" id="formHint" role="status" aria-live="polite"></p>
+
+            <ul class="cta__points" aria-label="What's included">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Free consultation</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Free quote</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Reply within 24 hrs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" data-testid="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="nav__logo" aria-label="IT Niche home">
+          <span class="nav__logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M4 9h16"/><path d="M9 4v16"/></svg>
+          </span>
+          <span class="nav__logo-text">IT<em>Niche</em></span>
+        </a>
+        <p>Digital strategy, web design and marketing for businesses ready to grow.</p>
+      </div>
+
+      <div class="footer__cols">
+        <div>
+          <h4>Services</h4>
+          <a href="#services">Websites</a>
+          <a href="#services">E-Commerce</a>
+          <a href="#services">SEO</a>
+          <a href="#services">Marketing</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="#vision">Vision</a>
+          <a href="#process">Process</a>
+          <a href="#why">Why Us</a>
+          <a href="#testimonials">Clients</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="#contact">Get in touch</a>
+          <span>Memphis, TN · USA</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <div class="container footer__bar-inner">
+        <span>© <span id="year"></span> IT Niche. All rights reserved.</span>
+        <span>Crafted with care · Built for growth</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
