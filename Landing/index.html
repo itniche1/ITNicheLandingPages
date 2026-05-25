@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="IT Niche — One stop shop for your online needs. Web design, custom solutions and digital marketing for small businesses." />
+  <meta name="theme-color" content="#e57119" />
+  <title>Let's Work Together · IT Niche</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ====================== NAV ====================== -->
+  <header class="nav" data-testid="site-nav">
+    <div class="container nav__inner">
+      <a href="#top" class="brand" data-testid="brand-logo" aria-label="IT Niche home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="26" height="26" rx="6"/>
+            <path d="M10 21V11M16 21l6-10M22 21V11"/>
+          </svg>
+        </span>
+        <span class="brand__name">IT&nbsp;Niche</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#go-online" data-testid="nav-link-approach">Approach</a>
+        <a href="#process" data-testid="nav-link-process">Process</a>
+        <a href="#why" data-testid="nav-link-why">Why us</a>
+        <a href="#cta" data-testid="nav-link-contact">Contact</a>
+      </nav>
+
+      <a href="tel:+19495551234" class="btn btn--ghost nav__cta" data-testid="nav-phone-cta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        <span>Call us</span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" data-testid="nav-menu-toggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ====================== HERO ====================== -->
+  <section class="hero" id="top" data-testid="hero-section">
+    <div class="container hero__grid">
+      <div class="hero__copy reveal">
+        <span class="eyebrow" data-testid="hero-eyebrow">
+          <span class="dot"></span> Lead generation, done right
+        </span>
+
+        <h1 class="hero__title">
+          Go online with <span class="accent">IT&nbsp;Niche.</span><br/>
+          One partner. <span class="outline">Every</span> piece of the puzzle.
+        </h1>
+
+        <p class="hero__lede">
+          Web design, custom solutions and digital marketing for small businesses — built around your goals, shipped on a clear timeline.
+        </p>
+
+        <div class="hero__ctas">
+          <a href="tel:+19495551234" class="btn btn--primary" data-testid="hero-call-cta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+            Talk to a strategist
+          </a>
+          <a href="#process" class="btn btn--ghost" data-testid="hero-process-cta">
+            See our process
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <ul class="hero__pills" aria-label="Services">
+          <li><span>Web Design</span></li>
+          <li><span>Custom Solutions</span></li>
+          <li><span>Digital Marketing</span></li>
+        </ul>
+      </div>
+
+      <!-- Right-side infographic (pure SVG, line style) -->
+      <div class="hero__art reveal" aria-hidden="true">
+        <svg viewBox="0 0 520 520" class="infographic" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+              <path d="M40 0H0V40" fill="none" stroke="#eee5d8" stroke-width="1"/>
+            </pattern>
+            <linearGradient id="ringGrad" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0%" stop-color="#e57119"/>
+              <stop offset="100%" stop-color="#0a0a0a"/>
+            </linearGradient>
+          </defs>
+
+          <rect x="0" y="0" width="520" height="520" fill="url(#grid)"/>
+
+          <!-- Outer ring -->
+          <circle cx="260" cy="260" r="200" fill="none" stroke="#0a0a0a" stroke-width="1.2" stroke-dasharray="2 6"/>
+          <circle cx="260" cy="260" r="150" fill="none" stroke="url(#ringGrad)" stroke-width="2"/>
+
+          <!-- Center node -->
+          <g class="center-node">
+            <circle cx="260" cy="260" r="58" fill="#0a0a0a"/>
+            <text x="260" y="256" text-anchor="middle" font-family="Lato" font-weight="900" fill="#fff" font-size="16">IT&nbsp;NICHE</text>
+            <text x="260" y="276" text-anchor="middle" font-family="Lato" font-weight="400" fill="#e57119" font-size="11" letter-spacing="2">CORE</text>
+          </g>
+
+          <!-- Orbiting nodes -->
+          <g class="node node-1">
+            <line x1="260" y1="260" x2="110" y2="120" stroke="#0a0a0a" stroke-width="1"/>
+            <rect x="50" y="90" width="120" height="60" rx="10" fill="#fff" stroke="#0a0a0a" stroke-width="1.4"/>
+            <text x="110" y="115" text-anchor="middle" font-family="Lato" font-weight="700" font-size="12" fill="#0a0a0a">DESIGN</text>
+            <text x="110" y="133" text-anchor="middle" font-family="Lato" font-size="10" fill="#5c5c5c">Look & feel</text>
+          </g>
+
+          <g class="node node-2">
+            <line x1="260" y1="260" x2="430" y2="130" stroke="#0a0a0a" stroke-width="1"/>
+            <rect x="370" y="100" width="120" height="60" rx="10" fill="#e57119" stroke="#e57119" stroke-width="1.4"/>
+            <text x="430" y="125" text-anchor="middle" font-family="Lato" font-weight="700" font-size="12" fill="#fff">BUILD</text>
+            <text x="430" y="143" text-anchor="middle" font-family="Lato" font-size="10" fill="#ffe7d3">Custom code</text>
+          </g>
+
+          <g class="node node-3">
+            <line x1="260" y1="260" x2="430" y2="400" stroke="#0a0a0a" stroke-width="1"/>
+            <rect x="370" y="370" width="120" height="60" rx="10" fill="#fff" stroke="#0a0a0a" stroke-width="1.4"/>
+            <text x="430" y="395" text-anchor="middle" font-family="Lato" font-weight="700" font-size="12" fill="#0a0a0a">MARKET</text>
+            <text x="430" y="413" text-anchor="middle" font-family="Lato" font-size="10" fill="#5c5c5c">SEO & reach</text>
+          </g>
+
+          <g class="node node-4">
+            <line x1="260" y1="260" x2="110" y2="400" stroke="#0a0a0a" stroke-width="1"/>
+            <rect x="50" y="370" width="120" height="60" rx="10" fill="#fff" stroke="#0a0a0a" stroke-width="1.4"/>
+            <text x="110" y="395" text-anchor="middle" font-family="Lato" font-weight="700" font-size="12" fill="#0a0a0a">SUPPORT</text>
+            <text x="110" y="413" text-anchor="middle" font-family="Lato" font-size="10" fill="#5c5c5c">90-day review</text>
+          </g>
+
+          <!-- Floating dots -->
+          <circle cx="260" cy="60"  r="4" fill="#e57119"/>
+          <circle cx="260" cy="460" r="4" fill="#0a0a0a"/>
+          <circle cx="60"  cy="260" r="4" fill="#0a0a0a"/>
+          <circle cx="460" cy="260" r="4" fill="#e57119"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Stats strip -->
+    <div class="container">
+      <div class="stats reveal" data-testid="hero-stats">
+        <div class="stat">
+          <div class="stat__num"><span data-count="12">0</span>+</div>
+          <div class="stat__label">Years building the web</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num"><span data-count="250">0</span>+</div>
+          <div class="stat__label">Projects shipped</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num"><span data-count="7">0</span></div>
+          <div class="stat__label">Step process, fully transparent</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num"><span data-count="90">0</span>d</div>
+          <div class="stat__label">Post-launch review window</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== GO ONLINE ====================== -->
+  <section class="section" id="go-online" data-testid="goonline-section">
+    <div class="container">
+      <header class="section__head reveal">
+        <span class="eyebrow"><span class="dot"></span> Go online with IT Niche</span>
+        <h2>Three moves. <span class="accent">One partner.</span></h2>
+        <p class="lede">
+          We listen first, plan together, then execute as one team. Here's exactly how we work with you.
+        </p>
+      </header>
+
+      <div class="cards three reveal">
+        <article class="card" data-testid="approach-card-listen">
+          <div class="card__icon">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20a10 10 0 1 1 20 0v4a3 3 0 0 1-3 3h-2v-9h5"/><path d="M6 20v4a3 3 0 0 0 3 3h2v-9H6"/></svg>
+          </div>
+          <div class="card__num">01</div>
+          <h3>We Listen</h3>
+          <p>Share your wish list. We map your immediate objectives and long-term goals before we touch a pixel.</p>
+        </article>
+
+        <article class="card card--accent" data-testid="approach-card-plan">
+          <div class="card__icon">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="6" width="24" height="22" rx="3"/><path d="M4 12h24M10 4v4M22 4v4M9 18h6M9 23h10"/></svg>
+          </div>
+          <div class="card__num">02</div>
+          <h3>We Plan Together</h3>
+          <p>Designers, developers and strategists draft a clear roadmap — parallel tasks, real timelines, defined roles.</p>
+        </article>
+
+        <article class="card" data-testid="approach-card-execute">
+          <div class="card__icon">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 16l5 5 12-14"/><circle cx="24" cy="24" r="4"/></svg>
+          </div>
+          <div class="card__num">03</div>
+          <h3>We Execute</h3>
+          <p>Design, build, launch and optimise. You stay in the loop at every checkpoint — no surprises, no scope creep.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== PROCESS ====================== -->
+  <section class="section section--alt" id="process" data-testid="process-section">
+    <div class="container">
+      <header class="section__head reveal">
+        <span class="eyebrow"><span class="dot"></span> The process breakdown</span>
+        <h2>A 7-step <span class="accent">blueprint</span> — no guesswork.</h2>
+        <p class="lede">
+          “Failing to plan = planning to fail.” Our website design process guide keeps time, budget and quality on track from kickoff to review.
+        </p>
+      </header>
+
+      <ol class="timeline reveal" data-testid="process-timeline">
+        <li class="step">
+          <div class="step__num">1</div>
+          <div class="step__body">
+            <div class="step__icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/><path d="M6 27c1.5-4 5.5-6.5 10-6.5s8.5 2.5 10 6.5"/></svg></div>
+            <h3>Initial Contact</h3>
+            <p>Discovery: opportunities, competitive scan, brand assets and a creative consultation.</p>
+            <span class="step__meta">Kickoff</span>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step__num">2</div>
+          <div class="step__body">
+            <div class="step__icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 26V8l8 4 8-4 8 4v18"/><path d="M12 12v18M20 8v18"/></svg></div>
+            <h3>Planning</h3>
+            <p>Interactive sitemap, modules, integrations and a parallel-task timeline you can rely on.</p>
+            <span class="step__meta">Roadmap</span>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step__num">3</div>
+          <div class="step__body">
+            <div class="step__icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h14l6 6v18a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M20 4v6h6M10 16h12M10 21h12M10 26h8"/></svg></div>
+            <h3>Content</h3>
+            <p>SEO-driven copy with keyword research, interviews and approved messaging — ready to place.</p>
+            <span class="step__meta">Weeks 1–6</span>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step__num">4</div>
+          <div class="step__body">
+            <div class="step__icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="12"/><path d="M16 4v24M4 16h24"/></svg></div>
+            <h3>Design</h3>
+            <p>Layout, look and feel. Home and inner templates iterated until the concept is approved.</p>
+            <span class="step__meta">Weeks 1–2</span>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step__num">5</div>
+          <div class="step__body">
+            <div class="step__icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 8l-7 8 7 8M21 8l7 8-7 8M19 5l-6 22"/></svg></div>
+            <h3>Development</h3>
+            <p>W3C-compliant, responsive code plus any custom app or DB logic — fully tested and staged.</p>
+            <span class="step__meta">Weeks 2–4</span>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step__num">6</div>
+          <div class="step__body">
+            <div class="step__icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22l8-8 4 4 8-8"/><path d="M26 10v8h-8"/></svg></div>
+            <h3>Launch</h3>
+            <p>Search engine submission, backlinks, local listings and press — visibility from day one.</p>
+            <span class="step__meta">Weeks 1–2</span>
+          </div>
+        </li>
+
+        <li class="step step--final">
+          <div class="step__num">7</div>
+          <div class="step__body">
+            <div class="step__icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M28 16a12 12 0 1 1-3.5-8.5"/><path d="M28 4v8h-8"/></svg></div>
+            <h3>Review</h3>
+            <p>90-day analytics review and a tailored growth roadmap — investments mapped to outcomes.</p>
+            <span class="step__meta">+90 days</span>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ====================== WHY US ====================== -->
+  <section class="section" id="why" data-testid="why-section">
+    <div class="container">
+      <header class="section__head reveal">
+        <span class="eyebrow"><span class="dot"></span> Why IT Niche</span>
+        <h2>Built for small business. <span class="accent">Engineered for trust.</span></h2>
+      </header>
+
+      <div class="grid four reveal">
+        <div class="tile">
+          <div class="tile__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 9.5 8 10 4.5-.5 8-5 8-10V6l-8-4z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <h4>Transparent scope</h4>
+          <p>Every deliverable documented before we build.</p>
+        </div>
+        <div class="tile">
+          <div class="tile__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <h4>On-time delivery</h4>
+          <p>Parallel tracks keep your launch date intact.</p>
+        </div>
+        <div class="tile">
+          <div class="tile__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H5.5L4 18z"/><path d="M8 9h8M8 12h5"/></svg></div>
+          <h4>One team, one bill</h4>
+          <p>Design, dev and marketing under a single roof.</p>
+        </div>
+        <div class="tile">
+          <div class="tile__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-7 4 14 3-7h4"/></svg></div>
+          <h4>Measured growth</h4>
+          <p>Analytics-led tweaks after each launch.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== CTA ====================== -->
+  <section class="cta" id="cta" data-testid="cta-section">
+    <div class="container cta__inner reveal">
+      <div class="cta__copy">
+        <span class="eyebrow eyebrow--inverse"><span class="dot"></span> Let's work together</span>
+        <h2>Your online presence, <br/><span class="accent">planned in one call.</span></h2>
+        <p>Tell us your goals. We'll map the right next steps — no obligation, no pressure.</p>
+      </div>
+
+      <div class="cta__actions">
+        <a href="tel:+19495551234" class="btn btn--primary btn--lg" data-testid="cta-call-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          +1&nbsp;(949)&nbsp;555-1234
+        </a>
+        <a href="tel:+19495551234" class="btn btn--outline-inverse btn--lg" data-testid="cta-call-secondary">
+          Schedule a callback
+        </a>
+        <small class="cta__note">Mon–Fri · 9am to 6pm PT</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer class="footer" data-testid="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="brand">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="26" height="26" rx="6"/>
+              <path d="M10 21V11M16 21l6-10M22 21V11"/>
+            </svg>
+          </span>
+          <span class="brand__name">IT&nbsp;Niche</span>
+        </span>
+        <p>One stop shop for your online needs.</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="#go-online">Approach</a>
+        <a href="#process">Process</a>
+        <a href="#why">Why us</a>
+        <a href="tel:+19495551234" data-testid="footer-phone">Call</a>
+      </nav>
+
+      <div class="footer__meta">
+        <span>© <span id="year"></span> IT Niche. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
