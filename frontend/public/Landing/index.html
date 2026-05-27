@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#e57119" />
+  <meta name="description" content="Build. Engage. Grow. Discover what makes a good website — fast load times, frictionless UX, and a clear path to growth." />
+  <meta name="keywords" content="good website, web design, user experience, load time, website quality, small business web design" />
+  <meta name="author" content="IT Niche" />
+
+  <!-- Open Graph / SEO -->
+  <meta property="og:title" content="What Makes a Good Website — Build. Engage. Grow." />
+  <meta property="og:description" content="A modern, minimal guide to building websites that load fast, delight users, and convert." />
+  <meta property="og:type" content="website" />
+
+  <title>What Makes a Good Website — Build. Engage. Grow.</title>
+
+  <!-- Fonts: Lato -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ───────────── HEADER ───────────── -->
+  <header class="site-header" data-testid="site-header">
+    <a href="#top" class="brand" data-testid="brand-logo" aria-label="IT Niche home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="6" width="26" height="18" rx="3"/>
+          <path d="M3 11h26"/>
+          <circle cx="7" cy="8.5" r="0.6" fill="currentColor"/>
+          <circle cx="10" cy="8.5" r="0.6" fill="currentColor"/>
+          <path d="M11 16l4 4 6-8"/>
+        </svg>
+      </span>
+      <span class="brand-name">IT&nbsp;Niche</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#load-time" data-testid="nav-loadtime">Load&nbsp;Time</a>
+      <a href="#ux" data-testid="nav-ux">UX</a>
+      <a href="#improve" data-testid="nav-improve">Improve</a>
+      <a href="#trust" data-testid="nav-trust">Why&nbsp;Us</a>
+    </nav>
+
+    <a href="mailto:helpdesk@itniche.com?subject=Let%27s%20build%20something%20amazing&body=Hi%20IT%20Niche%20team%2C%0A%0AI%27d%20like%20to%20discuss%20a%20project."
+       class="btn btn-primary btn-sm header-cta"
+       data-testid="header-contact-btn">
+      Contact&nbsp;Us
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+  </header>
+
+  <main id="top">
+
+    <!-- ───────────── HERO ───────────── -->
+    <section class="hero" data-testid="hero-section">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="grid-lines"></div>
+        <div class="hero-orb hero-orb--a"></div>
+        <div class="hero-orb hero-orb--b"></div>
+      </div>
+
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow" data-testid="hero-eyebrow">
+            <span class="dot"></span> Build. Engage. Grow.
+          </span>
+          <h1 class="hero-title" data-testid="hero-title">
+            What makes a <span class="accent">good website</span> for business growth?
+          </h1>
+          <p class="hero-sub" data-testid="hero-sub">
+            Easy to use. Loads in seconds. Works on every device. Tells visitors exactly what they need — and turns curiosity into customers.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-primary" data-testid="hero-primary-cta">
+              Schedule a Call
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#improve" class="btn btn-ghost" data-testid="hero-secondary-cta">
+              See how it works
+            </a>
+          </div>
+
+          <ul class="hero-stats" data-testid="hero-stats">
+            <li>
+              <strong>&lt;&nbsp;3s</strong>
+              <span>Ideal load time</span>
+            </li>
+            <li>
+              <strong>100%</strong>
+              <span>Responsive design</span>
+            </li>
+            <li>
+              <strong>24h</strong>
+              <span>Response time</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hero Infographic (SVG) -->
+        <div class="hero-art" data-testid="hero-infographic" aria-hidden="true">
+          <svg viewBox="0 0 520 480" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="card-fade" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+                <stop offset="1" stop-color="#ffffff" stop-opacity=".85"/>
+              </linearGradient>
+              <linearGradient id="bar" x1="0" x2="1">
+                <stop offset="0" stop-color="#e57119"/>
+                <stop offset="1" stop-color="#f59446"/>
+              </linearGradient>
+            </defs>
+
+            <!-- soft frame -->
+            <rect x="40" y="40" width="440" height="400" rx="22" fill="url(#card-fade)" stroke="#11111122"/>
+
+            <!-- browser bar -->
+            <rect x="40" y="40" width="440" height="46" rx="22" fill="#0a0a0a"/>
+            <circle cx="68" cy="63" r="5" fill="#e57119"/>
+            <circle cx="86" cy="63" r="5" fill="#ffffff" fill-opacity=".25"/>
+            <circle cx="104" cy="63" r="5" fill="#ffffff" fill-opacity=".25"/>
+            <rect x="140" y="52" width="280" height="22" rx="11" fill="#ffffff" fill-opacity=".10"/>
+            <text x="160" y="68" font-family="Lato, sans-serif" font-size="13" fill="#ffffffa0">itniche.com/good-website</text>
+
+            <!-- content lines -->
+            <rect x="72" y="110" width="180" height="14" rx="4" fill="#0a0a0a"/>
+            <rect x="72" y="132" width="120" height="10" rx="3" fill="#0a0a0a" fill-opacity=".25"/>
+
+            <!-- stat block 1 -->
+            <g>
+              <rect x="72" y="170" width="180" height="92" rx="14" fill="#fff7ef" stroke="#e5711933"/>
+              <text x="88" y="200" font-family="Lato, sans-serif" font-weight="900" font-size="34" fill="#e57119">99</text>
+              <text x="138" y="200" font-family="Lato, sans-serif" font-weight="700" font-size="18" fill="#0a0a0a">/100</text>
+              <text x="88" y="226" font-family="Lato, sans-serif" font-size="12" fill="#0a0a0a" fill-opacity=".7">Performance</text>
+              <!-- mini bars -->
+              <rect x="88" y="240" width="14" height="12" rx="3" fill="#e57119"/>
+              <rect x="108" y="234" width="14" height="18" rx="3" fill="#e57119"/>
+              <rect x="128" y="228" width="14" height="24" rx="3" fill="#e57119"/>
+              <rect x="148" y="222" width="14" height="30" rx="3" fill="#e57119"/>
+              <rect x="168" y="216" width="14" height="36" rx="3" fill="#e57119"/>
+              <rect x="188" y="210" width="14" height="42" rx="3" fill="#e57119" opacity=".9"/>
+            </g>
+
+            <!-- stat block 2 -->
+            <g>
+              <rect x="268" y="170" width="180" height="92" rx="14" fill="#0a0a0a"/>
+              <text x="284" y="200" font-family="Lato, sans-serif" font-weight="900" font-size="34" fill="#ffffff">2.4s</text>
+              <text x="284" y="222" font-family="Lato, sans-serif" font-size="12" fill="#ffffff" fill-opacity=".6">Avg. load time</text>
+              <!-- speed gauge -->
+              <path d="M290 252 A40 40 0 0 1 430 252" stroke="#ffffff22" stroke-width="6" fill="none" stroke-linecap="round"/>
+              <path d="M290 252 A40 40 0 0 1 400 232" stroke="#e57119" stroke-width="6" fill="none" stroke-linecap="round"/>
+              <circle cx="400" cy="232" r="5" fill="#e57119"/>
+            </g>
+
+            <!-- timeline -->
+            <g>
+              <rect x="72" y="282" width="376" height="60" rx="14" fill="#ffffff" stroke="#11111118"/>
+              <circle cx="100" cy="312" r="10" fill="#e57119"/>
+              <circle cx="190" cy="312" r="10" fill="#0a0a0a"/>
+              <circle cx="280" cy="312" r="10" fill="#0a0a0a"/>
+              <circle cx="370" cy="312" r="10" fill="#0a0a0a"/>
+              <line x1="110" y1="312" x2="180" y2="312" stroke="#0a0a0a" stroke-width="2"/>
+              <line x1="200" y1="312" x2="270" y2="312" stroke="#0a0a0a" stroke-width="2"/>
+              <line x1="290" y1="312" x2="360" y2="312" stroke="#0a0a0a" stroke-width="2"/>
+              <text x="100" y="336" font-family="Lato, sans-serif" font-size="10" fill="#0a0a0a" text-anchor="middle">Audit</text>
+              <text x="190" y="336" font-family="Lato, sans-serif" font-size="10" fill="#0a0a0a" text-anchor="middle">Design</text>
+              <text x="280" y="336" font-family="Lato, sans-serif" font-size="10" fill="#0a0a0a" text-anchor="middle">Build</text>
+              <text x="370" y="336" font-family="Lato, sans-serif" font-size="10" fill="#0a0a0a" text-anchor="middle">Grow</text>
+            </g>
+
+            <!-- bottom row -->
+            <g>
+              <rect x="72" y="362" width="180" height="60" rx="14" fill="#0a0a0a"/>
+              <text x="88" y="386" font-family="Lato, sans-serif" font-weight="700" font-size="14" fill="#ffffff">Mobile-first</text>
+              <text x="88" y="406" font-family="Lato, sans-serif" font-size="11" fill="#ffffff" fill-opacity=".55">Designed for thumbs</text>
+
+              <rect x="268" y="362" width="180" height="60" rx="14" fill="#fff7ef" stroke="#e5711933"/>
+              <text x="284" y="386" font-family="Lato, sans-serif" font-weight="700" font-size="14" fill="#0a0a0a">SEO-ready</text>
+              <text x="284" y="406" font-family="Lato, sans-serif" font-size="11" fill="#0a0a0a" fill-opacity=".6">Built to be found</text>
+            </g>
+
+            <!-- floating tag -->
+            <g class="float-tag">
+              <rect x="350" y="92" width="120" height="36" rx="18" fill="#e57119"/>
+              <circle cx="370" cy="110" r="6" fill="#ffffff"/>
+              <text x="384" y="115" font-family="Lato, sans-serif" font-weight="700" font-size="12" fill="#ffffff">Live · Healthy</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <div class="trust-strip" data-testid="trust-strip">
+        <span>Trusted by small businesses across</span>
+        <span class="tag">Web Design</span>
+        <span class="tag">Custom Software</span>
+        <span class="tag">Digital Marketing</span>
+      </div>
+    </section>
+
+    <!-- ───────────── LOAD TIME ───────────── -->
+    <section class="section section--alt" id="load-time" data-testid="loadtime-section">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">01 · Performance</span>
+          <h2>Load time: <span class="accent">seconds matter</span></h2>
+          <p class="lead">The ideal load time is under 3&nbsp;seconds. Faster websites make search engines — and customers — happier.</p>
+        </div>
+
+        <div class="loadtime-grid">
+
+          <!-- Big gauge card -->
+          <article class="card card--feature" data-testid="loadtime-gauge-card">
+            <header class="card-head">
+              <span class="card-tag">Goal</span>
+              <h3>Under&nbsp;3&nbsp;seconds</h3>
+            </header>
+
+            <div class="gauge" role="img" aria-label="Speedometer showing 2.4 seconds load time">
+              <svg viewBox="0 0 220 130" width="100%" height="auto">
+                <path d="M20 110 A90 90 0 0 1 200 110" stroke="#11111114" stroke-width="14" fill="none" stroke-linecap="round"/>
+                <path id="gauge-arc" d="M20 110 A90 90 0 0 1 200 110" stroke="#e57119" stroke-width="14" fill="none" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+                <g transform="translate(110 110)">
+                  <line x1="0" y1="0" x2="0" y2="-72" stroke="#0a0a0a" stroke-width="3" stroke-linecap="round" id="gauge-needle" transform="rotate(-70)"/>
+                  <circle r="6" fill="#0a0a0a"/>
+                </g>
+                <text x="110" y="125" text-anchor="middle" font-family="Lato" font-weight="900" font-size="14" fill="#0a0a0a">0s — 5s</text>
+              </svg>
+            </div>
+
+            <p class="gauge-readout"><span data-counter data-target="2.4" data-decimals="1">0.0</span><em>s</em> average for top-performing sites</p>
+          </article>
+
+          <!-- Bar chart card -->
+          <article class="card" data-testid="loadtime-bounce-card">
+            <header class="card-head">
+              <span class="card-tag">Impact</span>
+              <h3>Bounce rate climbs with every second</h3>
+            </header>
+
+            <ul class="bar-chart" aria-label="Bounce rate by load time">
+              <li style="--w: 18%"><span class="bar-label">1s</span><span class="bar"></span><span class="bar-val">9%</span></li>
+              <li style="--w: 32%"><span class="bar-label">2s</span><span class="bar"></span><span class="bar-val">17%</span></li>
+              <li style="--w: 58%"><span class="bar-label">3s</span><span class="bar"></span><span class="bar-val">32%</span></li>
+              <li style="--w: 82%"><span class="bar-label">5s</span><span class="bar"></span><span class="bar-val">90%</span></li>
+            </ul>
+            <p class="muted small">Every extra second turns visitors away. Speed is conversion.</p>
+          </article>
+
+          <!-- Tiny stat tiles -->
+          <article class="card card--tile" data-testid="loadtime-tile-mobile">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="7" y="2" width="10" height="20" rx="2"/>
+              <path d="M11 18h2"/>
+            </svg>
+            <h4>Mobile-first</h4>
+            <p>60%+ of traffic is mobile. Build for thumbs first.</p>
+          </article>
+
+          <article class="card card--tile" data-testid="loadtime-tile-seo">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>
+            </svg>
+            <h4>Search loves speed</h4>
+            <p>Core Web Vitals reward fast, accessible pages.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── UX ───────────── -->
+    <section class="section" id="ux" data-testid="ux-section">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">02 · Experience</span>
+          <h2>Why user experience <span class="accent">counts</span></h2>
+          <p class="lead">Poor design, slow load times, and hard navigation lead to frustration — and lost revenue. The opposite delights and converts.</p>
+        </div>
+
+        <div class="ux-compare">
+
+          <article class="ux-card ux-card--bad" data-testid="ux-card-bad">
+            <span class="ux-label">Confused on a <em>bad</em> site</span>
+
+            <div class="ux-visual" aria-hidden="true">
+              <svg viewBox="0 0 280 160">
+                <rect x="10" y="10" width="260" height="140" rx="10" fill="#fafafa" stroke="#11111115"/>
+                <rect x="10" y="10" width="260" height="22" rx="10" fill="#0a0a0a"/>
+                <circle cx="22" cy="21" r="3" fill="#ffffff66"/>
+                <circle cx="32" cy="21" r="3" fill="#ffffff66"/>
+                <circle cx="42" cy="21" r="3" fill="#ffffff66"/>
+                <!-- chaotic blocks -->
+                <rect x="24" y="46" width="100" height="10" rx="3" fill="#11111122"/>
+                <rect x="24" y="62" width="60" height="10" rx="3" fill="#11111133"/>
+                <rect x="140" y="46" width="120" height="46" rx="6" fill="#11111110"/>
+                <path d="M150 60 l40 25 M190 60 l-40 25" stroke="#0a0a0a" stroke-width="2" stroke-linecap="round"/>
+                <rect x="24" y="82" width="100" height="60" rx="6" fill="#11111108" stroke="#11111122" stroke-dasharray="3 3"/>
+                <text x="74" y="118" font-family="Lato" font-size="11" text-anchor="middle" fill="#0a0a0a" opacity=".5">?</text>
+                <!-- frustrated face -->
+                <g transform="translate(186 110)">
+                  <circle r="18" fill="#fff" stroke="#0a0a0a" stroke-width="2"/>
+                  <circle cx="-5" cy="-3" r="1.5" fill="#0a0a0a"/>
+                  <circle cx="5" cy="-3" r="1.5" fill="#0a0a0a"/>
+                  <path d="M-6 7 Q0 2 6 7" stroke="#0a0a0a" stroke-width="2" fill="none" stroke-linecap="round"/>
+                </g>
+              </svg>
+            </div>
+
+            <ul class="ux-list">
+              <li><span class="x" aria-hidden="true">×</span>Cluttered layout, unclear hierarchy</li>
+              <li><span class="x" aria-hidden="true">×</span>Slow, broken interactions</li>
+              <li><span class="x" aria-hidden="true">×</span>Visitors leave, revenue follows</li>
+            </ul>
+          </article>
+
+          <article class="ux-card ux-card--good" data-testid="ux-card-good">
+            <span class="ux-label ux-label--good">Delighted on a <em>great</em> site</span>
+
+            <div class="ux-visual" aria-hidden="true">
+              <svg viewBox="0 0 280 160">
+                <rect x="10" y="10" width="260" height="140" rx="10" fill="#fff7ef" stroke="#e5711933"/>
+                <rect x="10" y="10" width="260" height="22" rx="10" fill="#e57119"/>
+                <circle cx="22" cy="21" r="3" fill="#ffffffcc"/>
+                <circle cx="32" cy="21" r="3" fill="#ffffff66"/>
+                <circle cx="42" cy="21" r="3" fill="#ffffff66"/>
+                <!-- tidy blocks -->
+                <rect x="24" y="46" width="160" height="10" rx="3" fill="#0a0a0a"/>
+                <rect x="24" y="62" width="100" height="8" rx="3" fill="#0a0a0a" opacity=".4"/>
+                <rect x="24" y="84" width="110" height="50" rx="8" fill="#ffffff" stroke="#e5711933"/>
+                <rect x="34" y="96" width="40" height="6" rx="2" fill="#e57119"/>
+                <rect x="34" y="108" width="80" height="4" rx="2" fill="#0a0a0a" opacity=".25"/>
+                <rect x="34" y="116" width="60" height="4" rx="2" fill="#0a0a0a" opacity=".25"/>
+                <rect x="146" y="84" width="110" height="50" rx="8" fill="#0a0a0a"/>
+                <rect x="156" y="96" width="40" height="6" rx="2" fill="#e57119"/>
+                <rect x="156" y="108" width="80" height="4" rx="2" fill="#ffffff" opacity=".35"/>
+                <rect x="156" y="116" width="60" height="4" rx="2" fill="#ffffff" opacity=".35"/>
+                <!-- happy face -->
+                <g transform="translate(244 50)">
+                  <circle r="14" fill="#fff" stroke="#0a0a0a" stroke-width="2"/>
+                  <circle cx="-4" cy="-2" r="1.4" fill="#0a0a0a"/>
+                  <circle cx="4" cy="-2" r="1.4" fill="#0a0a0a"/>
+                  <path d="M-5 3 Q0 9 5 3" stroke="#0a0a0a" stroke-width="2" fill="none" stroke-linecap="round"/>
+                </g>
+              </svg>
+            </div>
+
+            <ul class="ux-list">
+              <li><span class="check" aria-hidden="true">✓</span>Clear hierarchy, calm whitespace</li>
+              <li><span class="check" aria-hidden="true">✓</span>Snappy, accessible interactions</li>
+              <li><span class="check" aria-hidden="true">✓</span>Visitors stay — and convert</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── HOW TO IMPROVE ───────────── -->
+    <section class="section section--dark" id="improve" data-testid="improve-section">
+      <div class="container">
+        <div class="section-head section-head--light">
+          <span class="kicker">03 · Roadmap</span>
+          <h2>How to improve your <span class="accent">website quality</span></h2>
+          <p class="lead">A simple three-step loop. Audit. Optimize. Measure. Repeat.</p>
+        </div>
+
+        <ol class="steps" data-testid="steps">
+
+          <li class="step" data-testid="step-1">
+            <span class="step-num">01</span>
+            <div class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="6" y="8" width="36" height="26" rx="3"/>
+                <path d="M6 14h36"/>
+                <path d="M14 22h10M14 27h16"/>
+                <path d="M30 30l4 4 6-8"/>
+                <path d="M16 38h16"/>
+              </svg>
+            </div>
+            <h3>Audit design</h3>
+            <p>Spot friction in layout, contrast, hierarchy, and accessibility — fast.</p>
+          </li>
+
+          <li class="step" data-testid="step-2">
+            <span class="step-num">02</span>
+            <div class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 10h22l8 8v20a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V12a2 2 0 0 1 2-2z"/>
+                <path d="M32 10v8h8"/>
+                <path d="M14 26h20M14 32h14M14 38h10"/>
+              </svg>
+            </div>
+            <h3>Optimize content</h3>
+            <p>Tighten copy, sharpen CTAs, compress assets, and ship for every device.</p>
+          </li>
+
+          <li class="step" data-testid="step-3">
+            <span class="step-num">03</span>
+            <div class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 38h36"/>
+                <rect x="10" y="24" width="6" height="14" rx="1"/>
+                <rect x="21" y="16" width="6" height="22" rx="1"/>
+                <rect x="32" y="8" width="6" height="30" rx="1"/>
+                <path d="M6 10l8 6 8-4 12 8"/>
+              </svg>
+            </div>
+            <h3>Check analytics</h3>
+            <p>Watch the numbers move. Decide with data. Iterate weekly, not yearly.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ───────────── TRUST / FINAL THOUGHTS ───────────── -->
+    <section class="section" id="trust" data-testid="trust-section">
+      <div class="container trust-grid">
+        <div class="trust-copy">
+          <span class="kicker">04 · Final thoughts</span>
+          <h2>A good website is an <span class="accent">investment</span>, not an expense.</h2>
+          <p class="lead">Fast. Friendly. Aligned with your business goals. That’s when your website becomes your strongest growth engine.</p>
+
+          <ul class="bullets">
+            <li><span class="check" aria-hidden="true">✓</span> Mobile-first responsive design</li>
+            <li><span class="check" aria-hidden="true">✓</span> Accessibility-friendly defaults</li>
+            <li><span class="check" aria-hidden="true">✓</span> SEO-ready structure</li>
+            <li><span class="check" aria-hidden="true">✓</span> Modern UX patterns</li>
+          </ul>
+        </div>
+
+        <aside class="trust-stats" aria-label="Outcome stats">
+          <div class="stat-card" data-testid="stat-leads">
+            <strong><span data-counter data-target="3.2" data-decimals="1">0.0</span>×</strong>
+            <span>More qualified leads</span>
+          </div>
+          <div class="stat-card stat-card--dark" data-testid="stat-bounce">
+            <strong>−<span data-counter data-target="46" data-decimals="0">0</span>%</strong>
+            <span>Bounce rate reduction</span>
+          </div>
+          <div class="stat-card" data-testid="stat-speed">
+            <strong><span data-counter data-target="2.4" data-decimals="1">0.0</span>s</strong>
+            <span>Avg. load time</span>
+          </div>
+          <div class="stat-card stat-card--accent" data-testid="stat-uptime">
+            <strong><span data-counter data-target="99.9" data-decimals="1">0.0</span>%</strong>
+            <span>Uptime delivered</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ───────────── CTA ───────────── -->
+    <section class="cta" id="contact" data-testid="cta-section">
+      <div class="container cta-inner">
+        <div class="cta-copy">
+          <h2>Let’s build something <span class="accent">amazing</span> together.</h2>
+          <p>Your success is our mission. Tell us what you’re building — we’ll outline a plan tailored to your business.</p>
+        </div>
+
+        <div class="cta-actions">
+          <a href="mailto:helpdesk@itniche.com?subject=Let%27s%20build%20something%20amazing&body=Hi%20IT%20Niche%20team%2C%0A%0AI%27d%20like%20to%20discuss%20a%20project."
+             class="btn btn-primary btn-lg"
+             data-testid="cta-primary-btn">
+            Get started today
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="tel:+19014149009" class="btn btn-outline btn-lg" data-testid="cta-call-btn">
+            (901) 414-9009
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ───────────── FOOTER ───────────── -->
+  <footer class="site-footer" data-testid="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand brand--light" aria-label="IT Niche home">
+          <span class="brand-mark brand-mark--light" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="6" width="26" height="18" rx="3"/>
+              <path d="M3 11h26"/>
+              <path d="M11 16l4 4 6-8"/>
+            </svg>
+          </span>
+          <span class="brand-name">IT&nbsp;Niche</span>
+        </a>
+        <p class="footer-tag">Web design, custom software, and digital marketing — without the corporate overhead.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Reach us</h5>
+        <ul>
+          <li><a href="mailto:helpdesk@itniche.com" data-testid="footer-email">helpdesk@itniche.com</a></li>
+          <li><a href="tel:+19014149009">+1 (901) 414-9009</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Offices</h5>
+        <ul>
+          <li>Memphis, Tennessee · USA</li>
+          <li>Hyderabad, Telangana · India</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="#load-time">Load Time</a></li>
+          <li><a href="#ux">User Experience</a></li>
+          <li><a href="#improve">Improve Quality</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> IT Niche. Build. Engage. Grow.</span>
+      <span>Made with care · Lato typography</span>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
