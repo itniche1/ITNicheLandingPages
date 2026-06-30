@@ -1,0 +1,109 @@
+{
+  "theme": "LIGHT",
+  "archetype": "4 (Swiss & High-Contrast)",
+  "rationale": "High-contrast authoritative layout to build trust and convey clear data for IT Niche LLC. Eliminating images focuses attention completely on service capabilities and precise statistics.",
+  "colors": {
+    "primary": "#e57119",
+    "secondary": "#000000",
+    "background_base": "#FFFFFF",
+    "background_alt": "#F9FAFB",
+    "surface": "#F3F4F6",
+    "border": "#E5E7EB",
+    "text_main": "#0A0A0A",
+    "text_muted": "#6B7280"
+  },
+  "typography": {
+    "strategy": "Swiss Brutalist (Tech/Agency)",
+    "headings": {
+      "family": "'Outfit', sans-serif",
+      "weight": "font-black or font-bold",
+      "tracking": "tracking-tighter",
+      "note": "Replaces generic fonts for headings to add E1 tension and a premium B2B agency feel."
+    },
+    "body": {
+      "family": "'Lato', sans-serif",
+      "weight": "font-normal",
+      "tracking": "tracking-normal",
+      "note": "User-selected Lato kept for maximum readability in body text, labels, and form inputs."
+    }
+  },
+  "layout_and_spacing": {
+    "grid_system": "Bento Protocol Mode A (The Tetris Grid) combined with Mode B (Control Room) for data stats.",
+    "spacing_scale": "Generous spacing. p-8 to p-16 for containers. Gap-8 to gap-12 for grids.",
+    "border_radius": "Sharp or minimal. rounded-none or max rounded-md (6px) to keep corporate precision.",
+    "borders": "1px solid #E5E7EB on surfaces to expose the skeleton (Grid Borders style)."
+  },
+  "visual_enhancers": {
+    "rule": "CRITICAL: NO IMAGES. NO HUMANS. Use SVG, CSS, and code-based visuals only.",
+    "icons": {
+      "library": "lucide-react",
+      "style": "Large scale (w-12 to w-16), 1.5px stroke, colored in #000000 or #e57119."
+    },
+    "infographics": {
+      "style": "Geometric shapes, progress bars, step-lines, and large numeric data points. Pure Tailwind CSS for bar visuals or Recharts if complex."
+    },
+    "textures": {
+      "style": "Subtle dot matrix patterns (.bg-dot-black/[0.1]) or thin 1px grid background lines on hero/stats sections."
+    }
+  },
+  "components": {
+    "cards": "Flat background, 1px subtle border (#E5E7EB), no shadow default. Hover: slight lift (-translate-y-1), shadow-lg, border color shifts to #e57119.",
+    "buttons": "Sharp rectangular edges (rounded-none). Primary: bg-[#e57119] text-white hover:bg-[#cc6516]. Secondary: outline 1px solid #000000 text-[#000000] hover:bg-[#000000] hover:text-white.",
+    "inputs": "Shadcn based. White bg, 1px border, focus:ring-2 focus:ring-[#e57119] focus:border-[#e57119]."
+  },
+  "sections": {
+    "header": {
+      "layout": "Sticky glassmorphism nav (backdrop-blur-xl bg-white/80). Logo left, Nav center, CTA right.",
+      "testid_nav": "header-nav",
+      "testid_cta": "header-cta-button"
+    },
+    "hero": {
+      "layout": "Split Layout (Text Left + Infographic Right).",
+      "content_left": "H1: Massive geometric typography (text-5xl to text-6xl+). Subheadline: 1-2 lines. Primary CTA + Secondary CTA.",
+      "content_right": "Abstract geometric SVG layout or pure CSS-based dashboard metric representation (e.g., glowing bar charts, floating metric cards, concentric circles).",
+      "testid": "hero-section"
+    },
+    "services_bento": {
+      "layout": "Asymmetrical Bento Grid. 4-6 cards showcasing Web Design, Digital Marketing, SEO, Custom Solutions.",
+      "visuals": "Large Lucide icons. Minimal text blocks (breadcrumbs). Hover reveals active state.",
+      "testid": "services-grid"
+    },
+    "stats_infographic": {
+      "layout": "Full width dark section (bg-[#000000] text-white) to create visual tension and break the light theme.",
+      "visuals": "Massive typography for numbers (e.g., '20+', '500+'). Accent labels with #e57119.",
+      "testid": "stats-section"
+    },
+    "process_timeline": {
+      "layout": "Vertical or horizontal timeline using SVG connecting lines.",
+      "visuals": "Numbered steps (1, 2, 3) inside high-contrast circles. Brief headers and 1-line descriptions.",
+      "testid": "process-timeline"
+    },
+    "global_presence": {
+      "layout": "2-column grid.",
+      "visuals": "USA and India represented by clean geographic SVG outlines or architectural/pin line-art icons. Address details text heavy.",
+      "testid": "global-presence"
+    },
+    "contact": {
+      "layout": "Grid split: Left side 'Let's Talk' typography and contact details, Right side static form.",
+      "form": "Shadcn form styles. Submit button uses #e57119.",
+      "testid": "contact-section",
+      "testid_form": "contact-form",
+      "testid_submit": "contact-submit-button"
+    },
+    "footer": {
+      "layout": "Massive typography for tagline 'Your feedback is Oxygen for us!' (text-[6vw] to text-[8vw] font-black). Clean link columns below.",
+      "testid": "footer"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install lucide-react and framer-motion.",
+    "Add Google Fonts import to CSS: @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Outfit:wght@400;700;900&display=swap');",
+    "Configure tailwind.config.js to use 'Outfit' for sans and 'Lato' for body font variables.",
+    "Build strictly responsive grid structures without reliance on fixed heights where content flows.",
+    "Ensure all text meets WCAG AA contrast, especially the orange #e57119 against white.",
+    "CRITICAL: Do NOT use any <img> tags for realistic photos or stock photos. Use ONLY SVG shapes, pure CSS constructs, and lucide-react icons.",
+    "Implement data-testid attributes on all interactive elements as defined.",
+    "Apply 'Bento grid' styling for the services section.",
+    "Use framer-motion for simple staggered reveals on scroll for the infographic elements."
+  ]
+}
