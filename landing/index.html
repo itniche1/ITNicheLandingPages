@@ -89,21 +89,16 @@
 
     <!-- ─────────────────────────  HERO  ───────────────────────── -->
     <section class="hero" id="hero" data-testid="hero-section">
-      <div class="hero-grid-bg" aria-hidden="true"></div>
-      <div class="hero-fade" aria-hidden="true"></div>
-
       <div class="container hero-inner">
         <div class="hero-text reveal">
           <div class="badge">
             <span class="badge-dot"></span>
-            Memphis, TN · Hyderabad, IN
+            Memphis, TN&nbsp;&nbsp;·&nbsp;&nbsp;Hyderabad, IN
           </div>
 
           <h1 class="display" data-testid="hero-headline">
             Websites, marketing &amp;
-            <span class="hl">
-              <span>custom builds</span>
-            </span>
+            <span class="orange">custom builds</span>
             for small business.
           </h1>
 
@@ -123,71 +118,46 @@
             </a>
             <a
               href="#services"
-              class="btn btn-outline btn-lg"
+              class="hero-link"
               data-testid="hero-secondary-cta"
             >
               Explore Services
               <i data-lucide="arrow-right" class="icon-sm"></i>
             </a>
           </div>
-
-          <div class="mini-stats">
-            <div><strong>20+</strong><span>Years in business</span></div>
-            <div><strong>500+</strong><span>Projects shipped</span></div>
-            <div><strong>2</strong><span>Global offices</span></div>
-          </div>
         </div>
 
         <div class="hero-infographic reveal" data-testid="hero-infographic" style="--delay: 0.15s">
           <div class="infographic-wrap">
-            <svg viewBox="0 0 400 400" class="rings" aria-hidden="true">
-              <defs>
-                <pattern id="dots" x="0" y="0" width="14" height="14" patternUnits="userSpaceOnUse">
-                  <circle cx="2" cy="2" r="1" fill="#0a0a0a" opacity="0.15"></circle>
-                </pattern>
-              </defs>
-              <circle cx="200" cy="200" r="190" fill="url(#dots)" />
-              <circle cx="200" cy="200" r="170" fill="none" stroke="#0a0a0a" stroke-width="1" opacity="0.2" />
-              <circle cx="200" cy="200" r="130" fill="none" stroke="#e57119" stroke-width="1.5" stroke-dasharray="3 6" />
-              <circle cx="200" cy="200" r="90" fill="#000000" />
-              <circle cx="200" cy="200" r="60" fill="none" stroke="#e57119" stroke-width="2" />
-              <line x1="200" y1="20" x2="200" y2="380" stroke="#0a0a0a" stroke-width="0.5" opacity="0.2" />
-              <line x1="20" y1="200" x2="380" y2="200" stroke="#0a0a0a" stroke-width="0.5" opacity="0.2" />
+            <svg viewBox="0 0 320 320" class="rings" aria-hidden="true">
+              <circle cx="160" cy="160" r="150" fill="none" stroke="#E5E7EB" stroke-width="1" />
+              <circle cx="160" cy="160" r="110" fill="none" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="2 6" />
+              <circle cx="160" cy="160" r="72" fill="none" stroke="#e57119" stroke-width="1.25" />
+              <circle cx="160" cy="10" r="3" fill="#e57119" />
+              <circle cx="310" cy="160" r="3" fill="#0a0a0a" />
+              <circle cx="160" cy="310" r="3" fill="#0a0a0a" />
+              <circle cx="10" cy="160" r="3" fill="#0a0a0a" />
             </svg>
 
-            <!-- Floating conversion card -->
-            <div class="float-card top-right">
-              <div class="float-label">
-                <i data-lucide="trending-up" class="icon-xs"></i>
-                CONVERSION
-              </div>
-              <div class="float-value">+218%</div>
-              <div class="float-bars">
-                <i style="--h: 9px"></i>
-                <i style="--h: 15px"></i>
-                <i style="--h: 12px"></i>
-                <i style="--h: 21px"></i>
-                <i style="--h: 18px"></i>
-                <i style="--h: 27px"></i>
-                <i style="--h: 24px"></i>
-                <i style="--h: 36px"></i>
-              </div>
+            <div class="hero-metric">
+              <div class="hero-metric-label">Avg. lift in conversions</div>
+              <div class="hero-metric-value">+218<span>%</span></div>
+              <div class="hero-metric-foot">across 500+ shipped projects</div>
             </div>
+          </div>
 
-            <!-- What we do tag -->
-            <div class="float-tag bottom-left">
-              <div class="float-tag-label">WHAT WE DO</div>
-              <div class="float-tag-value">Web · SEO · Custom Apps · Marketing</div>
+          <div class="hero-stats">
+            <div>
+              <strong>20+</strong>
+              <span>Years in business</span>
             </div>
-
-            <!-- Center icon grid -->
-            <div class="center-icons">
-              <div>
-                <span><i data-lucide="code-2" class="icon-md"></i></span>
-                <span><i data-lucide="search" class="icon-md"></i></span>
-                <span><i data-lucide="trending-up" class="icon-md"></i></span>
-                <span><i data-lucide="sparkles" class="icon-md"></i></span>
-              </div>
+            <div>
+              <strong>500+</strong>
+              <span>Projects shipped</span>
+            </div>
+            <div>
+              <strong>2</strong>
+              <span>Global offices</span>
             </div>
           </div>
         </div>
