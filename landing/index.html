@@ -185,24 +185,55 @@
             </div>
 
             <div class="hero-card-foot">
-              <div class="hero-card-metric">
-                <span class="metric-num">24<em>h</em></span>
-                <span class="metric-label">of coverage across two time zones</span>
+              <div class="clocks" aria-hidden="true">
+                <div class="clock">
+                  <svg viewBox="0 0 80 80" class="clock-face">
+                    <circle cx="40" cy="40" r="36" fill="none" stroke="#E5E7EB" stroke-width="1" />
+                    <g class="clock-ticks" stroke="#0a0a0a">
+                      <line x1="40" y1="6"  x2="40" y2="11" />
+                      <line x1="40" y1="69" x2="40" y2="74" />
+                      <line x1="6"  y1="40" x2="11" y2="40" />
+                      <line x1="69" y1="40" x2="74" y2="40" />
+                    </g>
+                    <line class="hand hour"   id="usHour"   x1="40" y1="40" x2="40" y2="22" />
+                    <line class="hand minute" id="usMinute" x1="40" y1="40" x2="40" y2="14" />
+                    <circle cx="40" cy="40" r="2" fill="#0a0a0a" />
+                  </svg>
+                  <div class="clock-meta">
+                    <span class="clock-time" id="usTime">— : —</span>
+                    <span class="clock-zone">US · CST</span>
+                  </div>
+                </div>
+
+                <div class="clocks-bridge" aria-hidden="true">
+                  <svg viewBox="0 0 60 40" preserveAspectRatio="none">
+                    <path d="M2 20 Q30 4, 58 20" fill="none" stroke="#e57119" stroke-width="1" stroke-dasharray="2 4" />
+                  </svg>
+                  <span class="bridge-label">24h</span>
+                </div>
+
+                <div class="clock">
+                  <svg viewBox="0 0 80 80" class="clock-face">
+                    <circle cx="40" cy="40" r="36" fill="none" stroke="#E5E7EB" stroke-width="1" />
+                    <g class="clock-ticks" stroke="#0a0a0a">
+                      <line x1="40" y1="6"  x2="40" y2="11" />
+                      <line x1="40" y1="69" x2="40" y2="74" />
+                      <line x1="6"  y1="40" x2="11" y2="40" />
+                      <line x1="69" y1="40" x2="74" y2="40" />
+                    </g>
+                    <line class="hand hour"   id="inHour"   x1="40" y1="40" x2="40" y2="22" />
+                    <line class="hand minute" id="inMinute" x1="40" y1="40" x2="40" y2="14" />
+                    <circle cx="40" cy="40" r="2" fill="#e57119" />
+                  </svg>
+                  <div class="clock-meta">
+                    <span class="clock-time" id="inTime">— : —</span>
+                    <span class="clock-zone">IN · IST</span>
+                  </div>
+                </div>
               </div>
-              <svg
-                class="hero-timeline"
-                viewBox="0 0 200 40"
-                preserveAspectRatio="none"
-                aria-hidden="true"
-              >
-                <line x1="0" y1="20" x2="200" y2="20" stroke="#E5E7EB" stroke-width="1" />
-                <line x1="0" y1="20" x2="200" y2="20" stroke="#e57119" stroke-width="1" stroke-dasharray="2 4" />
-                <circle cx="30" cy="20" r="4" fill="#e57119" />
-                <circle cx="170" cy="20" r="4" fill="#0a0a0a" />
-              </svg>
-              <div class="hero-timeline-labels">
-                <span>US · Memphis</span>
-                <span>IN · Hyderabad</span>
+
+              <div class="hero-card-caption">
+                Two teams, two time zones — one continuous 24-hour desk.
               </div>
             </div>
           </div>

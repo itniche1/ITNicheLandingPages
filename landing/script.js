@@ -96,6 +96,63 @@
     revealEls.forEach((el) => el.classList.add("in"));
   }
 
+  // ──────────────── Dual timezone clocks (US CST + IN IST) ────────────────
+  function getZoneParts(timeZone) {
+    const parts = new Intl.DateTimeFormat("en-US", {
+      timeZone,
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: false,
+    }).formatToParts(new Date());
+    let hour = 0, minute = 0;
+    parts.forEach((p) => {
+      if (p.type === "hour") hour = parseInt(p.value, 10) % 24;
+      if (p.type === "minute") minute = parseInt(p.value, 10);
+    });
+    return { hour, minute };
+  }
+  function fmt12(hour24, minute) {
+    const period = hour24 >= 12 ? "PM" : "AM";
+    let h = hour24 % 12;
+    if (h === 0) h = 12;
+    return `${h}:${String(minute).padStart(2, "0")} ${period}`;
+  }
+  function setHands(hourEl, minuteEl, hour, minute) {
+    if (!hourEl || !minuteEl) return;
+    const hourDeg = ((hour % 12) + minute / 60) * 30;
+    const minuteDeg = minute * 6;
+    hourEl.setAttribute("transform", `rotate(${hourDeg} 40 40)`);
+    minuteEl.setAttribute("transform", `rotate(${minuteDeg} 40 40)`);
+  }
+  function updateClocks() {
+    try {
+      const us = getZoneParts("America/Chicago");
+      const inTZ = getZoneParts("Asia/Kolkata");
+
+      const usTimeEl = document.getElementById("usTime");
+      const inTimeEl = document.getElementById("inTime");
+      if (usTimeEl) usTimeEl.textContent = fmt12(us.hour, us.minute);
+      if (inTimeEl) inTimeEl.textContent = fmt12(inTZ.hour, inTZ.minute);
+
+      setHands(
+        document.getElementById("usHour"),
+        document.getElementById("usMinute"),
+        us.hour,
+        us.minute
+      );
+      setHands(
+        document.getElementById("inHour"),
+        document.getElementById("inMinute"),
+        inTZ.hour,
+        inTZ.minute
+      );
+    } catch (e) {
+      // Intl may be limited on some browsers — silently ignore
+    }
+  }
+  updateClocks();
+  setInterval(updateClocks, 30000);
+
   // ──────────────── Toast utility ────────────────
   const toastContainer = document.getElementById("toastContainer");
   function toast(type, title, desc) {
