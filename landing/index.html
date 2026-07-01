@@ -91,20 +91,20 @@
     <section class="hero" id="hero" data-testid="hero-section">
       <div class="container hero-inner">
         <div class="hero-text reveal">
-          <div class="badge">
-            <span class="badge-dot"></span>
-            Memphis, TN&nbsp;&nbsp;·&nbsp;&nbsp;Hyderabad, IN
+          <div class="eyebrow hero-eyebrow">
+            <span class="eyebrow-line" aria-hidden="true"></span>
+            Contact IT Niche
           </div>
 
           <h1 class="display" data-testid="hero-headline">
-            Websites, marketing &amp;
-            <span class="orange">custom builds</span>
-            for small business.
+            Let&rsquo;s talk about your
+            <span class="orange">next digital&nbsp;move.</span>
           </h1>
 
           <p class="lead" data-testid="hero-subheadline">
-            One-stop digital partner for web design, SEO and custom software —
-            built lean, shipped fast, and engineered to convert.
+            Book a free 20-minute consultation with our team in Memphis or
+            Hyderabad. We&rsquo;ll listen first — then map a clear, honest path
+            to your goals.
           </p>
 
           <div class="cta-row">
@@ -113,54 +113,100 @@
               class="btn btn-primary btn-lg"
               data-testid="hero-primary-cta"
             >
-              Start a Project
+              Start a Conversation
               <i data-lucide="arrow-up-right" class="icon-sm"></i>
             </a>
             <a
-              href="#services"
+              href="tel:9014149009"
               class="hero-link"
               data-testid="hero-secondary-cta"
             >
-              Explore Services
-              <i data-lucide="arrow-right" class="icon-sm"></i>
+              <i data-lucide="phone" class="icon-sm"></i>
+              (901) 414-9009
             </a>
           </div>
-        </div>
 
-        <div class="hero-infographic reveal" data-testid="hero-infographic" style="--delay: 0.15s">
-          <div class="infographic-wrap">
-            <svg viewBox="0 0 320 320" class="rings" aria-hidden="true">
-              <circle cx="160" cy="160" r="150" fill="none" stroke="#E5E7EB" stroke-width="1" />
-              <circle cx="160" cy="160" r="110" fill="none" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="2 6" />
-              <circle cx="160" cy="160" r="72" fill="none" stroke="#e57119" stroke-width="1.25" />
-              <circle cx="160" cy="10" r="3" fill="#e57119" />
-              <circle cx="310" cy="160" r="3" fill="#0a0a0a" />
-              <circle cx="160" cy="310" r="3" fill="#0a0a0a" />
-              <circle cx="10" cy="160" r="3" fill="#0a0a0a" />
-            </svg>
-
-            <div class="hero-metric">
-              <div class="hero-metric-label">Avg. lift in conversions</div>
-              <div class="hero-metric-value">+218<span>%</span></div>
-              <div class="hero-metric-foot">across 500+ shipped projects</div>
-            </div>
-          </div>
-
-          <div class="hero-stats">
+          <div class="hero-assurances">
             <div>
-              <strong>20+</strong>
-              <span>Years in business</span>
+              <i data-lucide="check" class="icon-xs"></i>
+              Free consultation
             </div>
             <div>
-              <strong>500+</strong>
-              <span>Projects shipped</span>
+              <i data-lucide="check" class="icon-xs"></i>
+              Zero upfront cost
             </div>
             <div>
-              <strong>2</strong>
-              <span>Global offices</span>
+              <i data-lucide="check" class="icon-xs"></i>
+              Reply within 24 hrs
             </div>
           </div>
         </div>
+
+        <aside
+          class="hero-infographic reveal"
+          data-testid="hero-infographic"
+          style="--delay: 0.15s"
+        >
+          <div class="hero-card">
+            <div class="hero-card-head">
+              <span class="hero-card-label">Global desk</span>
+              <span class="hero-card-live">
+                <span class="live-dot" aria-hidden="true"></span>
+                Online now
+              </span>
+            </div>
+
+            <div class="hero-card-offices">
+              <div class="hero-office">
+                <div class="hero-office-flag">US</div>
+                <div class="hero-office-body">
+                  <div class="hero-office-city">Memphis, TN</div>
+                  <div class="hero-office-meta">
+                    <a href="tel:9014149009">(901) 414-9009</a>
+                    <span aria-hidden="true">·</span>
+                    <span>CST</span>
+                  </div>
+                </div>
+                <div class="hero-office-hours">8&nbsp;AM<br /><span>– 4&nbsp;PM</span></div>
+              </div>
+
+              <div class="hero-office">
+                <div class="hero-office-flag">IN</div>
+                <div class="hero-office-body">
+                  <div class="hero-office-city">Hyderabad, TS</div>
+                  <div class="hero-office-meta">
+                    <a href="tel:914027662622">(040) 2766-2622</a>
+                    <span aria-hidden="true">·</span>
+                    <span>IST</span>
+                  </div>
+                </div>
+                <div class="hero-office-hours">8&nbsp;AM<br /><span>– 4&nbsp;PM</span></div>
+              </div>
+            </div>
+
+            <div class="hero-card-foot">
+              <div class="hero-card-metric">
+                <span class="metric-num">24<em>h</em></span>
+                <span class="metric-label">of coverage across two time zones</span>
+              </div>
+              <svg
+                class="hero-timeline"
+                viewBox="0 0 200 40"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+              >
+                <line x1="0" y1="20" x2="200" y2="20" stroke="#E5E7EB" stroke-width="1" />
+                <line x1="0" y1="20" x2="200" y2="20" stroke="#e57119" stroke-width="1" stroke-dasharray="2 4" />
+                <circle cx="30" cy="20" r="4" fill="#e57119" />
+                <circle cx="170" cy="20" r="4" fill="#0a0a0a" />
+              </svg>
+              <div class="hero-timeline-labels">
+                <span>US · Memphis</span>
+                <span>IN · Hyderabad</span>
+              </div>
+            </div>
+          </div>
+        </aside>
       </div>
     </section>
 
