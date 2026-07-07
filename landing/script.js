@@ -4,20 +4,6 @@
 (function () {
   "use strict";
 
-  // ---------- Lucide icons ----------
-  function initIcons() {
-    if (window.lucide && typeof window.lucide.createIcons === "function") {
-      window.lucide.createIcons();
-    }
-  }
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initIcons);
-  } else {
-    initIcons();
-  }
-  // In case CDN loads after DOM
-  window.addEventListener("load", initIcons);
-
   // ---------- Year ----------
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
