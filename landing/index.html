@@ -91,17 +91,31 @@
 
     <!-- ============= HERO ============= -->
     <section class="hero" aria-labelledby="hero-title">
+      <!-- Decorative background shapes -->
+      <div class="hero__bg" aria-hidden="true">
+        <span class="hero__blob hero__blob--a"></span>
+        <span class="hero__blob hero__blob--b"></span>
+      </div>
+
       <div class="container hero__grid">
         <div class="hero__copy reveal">
           <span class="eyebrow" data-testid="hero-eyebrow">
-            <span class="eyebrow__dot"></span>Independent Business Ownership
+            <span class="eyebrow__dot"></span>Franchise Opportunity
           </span>
+
           <h1 id="hero-title" class="hero__title" data-testid="hero-title">
-            Be Your <span class="accent">Own Boss.</span><br />
-            Build a Business That <span class="underline-brush">Rewards You.</span>
+            Partnership &amp; Synergy is <span class="accent">KEY</span><br />
+            to <span class="underline-brush">Success.</span>
           </h1>
+
           <p class="hero__lead" data-testid="hero-lead">
-            Launch your web technology business with protected territory, complete training, and 360° support — at virtually zero startup cost until you start earning.
+            IT Niche introduces our <strong>Independent Business Ownership&nbsp;(IBO)</strong>, <strong>Reseller</strong> &amp; <strong>Virtual Client Office&nbsp;(VCO)</strong> programs. Start your own business with protected territory — we set you up with the required collateral, training and 360° support to ensure your success.
+          </p>
+
+          <p class="hero__quote" data-testid="hero-quote">
+            <span class="hero__quote-mark" aria-hidden="true">“</span>
+            Be your <em>Own Boss</em>. Your hard work should reward you with
+            <span class="accent"><strong>Proportionate &amp; Perpetual</strong></span> revenues.
           </p>
 
           <div class="hero__actions">
@@ -115,47 +129,64 @@
             </a>
           </div>
 
-          <ul class="hero__pills" aria-label="Key benefits">
-            <li><i data-lucide="check-circle-2"></i>Protected Territory</li>
-            <li><i data-lucide="check-circle-2"></i>No Upfront Cost*</li>
-            <li><i data-lucide="check-circle-2"></i>US &amp; India Training</li>
-          </ul>
+          <p class="hero__nocost" data-testid="hero-nocost">
+            <i data-lucide="badge-percent"></i>
+            <span><strong>A business opportunity at NO cost</strong> — you pay only when you actually start generating revenue.</span>
+          </p>
         </div>
 
         <!-- Infographic visual -->
         <div class="hero__visual reveal" aria-hidden="true">
           <div class="orbit">
-            <div class="orbit__center">
-              <svg viewBox="0 0 60 60" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M30 6l6 12 14 2-10 10 2 14-12-6-12 6 2-14L10 20l14-2z"/></svg>
-              <span>YOU</span>
-            </div>
-            <span class="orbit__node n1"><i data-lucide="graduation-cap"></i><em>Training</em></span>
-            <span class="orbit__node n2"><i data-lucide="headphones"></i><em>Support</em></span>
-            <span class="orbit__node n3"><i data-lucide="megaphone"></i><em>Marketing</em></span>
-            <span class="orbit__node n4"><i data-lucide="map-pin"></i><em>Territory</em></span>
-            <span class="orbit__node n5"><i data-lucide="briefcase"></i><em>Sales</em></span>
-            <span class="orbit__node n6"><i data-lucide="settings-2"></i><em>Ops</em></span>
             <svg class="orbit__rings" viewBox="0 0 400 400" aria-hidden="true">
               <circle cx="200" cy="200" r="120" />
               <circle cx="200" cy="200" r="170" />
             </svg>
+
+            <div class="orbit__center">
+              <span class="orbit__center-label">IT Niche</span>
+              <span class="orbit__center-sub">360° Support</span>
+            </div>
+
+            <!-- 3 program nodes -->
+            <span class="orbit__prog orbit__prog--ibo">
+              <i data-lucide="crown"></i>
+              <b>IBO</b>
+              <em>Own it end-to-end</em>
+            </span>
+            <span class="orbit__prog orbit__prog--reseller">
+              <i data-lucide="tag"></i>
+              <b>Reseller</b>
+              <em>White-label &amp; scale</em>
+            </span>
+            <span class="orbit__prog orbit__prog--vco">
+              <i data-lucide="monitor"></i>
+              <b>VCO</b>
+              <em>Virtual Client Office</em>
+            </span>
+
+            <!-- Support pills orbiting -->
+            <span class="orbit__node n1"><i data-lucide="graduation-cap"></i><em>US &amp; India Training</em></span>
+            <span class="orbit__node n2"><i data-lucide="shield-check"></i><em>Protected Territory</em></span>
+            <span class="orbit__node n3"><i data-lucide="megaphone"></i><em>Marketing</em></span>
+            <span class="orbit__node n4"><i data-lucide="handshake"></i><em>Hand-Holding</em></span>
           </div>
         </div>
       </div>
 
       <!-- Trust strip -->
       <div class="container trust">
-        <div class="trust__item" data-testid="stat-support">
-          <strong>360°</strong><span>End-to-End Support</span>
+        <div class="trust__item" data-testid="stat-programs">
+          <strong>3</strong><span>Ways to Partner<br/>IBO · Reseller · VCO</span>
         </div>
         <div class="trust__item" data-testid="stat-cost">
-          <strong>$0</strong><span>Until You Earn*</span>
+          <strong>$0</strong><span>Start-up cost<br/>until you earn</span>
         </div>
         <div class="trust__item" data-testid="stat-locations">
-          <strong>2</strong><span>Training Locations</span>
+          <strong>US + IN</strong><span>On-site training<br/>at both locations</span>
         </div>
-        <div class="trust__item" data-testid="stat-satisfaction">
-          <strong>100%</strong><span>Client Satisfaction Goal</span>
+        <div class="trust__item" data-testid="stat-support">
+          <strong>360°</strong><span>End-to-end<br/>partner support</span>
         </div>
       </div>
     </section>
