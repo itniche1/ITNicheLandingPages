@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Book a free, no-obligation consultation with web design experts in Memphis. Custom websites, digital marketing, and bespoke solutions for small businesses." />
+  <meta name="theme-color" content="#e57119" />
+  <meta property="og:title" content="Free Consultation — Web Design Experts in Memphis" />
+  <meta property="og:description" content="Tell us about your project. We'll match you with the right expert — no pressure, no obligation." />
+  <meta property="og:type" content="website" />
+  <title>Free Consultation — Web Design Experts | Memphis & Beyond</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" data-testid="site-header">
+    <div class="container nav__inner">
+      <a href="#top" class="brand" data-testid="brand-logo" aria-label="Custom Church Website home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 4 L34 12 V28 L20 36 L6 28 V12 Z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+            <path d="M14 22 L18 26 L26 16" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand__text">Custom<span>Site</span></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#services" data-testid="nav-services">Services</a>
+        <a href="#process" data-testid="nav-process">Process</a>
+        <a href="#why" data-testid="nav-why">Why Us</a>
+        <a href="#consult" data-testid="nav-consult">Consultation</a>
+      </nav>
+
+      <a href="#consult" class="btn btn--primary btn--sm" data-testid="nav-cta">
+        Book Free Call
+        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+      </a>
+
+      <button class="nav__toggle" aria-label="Menu" data-testid="mobile-nav-toggle" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" data-testid="hero-section">
+      <div class="hero__grid-bg" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__copy reveal">
+          <span class="eyebrow" data-testid="hero-eyebrow">
+            <span class="eyebrow__dot"></span> Free · No Obligation · 30 min
+          </span>
+
+          <h1 class="hero__title" data-testid="hero-title">
+            Web Design Experts <br/>
+            <span class="accent">in Memphis</span> — and beyond.
+          </h1>
+
+          <p class="hero__lead" data-testid="hero-lead">
+            Book a free consultation. Tell us about your project. We'll match you with the
+            right subject-matter expert — quickly and quietly.
+          </p>
+
+          <div class="hero__ctas">
+            <a href="#consult" class="btn btn--primary" data-testid="hero-cta-primary">
+              Start Free Consultation
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="#services" class="btn btn--ghost" data-testid="hero-cta-secondary">
+              What we do
+            </a>
+          </div>
+
+          <ul class="hero__meta" role="list" data-testid="hero-meta">
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> No pressure</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Real experts</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Reply in 24h</li>
+          </ul>
+        </div>
+
+        <!-- Minimal infographic -->
+        <div class="hero__graphic reveal" aria-hidden="true" data-testid="hero-graphic">
+          <div class="orbit">
+            <div class="orbit__ring orbit__ring--1"></div>
+            <div class="orbit__ring orbit__ring--2"></div>
+            <div class="orbit__ring orbit__ring--3"></div>
+
+            <div class="orbit__center">
+              <svg viewBox="0 0 64 64" fill="none">
+                <rect x="8" y="12" width="48" height="34" rx="4" stroke="currentColor" stroke-width="2.4"/>
+                <path d="M8 20 H56" stroke="currentColor" stroke-width="2.4"/>
+                <circle cx="13" cy="16" r="1.2" fill="currentColor"/>
+                <circle cx="17" cy="16" r="1.2" fill="currentColor"/>
+                <circle cx="21" cy="16" r="1.2" fill="currentColor"/>
+                <path d="M20 52 H44" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+                <path d="M28 46 V52 M36 46 V52" stroke="currentColor" stroke-width="2.4"/>
+              </svg>
+              <span>Your Site</span>
+            </div>
+
+            <div class="orbit__chip orbit__chip--a">
+              <i class="fa-solid fa-palette" aria-hidden="true"></i>
+              <span>Design</span>
+            </div>
+            <div class="orbit__chip orbit__chip--b">
+              <i class="fa-solid fa-code" aria-hidden="true"></i>
+              <span>Build</span>
+            </div>
+            <div class="orbit__chip orbit__chip--c">
+              <i class="fa-solid fa-magnifying-glass-chart" aria-hidden="true"></i>
+              <span>SEO</span>
+            </div>
+            <div class="orbit__chip orbit__chip--d">
+              <i class="fa-solid fa-bullhorn" aria-hidden="true"></i>
+              <span>Market</span>
+            </div>
+            <div class="orbit__chip orbit__chip--e">
+              <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+              <span>Grow</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust bar -->
+      <div class="container">
+        <div class="trustbar" data-testid="trust-bar">
+          <div class="trustbar__item">
+            <strong>15+</strong><span>Years of craft</span>
+          </div>
+          <div class="trustbar__item">
+            <strong>400+</strong><span>Projects shipped</span>
+          </div>
+          <div class="trustbar__item">
+            <strong>24h</strong><span>Response time</span>
+          </div>
+          <div class="trustbar__item">
+            <strong>100%</strong><span>Free first call</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section" id="services" data-testid="services-section">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow"><span class="eyebrow__dot"></span> What we do</span>
+          <h2 class="section__title">Small teams. <span class="accent">Serious craft.</span></h2>
+          <p class="section__lead">
+            Four focused practices — chosen for small businesses that need to look big.
+          </p>
+        </div>
+
+        <div class="cards" role="list">
+          <article class="card reveal" role="listitem" data-testid="service-card-web-design">
+            <div class="card__icon">
+              <svg viewBox="0 0 40 40" fill="none">
+                <rect x="4" y="7" width="32" height="24" rx="3" stroke="currentColor" stroke-width="2"/>
+                <path d="M4 14 H36" stroke="currentColor" stroke-width="2"/>
+                <path d="M10 21 H22 M10 26 H18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <rect x="25" y="19" width="7" height="9" rx="1.5" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Web Design</h3>
+            <p>Clean, conversion-first websites tailored to your brand and audience.</p>
+            <span class="card__tag">01</span>
+          </article>
+
+          <article class="card reveal" role="listitem" data-testid="service-card-custom">
+            <div class="card__icon">
+              <svg viewBox="0 0 40 40" fill="none">
+                <path d="M15 12 L7 20 L15 28" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M25 12 L33 20 L25 28" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M23 8 L17 32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Custom Solutions</h3>
+            <p>Portals, tools & platforms — built to fit exactly how your business works.</p>
+            <span class="card__tag">02</span>
+          </article>
+
+          <article class="card reveal" role="listitem" data-testid="service-card-marketing">
+            <div class="card__icon">
+              <svg viewBox="0 0 40 40" fill="none">
+                <path d="M6 26 L14 18 L20 22 L34 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M26 10 H34 V18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 32 H34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Digital Marketing</h3>
+            <p>Search, social, and campaigns designed to bring real customers — not just clicks.</p>
+            <span class="card__tag">03</span>
+          </article>
+
+          <article class="card reveal" role="listitem" data-testid="service-card-seo">
+            <div class="card__icon">
+              <svg viewBox="0 0 40 40" fill="none">
+                <circle cx="18" cy="18" r="10" stroke="currentColor" stroke-width="2"/>
+                <path d="M26 26 L33 33" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M13 18 H23 M18 13 V23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>SEO / Search</h3>
+            <p>On-page, off-page and technical SEO that helps the right people find you.</p>
+            <span class="card__tag">04</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS TIMELINE ============ -->
+    <section class="section section--dark" id="process" data-testid="process-section">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow eyebrow--light"><span class="eyebrow__dot"></span> How it works</span>
+          <h2 class="section__title section__title--light">
+            From <span class="accent">first call</span> to launch.
+          </h2>
+          <p class="section__lead section__lead--light">
+            A calm, four-step process. No surprises. No wasted meetings.
+          </p>
+        </div>
+
+        <ol class="timeline" data-testid="process-timeline">
+          <li class="timeline__step reveal">
+            <span class="timeline__num">01</span>
+            <div class="timeline__body">
+              <h3>Free Consultation</h3>
+              <p>Share your goals. We listen, ask sharp questions, and map next steps.</p>
+            </div>
+            <i class="fa-solid fa-comments timeline__icon" aria-hidden="true"></i>
+          </li>
+          <li class="timeline__step reveal">
+            <span class="timeline__num">02</span>
+            <div class="timeline__body">
+              <h3>Match Expert</h3>
+              <p>You get paired with the right subject-matter expert for your project.</p>
+            </div>
+            <i class="fa-solid fa-user-tie timeline__icon" aria-hidden="true"></i>
+          </li>
+          <li class="timeline__step reveal">
+            <span class="timeline__num">03</span>
+            <div class="timeline__body">
+              <h3>Build &amp; Refine</h3>
+              <p>Design, develop, review — in tight loops that respect your time.</p>
+            </div>
+            <i class="fa-solid fa-hammer timeline__icon" aria-hidden="true"></i>
+          </li>
+          <li class="timeline__step reveal">
+            <span class="timeline__num">04</span>
+            <div class="timeline__body">
+              <h3>Launch &amp; Grow</h3>
+              <p>Go live, then keep improving with marketing, SEO and analytics.</p>
+            </div>
+            <i class="fa-solid fa-rocket timeline__icon" aria-hidden="true"></i>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ WHY US / STATS ============ -->
+    <section class="section" id="why" data-testid="why-section">
+      <div class="container why__grid">
+        <div class="why__copy reveal">
+          <span class="eyebrow"><span class="eyebrow__dot"></span> Why teams choose us</span>
+          <h2 class="section__title">Built for <span class="accent">small businesses</span> that need to look big.</h2>
+          <p class="section__lead">
+            We're a small team by design. That means senior attention on every project — and honest answers, always.
+          </p>
+
+          <ul class="why__list" role="list">
+            <li><i class="fa-solid fa-check-circle" aria-hidden="true"></i> Senior craft, no hand-offs to juniors</li>
+            <li><i class="fa-solid fa-check-circle" aria-hidden="true"></i> Transparent scope &amp; pricing</li>
+            <li><i class="fa-solid fa-check-circle" aria-hidden="true"></i> Speed without cutting corners</li>
+            <li><i class="fa-solid fa-check-circle" aria-hidden="true"></i> Long-term partnership after launch</li>
+          </ul>
+        </div>
+
+        <div class="stats reveal" data-testid="stats-block">
+          <div class="stat">
+            <span class="stat__num" data-count="98">0</span><span class="stat__unit">%</span>
+            <p>Client satisfaction</p>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="400">0</span><span class="stat__unit">+</span>
+            <p>Projects delivered</p>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="15">0</span><span class="stat__unit">yrs</span>
+            <p>In the craft</p>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="24">0</span><span class="stat__unit">h</span>
+            <p>Reply guarantee</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LUNCH & LEARN ============ -->
+    <section class="section section--soft" data-testid="lunch-learn-section">
+      <div class="container lunch">
+        <div class="lunch__badge reveal" aria-hidden="true">
+          <svg viewBox="0 0 60 60" fill="none">
+            <circle cx="30" cy="30" r="26" stroke="currentColor" stroke-width="2"/>
+            <path d="M18 34 C22 40 38 40 42 34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="22" cy="24" r="2" fill="currentColor"/>
+            <circle cx="38" cy="24" r="2" fill="currentColor"/>
+            <path d="M12 14 L18 20 M48 14 L42 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="lunch__body reveal">
+          <span class="eyebrow"><span class="eyebrow__dot"></span> Bonus program</span>
+          <h2>Ask about our <span class="accent">Lunch &amp; Learn</span>.</h2>
+          <p>An informal session where your team learns what's possible online — over a great meal. On us.</p>
+          <a href="#consult" class="btn btn--primary" data-testid="lunch-learn-cta">
+            Include Lunch &amp; Learn
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONSULTATION FORM ============ -->
+    <section class="section" id="consult" data-testid="consultation-section">
+      <div class="container consult">
+        <div class="consult__intro reveal">
+          <span class="eyebrow"><span class="eyebrow__dot"></span> Free consultation</span>
+          <h2 class="section__title">Tell us about your <span class="accent">project</span>.</h2>
+          <p class="section__lead">
+            Share a few details — we'll match you with the right expert and get back within 24 hours.
+          </p>
+
+          <ul class="consult__meta" role="list">
+            <li>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:sales@itniche.com" data-testid="consult-email">sales@itniche.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>Memphis, Tennessee</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-lock" aria-hidden="true"></i>
+              <span>Your details stay private</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="form reveal" id="consultForm" novalidate data-testid="consult-form" aria-labelledby="formTitle">
+          <h3 id="formTitle" class="sr-only">Consultation Form</h3>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="firstName">First Name <span class="req">*</span></label>
+              <input id="firstName" name="firstName" type="text" required autocomplete="given-name" data-testid="input-first-name" />
+              <small class="err" data-err-for="firstName"></small>
+            </div>
+            <div class="field">
+              <label for="lastName">Last Name</label>
+              <input id="lastName" name="lastName" type="text" autocomplete="family-name" data-testid="input-last-name" />
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="business">Business Name <span class="req">*</span></label>
+              <input id="business" name="business" type="text" required autocomplete="organization" data-testid="input-business" />
+              <small class="err" data-err-for="business"></small>
+            </div>
+            <div class="field">
+              <label for="phone">Phone Number <span class="req">*</span></label>
+              <input id="phone" name="phone" type="tel" required autocomplete="tel" data-testid="input-phone" />
+              <small class="err" data-err-for="phone"></small>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="bestTime">Best Time to Call</label>
+              <select id="bestTime" name="bestTime" data-testid="select-best-time">
+                <option value="">Select</option>
+                <option>Morning</option>
+                <option>Evening</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="timezone">Time Zone</label>
+              <select id="timezone" name="timezone" data-testid="select-timezone">
+                <option value="">Select</option>
+                <option>Eastern (EST)</option>
+                <option>Central (CST)</option>
+                <option>Mountain (MST)</option>
+                <option>Pacific (PST)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="projectType">Project Inquiry</label>
+              <select id="projectType" name="projectType" data-testid="select-project">
+                <option value="">Select</option>
+                <option>e-Church</option>
+                <option>e-Restaurant</option>
+                <option>e-Realtor</option>
+                <option>Mantra Portal</option>
+                <option>I'MRealHungry.com</option>
+                <option>Custom Website</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="marketing">Marketing Inquiry</label>
+              <select id="marketing" name="marketing" data-testid="select-marketing">
+                <option value="">Select</option>
+                <option>Search Engine Optimization</option>
+                <option>Off-Page Optimization</option>
+                <option>On-Page Optimization</option>
+                <option>Social Media Marketing</option>
+                <option>I'MRealHungry.com</option>
+                <option>Custom Website</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="email">Email Address <span class="req">*</span></label>
+              <input id="email" name="email" type="email" required autocomplete="email" data-testid="input-email" />
+              <small class="err" data-err-for="email"></small>
+            </div>
+            <div class="field">
+              <label for="domain">Existing Domain (optional)</label>
+              <input id="domain" name="domain" type="text" placeholder="yoursite.com" data-testid="input-domain" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us a little about your project…" data-testid="input-message"></textarea>
+          </div>
+
+          <div class="form__row form__row--foot">
+            <label class="check" data-testid="check-not-robot">
+              <input type="checkbox" id="notRobot" required />
+              <span class="check__box" aria-hidden="true"><i class="fa-solid fa-check"></i></span>
+              <span>I'm not a robot</span>
+            </label>
+
+            <button type="submit" class="btn btn--primary btn--lg" data-testid="submit-consult">
+              Send Consultation Request
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+            </button>
+          </div>
+
+          <p class="form__foot">By submitting, you agree we may contact you about your inquiry.</p>
+        </form>
+
+        <!-- Thank You state -->
+        <div class="thankyou" id="thankYou" data-testid="thank-you-message" hidden>
+          <div class="thankyou__icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none">
+              <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M20 33 L28 41 L45 24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Thank you — we've got it.</h3>
+          <p>We'll review your project and reach out within <strong>24 hours</strong> from <a href="mailto:sales@itniche.com">sales@itniche.com</a>.</p>
+          <button type="button" class="btn btn--ghost" id="sendAnother" data-testid="send-another-btn">
+            Send another request
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FINAL CTA ============ -->
+    <section class="cta" data-testid="cta-section">
+      <div class="container cta__inner">
+        <div class="cta__glow" aria-hidden="true"></div>
+        <div class="reveal">
+          <span class="eyebrow eyebrow--light"><span class="eyebrow__dot"></span> Let's build something</span>
+          <h2>Ready when you are.</h2>
+          <p>Book your free, no-obligation consult today. Real people. Real answers.</p>
+        </div>
+        <a href="#consult" class="btn btn--white btn--lg" data-testid="cta-book">
+          Book Free Consultation
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" data-testid="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#top" class="brand brand--light" aria-label="Home">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none">
+              <path d="M20 4 L34 12 V28 L20 36 L6 28 V12 Z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+              <path d="M14 22 L18 26 L26 16" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="brand__text">Custom<span>Site</span></span>
+        </a>
+        <p>Web design experts in Memphis — building bespoke sites &amp; digital marketing for small businesses.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Services</h4>
+        <a href="#services">Web Design</a>
+        <a href="#services">Custom Solutions</a>
+        <a href="#services">Digital Marketing</a>
+        <a href="#services">SEO</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Company</h4>
+        <a href="#process">Process</a>
+        <a href="#why">Why Us</a>
+        <a href="#consult">Consultation</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <a href="mailto:sales@itniche.com">sales@itniche.com</a>
+        <span>748 Crossover Lane</span>
+        <span>Memphis, Tennessee</span>
+      </div>
+    </div>
+
+    <div class="container footer__base">
+      <span>© <span id="year"></span> CustomSite. All rights reserved.</span>
+      <span>Made in Memphis · Serving nationwide</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
