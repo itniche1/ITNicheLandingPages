@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#e57119" />
+  <title>How It Works — Web Design, Custom Solutions & Digital Marketing</title>
+  <meta name="description" content="A minimal, three-step approach to launching your business online. Custom websites, technical setup, and marketing that works — starting at $199." />
+  <meta name="keywords" content="web design, custom solutions, digital marketing, small business, SEO, SMM" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="How It Works — Web Design & Digital Marketing" />
+  <meta property="og:description" content="Sketch. Launch. Market. A simple three-step process to put your business in the spotlight." />
+  <meta property="og:type" content="website" />
+
+  <!-- Preconnect + fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" data-testid="site-header">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo" data-testid="nav-logo" aria-label="Home">
+        <span class="nav__logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16v16H4z" />
+            <path d="M4 10h16" />
+            <path d="M10 4v16" />
+          </svg>
+        </span>
+        <span class="nav__logo-text">Studio<span>.</span></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#process" data-testid="nav-link-process">Process</a>
+        <a href="#pillars" data-testid="nav-link-pillars">Why Us</a>
+        <a href="#stats" data-testid="nav-link-stats">Numbers</a>
+        <a href="#cta" data-testid="nav-link-cta">Contact</a>
+      </nav>
+
+      <a href="#cta" class="btn btn--primary btn--sm" data-testid="nav-cta-btn">
+        Start a Project
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+      </a>
+
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" data-testid="nav-toggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="grid-lines"></div>
+        <div class="hero__blob"></div>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="eyebrow" data-testid="hero-eyebrow">
+            <span class="dot" aria-hidden="true"></span>
+            How it works
+          </span>
+
+          <h1 id="hero-title" class="hero__title" data-testid="hero-title">
+            Is your business in the <span class="highlight">spotlight<svg class="underline" viewBox="0 0 300 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8 C 80 2, 160 2, 298 8" stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round"/></svg></span><span class="hero__q">?</span>
+          </h1>
+
+          <p class="hero__lede" data-testid="hero-lede">
+            We're your instant solution for a worldwide market. Custom websites, engineered launches, and marketing that moves the needle — all in three simple steps.
+          </p>
+
+          <div class="hero__ctas">
+            <a href="#process" class="btn btn--primary" data-testid="hero-cta-primary">
+              See the process
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+            </a>
+            <a href="#cta" class="btn btn--ghost" data-testid="hero-cta-secondary">
+              Talk to us
+            </a>
+          </div>
+
+          <ul class="hero__meta" role="list">
+            <li><strong>$199</strong><span>starting price</span></li>
+            <li><strong>16h</strong><span>daily support</span></li>
+            <li><strong>24×7</strong><span>always on</span></li>
+          </ul>
+        </div>
+
+        <!-- Infographic -->
+        <aside class="hero__graphic" aria-label="Process illustration">
+          <div class="orbit">
+            <div class="orbit__ring orbit__ring--1" aria-hidden="true"></div>
+            <div class="orbit__ring orbit__ring--2" aria-hidden="true"></div>
+
+            <div class="orbit__center">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="4"/>
+                <path d="M12 2v2"/><path d="M12 20v2"/>
+                <path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/>
+                <path d="M2 12h2"/><path d="M20 12h2"/>
+                <path d="m4.93 19.07 1.41-1.41"/><path d="m17.66 6.34 1.41-1.41"/>
+              </svg>
+            </div>
+
+            <div class="orbit__node orbit__node--1" style="--delay:0s">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 19 7 24l-1-5"/>
+                <path d="m21 3-3 3-11 11-3-3L15 3l3-3z"/>
+                <path d="m14 6 4 4"/>
+              </svg>
+              <span>Sketch</span>
+            </div>
+
+            <div class="orbit__node orbit__node--2" style="--delay:.2s">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m4.5 16.5-2 2 3 3 2-2"/>
+                <path d="m19 7 3-3"/>
+                <path d="M14 4l6 6-11 11-6-6z"/>
+                <path d="M9 15l3-3"/>
+              </svg>
+              <span>Launch</span>
+            </div>
+
+            <div class="orbit__node orbit__node--3" style="--delay:.4s">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 3v18h18"/>
+                <path d="m7 15 4-4 3 3 5-6"/>
+              </svg>
+              <span>Market</span>
+            </div>
+
+            <div class="orbit__node orbit__node--4" style="--delay:.6s">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M2 12h20"/>
+                <path d="M12 2a15 15 0 0 1 0 20"/>
+                <path d="M12 2a15 15 0 0 0 0 20"/>
+              </svg>
+              <span>Global</span>
+            </div>
+          </div>
+
+          <div class="chip chip--tl" data-testid="chip-uptime">
+            <span class="chip__pulse" aria-hidden="true"></span>
+            <div><strong>99.9%</strong><em>uptime</em></div>
+          </div>
+          <div class="chip chip--br" data-testid="chip-price">
+            <div><strong>from $199</strong><em>custom site</em></div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>WEB DESIGN</span><span>•</span>
+          <span>CUSTOM SOLUTIONS</span><span>•</span>
+          <span>DIGITAL MARKETING</span><span>•</span>
+          <span>SEO</span><span>•</span>
+          <span>SMM</span><span>•</span>
+          <span>SUPPORT 16H/DAY</span><span>•</span>
+          <span>WEB DESIGN</span><span>•</span>
+          <span>CUSTOM SOLUTIONS</span><span>•</span>
+          <span>DIGITAL MARKETING</span><span>•</span>
+          <span>SEO</span><span>•</span>
+          <span>SMM</span><span>•</span>
+          <span>SUPPORT 16H/DAY</span><span>•</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS / HOW IT WORKS ============ -->
+    <section id="process" class="process" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section-head">
+          <span class="eyebrow"><span class="dot"></span>The process</span>
+          <h2 id="process-title" class="section-title" data-testid="process-title">
+            Three steps.<br/>One clear path online.
+          </h2>
+          <p class="section-lede">
+            No jargon, no bloat. A tight workflow that takes your idea from a napkin sketch to a measurable market presence.
+          </p>
+        </header>
+
+        <ol class="steps" role="list">
+          <li class="step" data-testid="step-1">
+            <div class="step__num" aria-hidden="true">01</div>
+            <div class="step__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m12 19 7-7 3 3-7 7-3-3z"/>
+                <path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+                <path d="m2 2 7.586 7.586"/>
+                <circle cx="11" cy="11" r="2"/>
+              </svg>
+            </div>
+            <h3 class="step__title">Sketch</h3>
+            <p class="step__desc">
+              We put your idea on paper — user flows, wireframes, and a custom design built <em>only</em> for you.
+            </p>
+            <ul class="step__list" role="list">
+              <li>Discovery workshop</li>
+              <li>Wireframe &amp; visual concept</li>
+              <li>Brand alignment</li>
+            </ul>
+          </li>
+
+          <li class="step" data-testid="step-2">
+            <div class="step__num" aria-hidden="true">02</div>
+            <div class="step__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+                <path d="M12 15 9 12"/>
+                <path d="M15 12 9.74 6.74a13.06 13.06 0 0 1 8.79-6.13 1 1 0 0 1 1.13 1.13c-1.03 5.87-6.13 10.19-9.61 10.99z"/>
+                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
+                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
+              </svg>
+            </div>
+            <h3 class="step__title">Launch</h3>
+            <p class="step__desc">
+              We bring it online with <em>all</em> the technical credentials — hosting, security, speed and analytics wired in.
+            </p>
+            <ul class="step__list" role="list">
+              <li>Development &amp; QA</li>
+              <li>Secure hosting &amp; SSL</li>
+              <li>Analytics &amp; monitoring</li>
+            </ul>
+          </li>
+
+          <li class="step" data-testid="step-3">
+            <div class="step__num" aria-hidden="true">03</div>
+            <div class="step__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 3v18h18"/>
+                <path d="m19 9-5 5-4-4-3 3"/>
+                <path d="M14 9h5v5"/>
+              </svg>
+            </div>
+            <h3 class="step__title">Market</h3>
+            <p class="step__desc">
+              We make it work for you with SEO, social media, and full-stack internet marketing that scales.
+            </p>
+            <ul class="step__list" role="list">
+              <li>SEO &amp; content</li>
+              <li>Social &amp; paid ads</li>
+              <li>Conversion optimization</li>
+            </ul>
+          </li>
+        </ol>
+
+        <!-- Horizontal timeline connector -->
+        <div class="timeline" aria-hidden="true">
+          <div class="timeline__track"></div>
+          <div class="timeline__dot"></div>
+          <div class="timeline__dot"></div>
+          <div class="timeline__dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PILLARS (Affordable / Satisfying / Fast) ============ -->
+    <section id="pillars" class="pillars" aria-labelledby="pillars-title">
+      <div class="container">
+        <header class="section-head section-head--split">
+          <div>
+            <span class="eyebrow"><span class="dot"></span>Why work with us</span>
+            <h2 id="pillars-title" class="section-title" data-testid="pillars-title">
+              Built to be affordable,<br/> reliable, and <em>fast</em>.
+            </h2>
+          </div>
+          <p class="section-lede section-lede--right">
+            Three principles that shape every project we deliver — from a landing page to a full digital ecosystem.
+          </p>
+        </header>
+
+        <div class="pillar-grid">
+          <article class="pillar" data-testid="pillar-affordable">
+            <div class="pillar__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M12 6v12"/>
+                <path d="M16 9.5c0-1.4-1.8-2.5-4-2.5s-4 1.1-4 2.5 1.8 2.5 4 2.5 4 1.1 4 2.5-1.8 2.5-4 2.5-4-1.1-4-2.5"/>
+              </svg>
+            </div>
+            <h3 class="pillar__title">Affordable</h3>
+            <p class="pillar__desc">Custom websites starting as low as <strong>$199</strong>. Premium quality without the enterprise invoice.</p>
+            <div class="pillar__stat"><span>from</span><strong>$199</strong></div>
+          </article>
+
+          <article class="pillar pillar--dark" data-testid="pillar-results">
+            <div class="pillar__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 6 9 17l-5-5"/>
+              </svg>
+            </div>
+            <h3 class="pillar__title">Satisfying Results</h3>
+            <p class="pillar__desc">Every tool to market, sell, and connect with your customers — running <strong>24×7</strong>, without a break.</p>
+            <div class="pillar__stat"><span>always</span><strong>24×7</strong></div>
+          </article>
+
+          <article class="pillar" data-testid="pillar-fast">
+            <div class="pillar__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+            </div>
+            <h3 class="pillar__title">Fast</h3>
+            <p class="pillar__desc">Two full shifts — <strong>16 hours a day</strong> — so support and iteration match your schedule.</p>
+            <div class="pillar__stat"><span>per day</span><strong>16h</strong></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS STRIP ============ -->
+    <section id="stats" class="stats" aria-labelledby="stats-title">
+      <div class="container stats__inner">
+        <h2 id="stats-title" class="visually-hidden">By the numbers</h2>
+        <div class="stat" data-testid="stat-1">
+          <strong data-count="500" data-suffix="+">0</strong>
+          <span>Projects launched</span>
+        </div>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="stat" data-testid="stat-2">
+          <strong data-count="199" data-prefix="$">0</strong>
+          <span>Starting price</span>
+        </div>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="stat" data-testid="stat-3">
+          <strong data-count="16" data-suffix="h">0</strong>
+          <span>Daily support</span>
+        </div>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="stat" data-testid="stat-4">
+          <strong data-count="24" data-suffix="×7">0</strong>
+          <span>Always online</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section id="cta" class="cta" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta__card">
+          <div class="cta__pattern" aria-hidden="true">
+            <svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <pattern id="cta-dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+                  <circle cx="1.2" cy="1.2" r="1.2" fill="currentColor" opacity=".18"/>
+                </pattern>
+              </defs>
+              <rect width="600" height="400" fill="url(#cta-dots)"/>
+            </svg>
+          </div>
+
+          <div class="cta__content">
+            <span class="eyebrow eyebrow--light"><span class="dot dot--light"></span>Let's build</span>
+            <h2 id="cta-title" class="cta__title" data-testid="cta-title">
+              Ready to put your business in the spotlight?
+            </h2>
+            <p class="cta__desc">
+              Tell us about your project. We'll come back with a plan, a price, and a launch date — usually within a day.
+            </p>
+
+            <form class="cta__form" novalidate data-testid="cta-form" onsubmit="return handleSubmit(event)">
+              <label class="visually-hidden" for="email">Email address</label>
+              <input id="email" type="email" name="email" placeholder="your@email.com" required data-testid="cta-email-input" autocomplete="email" />
+              <button type="submit" class="btn btn--primary" data-testid="cta-submit-btn">
+                Get started
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+              </button>
+            </form>
+
+            <p class="cta__note" id="cta-note" role="status" aria-live="polite"></p>
+
+            <ul class="cta__reassure" role="list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                No commitment
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                Reply within 24 hours
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                Free consult
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" data-testid="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="nav__logo">
+          <span class="nav__logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16v16H4z" />
+              <path d="M4 10h16" />
+              <path d="M10 4v16" />
+            </svg>
+          </span>
+          <span class="nav__logo-text">Studio<span>.</span></span>
+        </a>
+        <p>Web Design · Custom Solutions · Digital Marketing</p>
+      </div>
+      <p class="footer__copy">© <span id="year">2026</span> Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
