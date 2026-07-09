@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#e57119" />
+  <title>IT Niche — Web Design, Custom Solutions & Digital Marketing</title>
+  <meta name="description" content="IT Niche is a Memphis-based agency helping small businesses grow with custom websites, digital marketing and SEO. Zero upfront cost. Log in to your account." />
+  <meta name="keywords" content="web design, digital marketing, SEO, custom websites, small business, Memphis" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="IT Niche — Web Design, Custom Solutions & Digital Marketing" />
+  <meta property="og:description" content="Custom websites, digital marketing and SEO for small businesses. Zero upfront cost." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts: Lato -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Skip link for a11y -->
+  <a href="#main" class="skip-link" data-testid="skip-link">Skip to main content</a>
+
+  <!-- NAV -->
+  <header class="nav" data-testid="site-header">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo" data-testid="brand-logo" aria-label="IT Niche home">
+        <span class="nav__logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 20 L12 12 L18 18 L28 8" />
+            <circle cx="28" cy="8" r="1.6" fill="currentColor" stroke="none"/>
+          </svg>
+        </span>
+        <span class="nav__logo-text">IT<span class="nav__logo-accent">Niche</span></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#services" data-testid="nav-services">Services</a>
+        <a href="#process" data-testid="nav-process">Process</a>
+        <a href="#features" data-testid="nav-features">Features</a>
+        <a href="#numbers" data-testid="nav-numbers">Impact</a>
+        <a href="#contact" data-testid="nav-contact">Contact</a>
+      </nav>
+
+      <div class="nav__cta">
+        <a href="#login" class="btn btn--ghost" data-testid="nav-login-btn">Log in</a>
+        <a href="#contact" class="btn btn--primary" data-testid="nav-quote-btn">Free Quote</a>
+      </div>
+
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" data-testid="nav-toggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" data-testid="hero-section">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="eyebrow" data-testid="hero-eyebrow">
+            <span class="eyebrow__dot"></span> Memphis · Est. Digital Agency
+          </span>
+          <h1 class="hero__title" data-testid="hero-title">
+            Your instant solution <br/>for the <span class="accent">world-wide market.</span>
+          </h1>
+          <p class="hero__sub" data-testid="hero-subtitle">
+            Custom websites, digital marketing and SEO for small businesses —
+            built at <strong>zero upfront cost</strong>, delivered with a subject-matter expert on your side.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary btn--lg" data-testid="hero-cta-primary">
+              Get a free consult
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#services" class="btn btn--outline btn--lg" data-testid="hero-cta-secondary">
+              Explore services
+            </a>
+          </div>
+
+          <ul class="hero__trust" aria-label="Highlights" data-testid="hero-trust">
+            <li><i class="fa-solid fa-check"></i> Zero upfront cost</li>
+            <li><i class="fa-solid fa-check"></i> Free quote &amp; consult</li>
+            <li><i class="fa-solid fa-check"></i> 360° ongoing support</li>
+          </ul>
+        </div>
+
+        <!-- Infographic -->
+        <div class="hero__graphic" aria-hidden="true" data-testid="hero-graphic">
+          <div class="orbit orbit--outer"></div>
+          <div class="orbit orbit--inner"></div>
+
+          <div class="hero__core">
+            <div class="hero__core-inner">
+              <span class="hero__core-label">IT NICHE</span>
+              <span class="hero__core-sub">GROWTH · OS</span>
+            </div>
+          </div>
+
+          <div class="chip chip--1">
+            <i class="fa-solid fa-code"></i>
+            <div>
+              <strong>Web Design</strong>
+              <span>Custom builds</span>
+            </div>
+          </div>
+          <div class="chip chip--2">
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+            <div>
+              <strong>SEO</strong>
+              <span>+240% organic</span>
+            </div>
+          </div>
+          <div class="chip chip--3">
+            <i class="fa-solid fa-bullhorn"></i>
+            <div>
+              <strong>Marketing</strong>
+              <span>Social · Email</span>
+            </div>
+          </div>
+          <div class="chip chip--4">
+            <i class="fa-solid fa-cubes"></i>
+            <div>
+              <strong>Custom Apps</strong>
+              <span>CMS · Portals</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Marquee -->
+      <div class="marquee" data-testid="hero-marquee">
+        <div class="marquee__track">
+          <span>Web Design</span><span>·</span>
+          <span>Custom Solutions</span><span>·</span>
+          <span>Digital Marketing</span><span>·</span>
+          <span>SEO</span><span>·</span>
+          <span>E-commerce</span><span>·</span>
+          <span>Content Management</span><span>·</span>
+          <span>Analytics</span><span>·</span>
+          <!-- duplicate for seamless loop -->
+          <span>Web Design</span><span>·</span>
+          <span>Custom Solutions</span><span>·</span>
+          <span>Digital Marketing</span><span>·</span>
+          <span>SEO</span><span>·</span>
+          <span>E-commerce</span><span>·</span>
+          <span>Content Management</span><span>·</span>
+          <span>Analytics</span><span>·</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services" data-testid="services-section">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow" data-testid="services-eyebrow"><span class="eyebrow__dot"></span> What we do</span>
+          <h2 class="section__title" data-testid="services-title">
+            One partner. <span class="accent">Four growth engines.</span>
+          </h2>
+          <p class="section__lead" data-testid="services-lead">
+            A focused set of services for small businesses that want a real online presence — not a template.
+          </p>
+        </header>
+
+        <div class="services__grid">
+          <article class="service-card" data-testid="service-card-web">
+            <div class="service-card__icon"><i class="fa-solid fa-code"></i></div>
+            <div class="service-card__num">01</div>
+            <h3>Web Design</h3>
+            <p>Custom, mobile-first websites tailored to your brand — no cookie-cutter templates.</p>
+            <a href="#contact" class="link-arrow" data-testid="service-link-web">Start a project <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="service-card" data-testid="service-card-custom">
+            <div class="service-card__icon"><i class="fa-solid fa-cubes"></i></div>
+            <div class="service-card__num">02</div>
+            <h3>Custom Solutions</h3>
+            <p>CMS, member portals, event tools and dashboards built around how you actually work.</p>
+            <a href="#contact" class="link-arrow" data-testid="service-link-custom">Explore builds <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="service-card" data-testid="service-card-marketing">
+            <div class="service-card__icon"><i class="fa-solid fa-bullhorn"></i></div>
+            <div class="service-card__num">03</div>
+            <h3>Digital Marketing</h3>
+            <p>Social campaigns, email flows and lead generation tuned to your audience — no guesswork.</p>
+            <a href="#contact" class="link-arrow" data-testid="service-link-marketing">See campaigns <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="service-card" data-testid="service-card-seo">
+            <div class="service-card__icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+            <div class="service-card__num">04</div>
+            <h3>SEO &amp; Traffic</h3>
+            <p>On-page + ongoing optimization that turns your site into a compounding growth channel.</p>
+            <a href="#contact" class="link-arrow" data-testid="service-link-seo">Grow visibility <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS / IMPACT -->
+    <section class="section section--dark" id="numbers" data-testid="stats-section">
+      <div class="container">
+        <header class="section__head section__head--center">
+          <span class="eyebrow eyebrow--light" data-testid="stats-eyebrow"><span class="eyebrow__dot"></span> Impact in numbers</span>
+          <h2 class="section__title section__title--light" data-testid="stats-title">
+            Small business. <span class="accent">Big signals.</span>
+          </h2>
+        </header>
+
+        <div class="stats__grid">
+          <div class="stat" data-testid="stat-clients">
+            <div class="stat__num" data-count="500" data-suffix="+">0</div>
+            <div class="stat__label">Businesses launched</div>
+          </div>
+          <div class="stat" data-testid="stat-uptime">
+            <div class="stat__num" data-count="99" data-suffix="%">0</div>
+            <div class="stat__label">Uptime &amp; reliability</div>
+          </div>
+          <div class="stat" data-testid="stat-traffic">
+            <div class="stat__num" data-count="240" data-suffix="%">0</div>
+            <div class="stat__label">Avg. organic growth</div>
+          </div>
+          <div class="stat" data-testid="stat-cost">
+            <div class="stat__num" data-count="0" data-suffix="$">0</div>
+            <div class="stat__label">Upfront cost</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS TIMELINE -->
+    <section class="section" id="process" data-testid="process-section">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow" data-testid="process-eyebrow"><span class="eyebrow__dot"></span> How we work</span>
+          <h2 class="section__title" data-testid="process-title">
+            From wish list <span class="accent">to launch — in four steps.</span>
+          </h2>
+          <p class="section__lead" data-testid="process-lead">
+            A transparent process built around listening first. Your objectives, your timeline, our expertise.
+          </p>
+        </header>
+
+        <ol class="timeline" data-testid="process-timeline">
+          <li class="timeline__item">
+            <div class="timeline__dot"><i class="fa-solid fa-comments"></i></div>
+            <div class="timeline__body">
+              <span class="timeline__step">Step 01</span>
+              <h3>Listen &amp; align</h3>
+              <p>We understand your goals, your audience and your immediate wins.</p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <div class="timeline__dot"><i class="fa-solid fa-pen-ruler"></i></div>
+            <div class="timeline__body">
+              <span class="timeline__step">Step 02</span>
+              <h3>Design &amp; scope</h3>
+              <p>Wireframes, sitemap and a clear roadmap — no surprises later.</p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <div class="timeline__dot"><i class="fa-solid fa-code"></i></div>
+            <div class="timeline__body">
+              <span class="timeline__step">Step 03</span>
+              <h3>Build &amp; launch</h3>
+              <p>Custom development, thorough QA and a launch you can rely on.</p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <div class="timeline__dot"><i class="fa-solid fa-chart-line"></i></div>
+            <div class="timeline__body">
+              <span class="timeline__step">Step 04</span>
+              <h3>Grow &amp; support</h3>
+              <p>SEO, campaigns and 360° ongoing support to keep growth compounding.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FEATURES GRID -->
+    <section class="section section--soft" id="features" data-testid="features-section">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow" data-testid="features-eyebrow"><span class="eyebrow__dot"></span> Built-in capabilities</span>
+          <h2 class="section__title" data-testid="features-title">
+            Everything on your site. <span class="accent">Nothing bolted on.</span>
+          </h2>
+        </header>
+
+        <div class="features__grid">
+          <div class="feature" data-testid="feature-secure"><i class="fa-solid fa-shield-halved"></i><h4>Secure &amp; Safe</h4><p>Member-only areas keep sensitive information private.</p></div>
+          <div class="feature" data-testid="feature-cms"><i class="fa-solid fa-file-pen"></i><h4>On-demand CMS</h4><p>Click, edit and publish — change content instantly.</p></div>
+          <div class="feature" data-testid="feature-directory"><i class="fa-solid fa-users"></i><h4>Member Directory</h4><p>Bring your community together with a detailed member list.</p></div>
+          <div class="feature" data-testid="feature-events"><i class="fa-solid fa-calendar-days"></i><h4>Event Manager</h4><p>Promote events instantly with a robust calendar.</p></div>
+          <div class="feature" data-testid="feature-blog"><i class="fa-solid fa-newspaper"></i><h4>Blog &amp; Media</h4><p>Publish blogs, galleries and video — multimedia ready.</p></div>
+          <div class="feature" data-testid="feature-mailer"><i class="fa-solid fa-envelope-open-text"></i><h4>Electronic Mailer</h4><p>Send updates, invitations and newsletters at scale.</p></div>
+          <div class="feature" data-testid="feature-donate"><i class="fa-solid fa-hand-holding-dollar"></i><h4>Online Payments</h4><p>Accept one-time or recurring payments with one click.</p></div>
+          <div class="feature" data-testid="feature-sermon"><i class="fa-solid fa-microphone-lines"></i><h4>Content Archive</h4><p>Audio, video &amp; text archive that never lets content go stale.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOGIN SECTION -->
+    <section class="section section--login" id="login" data-testid="login-section">
+      <div class="container login__grid">
+        <div class="login__intro">
+          <span class="eyebrow" data-testid="login-eyebrow"><span class="eyebrow__dot"></span> Client Portal</span>
+          <h2 class="section__title" data-testid="login-title">
+            Welcome back. <br/><span class="accent">Log in to your workspace.</span>
+          </h2>
+          <p class="section__lead" data-testid="login-lead">
+            Manage your website, review projects and reach your subject-matter expert — all in one place.
+          </p>
+
+          <ul class="login__perks" data-testid="login-perks">
+            <li><i class="fa-solid fa-lock"></i> Secure 256-bit encrypted access</li>
+            <li><i class="fa-solid fa-headset"></i> Direct line to your account manager</li>
+            <li><i class="fa-solid fa-gauge-high"></i> Live project &amp; performance dashboard</li>
+          </ul>
+        </div>
+
+        <form class="login__form" novalidate data-testid="login-form" aria-labelledby="login-form-title">
+          <h3 id="login-form-title" class="login__form-title">Sign in to IT Niche</h3>
+
+          <div class="field" data-testid="login-username-field">
+            <label for="username">Username <span class="req">*</span></label>
+            <div class="field__input">
+              <i class="fa-regular fa-user" aria-hidden="true"></i>
+              <input id="username" name="username" type="text" autocomplete="username" placeholder="you@company.com" required data-testid="login-username-input" />
+            </div>
+            <span class="field__error" data-testid="login-username-error"></span>
+          </div>
+
+          <div class="field" data-testid="login-password-field">
+            <label for="password">Password <span class="req">*</span></label>
+            <div class="field__input">
+              <i class="fa-solid fa-lock" aria-hidden="true"></i>
+              <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required data-testid="login-password-input" />
+              <button type="button" class="field__toggle" aria-label="Show password" data-testid="login-password-toggle">
+                <i class="fa-regular fa-eye"></i>
+              </button>
+            </div>
+            <span class="field__error" data-testid="login-password-error"></span>
+          </div>
+
+          <div class="login__row">
+            <label class="checkbox" data-testid="login-remember">
+              <input type="checkbox" name="remember" />
+              <span>Remember me</span>
+            </label>
+            <a href="#" class="link" data-testid="login-forgot">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--block" data-testid="login-submit">
+            Log in
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+
+          <p class="login__foot" data-testid="login-signup">
+            New here? <a href="#contact" class="link">Get a free consult</a>
+          </p>
+
+          <div class="login__success" role="status" aria-live="polite" data-testid="login-success" hidden>
+            <i class="fa-solid fa-circle-check"></i> Signed in — redirecting to your dashboard…
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta" id="contact" data-testid="cta-section">
+      <div class="container cta__inner">
+        <div>
+          <h2 class="cta__title" data-testid="cta-title">
+            Call our <span class="accent">Subject-Matter Expert</span> today
+          </h2>
+          <p class="cta__sub" data-testid="cta-sub">Free consult · Free quote · Zero upfront cost.</p>
+        </div>
+        <div class="cta__actions">
+          <a href="tel:+19010000000" class="btn btn--primary btn--lg" data-testid="cta-call">
+            <i class="fa-solid fa-phone"></i> Book a free consult
+          </a>
+          <a href="mailto:hello@itniche.com" class="btn btn--outline btn--lg" data-testid="cta-email">
+            <i class="fa-solid fa-envelope"></i> Email us
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" data-testid="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#" class="nav__logo" aria-label="IT Niche home">
+          <span class="nav__logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 20 L12 12 L18 18 L28 8" />
+              <circle cx="28" cy="8" r="1.6" fill="currentColor" stroke="none"/>
+            </svg>
+          </span>
+          <span class="nav__logo-text">IT<span class="nav__logo-accent">Niche</span></span>
+        </a>
+        <p>Memphis-based agency helping small businesses go from wish list to launch — with custom sites, marketing and SEO.</p>
+      </div>
+
+      <div>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">Web Design</a></li>
+          <li><a href="#services">Custom Solutions</a></li>
+          <li><a href="#services">Digital Marketing</a></li>
+          <li><a href="#services">SEO &amp; Traffic</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#process">How we work</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#numbers">Impact</a></li>
+          <li><a href="#login">Client login</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><i class="fa-solid fa-location-dot"></i> Memphis, TN</li>
+          <li><i class="fa-solid fa-envelope"></i> hello@itniche.com</li>
+          <li><i class="fa-solid fa-phone"></i> +1 (901) 000-0000</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bar">
+      <div class="container footer__bar-inner">
+        <span>© <span id="year"></span> IT Niche. All rights reserved.</span>
+        <div class="footer__social" aria-label="Social links">
+          <a href="#" aria-label="Twitter" data-testid="social-twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn" data-testid="social-linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Facebook" data-testid="social-facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram" data-testid="social-instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
