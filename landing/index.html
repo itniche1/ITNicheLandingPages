@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#e57119" />
+  <title>e-Church — Custom Church Website Platform | Online Demo</title>
+  <meta name="description" content="Take a full test drive of your future church website. Explore modules, features, and infographic-driven previews of the e-Church platform." />
+  <meta name="keywords" content="church website, custom church website, e-Church, online demo, church web builder, church CMS" />
+  <meta name="author" content="Custom Church Website" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="e-Church — Online Demo" />
+  <meta property="og:description" content="Test drive a live demo of a modern, custom-built church website. Modules, themes, and everything you need to launch." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://customchurchwebsite.com/onlinedemo.php" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "e-Church Custom Church Website",
+      "description": "A full-featured custom church website platform with modules, themes, and an online demo.",
+      "brand": { "@type": "Brand", "name": "Custom Church Website" },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://customchurchwebsite.com/getstarted.php",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+  </script>
+</head>
+<body>
+  <!-- Skip to content -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" role="banner">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo" aria-label="e-Church home">
+        <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <path d="M20 4 L28 12 L28 20 L36 20 L36 36 L24 36 L24 26 L16 26 L16 36 L4 36 L4 20 L12 20 L12 12 Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+          <line x1="20" y1="2" x2="20" y2="10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="16" y1="6" x2="24" y2="6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+        <span>e-<b>Church</b></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#demo">Online Demo</a>
+        <a href="#ebook">Free e-Book</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="nav__cta">
+        <a href="https://customchurchwebsite.com/demo" class="btn btn--ghost" target="_blank" rel="noopener">Test Drive</a>
+        <a href="https://customchurchwebsite.com/getstarted.php" class="btn btn--primary" target="_blank" rel="noopener">Get Started</a>
+      </div>
+
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#demo">Online Demo</a>
+      <a href="#ebook">Free e-Book</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://customchurchwebsite.com/demo" class="btn btn--primary" target="_blank" rel="noopener">Test Drive</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <span class="eyebrow" data-testid="hero-eyebrow">
+            <span class="eyebrow__dot"></span> Online Demo Available
+          </span>
+          <h1 class="hero__title">
+            Take a <span class="accent">full test drive</span><br />
+            of your future church website.
+          </h1>
+          <p class="hero__lede">
+            Explore modules, themes, and live features — the way your congregation will.
+            No signup. No fluff. Just clarity.
+          </p>
+
+          <div class="hero__cta">
+            <a href="#demo" class="btn btn--primary btn--lg" data-testid="hero-primary-cta">
+              Launch Online Demo
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#ebook" class="btn btn--ghost btn--lg" data-testid="hero-secondary-cta">
+              Free e-Book
+            </a>
+          </div>
+
+          <ul class="hero__meta" aria-label="Highlights">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Custom themes
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Lunch &amp; Learn sessions
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              U.S. based support
+            </li>
+          </ul>
+        </div>
+
+        <!-- Infographic hero visual (pure SVG, no images/humans) -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="infographic">
+            <div class="ig__grid-bg"></div>
+
+            <!-- Central browser card -->
+            <div class="ig__browser">
+              <div class="ig__browser-bar">
+                <span></span><span></span><span></span>
+                <div class="ig__url">newlifechurch.org</div>
+              </div>
+              <div class="ig__browser-body">
+                <div class="ig__hero-block"></div>
+                <div class="ig__line ig__line--long"></div>
+                <div class="ig__line ig__line--mid"></div>
+                <div class="ig__cards">
+                  <div class="ig__card">
+                    <svg viewBox="0 0 24 24"><path d="M3 10 12 3l9 7v11H3z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+                  </div>
+                  <div class="ig__card">
+                    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
+                  </div>
+                  <div class="ig__card">
+                    <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating chips -->
+            <div class="chip chip--1">
+              <svg viewBox="0 0 24 24"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+              Secure
+            </div>
+            <div class="chip chip--2">
+              <svg viewBox="0 0 24 24"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+              Modules
+            </div>
+            <div class="chip chip--3">
+              <svg viewBox="0 0 24 24"><path d="M3 12h4l2-7 4 14 2-7h6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Live
+            </div>
+
+            <!-- Orbit ring -->
+            <svg class="ig__ring" viewBox="0 0 400 400" aria-hidden="true">
+              <circle cx="200" cy="200" r="180" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="2 6"/>
+              <circle cx="200" cy="200" r="140" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="2 6" opacity=".5"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats strip -->
+      <div class="container">
+        <div class="stats" role="list">
+          <div class="stat" role="listitem">
+            <div class="stat__num" data-target="500" data-testid="stat-churches">0</div>
+            <div class="stat__label">Churches launched</div>
+          </div>
+          <div class="stat" role="listitem">
+            <div class="stat__num" data-target="30" data-suffix="+" data-testid="stat-modules">0</div>
+            <div class="stat__label">Built-in modules</div>
+          </div>
+          <div class="stat" role="listitem">
+            <div class="stat__num" data-target="99" data-suffix="%" data-testid="stat-uptime">0</div>
+            <div class="stat__label">Uptime</div>
+          </div>
+          <div class="stat" role="listitem">
+            <div class="stat__num" data-target="24" data-suffix="/7" data-testid="stat-support">0</div>
+            <div class="stat__label">Support</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section id="features" class="section">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow"><span class="eyebrow__dot"></span> Main Features</span>
+          <h2 class="section__title">Everything a modern <span class="accent">e-Church</span> needs.</h2>
+          <p class="section__sub">Purpose-built modules that keep your congregation connected, informed, and engaged.</p>
+        </header>
+
+        <div class="features">
+          <article class="feature" data-testid="feature-events">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 9h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Events &amp; Calendar</h3>
+            <p>Publish services, groups and community events in a live, filterable calendar.</p>
+          </article>
+
+          <article class="feature" data-testid="feature-sermons">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24"><path d="M5 4v16l7-4 7 4V4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Sermons Library</h3>
+            <p>Stream, archive and search past sermons with tags, speakers and series.</p>
+          </article>
+
+          <article class="feature" data-testid="feature-giving">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24"><path d="M12 21s-8-4.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 6.5-8 11-8 11z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Online Giving</h3>
+            <p>Secure, recurring donations with clear reporting for your finance team.</p>
+          </article>
+
+          <article class="feature" data-testid="feature-members">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24"><circle cx="9" cy="9" r="3.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M2 20c1-3.5 4-5 7-5s6 1.5 7 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="17" cy="7" r="2.4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+            </div>
+            <h3>Member Portal</h3>
+            <p>Private accounts for groups, prayer requests, directories and messaging.</p>
+          </article>
+
+          <article class="feature" data-testid="feature-blog">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24"><path d="M4 4h12l4 4v12H4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 12h8M8 16h8M8 8h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Blog &amp; News</h3>
+            <p>Share stories, announcements and pastoral notes with a clean editor.</p>
+          </article>
+
+          <article class="feature" data-testid="feature-forms">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Custom Forms</h3>
+            <p>Volunteer sign-ups, prayer forms, RSVPs — collect it all, no code required.</p>
+          </article>
+
+          <article class="feature" data-testid="feature-media">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 9v6l5-3z" fill="currentColor"/></svg>
+            </div>
+            <h3>Live Streaming</h3>
+            <p>Embed your Sunday service, replays and clips with a distraction-free player.</p>
+          </article>
+
+          <article class="feature" data-testid="feature-seo">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M20 20l-4.3-4.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <h3>SEO Optimized</h3>
+            <p>Fast, semantic markup so newcomers find your church first, not last.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS (TIMELINE) ============ -->
+    <section id="how" class="section section--alt">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow"><span class="eyebrow__dot"></span> Explore, Learn &amp; Enjoy</span>
+          <h2 class="section__title">Your test drive, in <span class="accent">four steps</span>.</h2>
+          <p class="section__sub">Simulate a real visitor moving through the site — from discovery to giving.</p>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline__item">
+            <div class="timeline__dot"><span>1</span></div>
+            <div class="timeline__body">
+              <h3>Open the Demo</h3>
+              <p>Launch the live sample site in a new tab — no login required.</p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <div class="timeline__dot"><span>2</span></div>
+            <div class="timeline__body">
+              <h3>Browse Modules</h3>
+              <p>Try events, sermons, giving and member features exactly as your congregation would.</p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <div class="timeline__dot"><span>3</span></div>
+            <div class="timeline__body">
+              <h3>Compare Themes</h3>
+              <p>View multiple custom themes to imagine your brand in the platform.</p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <div class="timeline__dot"><span>4</span></div>
+            <div class="timeline__body">
+              <h3>Book Lunch &amp; Learn</h3>
+              <p>Prefer a guided walkthrough? Schedule an in-house demo with our team.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ ONLINE DEMO ============ -->
+    <section id="demo" class="section">
+      <div class="container">
+        <div class="demo">
+          <div class="demo__copy">
+            <span class="eyebrow"><span class="eyebrow__dot"></span> Online Demo</span>
+            <h2 class="section__title">Test drive a <span class="accent">real</span> e-Church site.</h2>
+            <p class="section__sub">Move through the site like a real visitor. See how a modern church site feels — clean, fast, and mission-focused.</p>
+
+            <ul class="demo__list">
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Full navigation across every module
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Simulated donor &amp; giving flow
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Mobile-first responsive layouts
+              </li>
+            </ul>
+
+            <div class="demo__cta">
+              <a href="https://customchurchwebsite.com/demo" target="_blank" rel="noopener" class="btn btn--primary btn--lg" data-testid="demo-launch-cta">
+                Test Drive Now
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a href="https://customchurchwebsite.com/getstarted.php" target="_blank" rel="noopener" class="btn btn--ghost btn--lg" data-testid="demo-getstarted-cta">
+                Get Started
+              </a>
+            </div>
+
+            <p class="demo__hint">Need credentials for a deeper preview? Call <a href="tel:+19014149009">901-414-9009</a>.</p>
+          </div>
+
+          <!-- Demo Visual (browser mockup) -->
+          <div class="demo__visual" aria-hidden="true">
+            <div class="browser">
+              <div class="browser__bar">
+                <span></span><span></span><span></span>
+                <div class="browser__url">
+                  <svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+                  customchurchwebsite.com/demo
+                </div>
+              </div>
+              <div class="browser__body">
+                <div class="browser__nav">
+                  <div></div><div></div><div></div><div></div>
+                </div>
+                <div class="browser__hero">
+                  <div class="browser__title-1"></div>
+                  <div class="browser__title-2"></div>
+                  <div class="browser__cta"></div>
+                </div>
+                <div class="browser__grid">
+                  <div class="browser__tile"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 9h18" stroke="currentColor" stroke-width="1.6"/></svg></div>
+                  <div class="browser__tile"><svg viewBox="0 0 24 24"><path d="M5 4v16l7-4 7 4V4z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></div>
+                  <div class="browser__tile"><svg viewBox="0 0 24 24"><path d="M12 21s-8-4.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 6.5-8 11-8 11z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating stats card -->
+            <div class="float-card">
+              <div class="float-card__num">+128%</div>
+              <div class="float-card__label">Visitor engagement<br/>after redesign</div>
+              <svg class="float-card__spark" viewBox="0 0 100 30" aria-hidden="true">
+                <path d="M0 25 L15 20 L30 22 L45 12 L60 15 L75 6 L100 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ E-BOOK ============ -->
+    <section id="ebook" class="section section--dark">
+      <div class="container">
+        <div class="ebook">
+          <div class="ebook__copy">
+            <span class="eyebrow eyebrow--light"><span class="eyebrow__dot"></span> Free e-Book</span>
+            <h2 class="section__title section__title--light">
+              The <span class="accent">Church Website</span> Playbook.
+            </h2>
+            <p class="section__sub section__sub--light">
+              A concise, infographic-style guide with everything a small church needs to launch, grow, and convert online — in under 40 pages.
+            </p>
+
+            <ul class="ebook__list">
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                12 UX patterns that grow attendance
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Giving flow benchmarks
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                SEO checklist for churches
+              </li>
+            </ul>
+
+            <a href="ebook.pdf" download class="btn btn--primary btn--lg" data-testid="ebook-download-cta">
+              Download Free e-Book
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12m0 0-5-5m5 5 5-5M4 20h16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <p class="ebook__hint">PDF · 38 pages · 4.2 MB</p>
+          </div>
+
+          <div class="ebook__visual" aria-hidden="true">
+            <div class="ebook-cover">
+              <div class="ebook-cover__spine"></div>
+              <div class="ebook-cover__front">
+                <div class="ebook-cover__eyebrow">e-CHURCH GUIDE</div>
+                <div class="ebook-cover__title">Church<br/>Website<br/>Playbook</div>
+                <div class="ebook-cover__meta">2026 EDITION</div>
+                <svg class="ebook-cover__mark" viewBox="0 0 40 40">
+                  <path d="M20 4 L28 12 L28 20 L36 20 L36 36 L24 36 L24 26 L16 26 L16 36 L4 36 L4 20 L12 20 L12 12 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section id="faq" class="section">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow"><span class="eyebrow__dot"></span> Questions</span>
+          <h2 class="section__title">Short answers to <span class="accent">quick questions</span>.</h2>
+        </header>
+
+        <div class="faq">
+          <details class="faq__item" data-testid="faq-item-1">
+            <summary>
+              Do I need technical skills to use e-Church?
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </summary>
+            <p>No. Every module is designed for non-technical church staff — with clean editors and simple forms.</p>
+          </details>
+          <details class="faq__item" data-testid="faq-item-2">
+            <summary>
+              Can I keep our current domain?
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </summary>
+            <p>Yes. We migrate your domain and set up secure SSL as part of onboarding.</p>
+          </details>
+          <details class="faq__item" data-testid="faq-item-3">
+            <summary>
+              How is the demo different from the real product?
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </summary>
+            <p>It's not — the demo runs on the same platform. Only your branding and content will change.</p>
+          </details>
+          <details class="faq__item" data-testid="faq-item-4">
+            <summary>
+              What is a Lunch &amp; Learn?
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </summary>
+            <p>A relaxed in-house demo where our team walks you through e-Church while you enjoy lunch — on us.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BANNER ============ -->
+    <section class="cta-banner">
+      <div class="container cta-banner__inner">
+        <div>
+          <h2>Ready to see it live?</h2>
+          <p>Launch the demo — or talk to a real human at <a href="tel:+19014149009">901-414-9009</a>.</p>
+        </div>
+        <div class="cta-banner__actions">
+          <a href="https://customchurchwebsite.com/demo" target="_blank" rel="noopener" class="btn btn--primary btn--lg" data-testid="banner-demo-cta">Launch Demo</a>
+          <a href="https://customchurchwebsite.com/getstarted.php" target="_blank" rel="noopener" class="btn btn--dark btn--lg" data-testid="banner-getstarted-cta">Get Started</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#" class="nav__logo">
+          <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+            <path d="M20 4 L28 12 L28 20 L36 20 L36 36 L24 36 L24 26 L16 26 L16 36 L4 36 L4 20 L12 20 L12 12 Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+            <line x1="20" y1="2" x2="20" y2="10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+            <line x1="16" y1="6" x2="24" y2="6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+          <span>e-<b>Church</b></span>
+        </a>
+        <p>Custom church websites — built for mission, designed for people.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#demo">Online Demo</a>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <a href="#ebook">Free e-Book</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:+19014149009">901-414-9009</a>
+        <a href="mailto:sales@itniche.com">sales@itniche.com</a>
+        <address>748 Crossover Lane<br/>Memphis, TN</address>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> Custom Church Website. All rights reserved.</span>
+      <span>Made with care in Memphis, TN.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
