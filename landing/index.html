@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Marketing Methodologies — Custom Church Website</title>
+  <meta name="description" content="Modern online marketing methodologies for small businesses. Web design, custom solutions and digital marketing built on customer intelligence, SEO and social distribution." />
+  <meta name="theme-color" content="#e57119" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ============ NAV ============ -->
+  <header class="nav" data-testid="site-header">
+    <div class="container nav__inner">
+      <a href="#top" class="brand" data-testid="brand-logo" aria-label="Custom Church Website home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 3l3 6 6.5.8-4.7 4.6 1.1 6.6L16 18l-5.9 3 1.1-6.6L6.5 9.8 13 9l3-6z" stroke="#e57119" stroke-width="2" stroke-linejoin="round"/>
+            <circle cx="16" cy="16" r="14" stroke="#0b0b0b" stroke-width="1.2" stroke-dasharray="2 3"/>
+          </svg>
+        </span>
+        <span class="brand__name">Custom<span>Church</span>Website</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#methodologies" data-testid="nav-link-methodologies">Methodologies</a>
+        <a href="#process" data-testid="nav-link-process">Process</a>
+        <a href="#impact" data-testid="nav-link-impact">Impact</a>
+        <a href="#contact" data-testid="nav-link-contact">Contact</a>
+      </nav>
+
+      <a href="#contact" class="btn btn--primary nav__cta" data-testid="nav-cta-button">
+        Get Started
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" data-testid="nav-menu-toggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <span class="eyebrow" data-testid="hero-eyebrow">
+            <span class="eyebrow__dot"></span> Online Marketing Methodologies
+          </span>
+          <h1 id="hero-title" class="hero__title" data-testid="hero-title">
+            Put your business in the <span class="highlight">spotlight</span>.
+          </h1>
+          <p class="hero__lead" data-testid="hero-lead">
+            The instant solution for your worldwide market — web design, custom solutions and digital
+            marketing engineered around customer intelligence.
+          </p>
+          <div class="hero__cta">
+            <a href="#methodologies" class="btn btn--primary" data-testid="hero-primary-cta">
+              Explore Methodologies
+            </a>
+            <a href="#contact" class="btn btn--ghost" data-testid="hero-secondary-cta">
+              Talk to an Expert →
+            </a>
+          </div>
+
+          <ul class="hero__meta" aria-label="Highlights">
+            <li><strong>60%+</strong><span>Conversion uplift on targeted campaigns</span></li>
+            <li><strong>5</strong><span>Core methodologies, one clear playbook</span></li>
+            <li><strong>1:1</strong><span>Granular, customer-level engagement</span></li>
+          </ul>
+        </div>
+
+        <!-- Infographic-style hero visual (SVG only, no images) -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="orbit">
+            <div class="orbit__ring orbit__ring--1"></div>
+            <div class="orbit__ring orbit__ring--2"></div>
+            <div class="orbit__ring orbit__ring--3"></div>
+
+            <div class="orbit__core">
+              <svg viewBox="0 0 64 64" width="44" height="44" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="32" cy="32" r="10"/>
+                <path d="M32 6v6M32 52v6M6 32h6M52 32h6M14 14l4 4M46 46l4 4M50 14l-4 4M18 46l-4 4"/>
+              </svg>
+            </div>
+
+            <span class="chip chip--tl" data-testid="chip-seo">SEO</span>
+            <span class="chip chip--tr" data-testid="chip-social">Social</span>
+            <span class="chip chip--r" data-testid="chip-content">Content</span>
+            <span class="chip chip--br" data-testid="chip-analytics">Analytics</span>
+            <span class="chip chip--bl" data-testid="chip-trends">Trends</span>
+            <span class="chip chip--l" data-testid="chip-profile">Profile</span>
+          </div>
+
+          <div class="floaters">
+            <div class="floater floater--a">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#0b0b0b" stroke-width="1.8"><path d="M3 12l4 4 14-14"/></svg>
+              <span>Targeted</span>
+            </div>
+            <div class="floater floater--b">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#e57119" stroke-width="1.8"><path d="M3 3h18v14H7l-4 4z"/></svg>
+              <span>Conversational</span>
+            </div>
+            <div class="floater floater--c">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#0b0b0b" stroke-width="1.8"><path d="M3 20l6-6 4 4 8-10"/></svg>
+              <span>Measured</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE / TRUST STRIP ============ -->
+    <section class="strip" aria-label="Focus areas">
+      <div class="strip__track">
+        <ul class="strip__list">
+          <li>Small Business</li><li aria-hidden="true">◆</li>
+          <li>Web Design</li><li aria-hidden="true">◆</li>
+          <li>Custom Solutions</li><li aria-hidden="true">◆</li>
+          <li>Digital Marketing</li><li aria-hidden="true">◆</li>
+          <li>SEO</li><li aria-hidden="true">◆</li>
+          <li>Customer Intelligence</li><li aria-hidden="true">◆</li>
+        </ul>
+        <ul class="strip__list" aria-hidden="true">
+          <li>Small Business</li><li>◆</li>
+          <li>Web Design</li><li>◆</li>
+          <li>Custom Solutions</li><li>◆</li>
+          <li>Digital Marketing</li><li>◆</li>
+          <li>SEO</li><li>◆</li>
+          <li>Customer Intelligence</li><li>◆</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ INTRO / APPROACH ============ -->
+    <section class="approach" id="impact" aria-labelledby="approach-title">
+      <div class="container approach__grid">
+        <div class="approach__copy">
+          <span class="eyebrow"><span class="eyebrow__dot"></span> The Approach</span>
+          <h2 id="approach-title" class="section__title">
+            Marketing evolves. <br/><span class="muted">Your playbook should too.</span>
+          </h2>
+          <p class="section__lead">
+            Modern buyers test, comment and recommend. We treat customers as active participants —
+            gathering signals across channels to segment, target and personalize at scale.
+          </p>
+          <a href="#methodologies" class="link" data-testid="approach-cta">See how it works →</a>
+        </div>
+
+        <div class="stats" role="list" data-testid="stats-block">
+          <div class="stat" role="listitem">
+            <div class="stat__num" data-count="60" data-suffix="%+">0</div>
+            <p class="stat__label">Uplift on targeted, intelligent campaigns</p>
+          </div>
+          <div class="stat" role="listitem">
+            <div class="stat__num" data-count="5" data-suffix="">0</div>
+            <p class="stat__label">Repeatable methodologies</p>
+          </div>
+          <div class="stat" role="listitem">
+            <div class="stat__num" data-count="24" data-suffix="/7">0</div>
+            <p class="stat__label">Web presence that never sleeps</p>
+          </div>
+          <div class="stat" role="listitem">
+            <div class="stat__num" data-count="1" data-suffix=":1">0</div>
+            <p class="stat__label">Personalization down to the customer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ METHODOLOGIES ============ -->
+    <section class="methods" id="methodologies" aria-labelledby="methods-title">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow"><span class="eyebrow__dot"></span> Techniques</span>
+          <h2 id="methods-title" class="section__title">Five methodologies. One clear playbook.</h2>
+          <p class="section__lead">Every technique is a lever. Together, they compound into a measurable
+            marketing engine — designed to reach the right customer at the right moment.</p>
+        </header>
+
+        <ol class="methods__grid" data-testid="methods-grid">
+          <li class="method">
+            <span class="method__num">01</span>
+            <div class="method__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="24" cy="16" r="7"/>
+                <path d="M9 40c2-8 8-12 15-12s13 4 15 12"/>
+                <path d="M32 12l4-2M36 16l4-1"/>
+              </svg>
+            </div>
+            <h3 class="method__title">Diffusion Profile</h3>
+            <p class="method__desc">Publish your presence across Facebook, LinkedIn, X and video. Your profile
+              is your business card, expertise and references — everywhere at once.</p>
+          </li>
+
+          <li class="method">
+            <span class="method__num">02</span>
+            <div class="method__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="6" y="10" width="36" height="24" rx="3"/>
+                <path d="M6 16h36M12 22h10M12 26h16M12 30h8"/>
+                <path d="M24 34v6M18 40h12"/>
+              </svg>
+            </div>
+            <h3 class="method__title">Content Distribution</h3>
+            <p class="method__desc">Leverage bookmarking, micro-blogging and blogs to broadcast ideas.
+              Reply, engage and turn readers into ambassadors.</p>
+          </li>
+
+          <li class="method">
+            <span class="method__num">03</span>
+            <div class="method__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 34l8-10 6 6 8-12 10 14"/>
+                <path d="M6 40h36"/>
+                <circle cx="16" cy="24" r="2"/><circle cx="22" cy="30" r="2"/><circle cx="30" cy="18" r="2"/>
+              </svg>
+            </div>
+            <h3 class="method__title">Evolve Your Content</h3>
+            <p class="method__desc">Adapt formats to platform and audience — slides, podcasts, video, images.
+              Keep it simple. K.I.S.S.</p>
+          </li>
+
+          <li class="method">
+            <span class="method__num">04</span>
+            <div class="method__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="22" cy="22" r="12"/>
+                <path d="M31 31l9 9"/>
+                <path d="M16 22h12M22 16v12"/>
+              </svg>
+            </div>
+            <h3 class="method__title">Search Engine Optimization</h3>
+            <p class="method__desc">Position on the terms that matter. Structured content, healthy signals
+              across blogs, images, video — measured and improved.</p>
+          </li>
+
+          <li class="method">
+            <span class="method__num">05</span>
+            <div class="method__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 32l10-8 8 6 14-14"/>
+                <path d="M28 16h10v10"/>
+                <path d="M6 42h36"/>
+              </svg>
+            </div>
+            <h3 class="method__title">Trend Monitoring</h3>
+            <p class="method__desc">Listen to market and mentions in real time. Web-monitoring tools turn
+              conversation into action, before the moment passes.</p>
+          </li>
+
+          <li class="method method--wide">
+            <span class="method__num">+</span>
+            <div class="method__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 24h10l4-10 8 20 4-10h14"/>
+              </svg>
+            </div>
+            <h3 class="method__title">Customer Intelligence, Automated</h3>
+            <p class="method__desc">Explicit + implicit behavior becomes personalization at scale — the
+              right product, to the right customer, at the right time.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS TIMELINE ============ -->
+    <section class="process" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section__head section__head--center">
+          <span class="eyebrow"><span class="eyebrow__dot"></span> How it works</span>
+          <h2 id="process-title" class="section__title">From signal to sale.</h2>
+          <p class="section__lead">A four-step engine that turns behavior into results.</p>
+        </header>
+
+        <ol class="timeline" data-testid="timeline">
+          <li class="tl">
+            <span class="tl__dot"></span>
+            <span class="tl__step">Step 01</span>
+            <h3>Gather</h3>
+            <p>Collect explicit &amp; implicit signals across channels.</p>
+          </li>
+          <li class="tl">
+            <span class="tl__dot"></span>
+            <span class="tl__step">Step 02</span>
+            <h3>Segment</h3>
+            <p>Group audiences by intent, industry &amp; behavior.</p>
+          </li>
+          <li class="tl">
+            <span class="tl__dot"></span>
+            <span class="tl__step">Step 03</span>
+            <h3>Personalize</h3>
+            <p>Automate messages tailored to each customer.</p>
+          </li>
+          <li class="tl">
+            <span class="tl__dot"></span>
+            <span class="tl__step">Step 04</span>
+            <h3>Convert</h3>
+            <p>Deliver the right offer at the right moment.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ KISS PRINCIPLE ============ -->
+    <section class="kiss" aria-labelledby="kiss-title">
+      <div class="container kiss__grid">
+        <div class="kiss__mark" aria-hidden="true">
+          <span>K</span><span>I</span><span>S</span><span>S</span>
+        </div>
+        <div class="kiss__copy">
+          <span class="eyebrow"><span class="eyebrow__dot"></span> Principle</span>
+          <h2 id="kiss-title" class="section__title">Keep It Simple.</h2>
+          <p class="section__lead">
+            Great content is a conversation, not a monologue. Every asset we ship — page, post, video —
+            respects your audience's time and attention.
+          </p>
+          <ul class="kiss__list">
+            <li><span>1</span> Clear headlines over clever wordplay.</li>
+            <li><span>2</span> Visual storytelling over paragraph walls.</li>
+            <li><span>3</span> Real answers over marketing fluff.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA / CONTACT ============ -->
+    <section class="cta" id="contact" aria-labelledby="cta-title">
+      <div class="container cta__inner">
+        <div class="cta__deco" aria-hidden="true">
+          <svg viewBox="0 0 200 200" fill="none">
+            <circle cx="100" cy="100" r="80" stroke="#fff" stroke-opacity=".15" stroke-width="1"/>
+            <circle cx="100" cy="100" r="55" stroke="#fff" stroke-opacity=".25" stroke-width="1"/>
+            <circle cx="100" cy="100" r="30" stroke="#fff" stroke-opacity=".45" stroke-width="1"/>
+          </svg>
+        </div>
+        <span class="eyebrow eyebrow--light"><span class="eyebrow__dot"></span> Ready when you are</span>
+        <h2 id="cta-title" class="cta__title">Let's put your business in the spotlight.</h2>
+        <p class="cta__lead">Web design, custom solutions and digital marketing — tailored to your goals.</p>
+
+        <div class="cta__grid">
+          <a href="tel:+19014149009" class="cta__card" data-testid="cta-phone">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5a2 2 0 012-2h2l2 5-3 2a12 12 0 006 6l2-3 5 2v2a2 2 0 01-2 2A16 16 0 014 5z"/></svg>
+            <span class="cta__label">Call us</span>
+            <span class="cta__value">901-414-9009</span>
+          </a>
+          <a href="mailto:sales@itniche.com" class="cta__card" data-testid="cta-email">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            <span class="cta__label">Email us</span>
+            <span class="cta__value">sales@itniche.com</span>
+          </a>
+          <a href="https://maps.google.com/?q=748+Crossover+Lane+Memphis+TN" target="_blank" rel="noopener" class="cta__card" data-testid="cta-address">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <span class="cta__label">Visit us</span>
+            <span class="cta__value">748 Crossover Ln, Memphis TN</span>
+          </a>
+        </div>
+
+        <form class="cta__form" onsubmit="return handleContact(event)" data-testid="contact-form" novalidate>
+          <label class="sr-only" for="cf-name">Name</label>
+          <input id="cf-name" name="name" type="text" placeholder="Your name" required data-testid="contact-name" />
+          <label class="sr-only" for="cf-email">Email</label>
+          <input id="cf-email" name="email" type="email" placeholder="Email address" required data-testid="contact-email" />
+          <button type="submit" class="btn btn--primary" data-testid="contact-submit">
+            Request Consultation
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </form>
+        <p id="form-status" class="form-status" role="status" aria-live="polite" data-testid="form-status"></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" data-testid="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <div class="brand">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M16 3l3 6 6.5.8-4.7 4.6 1.1 6.6L16 18l-5.9 3 1.1-6.6L6.5 9.8 13 9l3-6z" stroke="#e57119" stroke-width="2" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="brand__name">Custom<span>Church</span>Website</span>
+        </div>
+        <p>Web design, custom solutions and digital marketing — from Memphis, to the world.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Company</h4>
+        <a href="#methodologies">Methodologies</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <a href="tel:+19014149009">901-414-9009</a>
+        <a href="mailto:sales@itniche.com">sales@itniche.com</a>
+        <span>748 Crossover Ln, Memphis, TN</span>
+      </div>
+
+      <div class="footer__col">
+        <h4>Follow</h4>
+        <div class="footer__social">
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 014 0v4M12 11v6"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 5.8c-.7.3-1.5.5-2.3.6a4 4 0 001.8-2.2 8 8 0 01-2.6 1A4 4 0 0012 8.5c0 .3 0 .6.1.9A11.4 11.4 0 013 4.7a4 4 0 001.2 5.3c-.6 0-1.2-.2-1.7-.5v.1a4 4 0 003.2 3.9c-.6.2-1.2.2-1.8.1a4 4 0 003.7 2.8A8 8 0 012 18.3 11.3 11.3 0 008.1 20c7.3 0 11.3-6 11.3-11.3v-.5A8 8 0 0022 5.8z"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> Custom Church Website. All rights reserved.</span>
+      <span>Made with clarity in Memphis.</span>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
