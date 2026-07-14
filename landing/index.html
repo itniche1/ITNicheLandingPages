@@ -49,85 +49,141 @@
   <main id="top">
     <!-- HERO -->
     <section class="hero" data-testid="hero-section">
+      <span class="hero__rail" aria-hidden="true">
+        Privacy&nbsp;·&nbsp;Policy&nbsp;·&nbsp;<b>MMXXV</b>&nbsp;·&nbsp;IT&nbsp;Niche
+      </span>
+
       <div class="container hero__grid">
         <div class="hero__copy reveal">
           <div class="eyebrow" data-testid="hero-eyebrow">
-            <span class="dot"></span> Privacy Policy · Effective now
+            <span class="dot"></span>
+            <span>Document · § 001</span>
+            <span class="eyebrow__sep">/</span>
+            <span>Last reviewed today</span>
           </div>
-          <h1 class="h1">
-            Your data,<br />
-            handled with<br />
-            <span class="accent">quiet integrity.</span>
+
+          <h1 class="h1 hero__title">
+            <span class="hero__line">We don't</span>
+            <span class="hero__line hero__line--strike">sell.</span>
+            <span class="hero__line">We don't</span>
+            <span class="hero__line hero__line--strike">spy.</span>
+            <span class="hero__line">We <span class="accent">build&nbsp;trust.</span></span>
           </h1>
+
           <p class="lede">
-            A clear, minimal summary of what we collect, why we collect it,
-            and the boundaries we never cross — from the web design team
-            behind Custom Church Website.
+            The privacy policy of Custom Church Website — written the way it's practiced.
+            Short, specific, and human.
           </p>
-          <div class="hero__meta">
-            <div class="meta">
-              <span class="meta__num">0</span>
-              <span class="meta__label">Data sold to third parties</span>
-            </div>
-            <div class="meta">
-              <span class="meta__num">100%</span>
-              <span class="meta__label">Anonymous analytics</span>
-            </div>
-            <div class="meta">
-              <span class="meta__num">1&nbsp;click</span>
-              <span class="meta__label">Unsubscribe from mailers</span>
-            </div>
+
+          <div class="hero__actions">
+            <a href="#policy" class="chip chip--primary" data-testid="hero-cta-read">
+              <span>Read the policy</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#principles" class="chip" data-testid="hero-cta-principles">
+              <span>See principles</span>
+            </a>
           </div>
         </div>
 
-        <!-- Infographic art -->
-        <div class="hero__art reveal" aria-hidden="true">
-          <svg viewBox="0 0 520 520" class="art">
-            <defs>
-              <linearGradient id="ringGrad" x1="0" x2="1" y1="0" y2="1">
-                <stop offset="0" stop-color="#e57119" stop-opacity=".9" />
-                <stop offset="1" stop-color="#e57119" stop-opacity=".15" />
-              </linearGradient>
-              <pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse">
-                <path d="M26 0H0V26" fill="none" stroke="#000" stroke-opacity=".06" stroke-width="1"/>
-              </pattern>
-            </defs>
-            <rect width="520" height="520" fill="url(#grid)"/>
-            <!-- Outer orbit -->
-            <circle cx="260" cy="260" r="210" fill="none" stroke="#000" stroke-opacity=".15" stroke-dasharray="2 6"/>
-            <circle cx="260" cy="260" r="160" fill="none" stroke="url(#ringGrad)" stroke-width="1.5"/>
-            <circle cx="260" cy="260" r="110" fill="none" stroke="#000" stroke-opacity=".2"/>
-            <!-- Center shield -->
-            <g transform="translate(260 260)">
-              <path d="M0 -80 L60 -55 L60 15 C60 55 30 78 0 90 C-30 78 -60 55 -60 15 L-60 -55 Z"
-                    fill="#fff" stroke="#000" stroke-width="1.6"/>
-              <path d="M-24 4 l16 16 l32 -34" fill="none" stroke="#e57119" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-            </g>
-            <!-- Nodes -->
-            <g class="node" transform="translate(260 50)">
-              <circle r="22" fill="#fff" stroke="#000" stroke-width="1.4"/>
-              <path d="M-8 -2v-4a8 8 0 0 1 16 0v4M-10 -2h20v12h-20z" fill="none" stroke="#e57119" stroke-width="1.6" stroke-linecap="round"/>
-            </g>
-            <g class="node" transform="translate(450 260)">
-              <circle r="22" fill="#fff" stroke="#000" stroke-width="1.4"/>
-              <path d="M-8 -8h16v16h-16z M-4 -4l8 8 M4 -4l-8 8" fill="none" stroke="#e57119" stroke-width="1.6" stroke-linecap="round"/>
-            </g>
-            <g class="node" transform="translate(260 470)">
-              <circle r="22" fill="#fff" stroke="#000" stroke-width="1.4"/>
-              <path d="M-9 0h18 M0 -9v18" fill="none" stroke="#e57119" stroke-width="1.6" stroke-linecap="round"/>
-            </g>
-            <g class="node" transform="translate(70 260)">
-              <circle r="22" fill="#fff" stroke="#000" stroke-width="1.4"/>
-              <path d="M-8 -6l8 6 8-6 M-8 6l8 -6 8 6" fill="none" stroke="#e57119" stroke-width="1.6" stroke-linecap="round"/>
-            </g>
-            <!-- Small ticks -->
-            <g fill="none" stroke="#000" stroke-opacity=".35" stroke-width="1">
-              <path d="M260 100 v 40"/>
-              <path d="M420 260 h -40"/>
-              <path d="M260 420 v -40"/>
-              <path d="M100 260 h 40"/>
-            </g>
-          </svg>
+        <!-- Control-panel infographic card -->
+        <aside class="hero__panel reveal" aria-hidden="true">
+          <div class="panel__head">
+            <span class="panel__tag">Trust · Snapshot</span>
+            <span class="panel__pulse"><i></i>Live</span>
+          </div>
+
+          <div class="panel__hero">
+            <svg viewBox="0 0 200 200" class="panel__shield">
+              <defs>
+                <pattern id="hexGrid" width="18" height="18" patternUnits="userSpaceOnUse">
+                  <path d="M18 0H0V18" fill="none" stroke="#000" stroke-opacity=".05" stroke-width="1"/>
+                </pattern>
+              </defs>
+              <rect width="200" height="200" fill="url(#hexGrid)"/>
+              <g transform="translate(100 100)">
+                <circle r="78" fill="none" stroke="#e57119" stroke-opacity=".2" stroke-dasharray="2 6"/>
+                <circle r="60" fill="none" stroke="#000" stroke-opacity=".15"/>
+                <path d="M0 -50 L38 -34 L38 8 C38 34 20 48 0 56 C-20 48 -38 34 -38 8 L-38 -34 Z"
+                      fill="#fff" stroke="#000" stroke-width="1.5"/>
+                <path d="M-14 4 l10 10 l20 -22" fill="none" stroke="#e57119" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+            </svg>
+            <div class="panel__hero-copy">
+              <span class="panel__hero-num">§ 001</span>
+              <span class="panel__hero-label">Data handling protocol</span>
+            </div>
+          </div>
+
+          <div class="panel__grid">
+            <div class="panel__cell">
+              <div class="panel__cell-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg>
+              </div>
+              <span class="panel__cell-num">0</span>
+              <span class="panel__cell-label">Data sold</span>
+            </div>
+            <div class="panel__cell">
+              <div class="panel__cell-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
+              </div>
+              <span class="panel__cell-num">100<i>%</i></span>
+              <span class="panel__cell-label">Anonymous IPs</span>
+            </div>
+            <div class="panel__cell">
+              <div class="panel__cell-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4z"/><path d="M4 6l8 6 8-6"/></svg>
+              </div>
+              <span class="panel__cell-num">1<i>-click</i></span>
+              <span class="panel__cell-label">Unsubscribe</span>
+            </div>
+            <div class="panel__cell">
+              <div class="panel__cell-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v6c0 5-3 8-8 10-5-2-8-5-8-10V7z"/></svg>
+              </div>
+              <span class="panel__cell-num">∞</span>
+              <span class="panel__cell-label">Consent-first</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Horizontal data-flow strip -->
+      <div class="container">
+        <div class="flow reveal" data-testid="hero-flow" aria-label="Data flow overview">
+          <div class="flow__item">
+            <span class="flow__num">A</span>
+            <div class="flow__text">
+              <strong>You share</strong>
+              <em>Name · email · request</em>
+            </div>
+          </div>
+          <span class="flow__arrow" aria-hidden="true">
+            <svg viewBox="0 0 60 12" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+              <path d="M0 6h54" stroke-dasharray="2 4"/>
+              <path d="M50 2l6 4-6 4"/>
+            </svg>
+          </span>
+          <div class="flow__item">
+            <span class="flow__num">B</span>
+            <div class="flow__text">
+              <strong>We protect</strong>
+              <em>Quality · integrity · limits</em>
+            </div>
+          </div>
+          <span class="flow__arrow" aria-hidden="true">
+            <svg viewBox="0 0 60 12" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+              <path d="M0 6h54" stroke-dasharray="2 4"/>
+              <path d="M50 2l6 4-6 4"/>
+            </svg>
+          </span>
+          <div class="flow__item">
+            <span class="flow__num">C</span>
+            <div class="flow__text">
+              <strong>You control</strong>
+              <em>Correct · opt-out · anytime</em>
+            </div>
+          </div>
         </div>
       </div>
 
