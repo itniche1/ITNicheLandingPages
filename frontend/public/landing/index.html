@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b0b0b" />
+
+    <title>Studio Joviant — A Deliberate Process for Building Digital Homes</title>
+    <meta
+      name="description"
+      content="A minimal, editorial studio building websites, custom solutions and digital marketing systems for small businesses. See the four-step process behind every project."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="./" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Studio Joviant — A Deliberate Process" />
+    <meta
+      property="og:description"
+      content="Web design, custom solutions and digital marketing — built through a proven four-step process."
+    />
+
+    <!-- Fonts: Lato (primary) + Fraunces (editorial display accent) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-theme="dark">
+    <!-- Grain overlay -->
+    <div class="grain" aria-hidden="true"></div>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader" aria-hidden="true">
+      <div class="preloader__inner">
+        <div class="preloader__mark">
+          <span>S</span><span>J</span>
+        </div>
+        <div class="preloader__bar"><span></span></div>
+        <div class="preloader__count"><span id="preCount">0</span><em>%</em></div>
+      </div>
+    </div>
+
+    <!-- Nav -->
+    <header class="nav" data-testid="site-nav">
+      <a href="#top" class="nav__brand" data-testid="brand-link" aria-label="Studio Joviant">
+        <svg viewBox="0 0 40 40" width="26" height="26" aria-hidden="true">
+          <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.2" />
+          <path d="M12 20 L20 12 L28 20 L20 28 Z" fill="currentColor" />
+        </svg>
+        <span>Studio<em>/</em>Joviant</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#process" data-testid="nav-process">Process</a>
+        <a href="#manifesto" data-testid="nav-manifesto">Manifesto</a>
+        <a href="#numbers" data-testid="nav-numbers">Numbers</a>
+        <a href="#terms" data-testid="nav-terms">Terms</a>
+      </nav>
+      <a href="#cta" class="nav__cta" data-testid="nav-cta">
+        <span>Request a quote</span>
+        <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+          <path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </header>
+
+    <main id="top">
+      <!-- ================= HERO ================= -->
+      <section class="hero" aria-label="Hero">
+        <div class="hero__meta">
+          <span class="dot" aria-hidden="true"></span>
+          <span data-testid="hero-availability">Currently accepting 3 projects · Q1</span>
+        </div>
+
+        <h1 class="hero__title" data-testid="hero-title">
+          <span class="line"><span class="line__inner">We build</span></span>
+          <span class="line"><span class="line__inner">
+            <em class="serif">digital&nbsp;homes</em>
+          </span></span>
+          <span class="line"><span class="line__inner">for small businesses</span></span>
+          <span class="line"><span class="line__inner">who refuse&nbsp;to look ordinary.</span></span>
+        </h1>
+
+        <div class="hero__lower">
+          <p class="hero__lede" data-testid="hero-lede">
+            A small studio for <b>web design</b>, <b>custom solutions</b> and <b>digital marketing</b> —
+            delivered through a deliberate, four-step process. No templates. No stock photos. No noise.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#cta" data-testid="hero-cta-primary">
+              <span>Get started</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#process" data-testid="hero-cta-secondary">
+              See the process
+            </a>
+          </div>
+        </div>
+
+        <!-- Kinetic hero visual: line-art infographic orb + orbiting labels -->
+        <div class="hero__stage" aria-hidden="true">
+          <div class="orb" data-parallax="0.15">
+            <svg viewBox="0 0 600 600" class="orb__svg">
+              <defs>
+                <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#e57119" stop-opacity="0.55"/>
+                  <stop offset="60%" stop-color="#e57119" stop-opacity="0.05"/>
+                  <stop offset="100%" stop-color="#e57119" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+              <circle cx="300" cy="300" r="290" fill="url(#glow)"/>
+              <g fill="none" stroke="#ffffff" stroke-width="0.6" opacity="0.35">
+                <circle cx="300" cy="300" r="120"/>
+                <circle cx="300" cy="300" r="180"/>
+                <circle cx="300" cy="300" r="240"/>
+                <circle cx="300" cy="300" r="290"/>
+              </g>
+              <g class="orb__ring" stroke="#e57119" stroke-width="1" fill="none">
+                <ellipse cx="300" cy="300" rx="270" ry="90"/>
+              </g>
+              <g class="orb__ring orb__ring--2" stroke="#ffffff" stroke-width="0.8" fill="none" opacity="0.6">
+                <ellipse cx="300" cy="300" rx="250" ry="70"/>
+              </g>
+              <g class="orb__ticks" stroke="#ffffff" opacity="0.35">
+                <!-- generated ticks -->
+              </g>
+              <text x="300" y="308" text-anchor="middle" font-family="Fraunces" font-size="120" font-weight="300" fill="#ffffff" opacity="0.92">01</text>
+              <text x="300" y="360" text-anchor="middle" font-family="Lato" font-size="14" letter-spacing="6" fill="#e57119">— A PROCESS —</text>
+            </svg>
+
+            <span class="orb__chip orb__chip--1"><i></i>Discovery</span>
+            <span class="orb__chip orb__chip--2"><i></i>Design</span>
+            <span class="orb__chip orb__chip--3"><i></i>Build</span>
+            <span class="orb__chip orb__chip--4"><i></i>Launch</span>
+          </div>
+        </div>
+
+        <!-- corner marks -->
+        <span class="corner corner--tl"></span>
+        <span class="corner corner--tr"></span>
+        <span class="corner corner--bl"></span>
+        <span class="corner corner--br"></span>
+
+        <!-- scroll cue -->
+        <div class="hero__scroll" aria-hidden="true">
+          <span>Scroll</span>
+          <svg viewBox="0 0 24 24" width="14" height="14"><path d="M12 4v14m0 0l-6-6m6 6l6-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+      </section>
+
+      <!-- ================= MARQUEE ================= -->
+      <section class="marquee" aria-hidden="true">
+        <div class="marquee__track" id="marqueeTrack">
+          <span>Web Design</span><b>✳</b>
+          <span>Custom Solutions</span><b>✳</b>
+          <span>Digital Marketing</span><b>✳</b>
+          <span class="marquee__accent">Free Mock-up</span><b>✳</b>
+          <span>Small Business</span><b>✳</b>
+          <span>Brand Systems</span><b>✳</b>
+          <span>Since 2010</span><b>✳</b>
+        </div>
+      </section>
+
+      <!-- ================= INTRO / KICKER ================= -->
+      <section class="intro" aria-label="Intro">
+        <div class="intro__grid">
+          <div class="intro__eyebrow">
+            <span class="tag" data-testid="intro-tag">A studio, not a factory</span>
+          </div>
+          <h2 class="intro__title" data-reveal>
+            Every project we take on is <em class="serif">custom designed</em> and hand-built —
+            so we developed a deliberate process to keep clients close at every stage.
+          </h2>
+          <div class="intro__meta">
+            <div><span>Est.</span><b>2010</b></div>
+            <div><span>Sites shipped</span><b>240+</b></div>
+            <div><span>Avg. build</span><b>~30 days</b></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= MANIFESTO (numbered chapters) ================= -->
+      <section class="manifesto" id="manifesto" aria-label="Manifesto">
+        <div class="section__head">
+          <span class="section__kicker" data-testid="manifesto-kicker">— Manifesto</span>
+          <h2 class="section__title" data-reveal>
+            Four beliefs<br/><em class="serif">that shape every build.</em>
+          </h2>
+        </div>
+
+        <ol class="chapters" data-testid="manifesto-list">
+          <li class="chapter" data-reveal>
+            <div class="chapter__no"><span class="serif">01</span></div>
+            <div class="chapter__body">
+              <h3>Design taste is a <em class="serif">deliverable</em>.</h3>
+              <p>Colour, type and rhythm are decided together — before a single line of code. Drafts land within four days of receiving your brand materials.</p>
+            </div>
+          </li>
+          <li class="chapter" data-reveal>
+            <div class="chapter__no"><span class="serif">02</span></div>
+            <div class="chapter__body">
+              <h3>Every client gets a <em class="serif">project manager</em>.</h3>
+              <p>Not a shared inbox. One human, from kickoff to launch, who oversees the build and keeps you in the loop weekly.</p>
+            </div>
+          </li>
+          <li class="chapter" data-reveal>
+            <div class="chapter__no"><span class="serif">03</span></div>
+            <div class="chapter__body">
+              <h3>Transparency, on <em class="serif">rails</em>.</h3>
+              <p>All work is tracked in Pixel Manager. Open a ticket, escalate a request, or watch the build progress — any time, no meetings required.</p>
+            </div>
+          </li>
+          <li class="chapter" data-reveal>
+            <div class="chapter__no"><span class="serif">04</span></div>
+            <div class="chapter__body">
+              <h3>Ship in a <em class="serif">month</em>, not a quarter.</h3>
+              <p>Small teams, fixed scope, honest timelines. Typical projects go live within thirty days of kickoff — production quality, no shortcuts.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ================= PROCESS TIMELINE ================= -->
+      <section class="process" id="process" aria-label="Process">
+        <div class="section__head">
+          <span class="section__kicker">— The Process</span>
+          <h2 class="section__title" data-reveal>
+            From deposit to <em class="serif">launch day</em>,<br/>
+            in four deliberate steps.
+          </h2>
+          <p class="section__sub" data-reveal>Simple to sign up. Fill a Requirement Gathering Document (RGD), or call us. That’s day one.</p>
+        </div>
+
+        <div class="steps" data-testid="process-steps">
+          <!-- Step 01 -->
+          <article class="step" data-reveal>
+            <header>
+              <span class="step__no">01</span>
+              <span class="step__tag">Day 1</span>
+            </header>
+            <div class="step__art" aria-hidden="true">
+              <svg viewBox="0 0 200 140" width="100%" height="100%">
+                <rect x="30" y="20" width="140" height="100" rx="4" fill="none" stroke="currentColor" stroke-width="1.2"/>
+                <line x1="46" y1="42" x2="126" y2="42" stroke="currentColor" stroke-width="1.2"/>
+                <line x1="46" y1="58" x2="150" y2="58" stroke="currentColor" stroke-width="1.2"/>
+                <line x1="46" y1="74" x2="110" y2="74" stroke="currentColor" stroke-width="1.2"/>
+                <line x1="46" y1="90" x2="140" y2="90" stroke="currentColor" stroke-width="1.2"/>
+                <circle cx="152" cy="102" r="10" fill="#e57119"/>
+                <path d="M148 102l3 3 6-6" stroke="#0b0b0b" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Requirement Gathering</h3>
+            <p>Fill the RGD (or call). On receipt of a 50% deposit we assign your dedicated project manager.</p>
+          </article>
+
+          <!-- Step 02 -->
+          <article class="step" data-reveal>
+            <header>
+              <span class="step__no">02</span>
+              <span class="step__tag">Within 4 days</span>
+            </header>
+            <div class="step__art" aria-hidden="true">
+              <svg viewBox="0 0 200 140" width="100%" height="100%">
+                <circle cx="70" cy="70" r="34" fill="none" stroke="currentColor" stroke-width="1.2"/>
+                <circle cx="120" cy="70" r="34" fill="none" stroke="#e57119" stroke-width="1.4"/>
+                <circle cx="95" cy="70" r="4" fill="#e57119"/>
+                <path d="M40 118 L160 118" stroke="currentColor" stroke-width="1.2"/>
+                <rect x="52" y="26" width="16" height="6" fill="#e57119"/>
+                <rect x="72" y="26" width="8" height="6" fill="none" stroke="currentColor" stroke-width="1"/>
+                <rect x="84" y="26" width="24" height="6" fill="none" stroke="currentColor" stroke-width="1"/>
+              </svg>
+            </div>
+            <h3>Design Drafts</h3>
+            <p>Your PM captures colour, style and taste. Design drafts land within four days of receiving brand materials.</p>
+          </article>
+
+          <!-- Step 03 -->
+          <article class="step" data-reveal>
+            <header>
+              <span class="step__no">03</span>
+              <span class="step__tag">Build phase</span>
+            </header>
+            <div class="step__art" aria-hidden="true">
+              <svg viewBox="0 0 200 140" width="100%" height="100%">
+                <path d="M30 90 L70 50 L110 80 L170 30" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                <circle cx="30" cy="90" r="3.5" fill="currentColor"/>
+                <circle cx="70" cy="50" r="3.5" fill="currentColor"/>
+                <circle cx="110" cy="80" r="3.5" fill="currentColor"/>
+                <circle cx="170" cy="30" r="5" fill="#e57119"/>
+                <line x1="20" y1="118" x2="180" y2="118" stroke="currentColor" stroke-width="1"/>
+                <text x="20" y="132" font-family="Lato" font-size="8" fill="currentColor" opacity="0.6">W1</text>
+                <text x="66" y="132" font-family="Lato" font-size="8" fill="currentColor" opacity="0.6">W2</text>
+                <text x="106" y="132" font-family="Lato" font-size="8" fill="currentColor" opacity="0.6">W3</text>
+                <text x="166" y="132" font-family="Lato" font-size="8" fill="currentColor" opacity="0.6">W4</text>
+              </svg>
+            </div>
+            <h3>Build &amp; Weekly Updates</h3>
+            <p>Our programming team builds to spec. You receive weekly progress updates via Pixel Manager, our project system.</p>
+          </article>
+
+          <!-- Step 04 -->
+          <article class="step" data-reveal>
+            <header>
+              <span class="step__no">04</span>
+              <span class="step__tag">~ 30 days</span>
+            </header>
+            <div class="step__art" aria-hidden="true">
+              <svg viewBox="0 0 200 140" width="100%" height="100%">
+                <path d="M100 20 L118 60 L160 66 L128 92 L138 132 L100 110 L62 132 L72 92 L40 66 L82 60 Z"
+                      fill="none" stroke="#e57119" stroke-width="1.4" stroke-linejoin="round"/>
+                <circle cx="100" cy="76" r="6" fill="currentColor"/>
+                <path d="M20 132 L180 132" stroke="currentColor" stroke-width="1"/>
+              </svg>
+            </div>
+            <h3>Launch</h3>
+            <p>Final 50% is due on satisfactory delivery. Tickets stay open — escalate anything, any time.</p>
+          </article>
+        </div>
+
+        <!-- Connecting rail (desktop) -->
+        <div class="steps__rail" aria-hidden="true">
+          <span class="steps__rail-fill" id="railFill"></span>
+        </div>
+      </section>
+
+      <!-- ================= NUMBERS ================= -->
+      <section class="numbers" id="numbers" aria-label="By the numbers">
+        <div class="section__head">
+          <span class="section__kicker">— By the numbers</span>
+          <h2 class="section__title" data-reveal>
+            A studio measured in <em class="serif">outcomes</em>,<br/>not opinions.
+          </h2>
+        </div>
+
+        <div class="stats" data-testid="stats-grid">
+          <div class="stat" data-reveal>
+            <span class="stat__value" data-count="4">0</span>
+            <span class="stat__unit">days</span>
+            <span class="stat__label">to first design draft, from brand handoff.</span>
+          </div>
+          <div class="stat" data-reveal>
+            <span class="stat__value" data-count="30">0</span>
+            <span class="stat__unit">days</span>
+            <span class="stat__label">typical project completion, kickoff to launch.</span>
+          </div>
+          <div class="stat" data-reveal>
+            <span class="stat__value stat__value--split"><b data-count="50">0</b><i>/</i><b data-count="50">0</b></span>
+            <span class="stat__unit">%</span>
+            <span class="stat__label">payment split — 50% deposit, 50% on delivery.</span>
+          </div>
+          <div class="stat" data-reveal>
+            <span class="stat__value serif" data-testid="stat-freebie">Free</span>
+            <span class="stat__unit">mock-up</span>
+            <span class="stat__label">a real preview of your new site — no strings attached.</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PAYMENT TERMS ================= -->
+      <section class="terms" id="terms" aria-label="Payment terms">
+        <div class="terms__grid">
+          <div class="terms__left" data-reveal>
+            <span class="section__kicker">— Payment</span>
+            <h2 class="terms__title">
+              Simple, <em class="serif">split&nbsp;in&nbsp;half</em>.
+            </h2>
+            <p class="terms__lede">We accept a 50% deposit of your selected package prior to commencement. The remaining 50% is due upon satisfactory delivery of a working site.</p>
+          </div>
+
+          <div class="terms__viz" data-reveal aria-hidden="true">
+            <svg viewBox="0 0 400 300" width="100%" height="100%">
+              <defs>
+                <pattern id="dots" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+                  <circle cx="1" cy="1" r="0.8" fill="currentColor" opacity="0.35"/>
+                </pattern>
+              </defs>
+              <rect x="0" y="0" width="400" height="300" fill="url(#dots)"/>
+              <rect x="40" y="60" width="150" height="180" rx="6" fill="#e57119"/>
+              <rect x="210" y="60" width="150" height="180" rx="6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-dasharray="3 5"/>
+              <text x="115" y="160" text-anchor="middle" font-family="Fraunces" font-size="52" fill="#0b0b0b">50%</text>
+              <text x="115" y="188" text-anchor="middle" font-family="Lato" font-size="11" letter-spacing="3" fill="#0b0b0b">DEPOSIT</text>
+              <text x="285" y="160" text-anchor="middle" font-family="Fraunces" font-size="52" fill="currentColor">50%</text>
+              <text x="285" y="188" text-anchor="middle" font-family="Lato" font-size="11" letter-spacing="3" fill="currentColor" opacity="0.7">ON DELIVERY</text>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= EDITORIAL LINE ================= -->
+      <section class="editorial" aria-hidden="true">
+        <div class="editorial__line">
+          <span>Get your</span>
+          <em class="serif">FREE mock-up</em>
+          <span>for your new website —</span>
+          <em class="serif">no strings attached.</em>
+        </div>
+      </section>
+
+      <!-- ================= CTA ================= -->
+      <section class="cta" id="cta" aria-label="Get started">
+        <div class="cta__inner">
+          <span class="section__kicker">— Ready when you are</span>
+          <h2 class="cta__title" data-reveal>
+            Let’s build something<br/>
+            <em class="serif">worth&nbsp;visiting</em>.
+          </h2>
+          <p class="cta__lede" data-reveal>
+            Tell us about your project. We’ll ship a free mock-up — no obligations — usually within four days.
+          </p>
+
+          <form class="cta__form" data-testid="cta-form" onsubmit="return handleCtaSubmit(event)">
+            <label class="cta__field">
+              <span>Name</span>
+              <input type="text" name="name" required data-testid="cta-name" placeholder="Your full name"/>
+            </label>
+            <label class="cta__field">
+              <span>Email</span>
+              <input type="email" name="email" required data-testid="cta-email" placeholder="you@company.com"/>
+            </label>
+            <label class="cta__field cta__field--wide">
+              <span>Project</span>
+              <input type="text" name="project" data-testid="cta-project" placeholder="A one-line brief"/>
+            </label>
+            <button type="submit" class="btn btn--primary btn--big" data-testid="cta-submit">
+              <span>Request a quote</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <p class="cta__note" id="ctaNote" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <!-- huge outlined typographic accent -->
+        <div class="cta__mega" aria-hidden="true">
+          <span>GET&nbsp;STARTED</span>
+          <span class="cta__mega--outline">GET&nbsp;STARTED</span>
+        </div>
+      </section>
+
+      <!-- ================= FOOTER ================= -->
+      <footer class="footer" aria-label="Footer">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <div class="footer__logo">
+              <svg viewBox="0 0 40 40" width="22" height="22" aria-hidden="true">
+                <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M12 20 L20 12 L28 20 L20 28 Z" fill="currentColor"/>
+              </svg>
+              <span>Studio<em>/</em>Joviant</span>
+            </div>
+            <p>A small studio building websites, custom solutions and digital marketing systems for small businesses.</p>
+          </div>
+
+          <div class="footer__col">
+            <h4>Studio</h4>
+            <a href="#process">Process</a>
+            <a href="#manifesto">Manifesto</a>
+            <a href="#numbers">Numbers</a>
+            <a href="#terms">Terms</a>
+          </div>
+
+          <div class="footer__col">
+            <h4>Contact</h4>
+            <a href="#cta">Request a quote</a>
+            <a href="mailto:hello@joviant.studio">hello@joviant.studio</a>
+          </div>
+
+          <div class="footer__col">
+            <h4>Local</h4>
+            <p><span id="clock">—</span></p>
+            <p class="muted">© <span id="year"></span> Studio Joviant.<br/>All rights reserved.</p>
+          </div>
+        </div>
+
+        <div class="footer__mega" aria-hidden="true">JOVIANT</div>
+      </footer>
+    </main>
+
+    <!-- Custom cursor -->
+    <div class="cursor" id="cursor" aria-hidden="true">
+      <span class="cursor__dot"></span>
+      <span class="cursor__ring"></span>
+    </div>
+
+    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="./script.js" defer></script>
+  </body>
+</html>
