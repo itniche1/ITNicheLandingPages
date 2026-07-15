@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <title>Process — e-Church · Custom Church Website Design</title>
+  <meta name="description" content="A proven, transparent process for building custom church websites. From requirement gathering to launch — in as little as one month." />
+  <meta name="keywords" content="church website, custom church website, church design process, e-church, digital ministry" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Process — e-Church" />
+  <meta property="og:description" content="A simple, proven process for custom church websites. Free mock-up. No strings attached." />
+  <meta property="og:type" content="website" />
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor__dot"></div>
+    <div class="cursor__ring"></div>
+  </div>
+
+  <!-- Loader -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <span class="loader__label"><em>e-</em>Church</span>
+      <div class="loader__bar"><div class="loader__fill"></div></div>
+      <span class="loader__count" id="loaderCount">000</span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav" data-nav>
+    <a href="#top" class="nav__brand" data-magnetic>
+      <svg class="nav__mark" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M12 2 L12 22 M2 12 L22 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.6"/>
+      </svg>
+      <span><em>e-</em>Church</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#process" class="nav__link">Process</a>
+      <a href="#chapters" class="nav__link">Chapters</a>
+      <a href="#terms" class="nav__link">Terms</a>
+      <a href="#faq" class="nav__link">FAQ</a>
+    </nav>
+    <a href="https://customchurchwebsite.com/getstarted.php" class="nav__cta" data-magnetic data-testid="nav-contact-btn">
+      <span>Contact Us</span>
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" data-scroll-section>
+      <div class="hero__meta">
+        <span class="tag"><i></i>Chapter 001 — The Process</span>
+        <span class="hero__coords">51.5074° N &nbsp;/&nbsp; 0.1278° W</span>
+      </div>
+
+      <div class="hero__stage">
+        <!-- floating decorative SVGs -->
+        <svg class="float float--a" viewBox="0 0 200 200" aria-hidden="true">
+          <circle cx="100" cy="100" r="98" fill="none" stroke="currentColor" stroke-width="1"/>
+          <circle cx="100" cy="100" r="70" fill="none" stroke="currentColor" stroke-width="1"/>
+          <circle cx="100" cy="100" r="42" fill="none" stroke="currentColor" stroke-width="1"/>
+          <line x1="100" y1="2" x2="100" y2="198" stroke="currentColor" stroke-width="1"/>
+          <line x1="2" y1="100" x2="198" y2="100" stroke="currentColor" stroke-width="1"/>
+        </svg>
+        <svg class="float float--b" viewBox="0 0 200 200" aria-hidden="true">
+          <polygon points="100,10 190,180 10,180" fill="none" stroke="currentColor" stroke-width="1.4"/>
+          <polygon points="100,50 160,160 40,160" fill="none" stroke="currentColor" stroke-width="1"/>
+        </svg>
+        <svg class="float float--c" viewBox="0 0 200 200" aria-hidden="true">
+          <rect x="20" y="20" width="160" height="160" fill="none" stroke="currentColor" stroke-width="1"/>
+          <rect x="45" y="45" width="110" height="110" fill="none" stroke="currentColor" stroke-width="1" transform="rotate(45 100 100)"/>
+        </svg>
+
+        <h1 class="hero__title" data-reveal>
+          <span class="line"><span>The&nbsp;</span></span>
+          <span class="line"><span><em>Process</em> of</span></span>
+          <span class="line"><span>building your</span></span>
+          <span class="line"><span>digital ministry.</span></span>
+        </h1>
+
+        <div class="hero__lead" data-reveal-fade>
+          <p>
+            Get your <strong>FREE mock-up</strong> for your new website.
+            <span class="lead__strike">No Strings Attached.</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="hero__foot">
+        <div class="hero__scroll">
+          <span>Scroll</span>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4v16M6 14l6 6 6-6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="hero__specs" data-reveal-fade>
+          <div><span>01</span><p>Requirement<br/>Gathering</p></div>
+          <div><span>02</span><p>Design<br/>Draft</p></div>
+          <div><span>03</span><p>Programming<br/>Sprint</p></div>
+          <div><span>04</span><p>Launch<br/>&amp; Ship</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Custom design</span><i class="dot"></i>
+        <span>Ministry-first</span><i class="dot"></i>
+        <span>Free mock-up</span><i class="dot"></i>
+        <span>15 modules</span><i class="dot"></i>
+        <span>Weekly updates</span><i class="dot"></i>
+        <span>No strings attached</span><i class="dot"></i>
+        <span>Custom design</span><i class="dot"></i>
+        <span>Ministry-first</span><i class="dot"></i>
+        <span>Free mock-up</span><i class="dot"></i>
+        <span>15 modules</span><i class="dot"></i>
+        <span>Weekly updates</span><i class="dot"></i>
+        <span>No strings attached</span><i class="dot"></i>
+      </div>
+    </section>
+
+    <!-- INTRO / MANIFESTO -->
+    <section class="intro" id="process" data-scroll-section>
+      <div class="intro__grid">
+        <div class="intro__label" data-reveal-fade>
+          <span class="tag tag--dark"><i></i>Who we are</span>
+        </div>
+        <div class="intro__body">
+          <p class="intro__text" data-reveal-lines>
+            e-Church is the creation of a group of <em>pastors, ministry leaders, and church planters</em> —
+            committed to building a great product and passionate about excellence.
+          </p>
+          <p class="intro__text intro__text--muted" data-reveal-lines>
+            Joviant is committed to providing the best system for churches to manage their website,
+            interact with guests and members, gather new visitors, and <strong>spread the gospel</strong>.
+          </p>
+        </div>
+        <div class="intro__stat" data-reveal-fade>
+          <span class="intro__stat-num">15</span>
+          <span class="intro__stat-lbl">Functional modules included, out of the box</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTERS / TIMELINE -->
+    <section class="chapters" id="chapters" data-scroll-section>
+      <header class="chapters__head">
+        <span class="tag" data-reveal-fade><i></i>Our Process — 04 chapters</span>
+        <h2 class="chapters__title" data-reveal-lines>
+          A proven <em>process,</em> built to keep you<br/>involved at every stage.
+        </h2>
+      </header>
+
+      <ol class="chapters__list">
+        <li class="chapter" data-chapter>
+          <div class="chapter__num"><span>01</span></div>
+          <div class="chapter__body">
+            <h3>Kick-off &amp; Project Manager</h3>
+            <p>Upon receipt of an initial payment, e-Church will assign the client a dedicated <strong>project manager</strong> who will communicate with the client and oversee the project end-to-end.</p>
+          </div>
+          <div class="chapter__art" aria-hidden="true">
+            <svg viewBox="0 0 200 200">
+              <circle cx="100" cy="100" r="70" fill="none" stroke="currentColor" stroke-width="1.4"/>
+              <circle cx="100" cy="100" r="8" fill="currentColor"/>
+              <path d="M100 30 L100 60 M100 140 L100 170 M30 100 L60 100 M140 100 L170 100" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+              <circle cx="100" cy="100" r="30" fill="none" stroke="currentColor" stroke-width="1.4" stroke-dasharray="4 4"/>
+            </svg>
+          </div>
+        </li>
+
+        <li class="chapter" data-chapter>
+          <div class="chapter__num"><span>02</span></div>
+          <div class="chapter__body">
+            <h3>Design taste &amp; drafts</h3>
+            <p>Your project manager gets a feel of your <strong>design taste</strong> — colour preferences and style. Design drafts are furnished within <strong>4 days</strong> from receipt of necessary materials like logos.</p>
+          </div>
+          <div class="chapter__art" aria-hidden="true">
+            <svg viewBox="0 0 200 200">
+              <rect x="30" y="40" width="140" height="120" fill="none" stroke="currentColor" stroke-width="1.4"/>
+              <rect x="45" y="55" width="50" height="30" fill="none" stroke="currentColor" stroke-width="1.2"/>
+              <rect x="105" y="55" width="50" height="30" fill="none" stroke="currentColor" stroke-width="1.2"/>
+              <rect x="45" y="95" width="110" height="10" fill="currentColor"/>
+              <rect x="45" y="115" width="80" height="6" fill="none" stroke="currentColor" stroke-width="1"/>
+              <rect x="45" y="128" width="60" height="6" fill="none" stroke="currentColor" stroke-width="1"/>
+            </svg>
+          </div>
+        </li>
+
+        <li class="chapter" data-chapter>
+          <div class="chapter__num"><span>03</span></div>
+          <div class="chapter__body">
+            <h3>Programming sprint</h3>
+            <p>Our programming team builds your site according to specifications and features requested. You receive <strong>weekly updates</strong> through our project management system, <em>Pixel Manager</em>.</p>
+          </div>
+          <div class="chapter__art" aria-hidden="true">
+            <svg viewBox="0 0 200 200">
+              <path d="M60 70 L30 100 L60 130" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M140 70 L170 100 L140 130" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="115" y1="55" x2="85" y2="145" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </li>
+
+        <li class="chapter" data-chapter>
+          <div class="chapter__num"><span>04</span></div>
+          <div class="chapter__body">
+            <h3>Tickets, escalation &amp; launch</h3>
+            <p>Tickets can be started using Pixel Manager at any time and escalated with reason. Project completion time is typically within <strong>1 month</strong>.</p>
+          </div>
+          <div class="chapter__art" aria-hidden="true">
+            <svg viewBox="0 0 200 200">
+              <path d="M50 130 C 80 60, 120 60, 150 130" fill="none" stroke="currentColor" stroke-width="1.6"/>
+              <circle cx="150" cy="130" r="10" fill="currentColor"/>
+              <path d="M40 155 L160 155" stroke="currentColor" stroke-width="1.4" stroke-dasharray="4 5"/>
+              <path d="M148 118 L160 122 L156 134" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- STATS INFOGRAPHIC -->
+    <section class="stats" data-scroll-section>
+      <div class="stats__grid">
+        <div class="stat" data-stat data-target="4" data-suffix=" days">
+          <span class="stat__num">0<span data-count>0</span><small> days</small></span>
+          <p>To furnish design drafts once materials are received.</p>
+        </div>
+        <div class="stat" data-stat data-target="1" data-suffix=" month">
+          <span class="stat__num"><span data-count>0</span><small> month</small></span>
+          <p>Typical completion time for a full custom build.</p>
+        </div>
+        <div class="stat" data-stat data-target="50" data-suffix="%">
+          <span class="stat__num"><span data-count>0</span><small>%</small></span>
+          <p>Deposit to commence. Balance due on satisfactory delivery.</p>
+        </div>
+        <div class="stat" data-stat data-target="15" data-suffix="">
+          <span class="stat__num"><span data-count>0</span><small> modules</small></span>
+          <p>Functional modules included in every custom church site.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TERMS / PAYMENT -->
+    <section class="terms" id="terms" data-scroll-section>
+      <header class="terms__head">
+        <span class="tag" data-reveal-fade><i></i>Chapter 05 — Payment Terms</span>
+        <h2 data-reveal-lines>
+          Fair, simple, <em>50 / 50.</em><br/>
+          No hidden clauses.
+        </h2>
+      </header>
+
+      <div class="split">
+        <div class="split__row" data-reveal-fade>
+          <div class="split__label"><span class="mono">01 —</span> Deposit</div>
+          <div class="split__bar"><div class="split__fill" data-fill="50"></div></div>
+          <div class="split__pct">50%</div>
+        </div>
+        <p class="split__note" data-reveal-fade>Accepted prior to commencement of any design or development work.</p>
+
+        <div class="split__row" data-reveal-fade>
+          <div class="split__label"><span class="mono">02 —</span> On delivery</div>
+          <div class="split__bar"><div class="split__fill" data-fill="50"></div></div>
+          <div class="split__pct">50%</div>
+        </div>
+        <p class="split__note" data-reveal-fade>Due upon satisfactory delivery of a working site.</p>
+      </div>
+    </section>
+
+    <!-- SIGN-UP / FAQ MICRO -->
+    <section class="signup" id="faq" data-scroll-section>
+      <div class="signup__grid">
+        <div class="signup__col">
+          <span class="tag" data-reveal-fade><i></i>How to begin</span>
+          <h2 data-reveal-lines>A simple, easy way to <em>sign up.</em></h2>
+          <p class="signup__lead" data-reveal-fade>Just call us, or fill a <strong>Requirement Gathering Document (RGD)</strong>. We take it from there.</p>
+        </div>
+        <ul class="signup__steps">
+          <li data-reveal-fade><span class="mono">A.</span> Call our team &amp; share your vision.</li>
+          <li data-reveal-fade><span class="mono">B.</span> Fill the Requirement Gathering Document.</li>
+          <li data-reveal-fade><span class="mono">C.</span> Receive your free, no-obligation sample.</li>
+          <li data-reveal-fade><span class="mono">D.</span> Approve, deposit &amp; kick-off in 24h.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" data-scroll-section>
+      <div class="cta__inner">
+        <span class="tag tag--light" data-reveal-fade><i></i>Ready when you are</span>
+        <h2 class="cta__title" data-reveal-lines>
+          Get your <em>FREE</em> mock-up,<br/>absolutely <span class="cta__underline">no obligations.</span>
+        </h2>
+        <a href="https://customchurchwebsite.com/getstarted.php" class="btn btn--primary btn--xl" data-magnetic data-testid="cta-contact-btn">
+          <span>Contact Us</span>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <p class="cta__foot" data-reveal-fade>Sample site delivered within 4 days. No credit card. No commitment.</p>
+      </div>
+
+      <!-- decorative cross grid -->
+      <svg class="cta__deco" viewBox="0 0 600 600" aria-hidden="true">
+        <defs>
+          <pattern id="p" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M20 12 v16 M12 20 h16" stroke="currentColor" stroke-width="1" opacity="0.35"/>
+          </pattern>
+        </defs>
+        <rect width="600" height="600" fill="url(#p)"/>
+      </svg>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="foot">
+      <div class="foot__top">
+        <div class="foot__brand">
+          <span class="foot__logo"><em>e-</em>Church</span>
+          <p>Custom church websites, purpose-built for ministry.</p>
+        </div>
+        <div class="foot__cols">
+          <div>
+            <h4>Explore</h4>
+            <a href="#process">Process</a>
+            <a href="#chapters">Chapters</a>
+            <a href="#terms">Terms</a>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <a href="https://customchurchwebsite.com/index.php">Home</a>
+            <a href="https://customchurchwebsite.com/getstarted.php">Get Started</a>
+          </div>
+          <div>
+            <h4>Say hello</h4>
+            <a href="https://customchurchwebsite.com/getstarted.php">Contact Us →</a>
+          </div>
+        </div>
+      </div>
+      <div class="foot__bottom">
+        <span>© <span id="year"></span> e-Church · Joviant</span>
+        <span class="mono">Made with intention.</span>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Libraries: vanilla JS via CDN -->
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
