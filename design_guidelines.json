@@ -1,0 +1,107 @@
+{
+  "project": "Infographic-Style Terms of Use Landing Page",
+  "app_type": "landing_page",
+  "theme": "light",
+  "design_philosophy": "Legal document turned into Art. A premium, minimal, editorial presentation using high-contrast typography, structural grid lines, and infographic visual storytelling.",
+  "colors": {
+    "primary": "#e57119",
+    "secondary": "#000000",
+    "background": "#F9F9FA",
+    "surface": "#FFFFFF",
+    "border": "#E5E5E5",
+    "text_main": "#000000",
+    "text_muted": "#666666",
+    "rules": [
+      "Use #F9F9FA as the main canvas background to soften the contrast slightly.",
+      "Use #FFFFFF for cards, infographic containers, and bento boxes.",
+      "Use #000000 for all primary typography to maintain an authoritative editorial feel.",
+      "Use #e57119 (Orange) strictly for accents, key data points, hover states, and the primary CTA."
+    ]
+  },
+  "typography": {
+    "font_family": "Lato, sans-serif",
+    "weights": {
+      "light": 300,
+      "regular": 400,
+      "bold": 700,
+      "black": 900
+    },
+    "scale": {
+      "h1": "clamp(3rem, 8vw, 7rem)",
+      "h2": "clamp(2rem, 5vw, 4rem)",
+      "h3": "clamp(1.5rem, 3vw, 2rem)",
+      "body": "1.125rem",
+      "small": "0.875rem",
+      "massive_numbers": "clamp(5rem, 12vw, 10rem)"
+    },
+    "rules": [
+      "Swiss Brutalist Approach: Maximize the contrast within the Lato family. Use Lato Black (900) for massive section numbers and H1, paired with Lato Light (300) for body copy.",
+      "Never center align body paragraphs. Left align for readability.",
+      "Use uppercase with wide letter-spacing (tracking-[0.2em]) for overlines and labels.",
+      "Tight line-height (leading-none) for massive headings."
+    ]
+  },
+  "layout_and_grids": {
+    "system": "CSS Grid / Bento Grid blend.",
+    "container": "max-w-[1440px] mx-auto px-6 md:px-12",
+    "spacing": "Extremely generous padding (py-24, py-32) between major sections.",
+    "borders": "Expose the skeleton. Use 1px solid #E5E5E5 borders to separate rows and infographic bento items to create a technical, structured aesthetic."
+  },
+  "visual_enhancers": {
+    "imagery": "STRICTLY NO HUMANS OR PHOTOS. Use only abstract, geometric, or isometric line-art SVG illustrations.",
+    "icons": "Minimalist stroke-based icons (1.5px to 2px stroke width) in #000000 or #e57119.",
+    "surfaces": "Solid flat colors only. NO glassmorphism. NO drop shadows. Rely entirely on 1px crisp borders to define surfaces (Brutalist Infographic style)."
+  },
+  "motion": {
+    "libraries": [
+      "Lenis (via CDN for momentum smooth scroll)",
+      "GSAP (via CDN for timeline animations)",
+      "ScrollTrigger (via CDN for scroll-linked animations)"
+    ],
+    "hero_reveal": "Masked line-by-line text reveal. Wrap each line of the H1 in a CSS container with `overflow: hidden`. Use GSAP to animate the `y` property of the inner text from 100% to 0% with `power4.out` easing.",
+    "marquee": "A slow, elegant CSS or GSAP based marquee. Text: 'WEB DESIGN — CUSTOM SOLUTIONS — DIGITAL MARKETING'. Continuous seamless loop.",
+    "scroll_animations": "Infographic elements (progress bars, pie charts, timelines) MUST animate their values (width/height/dashoffset) from 0 to actual value when ScrollTrigger detects they enter the viewport.",
+    "parallax": "Subtle parallax on background SVG line-art elements. Move them on the Y axis slightly slower than the scroll speed."
+  },
+  "sections": [
+    {
+      "name": "Hero",
+      "design": "Minimalist. Massive 'TERMS OF USE' kinetic text. An abstract geometric SVG line-art illustration (representing 'digital solutions' or 'networks') placed asymmetrically in the background with a slow, continuous rotation.",
+      "motion": "Signature on-load moment: Masked line-by-line reveal of the title, followed by a fade-in of the geometric background."
+    },
+    {
+      "name": "Editorial Marquee",
+      "design": "Full viewport width. 1px solid border on top and bottom. Background: #000000, Text: #e57119."
+    },
+    {
+      "name": "Terms Manifesto (The Core)",
+      "design": "Restructured into Scannable Numbered Chapters. A 12-column CSS Grid layout.",
+      "structure": [
+        "Left Column (col-span-3): Massive sticky numbers (e.g., '01', '02') in Lato Black.",
+        "Middle/Right Column (col-span-9): Bento-style infographic cards.",
+        "Visuals: Replace standard legal paragraphs with stats, timelines, and line-art SVG icons.",
+        "Interactive: Provide a brief visual summary of the term, followed by an elegant '+' toggle (accordion) to reveal the dense legal text."
+      ]
+    },
+    {
+      "name": "CTA Section",
+      "design": "High impact. Solid #e57119 background. Massive #000000 typography. A sharp, pill-shaped or brutalist rectangular button with an arrow icon that translates right on hover.",
+      "motion": "The entire CTA background container scales up slightly (scale: 0.95 to 1) via ScrollTrigger as it enters the viewport."
+    }
+  ],
+  "accessibility_and_testing": {
+    "contrast": "Ensure #e57119 text is readable against white/black backgrounds (adjust font-weight to bold if necessary to pass WCAG AA).",
+    "test_ids": "All interactive elements MUST have `data-testid` attributes (e.g., `data-testid='accordion-term-1'`, `data-testid='cta-button'`)."
+  },
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "You are building a premium, award-winning HTML/CSS/JS single-page site in `/app/landing/`.",
+    "DO NOT USE REACT. DO NOT USE SHADCN. Everything must be Vanilla HTML, CSS, and Vanilla JS.",
+    "You may use Tailwind CSS via CDN for rapid utility classes, OR write pure CSS. Ensure layout matches the strict grid rules.",
+    "Include CDN links for Lenis, GSAP, and ScrollTrigger in the HTML `<head>`.",
+    "Initialize Lenis in your JS file immediately to ensure the entire page has a premium, weighted smooth scroll.",
+    "Embed inline SVGs for all illustrations. DO NOT use placeholder image URLs. Draw geometric nodes, lines, and abstract shapes using `<svg>` paths.",
+    "Never use human imagery or photos.",
+    "Ensure the header navigation does not have a completely transparent background if content scrolls under it (use solid white or black).",
+    "Maintain extreme optical alignment. Spacing should feel luxurious and deliberate."
+  ]
+}
