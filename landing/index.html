@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#e57119" />
+  <meta name="description" content="Terms of Use — IT Niche. A premium, transparent agreement for our web design, custom solutions, and digital marketing partnerships." />
+  <meta name="keywords" content="terms of use, IT Niche, web design, custom solutions, digital marketing" />
+  <title>Terms of Use — IT Niche · Web Design · Custom Solutions · Digital Marketing</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Motion libs (CDN) -->
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23e57119'/><text x='50%25' y='55%25' font-family='Lato,sans-serif' font-size='18' font-weight='900' fill='%23000' text-anchor='middle' dominant-baseline='middle'>N</text></svg>" />
+</head>
+<body>
+  <!-- Cursor dot -->
+  <div class="cursor-dot" id="cursor" aria-hidden="true"></div>
+
+  <!-- Progress bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <div class="preloader-mark">
+        <span class="pl-line" style="--i:1">TERMS</span>
+        <span class="pl-line" style="--i:2">OF</span>
+        <span class="pl-line" style="--i:3">USE</span>
+      </div>
+      <div class="preloader-count"><span id="preloaderCount">0</span><em>%</em></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav" data-testid="site-nav">
+    <div class="nav-inner">
+      <a href="#top" class="nav-logo" data-testid="nav-logo" aria-label="IT Niche home">
+        <span class="logo-mark">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M6 12h12M12 6v12" />
+          </svg>
+        </span>
+        <span class="logo-word">IT&nbsp;Niche<em>®</em></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#manifesto" data-testid="nav-manifesto">Manifesto</a>
+        <a href="#chapters" data-testid="nav-chapters">Chapters</a>
+        <a href="#trust" data-testid="nav-trust">Trust</a>
+        <a href="#cta" data-testid="nav-cta">Contact</a>
+      </nav>
+
+      <a href="#cta" class="nav-cta" data-testid="nav-cta-button">
+        Start a project
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M13 6l6 6-6 6" />
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" data-testid="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <!-- Abstract line-art network -->
+        <svg class="hero-svg" viewBox="0 0 800 800" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <pattern id="dotgrid" width="24" height="24" patternUnits="userSpaceOnUse">
+              <circle cx="1" cy="1" r="1" fill="#000" opacity="0.08" />
+            </pattern>
+          </defs>
+          <rect width="800" height="800" fill="url(#dotgrid)" />
+          <g class="hero-rotate" stroke="#000" stroke-width="1" fill="none" opacity="0.55">
+            <circle cx="400" cy="400" r="140" />
+            <circle cx="400" cy="400" r="220" />
+            <circle cx="400" cy="400" r="320" />
+            <circle cx="400" cy="400" r="6" fill="#e57119" stroke="none" />
+            <line x1="400" y1="80" x2="400" y2="720" />
+            <line x1="80" y1="400" x2="720" y2="400" />
+            <line x1="170" y1="170" x2="630" y2="630" />
+            <line x1="170" y1="630" x2="630" y2="170" />
+          </g>
+          <g class="hero-nodes" fill="#e57119">
+            <circle cx="260" cy="180" r="4" />
+            <circle cx="540" cy="260" r="4" />
+            <circle cx="620" cy="500" r="4" />
+            <circle cx="180" cy="560" r="4" />
+            <circle cx="400" cy="720" r="4" />
+          </g>
+        </svg>
+      </div>
+
+      <div class="hero-inner container">
+        <div class="hero-meta">
+          <span class="overline" data-reveal>Legal · v2.0 · Effective Now</span>
+          <span class="overline right" data-reveal>Memphis · 35°08'N · 89°58'W</span>
+        </div>
+
+        <h1 class="hero-title" data-testid="hero-title">
+          <span class="mask"><span class="line">Terms&nbsp;of</span></span>
+          <span class="mask"><span class="line">Use<em>,</em> made</span></span>
+          <span class="mask"><span class="line">radically <i>clear</i>.</span></span>
+        </h1>
+
+        <div class="hero-foot">
+          <p class="hero-lede" data-reveal>
+            A minimalist agreement for a maximalist partnership.
+            Web&nbsp;Design · Custom&nbsp;Solutions · Digital&nbsp;Marketing.
+          </p>
+          <div class="hero-actions">
+            <a href="#chapters" class="btn btn-primary" data-testid="hero-cta">
+              Read the chapters
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M6 13l6 6 6-6" /></svg>
+            </a>
+            <a href="#cta" class="btn btn-ghost" data-testid="hero-secondary">Talk to us →</a>
+          </div>
+        </div>
+
+        <div class="hero-stats" data-testid="hero-stats">
+          <div class="stat">
+            <span class="stat-num" data-count="08">00</span>
+            <span class="stat-label">Chapters</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num"><em>~</em><span data-count="4">0</span><em>min</em></span>
+            <span class="stat-label">Read time</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num"><span data-count="100">0</span><em>%</em></span>
+            <span class="stat-label">Plain language</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">2025</span>
+            <span class="stat-label">Revision</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 4v16M6 14l6 6 6-6" /></svg>
+      </div>
+    </section>
+
+    <!-- ========== EDITORIAL MARQUEE ========== -->
+    <section class="marquee" aria-hidden="true" data-testid="marquee">
+      <div class="marquee-track">
+        <span>Web&nbsp;Design</span><span class="dot">◆</span>
+        <span>Custom&nbsp;Solutions</span><span class="dot">◆</span>
+        <span>Digital&nbsp;Marketing</span><span class="dot">◆</span>
+        <span>Small&nbsp;Business&nbsp;Growth</span><span class="dot">◆</span>
+        <span>Web&nbsp;Design</span><span class="dot">◆</span>
+        <span>Custom&nbsp;Solutions</span><span class="dot">◆</span>
+        <span>Digital&nbsp;Marketing</span><span class="dot">◆</span>
+        <span>Small&nbsp;Business&nbsp;Growth</span><span class="dot">◆</span>
+      </div>
+    </section>
+
+    <!-- ========== MANIFESTO INTRO ========== -->
+    <section class="manifesto" id="manifesto" data-testid="manifesto">
+      <div class="container manifesto-grid">
+        <div class="manifesto-left">
+          <span class="overline" data-reveal>§ 001 — Preamble</span>
+          <h2 class="section-title" data-reveal>
+            Legal, but <span class="hl">human-readable</span>.
+          </h2>
+        </div>
+        <div class="manifesto-right">
+          <p class="lede" data-reveal>
+            By using <strong>itniche.com</strong>, you agree to the terms below.
+            We restructured every clause into short, scannable chapters — with
+            visual summaries first, dense legal copy tucked underneath. No
+            surprises, no dark patterns. Just clarity.
+          </p>
+          <ul class="manifesto-list" data-reveal>
+            <li><span>01</span>Written in plain English</li>
+            <li><span>02</span>Every chapter is scannable in 20s</li>
+            <li><span>03</span>Full legal text is one click away</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CHAPTERS ========== -->
+    <section class="chapters" id="chapters" data-testid="chapters">
+      <div class="container">
+        <div class="chapters-header">
+          <span class="overline" data-reveal>The Terms</span>
+          <h2 class="section-title" data-reveal>Eight chapters. <br/>Zero legalese.</h2>
+        </div>
+
+        <!-- Chapter 01 -->
+        <article class="chapter" data-testid="chapter-01">
+          <aside class="chapter-num"><span>01</span></aside>
+          <div class="chapter-body">
+            <header class="chapter-head">
+              <h3>Acceptance &amp; Revisions</h3>
+              <p class="chapter-lede">Using the site means you accept these terms. We may update them at any time without notice.</p>
+            </header>
+            <div class="chapter-visual chapter-visual--flow">
+              <div class="flow-step"><span>01</span><em>Visit</em></div>
+              <svg viewBox="0 0 40 12" class="flow-arrow" aria-hidden="true"><path d="M0 6h34M28 1l6 5-6 5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+              <div class="flow-step"><span>02</span><em>Use</em></div>
+              <svg viewBox="0 0 40 12" class="flow-arrow" aria-hidden="true"><path d="M0 6h34M28 1l6 5-6 5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+              <div class="flow-step active"><span>03</span><em>Agree</em></div>
+            </div>
+            <details class="disclosure" data-testid="disclosure-01">
+              <summary><span>Read full clause</span><i class="plus" aria-hidden="true"></i></summary>
+              <p>By using our website, you agree to follow and be bound by the following terms and conditions concerning your use of the site. IT Niche may revise the Terms of Use at any time without notice to you. Areas of the site may have different terms of use posted; if there is a conflict, the specific terms shall take precedence for that area.</p>
+            </details>
+          </div>
+        </article>
+
+        <!-- Chapter 02 -->
+        <article class="chapter" data-testid="chapter-02">
+          <aside class="chapter-num"><span>02</span></aside>
+          <div class="chapter-body">
+            <header class="chapter-head">
+              <h3>Access &amp; Termination</h3>
+              <p class="chapter-lede">IT Niche may end access at any time. Warranty, accuracy, and indemnity clauses survive termination.</p>
+            </header>
+            <div class="chapter-visual chapter-visual--bars">
+              <div class="bar-row"><em>Access granted</em><div class="bar"><i style="--w:100%"></i></div><b>100%</b></div>
+              <div class="bar-row"><em>Access monitored</em><div class="bar"><i style="--w:100%"></i></div><b>100%</b></div>
+              <div class="bar-row"><em>Access reversible</em><div class="bar"><i style="--w:100%"></i></div><b>Any&nbsp;time</b></div>
+            </div>
+            <details class="disclosure" data-testid="disclosure-02">
+              <summary><span>Read full clause</span><i class="plus"></i></summary>
+              <p>IT Niche may terminate a user's access at any time for any reason. The provisions regarding the disclaimer of warranty, accuracy of information and indemnification shall survive such termination. IT Niche may monitor access to the site.</p>
+            </details>
+          </div>
+        </article>
+
+        <!-- Chapter 03 -->
+        <article class="chapter" data-testid="chapter-03">
+          <aside class="chapter-num"><span>03</span></aside>
+          <div class="chapter-body">
+            <header class="chapter-head">
+              <h3>Intellectual Property</h3>
+              <p class="chapter-lede">All content, code, media, and marks on this site belong to IT Niche. No reuse without written permission.</p>
+            </header>
+            <div class="chapter-visual chapter-visual--bento">
+              <div class="bento"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="6" y="6" width="20" height="20" rx="1"/><path d="M10 12h12M10 16h12M10 20h8"/></svg><span>Text</span></div>
+              <div class="bento"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5" y="7" width="22" height="18" rx="1"/><circle cx="12" cy="14" r="2"/><path d="m5 22 7-7 6 6 4-3 5 5"/></svg><span>Images</span></div>
+              <div class="bento"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 10h20v14H6zM10 14l6 4-6 4z"/></svg><span>Video</span></div>
+              <div class="bento"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M10 20a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M14 16V6l10 2v10"/><circle cx="20" cy="20" r="4"/></svg><span>Audio</span></div>
+              <div class="bento"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4"><path d="m10 20 4-8 4 4 4-6"/><path d="M6 6h20v20H6z"/></svg><span>Graphics</span></div>
+              <div class="bento bento--accent"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="16" cy="16" r="10"/><path d="M12 16l3 3 5-6"/></svg><span>All Rights Reserved</span></div>
+            </div>
+            <details class="disclosure" data-testid="disclosure-03">
+              <summary><span>Read full clause</span><i class="plus"></i></summary>
+              <p>All content present on this site is the exclusive property of IT Niche. The software, text, images, graphics, video and audio used on this site belong to IT Niche. No material from this site may be copied, modified, reproduced, republished, uploaded, transmitted, posted or distributed in any form without prior written permission. IT Niche is a registered trademark of IT Niche, LLC. Unauthorized use may violate copyright, trademark and other applicable laws.</p>
+            </details>
+          </div>
+        </article>
+
+        <!-- Chapter 04 -->
+        <article class="chapter" data-testid="chapter-04">
+          <aside class="chapter-num"><span>04</span></aside>
+          <div class="chapter-body">
+            <header class="chapter-head">
+              <h3>Warranty Disclaimer</h3>
+              <p class="chapter-lede">The site and services are provided "as is" and "as available", without warranties of any kind.</p>
+            </header>
+            <div class="chapter-visual chapter-visual--tags">
+              <span class="tag">as&nbsp;is</span>
+              <span class="tag">as&nbsp;available</span>
+              <span class="tag tag--muted">no&nbsp;merchantability</span>
+              <span class="tag tag--muted">no&nbsp;fitness&nbsp;guarantee</span>
+              <span class="tag tag--muted">no&nbsp;non-infringement</span>
+            </div>
+            <details class="disclosure" data-testid="disclosure-04">
+              <summary><span>Read full clause</span><i class="plus"></i></summary>
+              <p>The site, and all content, materials, information, software, products and services provided on the site, are provided on an "as is" and "as available" basis. IT Niche expressly disclaims all warranties of any kind, whether express or implied, including, but not limited to, the implied warranties of merchantability, fitness for a particular purpose and non-infringement.</p>
+            </details>
+          </div>
+        </article>
+
+        <!-- Chapter 05 -->
+        <article class="chapter" data-testid="chapter-05">
+          <aside class="chapter-num"><span>05</span></aside>
+          <div class="chapter-body">
+            <header class="chapter-head">
+              <h3>Limitation of Liability</h3>
+              <p class="chapter-lede">IT Niche is not liable for direct, incidental, or consequential damages arising from your use of the site.</p>
+            </header>
+            <div class="chapter-visual chapter-visual--donut">
+              <svg viewBox="0 0 120 120" width="120" height="120" aria-hidden="true">
+                <circle cx="60" cy="60" r="46" fill="none" stroke="#e5e5e5" stroke-width="10" />
+                <circle class="donut-arc" cx="60" cy="60" r="46" fill="none" stroke="#e57119" stroke-width="10" stroke-dasharray="289" stroke-dashoffset="289" transform="rotate(-90 60 60)" stroke-linecap="butt" />
+                <text x="60" y="58" text-anchor="middle" font-family="Lato" font-weight="900" font-size="22" fill="#000">$0</text>
+                <text x="60" y="76" text-anchor="middle" font-family="Lato" font-weight="400" font-size="9" fill="#666">MAX LIABILITY</text>
+              </svg>
+              <ul class="donut-legend">
+                <li><i></i>Direct damages — excluded</li>
+                <li><i></i>Incidental damages — excluded</li>
+                <li><i></i>Consequential damages — excluded</li>
+                <li><i></i>Lost profits &amp; data — excluded</li>
+              </ul>
+            </div>
+            <details class="disclosure" data-testid="disclosure-05">
+              <summary><span>Read full clause</span><i class="plus"></i></summary>
+              <p>In no event will IT Niche be liable for damages of any kind, including without limitation, direct, incidental or consequential damages (including, but not limited to, damages for lost profits, business interruption and loss of programs or information) arising out of the use of or inability to use the website. Some jurisdictions do not allow the limitation or exclusion of liability, so some of the above limitations may not apply.</p>
+            </details>
+          </div>
+        </article>
+
+        <!-- Chapter 06 -->
+        <article class="chapter" data-testid="chapter-06">
+          <aside class="chapter-num"><span>06</span></aside>
+          <div class="chapter-body">
+            <header class="chapter-head">
+              <h3>Accuracy of Information</h3>
+              <p class="chapter-lede">Information comes from reliable sources, but we do not warrant accuracy, completeness, or adequacy.</p>
+            </header>
+            <div class="chapter-visual chapter-visual--check">
+              <div class="check-row"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg><span>Sourced from reliable inputs</span></div>
+              <div class="check-row check-row--x"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path d="m9 9 6 6M15 9l-6 6"/></svg><span>No warranty of accuracy</span></div>
+              <div class="check-row check-row--x"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path d="m9 9 6 6M15 9l-6 6"/></svg><span>No guarantee of uptime</span></div>
+              <div class="check-row check-row--x"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path d="m9 9 6 6M15 9l-6 6"/></svg><span>Results may vary</span></div>
+            </div>
+            <details class="disclosure" data-testid="disclosure-06">
+              <summary><span>Read full clause</span><i class="plus"></i></summary>
+              <p>The information contained in the site has been obtained from sources believed to be reliable. IT Niche disclaims all warranties as to the accuracy, completeness or adequacy of such information. IT Niche makes no warranty that: (a) the site will meet your requirements; (b) the site will be available on an uninterrupted, timely, secure, or error-free basis; (c) the results obtained from the use of the site will be accurate or reliable.</p>
+            </details>
+          </div>
+        </article>
+
+        <!-- Chapter 07 -->
+        <article class="chapter" data-testid="chapter-07">
+          <aside class="chapter-num"><span>07</span></aside>
+          <div class="chapter-body">
+            <header class="chapter-head">
+              <h3>Privacy of Data</h3>
+              <p class="chapter-lede">Your privacy is paramount. We never share your data with third parties.</p>
+            </header>
+            <div class="chapter-visual chapter-visual--shield">
+              <svg viewBox="0 0 120 120" width="110" height="110" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+                <path d="M60 12 20 26v30c0 22 17 42 40 52 23-10 40-30 40-52V26L60 12Z"/>
+                <path d="m44 60 12 12 22-24" stroke="#e57119" stroke-width="2"/>
+              </svg>
+              <div class="shield-copy">
+                <div><b>0</b><em>third-parties with access</em></div>
+                <div><b>1</b><em>purpose: personalize your experience</em></div>
+              </div>
+            </div>
+            <details class="disclosure" data-testid="disclosure-07">
+              <summary><span>Read full clause</span><i class="plus"></i></summary>
+              <p>The user's right to privacy is of paramount importance to IT Niche. Any information provided by the user will not be shared with any third party. IT Niche reserves the right to use the information to provide the user a more personalized online experience.</p>
+            </details>
+          </div>
+        </article>
+
+        <!-- Chapter 08 -->
+        <article class="chapter" data-testid="chapter-08">
+          <aside class="chapter-num"><span>08</span></aside>
+          <div class="chapter-body">
+            <header class="chapter-head">
+              <h3>Third-Party Links</h3>
+              <p class="chapter-lede">We link to third parties for convenience — but we don't own or vouch for what's on the other side.</p>
+            </header>
+            <div class="chapter-visual chapter-visual--nodes">
+              <svg viewBox="0 0 320 120" width="100%" height="120" aria-hidden="true">
+                <g fill="none" stroke="#000" stroke-width="1.2">
+                  <circle cx="60" cy="60" r="18" />
+                  <text x="60" y="64" text-anchor="middle" font-family="Lato" font-weight="900" font-size="10" stroke="none" fill="#000">YOU</text>
+                  <line x1="80" y1="60" x2="140" y2="60" stroke-dasharray="3 3"/>
+                  <circle cx="160" cy="60" r="20" stroke="#e57119"/>
+                  <text x="160" y="64" text-anchor="middle" font-family="Lato" font-weight="900" font-size="10" stroke="none" fill="#e57119">NICHE</text>
+                  <line x1="180" y1="60" x2="240" y2="60" stroke-dasharray="3 3"/>
+                  <circle cx="260" cy="60" r="18" />
+                  <text x="260" y="64" text-anchor="middle" font-family="Lato" font-weight="900" font-size="9" stroke="none" fill="#666">3RD&nbsp;PARTY</text>
+                </g>
+              </svg>
+              <p class="nodes-caption">Not responsible for external opinions, ads, or availability. Read their policies first.</p>
+            </div>
+            <details class="disclosure" data-testid="disclosure-08">
+              <summary><span>Read full clause</span><i class="plus"></i></summary>
+              <p>The site provides links to web sites and access to content, products and services from third parties, including users, advertisers, affiliates and sponsors. You agree that IT Niche is not responsible for the availability of content provided by third-party sites. Users should review policies posted by other websites regarding privacy and other topics before use. IT Niche is not responsible for any loss or damage from dealing with any third party.</p>
+            </details>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ========== TRUST / INFO GRAPHIC BAND ========== -->
+    <section class="trust" id="trust" data-testid="trust">
+      <div class="container">
+        <div class="trust-grid">
+          <div class="trust-lead">
+            <span class="overline" data-reveal>Trust · By the numbers</span>
+            <h2 class="section-title" data-reveal>Small businesses. <br/>Big ambition. <span class="hl">Zero fluff.</span></h2>
+            <p class="lede" data-reveal>We build websites and campaigns for founders who need clarity — in code, contracts, and conversions.</p>
+          </div>
+          <div class="trust-cards">
+            <div class="tcard" data-reveal>
+              <span class="tcard-num" data-count="1200">0</span><em>+</em>
+              <p>projects shipped for small businesses.</p>
+            </div>
+            <div class="tcard" data-reveal>
+              <span class="tcard-num" data-count="18">0</span><em>yrs</em>
+              <p>designing, coding &amp; marketing on the web.</p>
+            </div>
+            <div class="tcard" data-reveal>
+              <span class="tcard-num" data-count="98">0</span><em>%</em>
+              <p>client retention across web + growth work.</p>
+            </div>
+            <div class="tcard tcard--accent" data-reveal>
+              <span class="tcard-num" data-count="24">0</span><em>/7</em>
+              <p>support for launch, uptime &amp; iterations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="cta" id="cta" data-testid="cta">
+      <div class="container cta-inner">
+        <div class="cta-tag">
+          <span class="dot"></span> Open for Q1 &amp; Q2 engagements
+        </div>
+        <h2 class="cta-title" data-testid="cta-title">
+          <span class="mask"><span class="line">Let's build something</span></span>
+          <span class="mask"><span class="line"><em>worth</em> agreeing to.</span></span>
+        </h2>
+        <p class="cta-lede">
+          Web design, custom software, and digital marketing for small businesses that plan to win.
+        </p>
+        <div class="cta-actions">
+          <a href="mailto:sales@itniche.com" class="btn btn-dark" data-testid="cta-primary">
+            Start a project
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="tel:+19014149009" class="btn btn-outline-dark" data-testid="cta-secondary">
+            +1 · 901 · 414 · 9009
+          </a>
+        </div>
+        <div class="cta-meta">
+          <div><span>Studio</span><b>748 Crossover Ln, Memphis TN</b></div>
+          <div><span>Hours</span><b>Mon–Fri · 9:00 – 18:00 CT</b></div>
+          <div><span>Email</span><b>sales@itniche.com</b></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="foot" data-testid="site-footer">
+      <div class="container foot-grid">
+        <div class="foot-brand">
+          <span class="logo-mark">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M6 12h12M12 6v12" />
+            </svg>
+          </span>
+          <span>IT Niche<em>®</em></span>
+        </div>
+        <nav class="foot-links" aria-label="Footer">
+          <a href="#manifesto">Manifesto</a>
+          <a href="#chapters">Chapters</a>
+          <a href="#trust">Trust</a>
+          <a href="#cta">Contact</a>
+        </nav>
+        <p class="foot-fine">© <span id="year"></span> IT Niche, LLC. All rights reserved. Terms of Use v2.0.</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
