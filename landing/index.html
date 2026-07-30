@@ -48,34 +48,94 @@
       <div class="hero__grid" aria-hidden="true"></div>
 
       <div class="hero__inner">
-        <span class="eyebrow reveal-fade" data-testid="hero-eyebrow">
-          <span class="eyebrow__dot"></span> Our Features · e-Restaurant Package
-        </span>
+        <div class="hero__content">
+          <span class="eyebrow reveal-fade" data-testid="hero-eyebrow">
+            <span class="eyebrow__dot"></span> Our Features · e-Restaurant Package
+          </span>
 
-        <h1 id="hero-title" class="hero__title" data-testid="hero-title">
-          <span class="line"><span>Power tools to</span></span>
-          <span class="line"><span>manage your</span></span>
-          <span class="line"><span class="accent">restaurant.</span></span>
-        </h1>
+          <h1 id="hero-title" class="hero__title" data-testid="hero-title">
+            <span class="line"><span>Power tools to</span></span>
+            <span class="line"><span>manage your</span></span>
+            <span class="line"><span class="accent">restaurant.</span></span>
+          </h1>
 
-        <p class="hero__lede reveal-fade" data-testid="hero-lede">
-          An optimal way to leverage cutting-edge technology. These are the core
-          features of the e-Restaurant package — with custom features available
-          on request, anytime.
-        </p>
+          <p class="hero__lede reveal-fade" data-testid="hero-lede">
+            An optimal way to leverage cutting-edge technology. These are the core
+            features of the e-Restaurant package — with custom features available
+            on request, anytime.
+          </p>
 
-        <div class="hero__actions reveal-fade" data-testid="hero-actions">
-          <a href="#cta" class="btn btn--primary" data-testid="hero-get-started">
-            Get Started
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-          <a href="#demo" class="btn btn--ghost" data-testid="hero-online-demo">Online Demo</a>
+          <div class="hero__actions reveal-fade" data-testid="hero-actions">
+            <a href="#cta" class="btn btn--primary" data-testid="hero-get-started">
+              Get Started
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#demo" class="btn btn--ghost" data-testid="hero-online-demo">Online Demo</a>
+          </div>
+
+          <div class="hero__stats reveal-fade" data-testid="hero-stats">
+            <div class="stat"><span class="stat__num" data-count="18" data-suffix="+">0</span><span class="stat__label">Built-in features</span></div>
+            <div class="stat"><span class="stat__num" data-count="0" data-text="Zero">0</span><span class="stat__label">Page reloads</span></div>
+            <div class="stat"><span class="stat__num" data-count="1998" data-plain="1">0</span><span class="stat__label">Crafting sites since</span></div>
+          </div>
         </div>
 
-        <div class="hero__stats reveal-fade" data-testid="hero-stats">
-          <div class="stat"><span class="stat__num" data-count="18" data-suffix="+">0</span><span class="stat__label">Built-in features</span></div>
-          <div class="stat"><span class="stat__num" data-count="0" data-text="Zero">0</span><span class="stat__label">Page reloads</span></div>
-          <div class="stat"><span class="stat__num" data-count="1998" data-plain="1">0</span><span class="stat__label">Crafting sites since</span></div>
+        <!-- Restaurant-style infographic -->
+        <div class="hero__visual reveal-fade" data-testid="hero-visual" role="img"
+             aria-label="Illustration of the e-Restaurant platform connecting reservations, a live menu, orders and checkout around one central hub.">
+          <div class="viz">
+            <svg class="viz__rings" viewBox="0 0 400 400" fill="none" aria-hidden="true">
+              <circle cx="200" cy="200" r="185" stroke="rgba(255,255,255,.07)"/>
+              <circle class="viz__ringspin" cx="200" cy="200" r="140" stroke="rgba(229,113,25,.45)" stroke-dasharray="4 10" stroke-linecap="round"/>
+              <circle cx="200" cy="200" r="96" stroke="rgba(255,255,255,.1)"/>
+              <path class="viz__link" d="M200 200 L92 96"/>
+              <path class="viz__link" d="M200 200 L308 96"/>
+              <path class="viz__link" d="M200 200 L92 304"/>
+              <path class="viz__link" d="M200 200 L308 304"/>
+            </svg>
+
+            <div class="viz__hub">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="24" cy="24" r="15"/>
+                <circle cx="24" cy="24" r="9"/>
+                <path d="M15 8v9a2.5 2.5 0 0 0 5 0V8M17.5 8v14M32 8c-1.6 1.2-2.6 3.4-2.6 6.4 0 2 1.1 3.1 2.6 3.1s2.6-1.1 2.6-3.1c0-3-1-5.2-2.6-6.4ZM32 17.5V40"/>
+              </svg>
+              <span class="viz__hub-label">e-Restaurant</span>
+              <span class="viz__hub-sub">Live platform</span>
+            </div>
+
+            <div class="viz__chip viz__chip--tl" data-testid="viz-reservation">
+              <span class="viz__chip-ic">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/><path d="m9 15 2 2 4-4"/></svg>
+              </span>
+              <span class="viz__chip-t">Reservations</span>
+              <span class="viz__chip-m">Table for 4 · 7:30 PM</span>
+            </div>
+
+            <div class="viz__chip viz__chip--tr" data-testid="viz-menu">
+              <span class="viz__chip-ic">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v16"/></svg>
+              </span>
+              <span class="viz__chip-t">Live Menu</span>
+              <span class="viz__chip-m">Always available</span>
+            </div>
+
+            <div class="viz__chip viz__chip--bl" data-testid="viz-orders">
+              <span class="viz__chip-ic">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.3"/><circle cx="18" cy="20" r="1.3"/><path d="M2 3h3l2.4 12.3a1.6 1.6 0 0 0 1.6 1.3h8.2a1.6 1.6 0 0 0 1.6-1.3L22 7H6"/></svg>
+              </span>
+              <span class="viz__chip-t">Orders</span>
+              <span class="viz__chip-m viz__chip-m--live"><span class="ping"></span>+3 new</span>
+            </div>
+
+            <div class="viz__chip viz__chip--br" data-testid="viz-checkout">
+              <span class="viz__chip-ic">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg>
+              </span>
+              <span class="viz__chip-t">Checkout</span>
+              <span class="viz__chip-m">No reload · $48.20</span>
+            </div>
+          </div>
         </div>
       </div>
 
