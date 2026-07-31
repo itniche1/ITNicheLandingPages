@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant Web Builder — Custom Websites, Online Ordering & Growth for Restaurants</title>
+  <meta name="description" content="Restaurant Web Builder designs high-converting restaurant websites with online ordering, reservations, SEO and ongoing support. Launch your restaurant online in days, not months." />
+  <meta name="keywords" content="restaurant website builder, restaurant web design, online ordering, restaurant SEO, digital marketing for restaurants" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Restaurant Web Builder" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Restaurant Web Builder — Websites That Fill Tables" />
+  <meta property="og:description" content="Premium restaurant websites with online ordering, reservations, SEO & support." />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <script defer src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ============ PROGRESS BAR ============ -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav" id="nav" data-testid="site-nav">
+    <a href="#top" class="nav__brand" data-testid="nav-brand" aria-label="Restaurant Web Builder home">
+      <span class="nav__mark" aria-hidden="true">RWB</span>
+      <span class="nav__brandtext">Restaurant<em>Web</em>Builder</span>
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#features" data-testid="nav-features">Features</a>
+      <a href="#process" data-testid="nav-process">Process</a>
+      <a href="#pricing" data-testid="nav-pricing">Pricing</a>
+      <a href="#offices" data-testid="nav-offices">Offices</a>
+    </nav>
+
+    <a href="#contact" class="btn btn--nav" data-testid="nav-cta">
+      Get Started <i class="ph ph-arrow-up-right" aria-hidden="true"></i>
+    </a>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" data-testid="nav-toggle">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" data-testid="mobile-menu">
+    <a href="#features" data-testid="m-nav-features">Features</a>
+    <a href="#process" data-testid="m-nav-process">Process</a>
+    <a href="#pricing" data-testid="m-nav-pricing">Pricing</a>
+    <a href="#offices" data-testid="m-nav-offices">Offices</a>
+    <a href="#contact" class="btn btn--primary" data-testid="m-nav-cta">Get Started</a>
+  </div>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero" data-testid="hero-section">
+      <div class="hero__grid" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+      </div>
+
+      <!-- floating line-art -->
+      <svg class="hero__art hero__art--fork" viewBox="0 0 100 200" fill="none" aria-hidden="true" data-parallax="0.12">
+        <path d="M20 10 v50 a15 15 0 0 0 30 0 v-50 M35 10 v70 M35 80 v110" stroke="currentColor" stroke-width="2"/>
+        <path d="M20 10 v40 M28 10 v40 M43 10 v40" stroke="currentColor" stroke-width="2"/>
+      </svg>
+      <svg class="hero__art hero__art--ring" viewBox="0 0 200 200" fill="none" aria-hidden="true" data-parallax="0.2">
+        <circle cx="100" cy="100" r="98" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="100" cy="100" r="60" stroke="currentColor" stroke-width="1.5"/>
+      </svg>
+
+      <div class="hero__inner">
+        <div class="hero__eyebrow reveal" data-testid="hero-eyebrow">
+          <span class="dot"></span> Since 1998 — Powering restaurants online
+        </div>
+
+        <h1 class="hero__title" data-testid="hero-title">
+          <span class="line-mask"><span class="line">Websites that</span></span>
+          <span class="line-mask"><span class="line">fill <em>tables.</em></span></span>
+          <span class="line-mask"><span class="line">Built for restaurants.</span></span>
+        </h1>
+
+        <div class="hero__bottom">
+          <p class="hero__lede reveal" data-testid="hero-lede">
+            Custom design, online ordering, reservations and marketing — everything
+            your restaurant needs to grow online, handled end to end.
+          </p>
+          <div class="hero__actions reveal">
+            <a href="#contact" class="btn btn--primary" data-testid="hero-cta-primary">
+              Start your project <i class="ph ph-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="#features" class="btn btn--ghost" data-testid="hero-cta-secondary">
+              See what's included
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a href="#stats" class="hero__scroll" aria-label="Scroll down" data-testid="hero-scroll">
+        <i class="ph ph-arrow-down" aria-hidden="true"></i> Scroll
+      </a>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="stats" id="stats" data-testid="stats-section">
+      <div class="stats__item reveal">
+        <div class="stats__num" data-count="500" data-suffix="+">0</div>
+        <div class="stats__label">Restaurant sites launched</div>
+      </div>
+      <div class="stats__item reveal">
+        <div class="stats__num" data-count="27" data-suffix="+">0</div>
+        <div class="stats__label">Years of experience</div>
+      </div>
+      <div class="stats__item reveal">
+        <div class="stats__num" data-count="99" data-suffix="%">0</div>
+        <div class="stats__label">Uptime guarantee</div>
+      </div>
+      <div class="stats__item reveal">
+        <div class="stats__num" data-count="2" data-suffix=" wks">0</div>
+        <div class="stats__label">Average time to launch</div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <section class="marquee" aria-hidden="true" data-testid="marquee">
+      <div class="marquee__track">
+        <span>Custom Design <b>✦</b> Online Ordering <b>✦</b> Reservations <b>✦</b> SEO &amp; Marketing <b>✦</b> Hosting &amp; Support <b>✦</b> </span>
+        <span>Custom Design <b>✦</b> Online Ordering <b>✦</b> Reservations <b>✦</b> SEO &amp; Marketing <b>✦</b> Hosting &amp; Support <b>✦</b> </span>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="section features" id="features" data-testid="features-section">
+      <div class="section__head">
+        <span class="label reveal">/ What you get</span>
+        <h2 class="reveal" data-testid="features-title">Everything a modern restaurant needs, in one build.</h2>
+      </div>
+
+      <div class="features__grid">
+        <article class="feature reveal" data-testid="feature-card-1">
+          <i class="ph ph-paint-brush-broad" aria-hidden="true"></i>
+          <h3>Custom Website Design</h3>
+          <p>Menu-first layouts crafted around your brand — fast, responsive and appetite-driving.</p>
+        </article>
+        <article class="feature reveal" data-testid="feature-card-2">
+          <i class="ph ph-shopping-bag-open" aria-hidden="true"></i>
+          <h3>Online Ordering</h3>
+          <p>Take pickup and delivery orders directly, commission-free, straight from your site.</p>
+        </article>
+        <article class="feature reveal" data-testid="feature-card-3">
+          <i class="ph ph-calendar-check" aria-hidden="true"></i>
+          <h3>Table Reservations</h3>
+          <p>Let guests book a table in seconds with a smooth, mobile-friendly flow.</p>
+        </article>
+        <article class="feature reveal" data-testid="feature-card-4">
+          <i class="ph ph-magnifying-glass" aria-hidden="true"></i>
+          <h3>SEO &amp; Marketing</h3>
+          <p>Proven lead-generation and local SEO so hungry customers find you first.</p>
+        </article>
+        <article class="feature reveal" data-testid="feature-card-5">
+          <i class="ph ph-device-mobile" aria-hidden="true"></i>
+          <h3>Mobile Optimized</h3>
+          <p>Pixel-perfect on every device where most of your diners are searching.</p>
+        </article>
+        <article class="feature reveal" data-testid="feature-card-6">
+          <i class="ph ph-lifebuoy" aria-hidden="true"></i>
+          <h3>Ongoing Support</h3>
+          <p>Enhancements, hosting and hands-on help — long after you go live.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS / TIMELINE ============ -->
+    <section class="section process" id="process" data-testid="process-section">
+      <div class="section__head">
+        <span class="label reveal">/ How it works</span>
+        <h2 class="reveal" data-testid="process-title">Four steps from idea to live.</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline__item reveal" data-testid="timeline-1">
+          <div class="timeline__num">01</div>
+          <div class="timeline__body">
+            <h3>Discovery</h3>
+            <p>We learn your menu, brand and goals in a quick free consultation.</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal" data-testid="timeline-2">
+          <div class="timeline__num">02</div>
+          <div class="timeline__body">
+            <h3>Design</h3>
+            <p>You approve a tailored, appetite-driving layout built around your dishes.</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal" data-testid="timeline-3">
+          <div class="timeline__num">03</div>
+          <div class="timeline__body">
+            <h3>Build &amp; Connect</h3>
+            <p>We wire up ordering, reservations, payments and analytics.</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal" data-testid="timeline-4">
+          <div class="timeline__num">04</div>
+          <div class="timeline__body">
+            <h3>Launch &amp; Grow</h3>
+            <p>Go live in ~2 weeks with ongoing SEO, support and enhancements.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section class="section pricing" id="pricing" data-testid="pricing-section">
+      <div class="section__head">
+        <span class="label reveal">/ Packages</span>
+        <h2 class="reveal" data-testid="pricing-title">Simple pricing. High value, low friction.</h2>
+      </div>
+
+      <div class="pricing__grid">
+        <article class="plan reveal" data-testid="plan-starter">
+          <div class="plan__top">
+            <span class="plan__name">Starter</span>
+            <p class="plan__desc">A polished presence to get your restaurant online, fast.</p>
+          </div>
+          <div class="plan__price"><span class="plan__from">from</span> $499<span>/site</span></div>
+          <ul class="plan__list">
+            <li><i class="ph ph-check" aria-hidden="true"></i> Custom responsive design</li>
+            <li><i class="ph ph-check" aria-hidden="true"></i> Digital menu &amp; gallery</li>
+            <li><i class="ph ph-check" aria-hidden="true"></i> Contact &amp; map integration</li>
+            <li><i class="ph ph-check" aria-hidden="true"></i> Basic on-page SEO</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost btn--full" data-testid="plan-starter-cta">Choose Starter</a>
+        </article>
+
+        <article class="plan plan--featured reveal" data-testid="plan-growth">
+          <span class="plan__tag">Most popular</span>
+          <div class="plan__top">
+            <span class="plan__name">Growth</span>
+            <p class="plan__desc">The complete engine to take orders and fill tables online.</p>
+          </div>
+          <div class="plan__price"><span class="plan__from">from</span> $999<span>/site</span></div>
+          <ul class="plan__list">
+            <li><i class="ph ph-check" aria-hidden="true"></i> Everything in Starter</li>
+            <li><i class="ph ph-check" aria-hidden="true"></i> Online ordering &amp; payments</li>
+            <li><i class="ph ph-check" aria-hidden="true"></i> Table reservations</li>
+            <li><i class="ph ph-check" aria-hidden="true"></i> Marketing &amp; lead generation</li>
+            <li><i class="ph ph-check" aria-hidden="true"></i> Priority ongoing support</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary btn--full" data-testid="plan-growth-cta">Choose Growth</a>
+        </article>
+      </div>
+      <p class="pricing__note reveal">Custom &amp; enterprise builds available — <a href="#contact">talk to us</a>.</p>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact" data-testid="contact-section">
+      <div class="contact__grid">
+        <div class="contact__intro">
+          <span class="label reveal">/ Contact us</span>
+          <h2 class="reveal" data-testid="contact-title">Let's build your restaurant's online home.</h2>
+          <p class="reveal contact__oxygen" data-testid="contact-oxygen">Your feedback is “Oxygen” for us.</p>
+
+          <ul class="contact__meta reveal">
+            <li><i class="ph ph-phone" aria-hidden="true"></i> <a href="tel:+19014149009">(901) 414-9009</a></li>
+            <li><i class="ph ph-clock" aria-hidden="true"></i> Mon–Fri, 8:00 AM – 4:00 PM CST</li>
+            <li><i class="ph ph-map-pin" aria-hidden="true"></i> Memphis, USA &amp; Hyderabad, India</li>
+          </ul>
+        </div>
+
+        <div class="contact__formwrap">
+          <form class="contact__form" id="contactForm" novalidate data-testid="contact-form">
+            <div class="field-row">
+              <div class="field">
+                <label for="firstName">First name *</label>
+                <input type="text" id="firstName" name="firstName" required autocomplete="given-name" data-testid="input-first-name" />
+              </div>
+              <div class="field">
+                <label for="lastName">Last name *</label>
+                <input type="text" id="lastName" name="lastName" required autocomplete="family-name" data-testid="input-last-name" />
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="email">Email address *</label>
+                <input type="email" id="email" name="email" required autocomplete="email" data-testid="input-email" />
+              </div>
+              <div class="field">
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" data-testid="input-phone" />
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="company">Restaurant / company *</label>
+                <input type="text" id="company" name="company" required autocomplete="organization" data-testid="input-company" />
+              </div>
+              <div class="field">
+                <label for="website">Website</label>
+                <input type="url" id="website" name="website" placeholder="https://" data-testid="input-website" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="message">Tell us about your project</label>
+              <textarea id="message" name="message" rows="4" data-testid="input-message"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full" data-testid="contact-submit-btn">
+              Send message <i class="ph ph-paper-plane-tilt" aria-hidden="true"></i>
+            </button>
+            <p class="form-error" id="formError" role="alert" data-testid="form-error" hidden></p>
+          </form>
+
+          <div class="contact__success" id="contactSuccess" hidden data-testid="contact-success">
+            <div class="contact__successicon"><i class="ph ph-check" aria-hidden="true"></i></div>
+            <h3>Message sent</h3>
+            <p>Thanks — we’ll be in touch within one business day.</p>
+            <button class="btn btn--ghost" id="resetForm" data-testid="reset-form-btn">Send another</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OFFICES ============ -->
+    <section class="section offices" id="offices" data-testid="offices-section">
+      <div class="section__head">
+        <span class="label reveal">/ Global offices</span>
+        <h2 class="reveal" data-testid="offices-title">Two offices. One team.</h2>
+      </div>
+
+      <div class="offices__grid">
+        <article class="office reveal" data-testid="office-usa">
+          <div class="office__flag"><i class="ph ph-buildings" aria-hidden="true"></i> USA — Memphis</div>
+          <h3>IT Niche, LLC</h3>
+          <p class="office__addr">748 Crossover Lane, Memphis, TN, USA 38117</p>
+          <ul class="office__meta">
+            <li><i class="ph ph-phone" aria-hidden="true"></i> (901) 414-9009</li>
+            <li><i class="ph ph-device-mobile" aria-hidden="true"></i> (901) 489-1234</li>
+            <li><i class="ph ph-clock" aria-hidden="true"></i> Mon–Fri 8AM–4PM CST · Sat 8AM–1PM CST</li>
+          </ul>
+        </article>
+
+        <article class="office reveal" data-testid="office-india">
+          <div class="office__flag"><i class="ph ph-buildings" aria-hidden="true"></i> India — Hyderabad</div>
+          <h3>IT Niche India Pvt. Ltd</h3>
+          <p class="office__addr">Ashoka Scintilla, Suite 306, III Floor, Himayath Nagar Main Road, Hyderabad, Telangana 500024</p>
+          <ul class="office__meta">
+            <li><i class="ph ph-phone" aria-hidden="true"></i> (040) 2766-2622</li>
+            <li><i class="ph ph-device-mobile" aria-hidden="true"></i> +91 97003-15970</li>
+            <li><i class="ph ph-headset" aria-hidden="true"></i> (901) 414-0300 · US Support</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" data-testid="footer">
+    <div class="footer__top">
+      <div class="footer__col">
+        <span class="label">Restaurant Web Builder</span>
+        <p>Websites, ordering &amp; marketing built exclusively for restaurants since 1998.</p>
+      </div>
+      <div class="footer__col">
+        <span class="label">Explore</span>
+        <a href="#features">Features</a>
+        <a href="#process">Process</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Get Started</a>
+      </div>
+      <div class="footer__col">
+        <span class="label">Company</span>
+        <a href="#offices">Offices</a>
+        <a href="#contact">Contact</a>
+        <a href="tel:+19014149009">(901) 414-9009</a>
+      </div>
+    </div>
+
+    <div class="footer__brandline" aria-hidden="true">RESTAURANT WEB BUILDER</div>
+
+    <div class="footer__bottom">
+      <span>© <span id="year"></span> IT Niche. All rights reserved.</span>
+      <span>Memphis · Hyderabad</span>
+    </div>
+  </footer>
+
+  <!-- Lenis smooth scroll -->
+  <script src="https://unpkg.com/lenis@1.1.2/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

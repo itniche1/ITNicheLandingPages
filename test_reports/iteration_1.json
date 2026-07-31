@@ -1,0 +1,22 @@
+{
+  "summary": "Frontend-only testing of the static Restaurant Web Builder landing page at https://minimal-convert-2.preview.emergentagent.com/landing/index.html. All 8 requested test scenarios pass: page loads with no console/page errors; hero title is fully visible (opacity 1) after safety-net delay; form validation shows inline error on empty and invalid-email submits; happy-path submit hides the form and shows the success view with 'Message sent'; 'Send another' resets form to empty; all 4 anchor nav links scroll to the correct sections; mobile menu opens via nav-toggle and closes/navigates on link click (viewport 390px); stat counters animate from 0 to 500+, 27+, 99%, 2 wks when the stats section scrolls into view.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "Minor spec deviation: mobile menu links use data-testid prefix 'm-nav-*' (m-nav-features, m-nav-process, m-nav-pricing, m-nav-offices, m-nav-cta) while desktop nav uses 'nav-*'. The review_request implied nav-features would exist inside the mobile menu. Functionality is unaffected (links use href=#... and work correctly), but if a strict testid contract is required for the mobile menu, consider either (a) reusing the same 'nav-*' testids inside the mobile menu or (b) documenting the 'm-nav-*' prefix in the spec."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A (skipped per request)", "frontend": "100%"},
+  "test_credentials": "N/A - no auth",
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "Static site served from /app/landing/ (canonical) and /app/frontend/public/landing/ (synced). No backend. Hero uses CSS animation reveal + JS safety-net that adds .hero--settled after ~2.6s; always wait >=3s after load before asserting hero visibility. Stat counters (.stats__num with data-target) are driven by IntersectionObserver — they remain '0' until the .stats section is scrolled into view; scroll the section into center of viewport and wait ~3s to observe the counted values (500+/27+/99%/2 wks). Mobile menu items use 'm-nav-*' testids (not 'nav-*'). Desktop nav links have data-testid='nav-features/process/pricing/offices'. Contact form fields are name='firstName', 'lastName', 'email', 'company'. Form error selector: [data-testid='form-error']; success: [data-testid='contact-success']; submit: [data-testid='contact-submit-btn']; reset: [data-testid='reset-form-btn'].",
+  "rca of the issue": "No issues found."
+}
