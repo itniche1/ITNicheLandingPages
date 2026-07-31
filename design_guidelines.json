@@ -1,0 +1,123 @@
+{
+  "theme": "light",
+  "typography": {
+    "font_family": "'Lato', sans-serif",
+    "import_url": "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap",
+    "hierarchy": {
+      "h1": "clamp(3rem, 8vw, 6rem); font-weight: 900; letter-spacing: -0.03em; line-height: 1.1",
+      "h2": "clamp(2.5rem, 5vw, 4rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.1",
+      "h3": "clamp(1.25rem, 3vw, 2rem); font-weight: 700; line-height: 1.3",
+      "body": "clamp(1rem, 1.5vw, 1.125rem); font-weight: 400; line-height: 1.6",
+      "labels": "0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em"
+    }
+  },
+  "colors": {
+    "primary": "#e57119",
+    "primary_hover": "#cc6416",
+    "background": "#ffffff",
+    "surface": "#f9f9f9",
+    "surface_dark": "#0a0a0a",
+    "text": "#000000",
+    "text_muted": "#666666",
+    "border": "rgba(0, 0, 0, 0.1)",
+    "border_dark": "rgba(255, 255, 255, 0.15)"
+  },
+  "layouts": {
+    "container": "max-width: 1400px; margin: 0 auto; padding: 0 5vw;",
+    "spacing": {
+      "section_y": "clamp(5rem, 10vw, 10rem)",
+      "element_y": "clamp(2rem, 4vw, 4rem)"
+    },
+    "grid": {
+      "bento": "display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;",
+      "asymmetric": "display: grid; grid-template-columns: 1fr; gap: 4rem; @media (min-width: 1024px) { grid-template-columns: 3fr 2fr; }"
+    }
+  },
+  "visual_enhancers": {
+    "icons": "Use Phosphor Icons via CDN (https://unpkg.com/@phosphor-icons/web). Use thin/light/regular styles to match the line-art aesthetic.",
+    "borders": "1px solid var(--border)",
+    "radius": "0px (Sharp edges for a professional, Swiss-brutalist aesthetic)",
+    "shadows": "None. Rely on high contrast 1px borders and structural color blocking instead of drop shadows."
+  },
+  "motion": {
+    "libraries": [
+      "Lenis via CDN (https://unpkg.com/lenis@1.1.2/dist/lenis.min.js)"
+    ],
+    "patterns": {
+      "smooth_scroll": "Initialize Lenis globally on document ready for momentum scrolling.",
+      "text_reveal": "Wrap text lines in an overflow-hidden wrapper container. Transform the inner text by translateY(100%) initially, then smoothly transition to translateY(0) when activated by IntersectionObserver.",
+      "fade_up": "Use IntersectionObserver to toggle an 'is-visible' class that animates opacity from 0 to 1 and translateY from 30px to 0, with staggered transition delays for grid items.",
+      "marquee": "Infinite linear translation using CSS @keyframes."
+    }
+  },
+  "components": [
+    {
+      "name": "Kinetic Hero",
+      "description": "Massive typography. 'Let's Build Your Restaurant Empire.' strictly no human imagery. Utilize geometric CSS shapes, grids, and line art floating in the negative space.",
+      "interactions": "Line-by-line staggered text reveal on initial page load."
+    },
+    {
+      "name": "Infographic Stats",
+      "description": "Horizontal or grid band displaying 3-4 key metrics (e.g., '500+ Live Websites', '99.9% Uptime'). Massive numbers in Lato Black, tiny uppercase tracker labels.",
+      "layout": "CSS Grid, items separated by 1px borders."
+    },
+    {
+      "name": "Features/Services Cards",
+      "description": "Grid of minimalist feature modules. Each containing a large orange Phosphor icon, short bold title, and a 1-2 line description.",
+      "styling": "Use surface background (#f9f9f9). Orange border highlight appearing on hover."
+    },
+    {
+      "name": "Timeline",
+      "description": "Numbered steps outlining process (e.g., 01 Discovery, 02 Design, 03 Launch).",
+      "layout": "Vertical progression timeline connected by thin solid lines and dots. Active state lights up in primary orange upon scroll reveal."
+    },
+    {
+      "name": "Pricing Snapshot",
+      "description": "Clean, bold pricing layouts highlighting high value vs low friction.",
+      "styling": "Dual card setup: one standard light surface, one inverted dark surface (#0a0a0a) to create tension and highlight the preferred option."
+    },
+    {
+      "name": "Trust Marquee",
+      "description": "Slow, infinitely scrolling text ribbon providing social proof.",
+      "styling": "Huge Lato text, outlined (-webkit-text-stroke: 1px var(--border)) or solid light gray text displaying 'TRUSTED BY RESTAURANTS NATIONWIDE ✦ PREMIUM WEB BUILDERS ✦'."
+    },
+    {
+      "name": "Contact Form",
+      "description": "Sleek frontend-only contact form including First/Last Name, Email, Phone, Company, Website, and Message.",
+      "interactions": "Native HTML validation. On JavaScript submit event preventDefault(), hide the form fields, and display a smooth animated success state ('Message Sent' with a checkmark)."
+    },
+    {
+      "name": "Global Offices",
+      "description": "USA (Memphis) and India (Hyderabad) addresses dynamically displayed using an infographic style, avoiding standard generic text blocks.",
+      "layout": "Two columns. Optionally incorporate a minimal SVG map node illustration."
+    },
+    {
+      "name": "Footer",
+      "description": "Ultra-minimal links, copyright, and an oversized brand name 'RESTAURANT WEB BUILDER' stretching across the bottom."
+    }
+  ],
+  "accessibility": {
+    "contrast": "Ensure #e57119 on #ffffff passes minimum 3:1 WCAG for large text. Use a darker shade for small text if needed.",
+    "focus": "All interactive inputs, buttons, and links MUST have a 2px solid #e57119 outline on :focus-visible.",
+    "aria": "Add aria-hidden='true' to purely decorative SVGs and icons."
+  },
+  "instructions_to_main_agent": {
+    "stack": "Use ONLY Vanilla HTML, CSS, and JavaScript. ABSOLUTELY NO REACT OR BUILD STEPS (no Vite, no Tailwind CLI). Do everything inside index.html, styles.css, script.js located within the /app/landing folder.",
+    "css_strategy": "Establish a strong foundation of CSS Custom Properties (var(--color)) at the :root level. Keep code extremely modular and comment section blocks prominently. Avoid inline styles.",
+    "js_strategy": "Leverage native ES6 JavaScript. Implement an IntersectionObserver class/function for 'reveal-on-scroll' logic. Include and initialize Lenis.",
+    "icons": "Use Phosphor Icons via CDN. Add `<script src=\"https://unpkg.com/@phosphor-icons/web\"></script>` in `<head>`.",
+    "testing": "All interactive inputs, buttons, form submits, and success messages MUST have a `data-testid` attribute (e.g. `data-testid=\"contact-submit-btn\"`)."
+  },
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Do not produce generic, centered designs. Create an Awwwards-winning look utilizing asymmetry, sharp typography, generous negative space, and rigid structural borders.",
+    "Never use dark colors as backgrounds for gradient overlays.",
+    "Avoid applying generic `transition: all`. Transition explicit properties (opacity, transform, background-color).",
+    "Never add `.App { text-align: center; }` or blanket center alignments. Content should natively read left-to-right.",
+    "All buttons must have sharp corners (0px radius) to align with the elegant/corporate aesthetic. Include clear hover states scaling or reversing colors.",
+    "NEVER use emojis (e.g., 🤖, 💡, 🚀) as visual stand-ins. Rely purely on premium SVG Phosphor icons.",
+    "Include intentional micro-interactions: slight text indents on link hovers, border highlights, or subtle icon translations.",
+    "Increase default spacing drastically. Use clamp() functions to make padding luxurious on desktop but acceptable on mobile.",
+    "Mock/fake integrations. Do not attempt to hit an API for the form. Simply transition to a success UI view upon button click.",
+    "All interactive and key informational elements MUST include a `data-testid` attribute to facilitate robust automated testing."
+  ]
+}
