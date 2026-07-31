@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How It Works — Web Design Experts | Spotlight Studio</title>
+  <meta name="description" content="From napkin sketch to a custom-built website that ranks and converts. See how our web design, custom solutions and digital marketing process puts small businesses in the spotlight." />
+  <meta name="theme-color" content="#000000" />
+  <meta property="og:title" content="How It Works — Put Your Business in the Spotlight" />
+  <meta property="og:description" content="Sketch. Launch. Grow. A three-step process for custom websites, SEO and digital marketing." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Grain / noise overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" data-cursor aria-hidden="true"></div>
+  <div class="cursor-dot" data-cursor-dot aria-hidden="true"></div>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" data-progress aria-hidden="true"></div>
+
+  <!-- Skip link (accessibility) -->
+  <a href="#how" class="skip-link">Skip to content</a>
+
+  <!-- NAV -->
+  <header class="nav" data-nav>
+    <a href="#top" class="brand" data-cursor-hover aria-label="Spotlight Studio home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
+          <circle cx="12" cy="12" r="4.2"/>
+          <path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/>
+        </svg>
+      </span>
+      <span class="brand-name">Spotlight<em>Studio</em></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#how" data-cursor-hover>Process</a>
+      <a href="#why" data-cursor-hover>Why Us</a>
+      <a href="#niche" data-cursor-hover>Expertise</a>
+      <a href="#start" class="nav-cta" data-cursor-hover>Get Started</a>
+    </nav>
+    <button class="nav-toggle" data-nav-toggle aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" data-mobile-menu aria-hidden="true">
+    <a href="#how" data-mm>Process</a>
+    <a href="#why" data-mm>Why Us</a>
+    <a href="#niche" data-mm>Expertise</a>
+    <a href="#start" data-mm class="mm-cta">Get Started</a>
+  </div>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="orb orb-1" data-parallax="0.18"></div>
+        <div class="orb orb-2" data-parallax="-0.12"></div>
+        <div class="grid-lines"></div>
+      </div>
+
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow reveal-fade" data-cursor-hover>
+            <span class="eyebrow-dot"></span> How It Works — Web Design &amp; Digital Marketing
+          </p>
+
+          <h1 class="hero-title">
+            <span class="line"><span class="line-in">Is your business</span></span>
+            <span class="line"><span class="line-in">in the <em>spotlight</em>?</span></span>
+          </h1>
+
+          <p class="hero-sub reveal-fade" data-delay="0.5">
+            We're the instant solution for your worldwide market. Custom-built
+            websites that go live, get found, and turn visitors into customers.
+          </p>
+
+          <div class="hero-actions reveal-fade" data-delay="0.65">
+            <a href="#how" class="btn btn-primary" data-cursor-hover>
+              See the process
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#start" class="btn btn-ghost" data-cursor-hover>Start a project</a>
+          </div>
+
+          <div class="hero-meta reveal-fade" data-delay="0.8">
+            <div class="hero-meta-item"><strong>$199</strong><span>starting price</span></div>
+            <div class="hero-meta-line" aria-hidden="true"></div>
+            <div class="hero-meta-item"><strong>16 hr</strong><span>daily support</span></div>
+            <div class="hero-meta-line" aria-hidden="true"></div>
+            <div class="hero-meta-item"><strong>24×7</strong><span>online reach</span></div>
+          </div>
+        </div>
+
+        <!-- Hero line-art infographic: spotlight on a browser -->
+        <div class="hero-art" data-parallax="0.06" aria-hidden="true">
+          <svg class="art-svg" viewBox="0 0 460 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- spotlight cone -->
+            <path class="draw cone" d="M230 20 L360 300 A150 150 0 0 1 100 300 Z" fill="rgba(229,113,25,0.05)" stroke="rgba(229,113,25,0.35)" stroke-width="1"/>
+            <!-- orbit rings -->
+            <circle class="draw ring" cx="230" cy="300" r="150" stroke="rgba(255,255,255,0.10)" stroke-width="1.2"/>
+            <circle class="draw ring" cx="230" cy="300" r="112" stroke="rgba(255,255,255,0.08)" stroke-width="1.2"/>
+            <!-- browser window -->
+            <g class="art-browser">
+              <rect class="draw" x="150" y="238" width="160" height="120" rx="10" stroke="#e57119" stroke-width="2"/>
+              <line class="draw" x1="150" y1="262" x2="310" y2="262" stroke="rgba(255,255,255,0.35)" stroke-width="1.4"/>
+              <circle cx="164" cy="250" r="2.4" fill="#e57119"/>
+              <circle cx="174" cy="250" r="2.4" fill="rgba(255,255,255,0.4)"/>
+              <circle cx="184" cy="250" r="2.4" fill="rgba(255,255,255,0.4)"/>
+              <rect class="draw" x="164" y="276" width="52" height="8" rx="4" stroke="rgba(255,255,255,0.4)" stroke-width="1.4"/>
+              <rect class="draw" x="164" y="294" width="132" height="6" rx="3" stroke="rgba(255,255,255,0.22)" stroke-width="1.2"/>
+              <rect class="draw" x="164" y="308" width="120" height="6" rx="3" stroke="rgba(255,255,255,0.22)" stroke-width="1.2"/>
+              <rect class="draw pulse-fill" x="164" y="328" width="60" height="16" rx="8" fill="#e57119"/>
+            </g>
+            <!-- floating nodes -->
+            <g class="art-node node-a">
+              <circle cx="96" cy="150" r="20" stroke="#e57119" stroke-width="1.6"/>
+              <path d="M88 150l6 6 10-12" stroke="#e57119" stroke-width="1.8" fill="none"/>
+            </g>
+            <g class="art-node node-b">
+              <circle cx="372" cy="132" r="22" stroke="rgba(255,255,255,0.5)" stroke-width="1.4"/>
+              <path d="M362 138l6-14 5 9 4-5" stroke="rgba(255,255,255,0.7)" stroke-width="1.6" fill="none"/>
+            </g>
+            <g class="art-node node-c">
+              <circle cx="392" cy="300" r="16" stroke="#e57119" stroke-width="1.6"/>
+              <path d="M392 293v14M385 300h14" stroke="#e57119" stroke-width="1.6"/>
+            </g>
+          </svg>
+          <span class="art-badge art-badge-1">SEO</span>
+          <span class="art-badge art-badge-2">Custom Code</span>
+          <span class="art-badge art-badge-3">Live 24×7</span>
+        </div>
+      </div>
+
+      <a href="#marquee" class="scroll-hint" data-cursor-hover aria-label="Scroll down">
+        <span>Scroll</span>
+        <span class="scroll-hint-line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- MARQUEE -->
+    <section class="marquee" id="marquee" aria-hidden="true">
+      <div class="marquee-track" data-marquee>
+        <span>Web Design <i>✦</i> SEO <i>✦</i> Social Media Marketing <i>✦</i> Custom Solutions <i>✦</i> Lead Generation <i>✦</i> Worldwide Market <i>✦</i></span>
+        <span>Web Design <i>✦</i> SEO <i>✦</i> Social Media Marketing <i>✦</i> Custom Solutions <i>✦</i> Lead Generation <i>✦</i> Worldwide Market <i>✦</i></span>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section how" id="how">
+      <div class="section-head">
+        <p class="section-tag reveal"><span>01 — 03</span> The Process</p>
+        <h2 class="section-title reveal">Web design experts in India<span class="accent">…</span> and beyond.</h2>
+        <p class="section-lead reveal">Three deliberate steps. No jargon, no guesswork — just a clear path from idea to a site that works for you.</p>
+      </div>
+
+      <div class="chapters">
+        <!-- Chapter 1 -->
+        <article class="chapter reveal" data-cursor-hover>
+          <div class="chapter-index"><span>01</span></div>
+          <div class="chapter-body">
+            <h3>We sketch your idea</h3>
+            <p>We put your vision on paper and design a custom site built <strong>only</strong> for you — never a template.</p>
+          </div>
+          <div class="chapter-art" aria-hidden="true">
+            <svg viewBox="0 0 120 120" fill="none" stroke-width="2">
+              <rect class="draw" x="24" y="18" width="72" height="84" rx="6" stroke="rgba(255,255,255,0.5)"/>
+              <line class="draw" x1="36" y1="38" x2="72" y2="38" stroke="#e57119"/>
+              <line class="draw" x1="36" y1="52" x2="84" y2="52" stroke="rgba(255,255,255,0.35)"/>
+              <line class="draw" x1="36" y1="62" x2="78" y2="62" stroke="rgba(255,255,255,0.35)"/>
+              <rect class="draw" x="36" y="74" width="30" height="18" rx="4" stroke="rgba(255,255,255,0.35)"/>
+              <path class="draw pencil" d="M78 96l18-18 8 8-18 18-11 3z" stroke="#e57119"/>
+            </svg>
+          </div>
+        </article>
+
+        <!-- Chapter 2 -->
+        <article class="chapter reveal" data-cursor-hover>
+          <div class="chapter-index"><span>02</span></div>
+          <div class="chapter-body">
+            <h3>We bring it online</h3>
+            <p>Launched with <strong>all</strong> the technical credentials — hosting, security, speed and a mobile-first build.</p>
+          </div>
+          <div class="chapter-art" aria-hidden="true">
+            <svg viewBox="0 0 120 120" fill="none" stroke-width="2">
+              <circle class="draw" cx="60" cy="60" r="34" stroke="rgba(255,255,255,0.5)"/>
+              <ellipse class="draw" cx="60" cy="60" rx="14" ry="34" stroke="rgba(255,255,255,0.3)"/>
+              <line class="draw" x1="26" y1="60" x2="94" y2="60" stroke="rgba(255,255,255,0.3)"/>
+              <path class="draw" d="M60 26c10 8 10 60 0 68M60 26c-10 8-10 60 0 68" stroke="rgba(255,255,255,0.3)"/>
+              <circle class="draw pulse-node" cx="60" cy="26" r="5" stroke="#e57119"/>
+              <circle class="draw pulse-node" cx="88" cy="72" r="5" stroke="#e57119"/>
+              <path class="draw" d="M60 12v8" stroke="#e57119"/>
+            </svg>
+          </div>
+        </article>
+
+        <!-- Chapter 3 -->
+        <article class="chapter reveal" data-cursor-hover>
+          <div class="chapter-index"><span>03</span></div>
+          <div class="chapter-body">
+            <h3>We make it work for you</h3>
+            <p>Growth on autopilot with <strong>SEO, SMM and internet marketing</strong> that keeps the leads coming.</p>
+          </div>
+          <div class="chapter-art" aria-hidden="true">
+            <svg viewBox="0 0 120 120" fill="none" stroke-width="2">
+              <line class="draw" x1="24" y1="96" x2="100" y2="96" stroke="rgba(255,255,255,0.5)"/>
+              <line class="draw" x1="24" y1="24" x2="24" y2="96" stroke="rgba(255,255,255,0.5)"/>
+              <rect class="draw" x="36" y="70" width="12" height="26" stroke="rgba(255,255,255,0.35)"/>
+              <rect class="draw" x="56" y="54" width="12" height="42" stroke="rgba(255,255,255,0.35)"/>
+              <rect class="draw pulse-fill-bar" x="76" y="38" width="12" height="58" fill="#e57119"/>
+              <path class="draw arrow" d="M30 78l22-18 16 10 24-30" stroke="#e57119"/>
+              <path class="draw arrow" d="M84 40h10v10" stroke="#e57119"/>
+            </svg>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- WHY / VALUE PROPS -->
+    <section class="section why" id="why">
+      <div class="section-head">
+        <p class="section-tag reveal"><span>Why us</span> Built to deliver</p>
+        <h2 class="section-title reveal">Everything you need to sell, connect &amp; grow online.</h2>
+      </div>
+
+      <div class="stats">
+        <article class="stat reveal" data-cursor-hover>
+          <div class="stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div class="stat-num"><span class="count" data-target="199" data-prefix="$">0</span><span class="stat-plus">+</span></div>
+          <h3>Affordable</h3>
+          <p>Custom websites starting as low as $199 — premium craft without the agency price tag.</p>
+        </article>
+
+        <article class="stat reveal" data-cursor-hover>
+          <div class="stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg>
+          </div>
+          <div class="stat-num"><span class="count" data-target="16" data-suffix=" hr">0</span></div>
+          <h3>Fast</h3>
+          <p>Our team runs two full shifts — 16 hours a day — so support fits your schedule, not ours.</p>
+        </article>
+
+        <article class="stat reveal" data-cursor-hover>
+          <div class="stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+          <div class="stat-num"><span class="count" data-target="24" data-suffix="×7">0</span></div>
+          <h3>Satisfying results</h3>
+          <p>Every option to market, sell and connect with your client base online, around the clock.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- NICHE / EXPERTISE -->
+    <section class="section niche" id="niche">
+      <div class="section-head">
+        <p class="section-tag reveal"><span>Our niche</span> Where we go deep</p>
+        <h2 class="section-title reveal">Specialised expertise, end to end.</h2>
+      </div>
+
+      <div class="niche-grid">
+        <a class="niche-card reveal" href="#start" data-cursor-hover>
+          <span class="niche-no">01</span>
+          <div class="niche-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.9 6.9a2.12 2.12 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3>Ongoing Enhancements &amp; Support</h3>
+          <p>Your site keeps evolving — updates, fixes and improvements whenever you need them.</p>
+          <span class="niche-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a class="niche-card reveal" href="#start" data-cursor-hover>
+          <span class="niche-no">02</span>
+          <div class="niche-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/><path d="M15 8h4v4"/></svg>
+          </div>
+          <h3>Online Marketing Methodologies</h3>
+          <p>Data-driven SEO, social and content strategy that puts you in front of the right people.</p>
+          <span class="niche-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a class="niche-card reveal" href="#start" data-cursor-hover>
+          <span class="niche-no">03</span>
+          <div class="niche-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3>Lead Generation Processes</h3>
+          <p>Funnels engineered to capture, nurture and convert visitors into paying clients.</p>
+          <span class="niche-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- CTA / GET STARTED -->
+    <section class="section start" id="start">
+      <div class="start-glow" aria-hidden="true"></div>
+      <div class="start-inner">
+        <div class="start-copy reveal">
+          <p class="section-tag"><span>Ask an expert</span> Free consultation</p>
+          <h2 class="start-title">Let's put your business in the spotlight.</h2>
+          <p class="start-lead">Tell us what you need. A real expert replies — whether it's a product question or an internet-marketing strategy.</p>
+          <ul class="start-list">
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#e57119" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Product-related inquiries</li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#e57119" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Internet-marketing inquiries</li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#e57119" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Refer &amp; earn opportunities</li>
+          </ul>
+        </div>
+
+        <form class="start-form reveal" data-form novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Jane Doe" autocomplete="name" data-cursor-hover required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="jane@business.com" autocomplete="email" data-cursor-hover required />
+          </div>
+          <div class="field">
+            <label for="topic">I'm interested in</label>
+            <div class="select-wrap">
+              <select id="topic" name="topic" data-cursor-hover>
+                <option>A custom website</option>
+                <option>SEO &amp; digital marketing</option>
+                <option>Lead generation</option>
+                <option>Ongoing support</option>
+              </select>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </div>
+          </div>
+          <div class="field">
+            <label for="msg">Message</label>
+            <textarea id="msg" name="msg" rows="3" placeholder="A few words about your project…" data-cursor-hover></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" data-cursor-hover>
+            Get my free consultation
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <p class="form-note" data-form-note aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <a href="#top" class="brand brand-lg" data-cursor-hover>
+        <span class="brand-name">Spotlight<em>Studio</em></span>
+      </a>
+      <p>Instant solutions for your worldwide market — web design, custom solutions &amp; digital marketing.</p>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Spotlight Studio. All rights reserved.</span>
+      <div class="footer-links">
+        <a href="#how" data-cursor-hover>Process</a>
+        <a href="#why" data-cursor-hover>Why Us</a>
+        <a href="#niche" data-cursor-hover>Expertise</a>
+        <a href="#start" data-cursor-hover>Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
