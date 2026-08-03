@@ -61,12 +61,13 @@
       const el = entry.target;
       const target = parseFloat(el.getAttribute("data-count"));
       const suffix = el.getAttribute("data-suffix") || "";
+      const prefix = el.getAttribute("data-prefix") || "";
       const duration = 1400;
       const start = performance.now();
       function tick(now) {
         const p = Math.min((now - start) / duration, 1);
         const eased = 1 - Math.pow(1 - p, 3);
-        el.textContent = Math.round(target * eased) + suffix;
+        el.textContent = prefix + Math.round(target * eased) + suffix;
         if (p < 1) requestAnimationFrame(tick);
       }
       requestAnimationFrame(tick);
