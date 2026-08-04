@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant Web Builder — Let's Work Together</title>
+  <meta name="description" content="We plan, design, develop and launch high-performing websites for small businesses. A clear 7-step process for web design, custom solutions and digital marketing." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <script>document.documentElement.className += ' js';</script>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Restaurant Web Builder — Let's Work Together" />
+  <meta property="og:description" content="A clear, proven process to take your business online. Web design, custom solutions and digital marketing for small businesses." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Progress bar -->
+  <div class="scroll-progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav" data-testid="site-header">
+    <a href="#top" class="brand" data-testid="brand-logo" aria-label="Restaurant Web Builder home">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 27V9l12-6 12 6v18" />
+          <path d="M11 27v-8h10v8" />
+          <path d="M4 14h24" />
+        </svg>
+      </span>
+      <span class="brand__text">Restaurant<em>WebBuilder</em></span>
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#niche" data-testid="nav-approach">Approach</a>
+      <a href="#process" data-testid="nav-process">Process</a>
+      <a href="#numbers" data-testid="nav-results">Results</a>
+    </nav>
+
+    <a href="#cta" class="btn btn--pill" data-testid="nav-cta-button">
+      Get Started
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+    </a>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" data-testid="mobile-menu-toggle">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" data-testid="mobile-menu">
+    <a href="#niche" data-testid="mobile-nav-approach">Approach</a>
+    <a href="#process" data-testid="mobile-nav-process">Process</a>
+    <a href="#numbers" data-testid="mobile-nav-results">Results</a>
+    <a href="#cta" class="btn btn--pill" data-testid="mobile-nav-cta">Get Started</a>
+  </div>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero" data-testid="hero-section">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__orb" data-parallax="0.18" aria-hidden="true"></div>
+      <div class="hero__blueprint" data-parallax="-0.06" aria-hidden="true">
+        <svg viewBox="0 0 600 600" width="100%" height="100%" fill="none" stroke="currentColor" stroke-width="1">
+          <circle cx="300" cy="300" r="250" />
+          <circle cx="300" cy="300" r="170" />
+          <circle cx="300" cy="300" r="90" stroke-dasharray="4 6" />
+          <path d="M50 300h500M300 50v500" stroke-dasharray="2 8" />
+        </svg>
+      </div>
+
+      <div class="hero__inner">
+        <p class="eyebrow reveal-fade" data-testid="hero-eyebrow"><span></span>Let us work together</p>
+
+        <h1 class="hero__title" data-testid="hero-title">
+          <span class="line"><span>We build the</span></span>
+          <span class="line"><span>web that grows</span></span>
+          <span class="line"><span>your <em>business.</em></span></span>
+        </h1>
+
+        <p class="hero__lede reveal-fade" data-delay="0.6" data-testid="hero-lede">
+          Share your wish list. We listen to your goals, then plan, design, develop
+          and launch an online presence built to convert — together.
+        </p>
+
+        <div class="hero__actions reveal-fade" data-delay="0.75">
+          <a href="#cta" class="btn btn--solid btn--lg magnetic" data-testid="hero-primary-cta">
+            Start the conversation
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#process" class="btn btn--ghost btn--lg" data-testid="hero-secondary-cta">See the process</a>
+        </div>
+
+        <dl class="hero__stats reveal-fade" data-delay="0.9" data-testid="hero-stats">
+          <div><dt data-count="7">0</dt><dd>Step process</dd></div>
+          <div><dt data-count="90" data-suffix="">0</dt><dd>Day growth review</dd></div>
+          <div><dt data-count="100" data-suffix="%">0</dt><dd>Responsive & W3C</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M6 13l6 6 6-6"/></svg>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <section class="marquee" aria-hidden="true" data-testid="marquee">
+      <div class="marquee__track">
+        <span>Web Design</span><i>✳</i><span>Custom Solutions</span><i>✳</i><span>Digital Marketing</span><i>✳</i><span>Small Business</span><i>✳</i>
+        <span>Web Design</span><i>✳</i><span>Custom Solutions</span><i>✳</i><span>Digital Marketing</span><i>✳</i><span>Small Business</span><i>✳</i>
+      </div>
+    </section>
+
+    <!-- ============ GO ONLINE WITH IT NICHE ============ -->
+    <section class="niche" id="niche" data-testid="niche-section">
+      <div class="section-head">
+        <p class="eyebrow eyebrow--dark reveal" data-testid="niche-eyebrow"><span></span>Go online with IT Niche</p>
+        <h2 class="reveal" data-testid="niche-title">
+          One partner for the whole journey — from first sketch to a site that sells.
+        </h2>
+        <p class="section-head__lede reveal" data-testid="niche-lede">
+          Miscommunication, scope creep and guesswork sink most web projects.
+          We replace them with a documented blueprint, clear expectations and one accountable team.
+        </p>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal" data-testid="niche-card-1">
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="36" height="24" rx="3"/><path d="M6 18h36"/><path d="M18 42h12M24 34v8"/><circle cx="11" cy="14" r="1.2" fill="currentColor" stroke="none"/></svg>
+          </span>
+          <h3>Web Design</h3>
+          <p>Layouts and interfaces crafted around your brand — refined through revisions until the look feels unmistakably yours.</p>
+        </article>
+
+        <article class="card reveal" data-delay="0.08" data-testid="niche-card-2">
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 14l-8 10 8 10M30 14l8 10-8 10"/><path d="M27 10l-6 28"/></svg>
+          </span>
+          <h3>Custom Solutions</h3>
+          <p>Dynamic, functional builds — custom application development, databases and the right third-party integrations.</p>
+        </article>
+
+        <article class="card reveal" data-delay="0.16" data-testid="niche-card-3">
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 30V20M18 30V12M28 30V22M38 30V8"/><path d="M6 38h36"/></svg>
+          </span>
+          <h3>Digital Marketing</h3>
+          <p>SEO-rich content, search submissions, local listings and backlinks that make sure the right people find you.</p>
+        </article>
+
+        <article class="card reveal" data-delay="0.24" data-testid="niche-card-4">
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6v6M24 36v6M6 24h6M36 24h6"/><circle cx="24" cy="24" r="10"/><path d="M20 24l3 3 6-6"/></svg>
+          </span>
+          <h3>Small Business Focus</h3>
+          <p>Built for owners who need results, not jargon. Ongoing maintenance keeps your site evolving month after month.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS BREAKDOWN ============ -->
+    <section class="process" id="process" data-testid="process-section">
+      <div class="process__intro">
+        <p class="eyebrow reveal" data-testid="process-eyebrow"><span></span>The process breakdown</p>
+        <h2 class="reveal" data-testid="process-title">
+          Failing to plan is planning to fail. So we start with a blueprint.
+        </h2>
+        <p class="reveal process__intro-lede" data-testid="process-lede">
+          Seven deliberate chapters take your project from first hello to measurable growth —
+          no surprises, no scope creep.
+        </p>
+      </div>
+
+      <ol class="timeline" data-testid="process-timeline">
+        <li class="timeline__line" aria-hidden="true"><span id="timelineProgress"></span></li>
+
+        <li class="step reveal" data-testid="process-step-1">
+          <span class="step__num">01</span>
+          <div class="step__body">
+            <h3>Initial Contact</h3>
+            <p>We discover together — opportunities, look and feel, demographics, market and competitor research, then a hands-on creative consultation.</p>
+          </div>
+          <span class="step__ico" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 10h28v18H16l-7 6v-6H6z"/></svg></span>
+        </li>
+
+        <li class="step reveal" data-testid="process-step-2">
+          <span class="step__num">02</span>
+          <div class="step__body">
+            <h3>Planning</h3>
+            <p>Designers, developers and programmers map every module, integration and function into an interactive flow — with a clear delivery timeline.</p>
+          </div>
+          <span class="step__ico" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="11" height="11" rx="2"/><rect x="22" y="7" width="11" height="11" rx="2"/><rect x="7" y="22" width="11" height="11" rx="2"/><path d="M18 12.5h4M12.5 18v4"/></svg></span>
+        </li>
+
+        <li class="step reveal" data-testid="process-step-3">
+          <span class="step__num">03</span>
+          <div class="step__body">
+            <h3>Content</h3>
+            <p>Copywriters work with SEO from day one — keyword-rich, compelling content built from interviews with your team, then placed into the design.</p>
+          </div>
+          <span class="step__ico" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 8h20l4 4v20H10z"/><path d="M15 18h14M15 24h10M15 12h6"/></svg></span>
+        </li>
+
+        <li class="step reveal" data-testid="process-step-4">
+          <span class="step__num">04</span>
+          <div class="step__body">
+            <h3>Design</h3>
+            <p>Layout and interface come to life — home page first, then inner templates — refined through revisions until the final look and feel is approved.</p>
+          </div>
+          <span class="step__ico" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M27 6l7 7-18 18-9 2 2-9z"/><path d="M23 10l7 7"/></svg></span>
+        </li>
+
+        <li class="step reveal" data-testid="process-step-5">
+          <span class="step__num">05</span>
+          <div class="step__body">
+            <h3>Development</h3>
+            <p>Designs become a W3C-compliant, fully responsive build — custom application and database work, tested and hosted, ready for launch.</p>
+          </div>
+          <span class="step__ico" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14l-7 6 7 6M25 14l7 6-7 6"/><path d="M22 10l-4 20"/></svg></span>
+        </li>
+
+        <li class="step reveal" data-testid="process-step-6">
+          <span class="step__num">06</span>
+          <div class="step__body">
+            <h3>Launch</h3>
+            <p>Go-live begins the off-page work — search submissions, backlinks, local listing claims and press releases that make your site visible.</p>
+          </div>
+          <span class="step__ico" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4c6 4 9 10 9 17l-4 5h-10l-4-5c0-7 3-13 9-17z"/><circle cx="20" cy="17" r="3"/><path d="M14 30l-3 6M26 30l3 6"/></svg></span>
+        </li>
+
+        <li class="step reveal" data-testid="process-step-7">
+          <span class="step__num">07</span>
+          <div class="step__body">
+            <h3>Review &amp; Grow</h3>
+            <p>After 90 days of analytics we meet, review the data and map the next moves — with ongoing maintenance to keep evolving.</p>
+          </div>
+          <span class="step__ico" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 24l7-8 6 5 9-11"/><path d="M28 10h4v4"/><path d="M6 32h28"/></svg></span>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ NUMBERS / RESULTS ============ -->
+    <section class="numbers" id="numbers" data-testid="numbers-section">
+      <div class="numbers__grid">
+        <div class="numbers__lead reveal">
+          <p class="eyebrow reveal" data-testid="numbers-eyebrow"><span></span>Why it works</p>
+          <h2>A blueprint that removes the guesswork.</h2>
+          <p>Every project is planned, documented and reviewed — so time and budget stay protected from first sketch to launch day.</p>
+        </div>
+        <div class="stat reveal" data-testid="numbers-stat-1"><span class="stat__n" data-count="7">0</span><span class="stat__l">Structured phases, zero surprises</span></div>
+        <div class="stat reveal" data-delay="0.08" data-testid="numbers-stat-2"><span class="stat__n" data-count="90" data-suffix="d">0</span><span class="stat__l">Data-driven growth review</span></div>
+        <div class="stat reveal" data-delay="0.16" data-testid="numbers-stat-3"><span class="stat__n" data-count="100" data-suffix="%">0</span><span class="stat__l">Responsive, W3C-compliant builds</span></div>
+        <div class="stat reveal" data-delay="0.24" data-testid="numbers-stat-4"><span class="stat__n" data-count="1">0</span><span class="stat__l">Accountable team, end to end</span></div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta" id="cta" data-testid="cta-section">
+      <div class="cta__grid" aria-hidden="true"></div>
+      <div class="cta__inner">
+        <p class="eyebrow reveal" data-testid="cta-eyebrow"><span></span>Let us work together</p>
+        <h2 class="cta__title reveal" data-testid="cta-title">
+          Tell us your goals.<br/>We'll build the road there.
+        </h2>
+        <p class="cta__lede reveal" data-testid="cta-lede">
+          It's an adventure we take together — mutually learning, planning and building toward
+          the online presence your business deserves.
+        </p>
+        <a href="#top" class="btn btn--solid btn--xl magnetic reveal" data-testid="cta-button">
+          Get Started
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" data-testid="site-footer">
+    <div class="footer__inner">
+      <a href="#top" class="brand brand--foot" data-testid="footer-brand">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 27V9l12-6 12 6v18"/><path d="M11 27v-8h10v8"/><path d="M4 14h24"/></svg>
+        </span>
+        <span class="brand__text">Restaurant<em>WebBuilder</em></span>
+      </a>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#niche">Approach</a>
+        <a href="#process">Process</a>
+        <a href="#numbers">Results</a>
+        <a href="#cta">Get Started</a>
+      </nav>
+      <p class="footer__copy">&copy; <span id="year">2025</span> Restaurant Web Builder. Web design, custom solutions &amp; digital marketing.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
